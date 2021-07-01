@@ -11,7 +11,14 @@
             <div id="header">
                 <div id="intro">
                     <div id="vectors">
-                        <img src="yomi-website/src/assets/img/vectors/Group1.svg" alt="vector1" />
+                        <img src="/assets/img/vectors/Group1.svg" alt="vector1" />
+                        <img src="/assets/img/vectors/Group2.svg" alt="vector2" />
+                        <img src="/assets/img/vectors/Group3.svg" alt="vector3" />
+                        <img src="/assets/img/vectors/Group4.svg" alt="vector4" />
+                        <img src="/assets/img/vectors/Group1.svg" alt="vector1" />
+                    </div>
+                    <div id="logo">
+                        <img src="/assets/img/vectors/logo.svg" alt="logo" />
                     </div>
                 </div>
             </div>
@@ -46,7 +53,21 @@ export default {
     #intro{
         height: 100%;
         width: 100%;
-        border: white solid 1px;
+        position: relative;
+    }
+
+    #vectors {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    #logo {
+        position: absolute;
+        top: 45%;
+        left: 32%;
     }
    
 </style>
