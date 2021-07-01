@@ -16,6 +16,7 @@
                         <img src="/assets/img/vectors/Group3.svg" alt="vector3" />
                         <img src="/assets/img/vectors/Group4.svg" alt="vector4" />
                         <img src="/assets/img/vectors/Group1.svg" alt="vector1" />
+                        <img src="/assets/img/vectors/Group2.svg" alt="vector2" />
                     </div>
                     <div id="logo">
                         <img src="/assets/img/vectors/logo.svg" alt="logo" />
@@ -38,7 +39,8 @@ export default {
     body, html {
         padding: 0;
         margin: 0;
-        width: 100%;
+        width:100vw;
+        height:auto;
         min-height: 100vh;
         background-color: black!important;
          display: flex;
@@ -47,10 +49,12 @@ export default {
     }
 
     #header {
-        width: 80%;
+        width: 80vw;
+        height: 100%;
     }
 
     #intro{
+      
         height: 100%;
         width: 100%;
         position: relative;
@@ -66,8 +70,12 @@ export default {
 
     #logo {
         position: absolute;
-        top: 45%;
-        left: 32%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #logo img {
+        height: 200px;
     }
    
 </style>
