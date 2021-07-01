@@ -17,9 +17,13 @@
                         <img src="/assets/img/vectors/Group4.svg" alt="vector4" />
                         <img src="/assets/img/vectors/Group1.svg" alt="vector1" />
                         <img src="/assets/img/vectors/Group2.svg" alt="vector2" />
+                        <img src="/assets/img/vectors/Group3.svg" alt="vector3" />
                     </div>
                     <div id="logo">
                         <img src="/assets/img/vectors/logo.svg" alt="logo" />
+                    </div>
+                    <div id="arrow">
+                        <img src="/assets/img/vectors/arrow1.svg" alt="arrow" />
                     </div>
                 </div>
             </div>
@@ -49,7 +53,7 @@ export default {
     }
 
     #header {
-        width: 80vw;
+        width: 100vw;
         height: 100%;
     }
 
@@ -72,6 +76,13 @@ export default {
         position: absolute;
         left: 50%;
         top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    #arrow {
+        position: absolute;
+        left: 50%;
+        top: 95%;
         transform: translate(-50%,-50%);
     }
     #logo img {
