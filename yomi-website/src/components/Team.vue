@@ -15,12 +15,24 @@
             <div class="container has-text-centered">
                 <div class="columns is-vcentered">
 
-                    <div id="teamSVG">
-                        <img src="/assets/img/vectors/Team.svg" alt="team" />
+                    <div class="column is-5 biggerFont">
+                        <p>
+                            
+                        Non la solita software house. Un gruppo giovane e dinamico di professionisti appassionati, con un approccio al lavoro pragmatico fondato sulla continua formazione e aggiornamento,  per rispondere alla crescente domanda di prodotti e servizi tecnologicamente all’avanguardia.
+                        <br><br>
+                        Un laboratorio digitale in continua evoluzione e sperimentazione, che fa della passione per l’innovazione il suo principale punto di forza. 
+
+                        </p>
                     </div>
+
+                    
                 </div>
+                
             </div>
         </div>
+    <div id="teamSVG">
+        <img class="fullWidth" src="/assets/img/vectors/Team.svg" alt="team" />
+    </div>
     </section>
 </template>
 
@@ -41,5 +53,11 @@ export default {
         line-height: 55px;
         font-weight: 500;
     }
+    .biggerFont{
+        font-size: 28px
+    }
 
+    .fullWidth {
+        width: 100%;
+    }
 </style>

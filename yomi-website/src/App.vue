@@ -3,6 +3,7 @@
     <Home></Home>
     <Menu></Menu>
     <Team></Team>
+    <Members></Members>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Home from './components/Home.vue'
 import Menu from './components/Menu.vue'
 import Team from './components/Team.vue'
+import Members from './components/Members.vue'
 
 export default {
   name: 'App',
   components: {
     Home,
     Menu,
-    Team
+    Team,
+    Members
   }
 }
 </script>
