@@ -1,46 +1,42 @@
 <template>
-    <section class="hero is-fullheight is-default is-bold">
-        <div class="hero-body ">
-            <div class="columns has-text-centered marginZero is-multiline is-mobile width25">
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
-                <br>
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
+    <section class="section">
+
+        <div class="columns has-text-centered is-multiline ">
+
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>SEBASTIANO CATAUDO</strong></p><br>
+                <p>CTO, Blockchain Guru<br>Co-founder</p>
             </div>
-            <div class="columns has-text-centered  marginZero is-multiline is-mobile width25">
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
+    
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>LIVIO LOMBARDO</strong></p><br>
+                <p>Finance & Administration<br>Co-founder</p>
             </div>
-            <div class="columns has-text-centered  marginZero is-multiline is-mobile width25">
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
-                <div class="column is-full border ">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
+    
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>ROBERTO DIANO</strong></p><br>
+                <p>Sales<br>Co-founder</p>
             </div>
-            <div class="columns has-text-centered  marginZero is-multiline is-mobile width25">
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
-                <div class="column is-full border">
-                    <div><p>SEBASTIANO CATAUDO</p></div>
-                    <div><p>CTO, Blockchain Guru<br>Co-founder</p></div>
-                </div>
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>STEFANO RANIOLO</strong></p><br>
+                <p>Front end Developer</p>
+            </div>
+    
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>GIORGIA GUIDETTI</strong></p><br>
+                <p>Marketing Specialist</p>
+            </div>
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>ALAN DEVALIS</strong></p><br>
+                <p>Full Stack Developer</p>
+            </div>
+        
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>SIMONE CALABRESE</strong></p><br>
+                <p>Junior Developer</p>
+            </div>
+            <div class="column is-one-quarter border text-vcentered">
+                <p>maybe you?</p>
             </div>
         </div>
     </section>
@@ -56,26 +52,32 @@ export default {
 <style scoped>
    section{
         background-color: white;
+        height: 100vh;
     }
 
     .border{
         border: solid black 1px;
     }
-    .width25{
-        width: 25%;
+    .columns{
+        height: 90vh;
     }
 
-    .marginZero {
-        margin: 0!important;
+    .text-vcentered {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
 
-    @media (max-width: 480px) {
-        .hero-body {
-            flex-direction: column;
-        }
-        .columns{
-            width: 100%;
-        }
+    .name {
+        font-size: 30px;
     }
+
+    .job {
+        font: 20px;
+    }
+
+
 
 </style>
