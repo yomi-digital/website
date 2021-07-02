@@ -4,6 +4,8 @@
     <Menu></Menu>
     <Team></Team>
     <Members></Members>
+    <Service></Service>
+    <Portafolio></Portafolio>
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import Home from './components/Home.vue'
 import Menu from './components/Menu.vue'
 import Team from './components/Team.vue'
 import Members from './components/Members.vue'
+import Service from './components/Service.vue'
+import Portafolio from './components/Portafolio.vue'
 
 export default {
   name: 'App',
@@ -19,7 +23,9 @@ export default {
     Home,
     Menu,
     Team,
-    Members
+    Members,
+    Service,
+    Portafolio
   }
 }
 </script>

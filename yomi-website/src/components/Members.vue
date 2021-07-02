@@ -1,7 +1,7 @@
 <template>
     <section class="section">
-
-        <div class="columns has-text-centered is-multiline ">
+        <div class="hero is-fullheight fullWidth">
+            <div class="columns has-text-centered is-multiline fullWidth">
 
             <div class="column is-one-quarter border text-vcentered">
                 <p class="name"><strong>SEBASTIANO CATAUDO</strong></p><br>
@@ -17,19 +17,23 @@
                 <p class="name"><strong>ROBERTO DIANO</strong></p><br>
                 <p>Sales<br>Co-founder</p>
             </div>
+
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>GIORGIA GUIDETTI</strong></p><br>
+                <p>Marketing Specialist</p>
+            </div>
+
+            <div class="column is-one-quarter border text-vcentered">
+                <p class="name"><strong>ALAN DEVALIS</strong></p><br>
+                <p>Full Stack Developer</p>
+            </div>
+
             <div class="column is-one-quarter border text-vcentered">
                 <p class="name"><strong>STEFANO RANIOLO</strong></p><br>
                 <p>Front end Developer</p>
             </div>
     
-            <div class="column is-one-quarter border text-vcentered">
-                <p class="name"><strong>GIORGIA GUIDETTI</strong></p><br>
-                <p>Marketing Specialist</p>
-            </div>
-            <div class="column is-one-quarter border text-vcentered">
-                <p class="name"><strong>ALAN DEVALIS</strong></p><br>
-                <p>Full Stack Developer</p>
-            </div>
+          
         
             <div class="column is-one-quarter border text-vcentered">
                 <p class="name"><strong>SIMONE CALABRESE</strong></p><br>
@@ -39,6 +43,9 @@
                 <p>maybe you?</p>
             </div>
         </div>
+        </div>
+
+        
     </section>
 </template>
 
@@ -52,14 +59,13 @@ export default {
 <style scoped>
    section{
         background-color: white;
-        height: 100vh;
     }
 
     .border{
         border: solid black 1px;
     }
     .columns{
-        height: 90vh;
+        height: 90%;
     }
 
     .text-vcentered {
@@ -76,6 +82,18 @@ export default {
 
     .job {
         font: 20px;
+    }
+
+    .fullWidth{
+        width: 100%;
+    }
+
+    .container {
+        margin:0;
+        margin-right: 0;
+    }
+    .hero{
+        display: grid;
     }
 
 
