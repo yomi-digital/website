@@ -19,24 +19,77 @@
                     <div style="padding-top:0;" class="column is-half secondColumn">
                         <div class="columns is-multiline is-mobile">
                             <div class="column is-full borders">
-                                <p class="numbers">01</p>
-                                <p class="numberContent">THE HUB</p>
+                                <div class="columns is-mobile is-multiline">
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numbers">01</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numberContent">THE HUB</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                    </div>                                  
+                                </div>
                             </div>
                             <div class="column is-full borders">
-                                <p class="numbers">02</p>
-                                <p class="numberContent">NETWORK REVOLUTION</p>
+                                <div class="columns is-mobile is-multiline">
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numbers">02</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numberContent">NETWORK REVOLUTION</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                    </div>                                  
+                                </div>
+                                
+                                
                             </div>
                             <div class="column is-full borders">
-                                <p class="numbers">03</p>
-                                <p class="numberContent">DIGITAL ORACLES</p>
+                                <div class="columns is-mobile is-multiline">
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numbers">03</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                         <p class="numberContent">DIGITAL ORACLES</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <img class="arrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                    </div>                                  
+                                </div>
+                                
+                               
                             </div>
                             <div class="column is-full borders">
-                                <p class="numbers">04</p>
-                                <p class="numberContent">EINAUDISTORE</p>
+                                <div class="columns is-mobile is-multiline">
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numbers">04</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numberContent">EINAUDISTORE</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <img class="arrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                    </div>                                  
+                                </div>
+                                
+                                
                             </div>
                             <div class="column is-full borders">
-                                <p class="numbers">05</p>
-                                <p class="numberContent">MCA GROUP</p>
+                                <div class="columns is-mobile is-multiline">
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numbers">05</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <p class="numberContent">MCA GROUP</p>
+                                    </div>
+                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
+                                        <img class="arrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                    </div>                                  
+                                </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -104,6 +157,9 @@ export default {
     .alignLeft {
         text-align: left;
     }
+    .arrow {
+        height: 20px;
+    }
 
     .moreLeftPad{
         padding-left: 400px;
@@ -128,11 +184,17 @@ export default {
         padding-left: 20px;
         float: left;
     }
+    .flexCenter {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
     .numberContent {
         float:left;
         color: white;
         font-size: 20px;
-        padding-left: 85px;
+        padding-left: 10px;
         padding-top: 10px;
     
     }
@@ -161,7 +223,7 @@ export default {
         }
         .numberContent {
         float:left;
-        padding-left: 25px;
+        padding-left: 5px;
         }
         .firstPad {
         padding: 30px;

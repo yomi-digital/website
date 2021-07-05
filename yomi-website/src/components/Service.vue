@@ -6,10 +6,10 @@
                 </div>      
                 <div class="column is-full padding">
                     <div class="columns has-text-centered is-multiline is-vcentered">
-                        <div class="column is-half  bigText">
+                        <div class="column is-half bigText textLeft serviziPad">
                             <p>IL PARTNER<br> TECNOLOGICO IDEALE <br>PER I TUOI PROCESSI<br> DI INNOVAZIONE</p>
                         </div>
-                        <div class="column is-half  smallerText">
+                        <div class="column is-half smallerText textLeft serviziPad">
                             <p>Il know-how acquisito in tanti anni di <br>esperienza è stato sempre guidato<br> dall’obiettivo primario di offrire prodotti e<br> servizi altamente professionali disegnati<br> su misura esclusivamente per la<br> soddisfazione del cliente. </p>
                         </div>
                     </div>
@@ -30,6 +30,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
  
+    .textLeft {
+        text-align: left;
+    }
     .padding {
         padding: 200px
     }
@@ -37,6 +40,10 @@ export default {
     .smallPadding {
         padding: 100px;
         padding-top: 0;
+    }
+
+    .serviziPad {
+        padding: 0px 50px 0px 50px;
     }
 
     .bordered{
@@ -55,10 +62,10 @@ export default {
     }
 
     .bigText{
-        font-size: 40px;
+        font-size: 50px;
     }
     .smallerText{
-        font-size: 25px;
+        font-size: 35px;
     }
 
     @media (max-width: 768px) {
