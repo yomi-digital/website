@@ -4,7 +4,7 @@
             <div class="column is-one-third-desktop is-full-mobile">
                 <div class="columns is-multiline is-mobile firstPad">
                     <div class="column is-full">
-                        <p>TORNA ALLA HOME</p>
+                        <a href="#" style="color: black"><p>TORNA ALLA HOME</p></a>
                     </div>
                     <div class="column is-full">
                         <p>POLITICA SULLA RISERVATEZZA<br> TERMINI DI UTILIZZO</p>
@@ -17,7 +17,7 @@
                         <p><b>VIA ERCOLANO 62, 97100 RAGUSA (RG)</b></p>
                     </div>
                     <div class="column is-full">
-                        <p><b>INFO@YOMI.DIGITAL</b></p>
+                        <a href="mailto:info@yomi.digital" style="color: black; cursor: pointer;"><p><b>INFO@YOMI.DIGITAL</b></p></a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,6 @@ export default {
     .firstPad {
         padding: 50px 0px 50px 200px;
     }
-
 
     @media (max-width: 768px) {
       .firstPad {

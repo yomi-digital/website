@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="whoWeAre">
         <div class="columns has-text-centered is-multiline">
             <div class="column is-full bordered">
                 <div class="columns is-mobile">
@@ -20,31 +20,37 @@
                                         <div class="column is-full littleTopPad">
                                             <div class="columns is-mobile is-multiline black-text littePad">
                                                 <div class="column is-full topBorder">
-                                                    <p class="floatLeft littleLeftPad">CHI SIAMO</p>
+                                                    <a href="#whoWeAre" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">CHI SIAMO</p></a>
                                                 </div>
                                                 <div class="column is-full topBorder">                                       
-                                                    <p class="floatLeft littleLeftPad">PORTFOLIO</p>
+                                                    <a href="#portafolio" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">PORTFOLIO</p></a>
                                                 </div>
                                                 <div class="column is-full topBorder">                                           
-                                                    <p class="floatLeft littleLeftPad">SERVIZI</p>
+                                                    <a href="#servizi" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">SERVIZI</p></a>
                                                 </div>
                                                 <div class="column is-full topBorder bottomBorder">                                                  
-                                                    <p class="floatLeft littleLeftPad">CONTATTI</p>
+                                                    <a href="#contact" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">CONTATTI</p></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="column is-full littleTopPad">
                                             <div class="columns is-mobile is-multiline black-text littePad ">
                                                 <div class="column is-full topBorder">
-                                                    <p class="floatLeft littleLeftPad">INSTAGRAM</p>
+                                                    <a href="https://www.instagram.com/yomi_digitalhub/" style="color: black;" target="_blank"><p class="floatLeft littleLeftPad">INSTAGRAM</p></a>
                                                 </div>
                                                 <div class="column is-full topBorder">
-                                                    <p class="floatLeft littleLeftPad">FACEBOOK</p>
+                                                    <a href="https://www.facebook.com/YOMI-107740754843280/" style="color: black;" target="_blank"><p class="floatLeft littleLeftPad">FACEBOOK</p></a>
                                                 </div>
                                                 <div class="column is-full topBorder bottomBorder">
-                                                    <p class="floatLeft littleLeftPad">LINKEDIN</p>
+                                                    <a href="https://www.linkedin.com/company/yomidigitalhub/" style="color: black;" target="_blank"><p class="floatLeft littleLeftPad">LINKEDIN</p></a>
+                                                </div>                                   
+                                            </div>
+                                        </div>
+                                        <div class="column is-full littleTopPad">
+                                            <div class="columns is-mobile is-multiline black-text littePad ">
+                                                <div class="column is-full topBorder">
+                                                    <p class="floatLeft littleLeftPad">VIA ERCOLANO 62, 97100 RAGUSA (RG)</p>
                                                 </div>
-                                    
                                             </div>
                                         </div>
                                     </div>
@@ -54,9 +60,15 @@
                     </div>
                     <div class="column is-half">
                         <div class="columns is-mobile">
-                            <div class="column fontWhite rightBorder">FB</div>
-                            <div class="column fontWhite rightBorder">IG</div>
-                            <div class="column fontWhite">IN</div>
+                            <div class="column fontWhite rightBorder">
+                                <a href="https://www.facebook.com/YOMI-107740754843280/" style="color: white;" target="_blank"><p>FB</p></a>
+                            </div>
+                            <div class="column fontWhite rightBorder">
+                                <a href="https://www.instagram.com/yomi_digitalhub/" style="color: white;" target="_blank"><p>IG</p></a>
+                            </div>
+                            <div class="column fontWhite">
+                                <a href="https://www.linkedin.com/company/yomidigitalhub/" style="color: white;" target="_blank"><p>IN</p></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,6 +122,11 @@
         data() {
             return {
                 isComponentModalActive: false,
+            }
+        },
+        methods: {
+            closeModal: function(){
+                this.isComponentModalActive = false
             }
         },
         name: 'Menu',
@@ -198,6 +215,7 @@
     .littleLeftPad {
         padding-left: 25px
     }
+    
     @media (max-width: 768px) {
         .padding {
             padding: 50px;

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="portafolio">
         <div class="columns has-text-centered is-multiline">
 
             <div class="column is-full smallPadding">
@@ -27,8 +27,13 @@
                                         <p class="numberContent">THE HUB</p>
                                     </div>
                                     <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                    </div>                                  
+                                        <div @click='toggle = !toggle'>
+                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        </div>                                      
+                                    </div>  
+                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle'>             
+                                        <p class="left"><i>Piattaforma di masternode hosting  e di staking box virtuali.</i></p>                                                                
+                                    </div>                                
                                 </div>
                             </div>
                             <div class="column is-full borders">
@@ -40,11 +45,14 @@
                                         <p class="numberContent">NETWORK REVOLUTION</p>
                                     </div>
                                     <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        <div @click='toggle2 = !toggle2'>
+                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        </div>                                      
+                                    </div>  
+                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle2'>             
+                                        <p>aaaaa</p>                                                                
                                     </div>                                  
-                                </div>
-                                
-                                
+                                </div>                                                            
                             </div>
                             <div class="column is-full borders">
                                 <div class="columns is-mobile is-multiline">
@@ -55,11 +63,14 @@
                                          <p class="numberContent">DIGITAL ORACLES</p>
                                     </div>
                                     <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <img class="arrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                    </div>                                  
-                                </div>
-                                
-                               
+                                        <div @click='toggle3 = !toggle3'>
+                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        </div>                                      
+                                    </div>  
+                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle3'>             
+                                        <p>aaaaa</p>                                                                
+                                    </div>                                 
+                                </div>                                                    
                             </div>
                             <div class="column is-full borders">
                                 <div class="columns is-mobile is-multiline">
@@ -70,11 +81,14 @@
                                         <p class="numberContent">EINAUDISTORE</p>
                                     </div>
                                     <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <img class="arrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                    </div>                                  
-                                </div>
-                                
-                                
+                                        <div @click='toggle4 = !toggle4'>
+                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        </div>                                      
+                                    </div>  
+                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle4'>             
+                                        <p>aaaaa</p>                                                                
+                                    </div>                                 
+                                </div>                                                           
                             </div>
                             <div class="column is-full borders">
                                 <div class="columns is-mobile is-multiline">
@@ -85,11 +99,14 @@
                                         <p class="numberContent">MCA GROUP</p>
                                     </div>
                                     <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <img class="arrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        <div @click='toggle5 = !toggle5'>
+                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        </div>                                      
+                                    </div>  
+                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle5'>             
+                                        <p>aaaaa</p>                                                                
                                     </div>                                  
-                                </div>
-                                
-                                
+                                </div>                                 
                             </div>
                         </div>
                     </div>
@@ -117,7 +134,16 @@
 
 <script>
 export default {
-  name: 'Portafolio',
+    data() {
+        return {
+            toggle: false,
+            toggle2: false,
+            toggle3: false,
+            toggle4: false,
+            toggle5: false
+        }
+    },
+    name: 'Portafolio',
 }
 </script>
 

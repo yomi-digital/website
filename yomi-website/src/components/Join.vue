@@ -8,7 +8,7 @@
                <div class="columns is-mobile is-multiline">
                     <div class="column is-one-quarter-desktop is-full-mobile">
                         <p class="headText">E-MAIL</p> 
-                        <p class="content">info@yomi.digital</p>
+                        <a href="mailto:info@yomi.digital" style="color: white; cursor: pointer;"><p class="content">info@yomi.digital</p></a>
                     </div>
                     <div class="column is-one-quarter-desktop is-full-mobile">
                         <p class="headText">TELEFONO</p> 

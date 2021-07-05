@@ -1,5 +1,5 @@
 <template>
-        <div class="white">
+        <div id="servizi" class="white">
             <div class="columns has-text-centered is-multiline ">
                 <div class="column is-full bordered">
                     <p class="headerText dontShow">SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>></p>

@@ -58,5 +58,6 @@ export default {
 }
   html{
     background-color: black!important;
+    scroll-behavior: smooth;
   }
 </style>

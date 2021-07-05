@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="contact">
         <div class="columns is-multiline has-text-centered is-mobile">
             <div class="column is-full">
                 <div class="columns is-multiline firstPad has-text-centered is-mobile">
