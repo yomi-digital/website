@@ -28,8 +28,9 @@
                             <div>
                                 <img src="/assets/img/vectors/arrow1.svg" alt="arrow" />
                             </div>
-                            <div>
+                            <div class="relative">
                                 <img class="biggerImage" src="/assets/img/vectors/scrollDown.svg" alt="arrow" />
+                                <p class="absolute">SCROLL DOWN</p>
                             </div>
                         </div>
                         
@@ -78,11 +79,28 @@ export default {
     }
     .biggerLight{
         font-size: 20px;
-        color: rgb(207, 149, 149);
+        color: #E5E5E5;
+        font-style: italic;
     }
 
     .padding {
         padding: 150px;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .absolute {
+        font-size: 16px;
+        color: white;
+        position: absolute;
+        left: 62px;
+        bottom: 133px;
+    }
+    .absolute:hover {
+        color: #40FF98;
+        text-decoration: underline;
     }
 
     .bordered {

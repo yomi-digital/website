@@ -50,6 +50,10 @@ export default {
         text-align: center;
     }
 
+    .headerText:hover {
+        color: #40FF98;
+    }
+
     .bigText{
         font-size: 40px;
     }

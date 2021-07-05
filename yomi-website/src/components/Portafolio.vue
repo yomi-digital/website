@@ -3,10 +3,14 @@
         <div class="columns has-text-centered is-multiline">
 
             <div class="column is-full smallPadding">
-                <div class="largePadding moreLeftPad">
-                    <p class="title alignLeft">PORTFOLIO</p>
-                    <br>
-                    <p class="content alignLeft">Nel tempo abbiamo costruito collaborazioni proficue. La nostra clientela<br> è composta da piccole realtà italiane, start up e grandi compagnie<br> internazionali che si sono affidate alla professionalità e competenza del<br> nostro team. L’eterogeneità della nostra clientela ci ha permesso di<br> ampliare le nostre conoscenze e realizzare differenti progetti disegnati<br> su misura con le tecnologie più innovative. 	</p>
+                <div class="columns is-multiline is-mobile">
+                    <div class="column is-full firstPad">
+                        <p class="title">PORTFOLIO</p>
+                    </div>
+                
+                    <div class="column is-full firstPad">
+                        <p class="content alignLeft">Nel tempo abbiamo costruito collaborazioni proficue. La nostra clientela<br> è composta da piccole realtà italiane, start up e grandi compagnie<br> internazionali che si sono affidate alla professionalità e competenza del<br> nostro team. L’eterogeneità della nostra clientela ci ha permesso di<br> ampliare le nostre conoscenze e realizzare differenti progetti disegnati<br> su misura con le tecnologie più innovative. 	</p>
+                    </div>
                 </div>
             </div>   
 
@@ -50,7 +54,7 @@
                         </p>                         
                     </div>
                     <div class="column thirdColumn">
-                         <b-button rounded type='is-dark' class="left">Download PDF</b-button>
+                         <b-button rounded type='is-dark button' class="left">Download PDF</b-button>
                     </div>
                 </div>
             </div>
@@ -68,7 +72,10 @@ export default {
 <style scoped>
     .title {
         color: white;
-        font-size: 40px;
+        font-size: 45px;
+        line-height: 55px;
+        font-weight: 500;
+        float: left;
     }
 
     .thirdColumn {
@@ -102,6 +109,11 @@ export default {
         padding-left: 400px;
     }
 
+    .firstPad {
+        padding: 50px 0px 50px 200px;
+    }
+
+
     .borders{
         border-top: solid white 1px;
         border-bottom: solid white 1px;
@@ -125,9 +137,17 @@ export default {
     
     }
 
+    .button:hover {
+        border-color: #40FF98;
+    }
+
     @media (max-width: 768px) {
-        .largePadding {
-            padding: 50px;
+        .secondColumn {
+            padding: 20px;
+            margin-top: 0px;
+        }
+        .thirdColumn {
+            padding: 20px
         }
         .smallPadding{
             padding: 10px;
@@ -143,6 +163,10 @@ export default {
         float:left;
         padding-left: 25px;
         }
+        .firstPad {
+        padding: 30px;
+    }
+
     }
    
 </style>

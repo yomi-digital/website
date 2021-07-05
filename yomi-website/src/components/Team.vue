@@ -36,6 +36,10 @@ export default {
         text-align: center;
     }
 
+    .teamHeader:hover {
+        color: #40FF98;
+    }
+
     .bordered {
         border: black solid 1px
     }
