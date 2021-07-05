@@ -1,35 +1,40 @@
 <template>
-    <section class="hero is-fullheight is-default is-bold">
-
-        <div class="hero-head">
-            <div class="columns has-text-centered">
-                <div id="menu" class="column is-5 fontWhite">
-                    MENU
-                </div>
-                <div id="social" class="colums">
-                    <div class="column fontWhite">FB</div>
-                    <div class="column fontWhite">IG</div>
-                    <div class="column fontWhite">IN</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="columns is-vcentered">
-                    <div class="column is-5 bigWhite">
-                        <p>
-                            YOMI È UN DIGITAL HUB HIT-TECH
-                        </p>
-                        <div id="arrow">
-                            <img src="/assets/img/vectors/arrow1.svg" alt="arrow" />
-                        </div>
-                        <div id="arrow">
-                            <img src="/assets/img/vectors/scrollDown.svg" alt="arrow" />
+    <div>
+        <div class="columns has-text-centered is-multiline">
+            <div class="column is-full bordered">
+                <div class="columns is-mobile">
+                    <div class="column is-half fontWhite rightBorder">
+                        MENU
+                    </div>
+                    <div class="column is-half">
+                        <div class="columns is-mobile">
+                            <div class="column fontWhite rightBorder">FB</div>
+                            <div class="column fontWhite rightBorder">IG</div>
+                            <div class="column fontWhite">IN</div>
                         </div>
                     </div>
-                    <div class="column is-6 is-offset-1">
+                </div>
+            </div>
+
+
+
+            <div class="column is-full padding">
+                <div class="columns">
+                    <div class="column bigWhite">
+                        <p style="text-align: left">
+                            YOMI È UN DIGITAL <br>HUB HIT-TECH
+                        </p>
+                        <div class="floatLeft">
+                            <div>
+                                <img src="/assets/img/vectors/arrow1.svg" alt="arrow" />
+                            </div>
+                            <div>
+                                <img class="biggerImage" src="/assets/img/vectors/scrollDown.svg" alt="arrow" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
                         <div class="fontWhite">
                             <p>
                                 Promuoviamo la diffusione della tecnologia per il raggiungimento di una realtà più etica e democratica. Le competenze della nostra squadra ci consentono di utilizzare le tecnologie più innovative plasmandole e adattandole alle complesse esigenze dei nostri clienti.
@@ -49,7 +54,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -60,32 +65,46 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .hero-head{
-        border: solid white 1px;
-    }
-    #social {
-        float: right;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 50%;
-    }
+    
+  
     .fontWhite{
         color: white;
         font-size: 35px;
     }
-    #menu {
-        width: 50%;
-        float: left;
-        border-right: solid white 1px;
-    }
+   
     .bigWhite {
-        font-size: 50px;
+        font-size: 60px;
         color: white;
     }
     .biggerLight{
         font-size: 20px;
         color: rgb(207, 149, 149);
     }
+
+    .padding {
+        padding: 150px;
+    }
+
+    .bordered {
+        border: solid white 1px;
+    }
+
+    .rightBorder {
+        border-right: solid white 1px;
+    }
+
+    .floatLeft {
+        float: left;
+    }
+
+    .biggerImage {
+        height: 250px;
+    }
+    @media (max-width: 768px) {
+        .padding {
+            padding: 50px;
+        }
+    }
+
 
 </style>

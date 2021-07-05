@@ -1,32 +1,24 @@
 <template>
-
-    <section class="section fullWidth">
-        <div class="hero is-fullheight">
-            <div class="columns has-text-centered fullWidth is-vcentered">
-                <div class="column bordered">
-                    <p class="headerText">SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>></p>
+        <div class="white">
+            <div class="columns has-text-centered is-multiline ">
+                <div class="column is-full bordered">
+                    <p class="headerText dontShow">SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>></p>
+                </div>      
+                <div class="column is-full padding">
+                    <div class="columns has-text-centered is-multiline is-vcentered">
+                        <div class="column is-half  bigText">
+                            <p>IL PARTNER<br> TECNOLOGICO IDEALE <br>PER I TUOI PROCESSI<br> DI INNOVAZIONE</p>
+                        </div>
+                        <div class="column is-half  smallerText">
+                            <p>Il know-how acquisito in tanti anni di <br>esperienza è stato sempre guidato<br> dall’obiettivo primario di offrire prodotti e<br> servizi altamente professionali disegnati<br> su misura esclusivamente per la<br> soddisfazione del cliente. </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="columns has-text-centered is-multiline fullWidth is-vcentered biggerColumn">
-
-                <div class="column is-half  bigText verticalAlign">
-                    <p>IL PARTNER<br> TECNOLOGICO IDEALE <br>PER I TUOI PROCESSI<br> DI INNOVAZIONE</p>
-                </div>
-
-                <div class="column is-half verticalAlign smallerText">
-                    <p>Il know-how acquisito in tanti anni di <br>esperienza è stato sempre guidato<br> dall’obiettivo primario di offrire prodotti e<br> servizi altamente professionali disegnati<br> su misura esclusivamente per la<br> soddisfazione del cliente. </p>
-                </div>
-
-            </div>
-            <div class="columns has-text-centered fullWidth is-vcentered ">
-
-                <div class="column">
+                <div class="column is-full smallPadding">
                     <img src="/assets/img/vectors/arrow2.svg" alt="arrow" />
                 </div>
             </div>
         </div>
-    </section>
-  
 </template>
 
 <script>
@@ -37,19 +29,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    section {
-        background-color: white;
-        height: 100%;
+ 
+    .padding {
+        padding: 200px
     }
 
-    .biggerColumn{
-        height: 80%;   
-    }
-
-   
-
-    .fullWidth {
-        width: 100%;
+    .smallPadding {
+        padding: 100px;
+        padding-top: 0;
     }
 
     .bordered{
@@ -70,20 +57,18 @@ export default {
         font-size: 25px;
     }
 
-    .verticalAlign{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
     @media (max-width: 768px) {
-        .headerText{
-            display: none;
-        } 
+       .dontShow{
+           display: none;
+       }
+        .padding{
+            padding: 10px;
+        }
     }
 
-    .hero.is-fullheight {
-        min-height: 60vh;
+    .white {
+        background-color: white;
     }
+
+ 
 </style>

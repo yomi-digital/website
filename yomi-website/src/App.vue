@@ -2,10 +2,12 @@
   <div>
     <Home></Home>
     <Menu></Menu>
-    <Team></Team>
-    <Members></Members>
     <Service></Service>
     <Portafolio></Portafolio>
+    <Team></Team>
+    <Members></Members>
+   
+  
   </div>
 </template>
 
