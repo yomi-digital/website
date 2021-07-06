@@ -11,7 +11,7 @@
                         <a href="mailto:info@yomi.digital" style="color: white; cursor: pointer;"><p class="content">info@yomi.digital</p></a>
                     </div>
                     <div class="column is-one-quarter-desktop is-full-mobile">
-                        <p class="headText">TELEFONO</p> 
+                        <p class="headText">{{ $t('message.phone') }}</p> 
                         <p class="content">+39 17162101711</p>
                     </div>
                </div>

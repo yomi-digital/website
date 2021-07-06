@@ -59,7 +59,8 @@ const messages = {
       returnHome: 'RETURN HOME',
       politics: 'PRIVACY POLICY',
       termsOfUse: 'TERMS OF USE',
-      service: 'SERVICES'
+      service: 'SERVICES',
+      phone: 'PHONE NUMBER'
     }
   },
   it: {
@@ -108,7 +109,8 @@ const messages = {
       returnHome: 'TORNA ALLA HOME',
       politics: 'POLITICA SULLA RISERVATEZZA',
       termsOfUse: 'TERMINI DI UTILIZZO',
-      service: 'SERVIZI'
+      service: 'SERVIZI',
+      phone: 'TELEFONO'
     }
   }
 };
