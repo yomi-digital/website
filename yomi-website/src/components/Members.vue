@@ -92,12 +92,7 @@ export default {
     .job {
         font: 20px;
     }
-
-    .fullWidth{
-        width: 100%;
-    }
-
-
+ 
     .white {
         background-color: white;
          display: grid;
@@ -110,7 +105,7 @@ export default {
     }
 
     .minHeight {
-        min-height: 355px;
+        min-height: 500px;
     }
 
 </style>

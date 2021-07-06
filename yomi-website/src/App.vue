@@ -60,4 +60,7 @@ export default {
     background-color: black!important;
     scroll-behavior: smooth;
   }
+  body, html {
+    overflow-x: hidden;
+  }
 </style>

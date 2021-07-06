@@ -49,6 +49,7 @@ export default {
     }
     .content {
         font-size: 20px;
+        text-align: left;
     }
 
     .partners {

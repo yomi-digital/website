@@ -43,7 +43,7 @@ export default {
     }
 
     .serviziPad {
-        padding: 0px 50px 0px 50px;
+        padding: 0px 50px 10px 50px;
     }
 
     .bordered{
@@ -52,7 +52,7 @@ export default {
     }
 
     .headerText {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 500;
         text-align: center;
     }
@@ -74,6 +74,13 @@ export default {
        }
         .padding{
             padding: 10px;
+        }
+
+        .bigText {
+            font-size: 40px;
+        }
+        .smallerText{
+            font-size: 25px;
         }
     }
 

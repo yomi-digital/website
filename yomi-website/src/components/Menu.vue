@@ -1,6 +1,6 @@
 <template>
     <div id="whoWeAre">
-        <div class="columns has-text-centered is-multiline">
+        <div class="columns has-text-centered is-multiline is-mobile">
             <div class="column is-full bordered">
                 <div class="columns is-mobile">
                     <div class="column is-half fontWhite rightBorder">

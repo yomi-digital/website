@@ -5,7 +5,7 @@
                     <p class="teamHeader dontShow">TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>></p>
                 </div>
                 <div class="column is-full padding">
-                    <div class="column is-half biggerFont">
+                    <div class="column is-half biggerFont alignLeft">
                         <p>
                         Non la solita software house. Un gruppo giovane e dinamico di professionisti appassionati, con un approccio al lavoro pragmatico fondato sulla continua formazione e aggiornamento,  per rispondere alla crescente domanda di prodotti e servizi tecnologicamente all’avanguardia.
                         <br><br>
@@ -45,6 +45,9 @@ export default {
     }
     .biggerFont{
         font-size: 28px
+    }
+    .alignLeft {
+        text-align: left;
     }
 
     .fullWidth {

@@ -2,7 +2,7 @@
     <div id="portafolio">
         <div class="columns has-text-centered is-multiline">
 
-            <div class="column is-full smallPadding">
+            <div class="column is-half secondColumn">
                 <div class="columns is-multiline is-mobile">
                     <div class="column is-full firstPad">
                         <p class="title">PORTFOLIO</p>
@@ -16,97 +16,217 @@
 
             <div class="column is-full">
                 <div class="columns has-text-centered">
-                    <div style="padding-top:0;" class="column is-half secondColumn">
+                    <div style="padding-top:0;" class="column is-half secondColumn listPad">
                         <div class="columns is-multiline is-mobile">
-                            <div class="column is-full borders">
-                                <div class="columns is-mobile is-multiline">
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numbers">01</p>
+
+                            <!-- PORTFOLIO MODALS -->
+                            <!-- THE HUB -->
+                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                                <div class="columns is-mobile is-multiline">                     
+                                    <div 
+                                        label="Launch component modal"
+                                        size="is-medium"
+                                        @click="isTheHubModalActive = true"
+                                    >
+                                        <div class="column is-full flexCenter">
+                                            <p class="numberContent alignLeft">THE HUB</p>
+                                        </div>
                                     </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numberContent">THE HUB</p>
-                                    </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <div @click='toggle = !toggle'>
-                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                        </div>                                      
-                                    </div>  
-                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle'>             
-                                        <p class="left"><i>Piattaforma di masternode hosting  e di staking box virtuali.</i></p>                                                                
-                                    </div>                                
+                                    <b-modal
+                                        v-model="isTheHubModalActive"
+                                        >
+                                        <template>
+                                            <div class="white">
+                                                <div class="columns is-mobile modalsPad is-multiline">
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="columns is-multiline is-mobile">
+                                                            <div class="column is-full ">
+                                                                <p class="alignLeft modalsTitle">THE HUB</p>
+                                                            </div>
+                                                            <div class="column is-full">
+                                                                <p class="alignLeft modalsDescription">
+                                                                    Piattaforma di masternode hosting (in competizione con GIN, Nodehost e pochi altri) e di staking box virtuali (sistema unico a livello internazionale). Una suite completa per la gestione degli sviluppi legati alla blockchain di Scryta.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="modalsImage">
+                                                            image
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>         
+                                        </template>
+                                    </b-modal>                                       
                                 </div>
                             </div>
-                            <div class="column is-full borders">
-                                <div class="columns is-mobile is-multiline">
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numbers">02</p>
+
+                            <!-- NETWORK REVOLUTION -->
+                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                                <div class="columns is-mobile is-multiline">                     
+                                    <div 
+                                        label="Launch component modal"
+                                        size="is-medium"
+                                        @click="isNetworkModalActive = true"
+                                    >
+                                        <div class="column is-full flexCenter">
+                                            <p class="numberContent alignLeft">NETWORK REVOLUTION</p>
+                                        </div>
                                     </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numberContent">NETWORK REVOLUTION</p>
-                                    </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <div @click='toggle2 = !toggle2'>
-                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                        </div>                                      
-                                    </div>  
-                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle2'>             
-                                        <p>aaaaa</p>                                                                
-                                    </div>                                  
-                                </div>                                                            
+                                    <b-modal
+                                        v-model="isNetworkModalActive"
+                                        >
+                                        <template>
+                                            <div class="white">
+                                                <div class="columns is-mobile modalsPad is-multiline">
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="columns is-multiline is-mobile">
+                                                            <div class="column is-full ">
+                                                                <p class="alignLeft modalsTitle">NETWORK REVOLUTION</p>
+                                                            </div>
+                                                            <div class="column is-full">
+                                                                <p class="alignLeft modalsDescription">
+                                                                    DESCRIPTION
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="modalsImage">
+                                                            image
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>         
+                                        </template>
+                                    </b-modal>                                       
+                                </div>
                             </div>
-                            <div class="column is-full borders">
-                                <div class="columns is-mobile is-multiline">
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numbers">03</p>
+
+                            <!-- DIGITAL ORACLES -->
+                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                                <div class="columns is-mobile is-multiline">                     
+                                    <div 
+                                        label="Launch component modal"
+                                        size="is-medium"
+                                        @click="isDigitalModalActive = true"
+                                    >
+                                        <div class="column is-full flexCenter">
+                                            <p class="numberContent alignLeft">DIGITAL ORACLES</p>
+                                        </div>
                                     </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                         <p class="numberContent">DIGITAL ORACLES</p>
-                                    </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <div @click='toggle3 = !toggle3'>
-                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                        </div>                                      
-                                    </div>  
-                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle3'>             
-                                        <p>aaaaa</p>                                                                
-                                    </div>                                 
-                                </div>                                                    
+                                    <b-modal
+                                        v-model="isDigitalModalActive"
+                                        >
+                                        <template>
+                                            <div class="white">
+                                                <div class="columns is-mobile modalsPad is-multiline">
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="columns is-multiline is-mobile">
+                                                            <div class="column is-full ">
+                                                                <p class="alignLeft modalsTitle">DIGITAL ORACLES</p>
+                                                            </div>
+                                                            <div class="column is-full">
+                                                                <p class="alignLeft modalsDescription">
+                                                                    Description
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="modalsImage">
+                                                            image
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>         
+                                        </template>
+                                    </b-modal>                                       
+                                </div>
                             </div>
-                            <div class="column is-full borders">
-                                <div class="columns is-mobile is-multiline">
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numbers">04</p>
+
+                            <!-- EINAUDISTORE -->
+                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                                <div class="columns is-mobile is-multiline">                     
+                                    <div 
+                                        label="Launch component modal"
+                                        size="is-medium"
+                                        @click="isEinaudistoreModalActive = true"
+                                    >
+                                        <div class="column is-full flexCenter">
+                                            <p class="numberContent alignLeft">EINAUDISTORE</p>
+                                        </div>
                                     </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numberContent">EINAUDISTORE</p>
-                                    </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <div @click='toggle4 = !toggle4'>
-                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                        </div>                                      
-                                    </div>  
-                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle4'>             
-                                        <p>aaaaa</p>                                                                
-                                    </div>                                 
-                                </div>                                                           
+                                    <b-modal
+                                        v-model="isEinaudistoreModalActive"
+                                        >
+                                        <template>
+                                            <div class="white">
+                                                <div class="columns is-mobile modalsPad is-multiline">
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="columns is-multiline is-mobile">
+                                                            <div class="column is-full ">
+                                                                <p class="alignLeft modalsTitle">EINAUDISTORE</p>
+                                                            </div>
+                                                            <div class="column is-full">
+                                                                <p class="alignLeft modalsDescription">
+                                                                    Description
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="modalsImage">
+                                                            image
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>         
+                                        </template>
+                                    </b-modal>                                       
+                                </div>
                             </div>
-                            <div class="column is-full borders">
-                                <div class="columns is-mobile is-multiline">
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numbers">05</p>
+                            <!-- MCA GROUP -->
+                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                                <div class="columns is-mobile is-multiline">                     
+                                    <div 
+                                        label="Launch component modal"
+                                        size="is-medium"
+                                        @click="isMcaModalActive = true"
+                                    >
+                                        <div class="column is-full flexCenter">
+                                            <p class="numberContent alignLeft">MCA GROUP</p>
+                                        </div>
                                     </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <p class="numberContent">MCA GROUP</p>
-                                    </div>
-                                    <div class="column is-one-third-mobile is-2-desktop flexCenter">
-                                        <div @click='toggle5 = !toggle5'>
-                                            <img class="arrow"  src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                        </div>                                      
-                                    </div>  
-                                    <div class="column is-6-desktop flexCenter is-full-mobile" v-show='toggle5'>             
-                                        <p>aaaaa</p>                                                                
-                                    </div>                                  
-                                </div>                                 
+                                    <b-modal
+                                        v-model="isMcaModalActive"
+                                        >
+                                        <template>
+                                            <div class="white">
+                                                <div class="columns is-mobile modalsPad is-multiline">
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="columns is-multiline is-mobile">
+                                                            <div class="column is-full ">
+                                                                <p class="alignLeft modalsTitle">MCA GROUP</p>
+                                                            </div>
+                                                            <div class="column is-full">
+                                                                <p class="alignLeft modalsDescription">
+                                                                    Description
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-half-desktop is-full-mobile">
+                                                        <div class="modalsImage">
+                                                            image
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>         
+                                        </template>
+                                    </b-modal>                                       
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -116,8 +236,8 @@
                 </div>
             </div>
 
-            <div class="column is-half">
-                <div class="columns has-text-centered smallPadding is-multiline">
+            <div class="column is-half mobile-centered leftPad">
+                <div class="columns has-text-centered smallPadding is-multiline bottomPad ">
                     <div class="column is-full thirdColumn">
                         <p class="left">
                             VUOI SCOPRIRE DI PIÙ?
@@ -135,14 +255,19 @@
 <script>
 export default {
     data() {
-        return {
-            toggle: false,
-            toggle2: false,
-            toggle3: false,
-            toggle4: false,
-            toggle5: false
-        }
-    },
+            return {
+                isTheHubModalActive: false,
+                isNetworkModalActive: false,
+                isDigitalModalActive: false,
+                isEinaudistoreModalActive: false, 
+                isMcaModalActive: false
+            }
+        },
+        methods: {
+            closeModal: function(){
+                this.isComponentModalActive = false
+            }
+        },
     name: 'Portafolio',
 }
 </script>
@@ -157,6 +282,9 @@ export default {
         float: left;
     }
 
+    .leftPad{
+        padding-left: 200px;
+    }
     .thirdColumn {
         padding: 0px 0px 30px 70px
     }
@@ -176,10 +304,15 @@ export default {
     .smallPadding {
         padding: 50px;
     }
-
-    .largePadding {
-        padding: 50px 100px 0px 150px;
+    .listPad {
+        padding-left: 90px;
     }
+
+    .floatLeft {
+        float: left;
+    }
+
+ 
     .alignLeft {
         text-align: left;
     }
@@ -187,18 +320,38 @@ export default {
         height: 20px;
     }
 
-    .moreLeftPad{
-        padding-left: 400px;
-    }
-
+ 
     .firstPad {
         padding: 50px 0px 50px 200px;
     }
 
+    .modalsPad {
+        padding: 50px;
+    }
+
+    .modalsTitle {
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: solid black 1px;
+    }
+
+    .modalsDescription {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .modalsImage {
+        min-width: 436px;
+        min-height: 268px;
+        border: solid black 1px;
+    }
 
     .borders{
-        border-top: solid white 1px;
         border-bottom: solid white 1px;
+    }
+
+    .white {
+        background-color: white;
     }
     #girandola {
         height: 300px;
@@ -220,15 +373,16 @@ export default {
         float:left;
         color: white;
         font-size: 20px;
-        padding-left: 10px;
-        padding-top: 10px;
-    
+        padding-top: 10px;  
+        cursor: pointer;
     }
 
     .button:hover {
         border-color: #40FF98;
     }
 
+    /* MOBILE!!!!!!!! */
+    
     @media (max-width: 768px) {
         .secondColumn {
             padding: 20px;
@@ -240,21 +394,33 @@ export default {
         .smallPadding{
             padding: 10px;
         }
-        .moreLeftPad {
-            padding: 50px;
-        }
+
         .numbers {
             padding-left: 10px;
             font-size: 20px;
         }
         .numberContent {
-        float:left;
-        padding-left: 5px;
+            float:left;
+            padding-left: 5px;
         }
         .firstPad {
-        padding: 30px;
+            padding: 30px;
+        }
+        .bottomPad {
+            padding-bottom: 50px;
+        }
+        .mobile-centered {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .modalsImage {
+            display: none;
+        }
+        .leftPad {
+            padding-left: 0;
+        }
     }
 
-    }
    
 </style>
