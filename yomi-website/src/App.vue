@@ -1,5 +1,14 @@
 <template>
   <div>
+    <select v-model="$i18n.locale">
+        <option
+            v-for="(lang, i) in langs"
+            :key="`lang-${i}`"
+            :value="lang"
+        >
+            {{ lang }}
+        </option>
+    </select>
     <Home></Home>
     <Menu></Menu>
     <Service></Service>
@@ -10,7 +19,10 @@
     <Partner></Partner>
     <Join></Join>
     <Footer></Footer>
+    
   </div>
+ 
+  
 </template>
 
 <script>
@@ -38,6 +50,9 @@ export default {
     Join,
     Footer,
     Servizi
+  },
+  data() {
+    return { langs: ['en', 'it'] }
   }
 }
 </script>
@@ -60,7 +75,11 @@ export default {
     background-color: black!important;
     scroll-behavior: smooth;
   }
-  body, html {
-    overflow-x: hidden;
-  }
+
+  @media (max-width: 768px) {
+      body, html {
+        overflow-x: hidden;
+      }
+    }
+
 </style>

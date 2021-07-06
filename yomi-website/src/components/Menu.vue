@@ -2,7 +2,7 @@
     <div id="whoWeAre">
         <div class="columns has-text-centered is-multiline is-mobile">
             <div class="column is-full bordered">
-                <div class="columns is-mobile">
+                <div class="columns is-mobile menuBar">
                     <div class="column is-half fontWhite rightBorder">
                         <div 
                             label="Launch component modal"
@@ -80,7 +80,7 @@
                 <div class="columns">
                     <div class="column bigWhite">
                         <p style="text-align: left">
-                            YOMI È UN DIGITAL <br>HUB HIT-TECH
+                            {{ $t('message.whoWeAre1') }}<br>{{ $t('message.whoWeAre2') }}
                         </p>
                         <div class="floatLeft">
                             <div>
@@ -96,17 +96,20 @@
                     <div class="column">
                         <div class="fontWhite textLeft">
                             <p>
-                                Promuoviamo la diffusione della tecnologia per il raggiungimento di una realtà più etica e democratica. Le competenze della nostra squadra ci consentono di utilizzare le tecnologie più innovative plasmandole e adattandole alle complesse esigenze dei nostri clienti.
+                                {{ $t('message.promote1') }}
+                                <br>
+                                {{ $t('message.promote2') }}
+                                <br>
                             </p>
                         </div> 
                         <br>
                         <div class="biggerLight textLeft">
                             <p>
-                                Il nostro obiettivo è quello di essere una guida nel mondo sconfinato della tecnologia, fornendo a tutti i mezzi per realizzare le proprie visioni.
+                                {{ $t('message.ourHub') }}
                             </p>
                             <br>
                             <p>
-                                Il nostro hub è un luogo fisico e digitale libero, dove tutti hanno la possibilità di esprimere il proprio io e le proprie idee senza il timore di non essere ascoltati.
+                                {{ $t('message.ourGoal') }}
                             </p>
                         </div>
                     </div>
@@ -215,12 +218,17 @@
     .littleLeftPad {
         padding-left: 25px
     }
-    
+   
     @media (max-width: 768px) {
         .padding {
             padding: 50px;
         }
     }
 
+    #whoWeAre {
+        padding-top: 10px;
+      
+    }
+    
 
 </style>

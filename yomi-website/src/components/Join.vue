@@ -2,7 +2,7 @@
     <div>
        <div class="columns is-multiline is-mobile ">
            <div class="column is-full firstPad">
-               <p class="title">SCOPRI COME<br> UNIRTI AL TEAM</p>
+               <p class="title">{{ $t('message.joinTeam') }}</p>
            </div>
            <div class="column is-full firstPad">
                <div class="columns is-mobile is-multiline">

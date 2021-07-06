@@ -2,15 +2,15 @@
         <div id="servizi" class="white">
             <div class="columns has-text-centered is-multiline ">
                 <div class="column is-full bordered">
-                    <p class="headerText dontShow">SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>>SERVIZI>>></p>
+                    <p class="headerText dontShow">{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>></p>
                 </div>      
                 <div class="column is-full padding">
                     <div class="columns has-text-centered is-multiline is-vcentered">
                         <div class="column is-half bigText textLeft serviziPad">
-                            <p>IL PARTNER<br> TECNOLOGICO IDEALE <br>PER I TUOI PROCESSI<br> DI INNOVAZIONE</p>
+                            <p>{{ $t('message.serviceTitle1') }}<br>{{ $t('message.serviceTitle2') }}<br>{{ $t('message.serviceTitle3') }}<br>{{ $t('message.serviceTitle4') }}</p>
                         </div>
                         <div class="column is-half smallerText textLeft serviziPad">
-                            <p>Il know-how acquisito in tanti anni di <br>esperienza è stato sempre guidato<br> dall’obiettivo primario di offrire prodotti e<br> servizi altamente professionali disegnati<br> su misura esclusivamente per la<br> soddisfazione del cliente. </p>
+                            <p>{{ $t('message.serviceDescription1') }}<br>{{ $t('message.serviceDescription2') }}<br>{{ $t('message.serviceDescription3') }}<br>{{ $t('message.serviceDescription4') }}<br>{{ $t('message.serviceDescription5') }}<br>{{ $t('message.serviceDescription6') }}</p>
                         </div>
                     </div>
                 </div>

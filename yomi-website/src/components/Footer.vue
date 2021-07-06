@@ -4,10 +4,10 @@
             <div class="column is-one-third-desktop is-full-mobile">
                 <div class="columns is-multiline is-mobile firstPad">
                     <div class="column is-full">
-                        <a href="#" style="color: black"><p>TORNA ALLA HOME</p></a>
+                        <a href="#" style="color: black"><p>{{ $t('message.returnHome') }}</p></a>
                     </div>
                     <div class="column is-full">
-                        <p>POLITICA SULLA RISERVATEZZA<br> TERMINI DI UTILIZZO</p>
+                        <p>{{ $t('message.politics') }}<br><br> {{ $t('message.termsOfUse') }}</p>
                     </div>
                 </div>
             </div>

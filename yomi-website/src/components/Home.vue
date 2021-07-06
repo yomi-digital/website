@@ -1,17 +1,15 @@
-<template>
-    
+<template>   
     <section class="hero is-fullheight">
-        <div class="container is-fluid flexCenter">
-                
-            <img class="hideMobile" src="/assets/img/vectors/Group1.svg" alt="vector1" />
-            <img class="hideMobile" src="/assets/img/vectors/Group2.svg" alt="vector2" />
-            <img class="hideMobile" src="/assets/img/vectors/Group3.svg" alt="vector3" />
-            <img  src="/assets/img/vectors/Group4.svg" alt="vector4" />
-            <img class="hideMobile" src="/assets/img/vectors/Group1.svg" alt="vector1" />
-            <img class="hideMobile" src="/assets/img/vectors/Group2.svg" alt="vector2" />
-            <img class="hideMobile" src="/assets/img/vectors/Group3.svg" alt="vector3" />
-    
         
+        <div class="container is-fluid flexCenter">
+            <img class=" vectors" src="/assets/img/vectors/home_vec1.svg" alt="vector1" />
+            <img class=" vectors" src="/assets/img/vectors/home_vec2.svg" alt="vector2" />
+            <img class="hideMobile vectors" src="/assets/img/vectors/home_vec3.svg" alt="vector3" />
+            <img class="vectors" src="/assets/img/vectors/home_vec4.svg" alt="vector4" />
+            <img class="hideMobile vectors" src="/assets/img/vectors/home_vec1.svg" alt="vector1" />
+            <img class="hideMobile vectors" src="/assets/img/vectors/home_vec2.svg" alt="vector2" />
+            <img class="hideMobile vectors" src="/assets/img/vectors/home_vec3.svg" alt="vector3" />
+
             <div id="logo">
                 <img src="/assets/img/vectors/logo.svg" alt="logo" />
             </div>
@@ -27,6 +25,7 @@
 <script>
 export default {
   name: 'Home',
+  
 }
 </script>
 
@@ -50,9 +49,12 @@ export default {
     #logo img {
         height: 200px;
     }
-
-   
     
+
+    img {
+        max-height: 100vh;
+        width: auto;
+    }
     @media (max-width: 768px) {
         .hideMobile {
             display: none;

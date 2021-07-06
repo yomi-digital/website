@@ -9,7 +9,7 @@
                     </div>
                 
                     <div class="column is-full firstPad">
-                        <p class="content alignLeft">Nel tempo abbiamo costruito collaborazioni proficue. La nostra clientela<br> è composta da piccole realtà italiane, start up e grandi compagnie<br> internazionali che si sono affidate alla professionalità e competenza del<br> nostro team. L’eterogeneità della nostra clientela ci ha permesso di<br> ampliare le nostre conoscenze e realizzare differenti progetti disegnati<br> su misura con le tecnologie più innovative. 	</p>
+                        <p class="content alignLeft">{{ $t('message.portfolioContent') }}</p>
                     </div>
                 </div>
             </div>   
@@ -45,7 +45,7 @@
                                                             </div>
                                                             <div class="column is-full">
                                                                 <p class="alignLeft modalsDescription">
-                                                                    Piattaforma di masternode hosting (in competizione con GIN, Nodehost e pochi altri) e di staking box virtuali (sistema unico a livello internazionale). Una suite completa per la gestione degli sviluppi legati alla blockchain di Scryta.
+                                                                    {{ $t('message.theHubContent') }}
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -68,14 +68,14 @@
                                     <div 
                                         label="Launch component modal"
                                         size="is-medium"
-                                        @click="isNetworkModalActive = true"
+                                        @click="isAmbassadorModalActive = true"
                                     >
                                         <div class="column is-full flexCenter">
-                                            <p class="numberContent alignLeft">NETWORK REVOLUTION</p>
+                                            <p class="numberContent alignLeft">4AMBASSADOR</p>
                                         </div>
                                     </div>
                                     <b-modal
-                                        v-model="isNetworkModalActive"
+                                        v-model="isAmbassadorModalActive"
                                         >
                                         <template>
                                             <div class="white">
@@ -83,11 +83,11 @@
                                                     <div class="column is-half-desktop is-full-mobile">
                                                         <div class="columns is-multiline is-mobile">
                                                             <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">NETWORK REVOLUTION</p>
+                                                                <p class="alignLeft modalsTitle">4AMBASSADOR</p>
                                                             </div>
                                                             <div class="column is-full">
                                                                 <p class="alignLeft modalsDescription">
-                                                                    DESCRIPTION
+                                                                    {{ $t('message.ambassadorContent') }}
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -129,7 +129,7 @@
                                                             </div>
                                                             <div class="column is-full">
                                                                 <p class="alignLeft modalsDescription">
-                                                                    Description
+                                                                    {{ $t('message.digitalOraclesContent') }}
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -152,14 +152,14 @@
                                     <div 
                                         label="Launch component modal"
                                         size="is-medium"
-                                        @click="isEinaudistoreModalActive = true"
+                                        @click="isNFTModalActive = true"
                                     >
                                         <div class="column is-full flexCenter">
-                                            <p class="numberContent alignLeft">EINAUDISTORE</p>
+                                            <p class="numberContent alignLeft">NFT STUDIO</p>
                                         </div>
                                     </div>
                                     <b-modal
-                                        v-model="isEinaudistoreModalActive"
+                                        v-model="isNFTModalActive"
                                         >
                                         <template>
                                             <div class="white">
@@ -167,52 +167,11 @@
                                                     <div class="column is-half-desktop is-full-mobile">
                                                         <div class="columns is-multiline is-mobile">
                                                             <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">EINAUDISTORE</p>
+                                                                <p class="alignLeft modalsTitle">NFT STUDIO</p>
                                                             </div>
                                                             <div class="column is-full">
                                                                 <p class="alignLeft modalsDescription">
-                                                                    Description
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="modalsImage">
-                                                            image
-                                                        </div>
-                                                    </div>
-                                                </div>  
-                                            </div>         
-                                        </template>
-                                    </b-modal>                                       
-                                </div>
-                            </div>
-                            <!-- MCA GROUP -->
-                            <div class="column is-three-fifths is-offset-one-fifth borders">
-                                <div class="columns is-mobile is-multiline">                     
-                                    <div 
-                                        label="Launch component modal"
-                                        size="is-medium"
-                                        @click="isMcaModalActive = true"
-                                    >
-                                        <div class="column is-full flexCenter">
-                                            <p class="numberContent alignLeft">MCA GROUP</p>
-                                        </div>
-                                    </div>
-                                    <b-modal
-                                        v-model="isMcaModalActive"
-                                        >
-                                        <template>
-                                            <div class="white">
-                                                <div class="columns is-mobile modalsPad is-multiline">
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="columns is-multiline is-mobile">
-                                                            <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">MCA GROUP</p>
-                                                            </div>
-                                                            <div class="column is-full">
-                                                                <p class="alignLeft modalsDescription">
-                                                                    Description
+                                                                    {{ $t('message.nftContent') }}
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -257,10 +216,9 @@ export default {
     data() {
             return {
                 isTheHubModalActive: false,
-                isNetworkModalActive: false,
+                isAmbassadorModalActive: false,
                 isDigitalModalActive: false,
-                isEinaudistoreModalActive: false, 
-                isMcaModalActive: false
+                isNFTModalActive: false, 
             }
         },
         methods: {

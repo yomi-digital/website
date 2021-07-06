@@ -7,9 +7,9 @@
                 <div class="column is-full padding">
                     <div class="column is-half biggerFont alignLeft">
                         <p>
-                        Non la solita software house. Un gruppo giovane e dinamico di professionisti appassionati, con un approccio al lavoro pragmatico fondato sulla continua formazione e aggiornamento,  per rispondere alla crescente domanda di prodotti e servizi tecnologicamente all’avanguardia.
+                        {{ $t('message.team1') }}
                         <br><br>
-                        Un laboratorio digitale in continua evoluzione e sperimentazione, che fa della passione per l’innovazione il suo principale punto di forza. 
+                        {{ $t('message.team2') }}
                         </p>
                     </div>
                 </div>

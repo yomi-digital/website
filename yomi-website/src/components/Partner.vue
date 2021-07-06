@@ -7,7 +7,7 @@
                         <p class="white title">PARTNER</p>
                     </div>
                     <div class="column is-full">
-                        <p class="white content">Insieme inventiamo, pensiamo, creiamo, collaboriamo, costruiamo, testiamo, impariamo e vinciamo.</p>
+                        <p class="white content">{{ $t('message.partnerContent') }}</p>
                     </div>
                 </div>
             </div>
