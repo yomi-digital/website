@@ -2,7 +2,9 @@
     <div class="white">
             <div class="columns has-text-centered is-multiline ">
                 <div class="column is-full bordered">
-                    <p class="teamHeader dontShow">TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>></p>
+                    <marquee-text class="highlight">
+                        <p class="teamHeader ">TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>> </p> 
+                    </marquee-text> 
                 </div>
                 <div class="column is-full padding">
                     <div class="column is-half biggerFont alignLeft">
@@ -13,11 +15,12 @@
                         </p>
                     </div>
                 </div>
+                <div class='column is-full'>
+                    <img src="/assets/img/vectors/Team.svg" alt="team" />
+                </div>
             </div>
  
-        <div id="teamSVG">
-            <img class="fullWidth" src="/assets/img/vectors/Team.svg" alt="team" />
-        </div>
+        
     </div>
 </template>
 
@@ -30,13 +33,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   
+    img {
+        width: 100%;
+    }
     .teamHeader{
         font-size: 50px;
         font-weight: 500;
         text-align: center;
     }
 
-    .teamHeader:hover {
+    .highlight:hover {
         color: #40FF98;
     }
 
@@ -50,24 +56,23 @@ export default {
         text-align: left;
     }
 
-    .fullWidth {
-        width: 100%;
-    }
-
     .white {
         background-color: white;
     }
     .padding {
         padding: 150px;
     }
+   
 
     
     @media (max-width: 768px) {
         .padding {
             padding: 50px;
         }
-        .dontShow{
-            display: none;
+        img {
+            height: 120px;
+            width: auto;
+            max-width: none;
         }
     }
 

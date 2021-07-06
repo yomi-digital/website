@@ -2,7 +2,9 @@
         <div id="servizi" class="white">
             <div class="columns has-text-centered is-multiline ">
                 <div class="column is-full bordered">
-                    <p class="headerText dontShow">{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>></p>
+                    <marquee-text class="highlight">
+                        <p class="headerText">{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>>{{ $t('message.service') }}>>></p>
+                    </marquee-text>                   
                 </div>      
                 <div class="column is-full padding">
                     <div class="columns has-text-centered is-multiline is-vcentered">
@@ -34,7 +36,7 @@ export default {
         text-align: left;
     }
     .padding {
-        padding: 200px
+        padding: 150px
     }
 
     .smallPadding {
@@ -57,7 +59,7 @@ export default {
         text-align: center;
     }
 
-    .headerText:hover {
+    .highlight:hover {
         color: #40FF98;
     }
 
@@ -67,11 +69,10 @@ export default {
     .smallerText{
         font-size: 35px;
     }
+    
 
     @media (max-width: 768px) {
-       .dontShow{
-           display: none;
-       }
+       
         .padding{
             padding: 10px;
         }
@@ -82,6 +83,10 @@ export default {
         .smallerText{
             font-size: 25px;
         }
+        .smallPadding {
+            padding: 60px;
+        }
+       
     }
 
     .white {

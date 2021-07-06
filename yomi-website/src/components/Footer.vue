@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="column is-one-third-desktop is-full-mobile firstPad">
-                <p><b>P.IVA: 01652950880</b></p>
+                <p class="iva"><b>P.IVA: 01652950880</b></p>
             </div>
         </div>
     </div>
@@ -47,6 +47,9 @@ export default {
     @media (max-width: 768px) {
       .firstPad {
         padding: 30px;
+    }
+    .iva {
+        padding-left: 10px;
     }
 
     }

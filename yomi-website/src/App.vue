@@ -1,14 +1,8 @@
 <template>
   <div>
-    <select v-model="$i18n.locale">
-        <option
-            v-for="(lang, i) in langs"
-            :key="`lang-${i}`"
-            :value="lang"
-        >
-            {{ lang }}
-        </option>
-    </select>
+    <head>
+      <link rel="stylesheet" href="/public/assets/fonts/stylesheet.css">
+    </head>
     <Home></Home>
     <Menu></Menu>
     <Service></Service>
@@ -50,28 +44,23 @@ export default {
     Join,
     Footer,
     Servizi
-  },
-  data() {
-    return { langs: ['en', 'it'] }
   }
 }
 </script>
 
 <style>
-@font-face {
-  font-family: "Obviously";
-  src: local("Obviously"),
-   url(/fonts/Obviously/Oviously-Regular.ttf) format("truetype");
-}
+
 #app {
-  font-family: Obviously;
+  font-family: "Obviously";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
 }
-  html{
+  html, body{
+    font-family: "Obviously";
     background-color: black!important;
     scroll-behavior: smooth;
   }
@@ -82,4 +71,5 @@ export default {
       }
     }
 
+  
 </style>

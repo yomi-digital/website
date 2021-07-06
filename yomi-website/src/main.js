@@ -3,13 +3,14 @@ import App from './App.vue'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import VueI18n from 'vue-i18n'
+import MarqueeText from 'vue-marquee-text-component'
 
 
 Vue.config.productionTip = false
 
 Vue.use(Buefy)
 Vue.use(VueI18n)
-
+Vue.component('marquee-text', MarqueeText)
 
 // TRANSLATIONS
 const messages = {

@@ -4,11 +4,11 @@
 
             <div class="column is-half secondColumn">
                 <div class="columns is-multiline is-mobile">
-                    <div class="column is-full firstPad">
+                    <div class="column is-10-desktop is-offset-2-desktop is-full-mobile ">
                         <p class="title">PORTFOLIO</p>
                     </div>
                 
-                    <div class="column is-full firstPad">
+                    <div class="column is-10-desktop is-offset-2-desktop is-full-mobile ">
                         <p class="content alignLeft">{{ $t('message.portfolioContent') }}</p>
                     </div>
                 </div>
@@ -21,16 +21,22 @@
 
                             <!-- PORTFOLIO MODALS -->
                             <!-- THE HUB -->
-                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                            <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
                                 <div class="columns is-mobile is-multiline">                     
                                     <div 
+                                        class="column is-full flexCenter"
                                         label="Launch component modal"
                                         size="is-medium"
                                         @click="isTheHubModalActive = true"
                                     >
-                                        <div class="column is-full flexCenter">
+                                    <div class="columns is-mobile">
+                                        <div class="column is-half">
                                             <p class="numberContent alignLeft">THE HUB</p>
                                         </div>
+                                        <div class="column is-half alignLeft flexCenter">
+                                            <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                        </div>
+                                    </div>
                                     </div>
                                     <b-modal
                                         v-model="isTheHubModalActive"
@@ -63,16 +69,22 @@
                             </div>
 
                             <!-- NETWORK REVOLUTION -->
-                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                            <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
                                 <div class="columns is-mobile is-multiline">                     
                                     <div 
+                                        class="column is-full flexCenter"
                                         label="Launch component modal"
                                         size="is-medium"
                                         @click="isAmbassadorModalActive = true"
                                     >
-                                        <div class="column is-full flexCenter">
-                                            <p class="numberContent alignLeft">4AMBASSADOR</p>
-                                        </div>
+                                        <div class="columns is-mobile">
+                                            <div class="column is-half">
+                                                <p class="numberContent alignLeft">4AMBASSADOR</p>
+                                            </div>
+                                            <div class="column is-half alignLeft flexCenter">
+                                                <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                            </div>
+                                        </div>                                 
                                     </div>
                                     <b-modal
                                         v-model="isAmbassadorModalActive"
@@ -105,16 +117,22 @@
                             </div>
 
                             <!-- DIGITAL ORACLES -->
-                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                            <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
                                 <div class="columns is-mobile is-multiline">                     
                                     <div 
+                                        class="column is-full flexCenter"
                                         label="Launch component modal"
                                         size="is-medium"
                                         @click="isDigitalModalActive = true"
                                     >
-                                        <div class="column is-full flexCenter">
-                                            <p class="numberContent alignLeft">DIGITAL ORACLES</p>
-                                        </div>
+                                        <div class="columns is-mobile">
+                                            <div class="column is-half">
+                                                <p class="numberContent alignLeft">DIGITAL ORACLES</p>
+                                            </div>
+                                            <div class="column is-half alignLeft flexCenter">
+                                                <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                            </div>
+                                        </div>                                        
                                     </div>
                                     <b-modal
                                         v-model="isDigitalModalActive"
@@ -147,16 +165,22 @@
                             </div>
 
                             <!-- EINAUDISTORE -->
-                            <div class="column is-three-fifths is-offset-one-fifth borders">
+                            <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
                                 <div class="columns is-mobile is-multiline">                     
                                     <div 
+                                        class="column is-full flexCenter"
                                         label="Launch component modal"
                                         size="is-medium"
                                         @click="isNFTModalActive = true"
                                     >
-                                        <div class="column is-full flexCenter">
-                                            <p class="numberContent alignLeft">NFT STUDIO</p>
-                                        </div>
+                                         <div class="columns is-mobile">
+                                            <div class="column is-half">
+                                                <p class="numberContent alignLeft">NFT STUDIO</p>
+                                            </div>
+                                            <div class="column is-half alignLeft flexCenter">
+                                                <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                            </div>
+                                        </div> 
                                     </div>
                                     <b-modal
                                         v-model="isNFTModalActive"
@@ -195,14 +219,14 @@
                 </div>
             </div>
 
-            <div class="column is-half mobile-centered leftPad">
-                <div class="columns has-text-centered smallPadding is-multiline bottomPad ">
-                    <div class="column is-full thirdColumn">
+            <div class="column is-half mobile-centered thirdColumn">
+                <div class="columns has-text-centered is-multiline bottomPad">
+                    <div class="column is-10-desktop is-offset-2-desktop is-full-mobile ">
                         <p class="left">
                             VUOI SCOPRIRE DI PIÙ?
                         </p>                         
                     </div>
-                    <div class="column thirdColumn">
+                    <div class="column is-10-desktop is-offset-2-desktop is-full-mobile ">
                          <b-button rounded type='is-dark button' class="left">Download PDF</b-button>
                     </div>
                 </div>
@@ -244,7 +268,7 @@ export default {
         padding-left: 200px;
     }
     .thirdColumn {
-        padding: 0px 0px 30px 70px
+        padding: 50px 0px 50px 100px ;
     }
     .secondColumn {
         padding: 100px 0px 50px 100px ;
@@ -274,13 +298,10 @@ export default {
     .alignLeft {
         text-align: left;
     }
-    .arrow {
-        height: 20px;
-    }
-
- 
-    .firstPad {
-        padding: 50px 0px 50px 200px;
+  
+    .rightArrow {
+        height:20px;
+        cursor: pointer;
     }
 
     .modalsPad {
@@ -343,7 +364,7 @@ export default {
     
     @media (max-width: 768px) {
         .secondColumn {
-            padding: 20px;
+            padding: 30px;
             margin-top: 0px;
         }
         .thirdColumn {

@@ -79,12 +79,12 @@
             <div class="column is-full padding">
                 <div class="columns">
                     <div class="column bigWhite">
-                        <p style="text-align: left">
+                        <p class="textLeft">
                             {{ $t('message.whoWeAre1') }}<br>{{ $t('message.whoWeAre2') }}
                         </p>
-                        <div class="floatLeft">
+                        <div class="floatLeft logoMenu">
                             <div>
-                                <img src="/assets/img/vectors/arrow1.svg" alt="arrow" />
+                                <img id="menuArrow" src="/assets/img/vectors/arrow1.svg" alt="arrow" />
                             </div>
                             <div class="relative">
                                 <img class="biggerImage" src="/assets/img/vectors/scrollDown.svg" alt="arrow" />
@@ -218,10 +218,21 @@
     .littleLeftPad {
         padding-left: 25px
     }
+    
    
     @media (max-width: 768px) {
         .padding {
             padding: 50px;
+        }
+      
+        .floatLeft {
+            float: none;
+        }
+        .absolute {
+            left: 110px;
+        }
+        #menuArrow {
+            display: none;
         }
     }
 
