@@ -8,7 +8,7 @@
                 </div>      
                 <div class="column is-full padding">
                     <div class="columns has-text-centered is-multiline is-vcentered">
-                        <div class="column is-half bigText textLeft serviziPad">
+                        <div class="column is-half bigText textLeft serviziPad serviceFont1">
                             <p>{{ $t('message.serviceTitle1') }}<br>{{ $t('message.serviceTitle2') }}<br>{{ $t('message.serviceTitle3') }}<br>{{ $t('message.serviceTitle4') }}</p>
                         </div>
                         <div class="column is-half smallerText textLeft serviziPad">
@@ -16,9 +16,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-full smallPadding">
+                <a href="#serviceList" class="column is-full smallPadding">
                     <img src="/assets/img/vectors/Arrow2.svg" alt="arrow" />
-                </div>
+                </a>
             </div>
         </div>
 </template>
@@ -54,9 +54,10 @@ export default {
     }
 
     .headerText {
-        font-size: 50px;
+        font-size: 35px;
         font-weight: 500;
         text-align: center;
+        font-family: "Obviously Wide Medi";
     }
 
     .highlight:hover {
@@ -64,10 +65,18 @@ export default {
     }
 
     .bigText{
-        font-size: 50px;
+        font-size: 35px;
     }
     .smallerText{
-        font-size: 35px;
+        font-size: 25px;
+        font-family: "Obviously Medi";
+    }
+
+    .marquee-text-text {
+        animation-direction: reverse;
+    }
+    .serviceFont1 {
+        font-family: "Obviously Wide Medi";
     }
     
 

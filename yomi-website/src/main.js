@@ -5,6 +5,8 @@ import 'buefy/dist/buefy.css'
 import VueI18n from 'vue-i18n'
 import MarqueeText from 'vue-marquee-text-component'
 
+
+
 import './fonts/fontsheet.css'
 
 Vue.config.productionTip = false
@@ -12,6 +14,7 @@ Vue.config.productionTip = false
 Vue.use(Buefy)
 Vue.use(VueI18n)
 Vue.component('marquee-text', MarqueeText)
+
 
 
 // TRANSLATIONS

@@ -6,7 +6,7 @@
                         <p class="teamHeader ">TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>> TEAM >>> </p> 
                     </marquee-text> 
                 </div>
-                <div class="column is-full padding">
+                <div id="teamBody" class="column is-full padding">
                     <div class="column is-half biggerFont alignLeft">
                         <p>
                         {{ $t('message.team1') }}
@@ -34,8 +34,11 @@ export default {
 <style scoped>
     p {
         font-weight: 500;
-        
         color: #000000;
+    }
+
+    .marquee-text-text {
+        animation-direction: reverse;
     }
 
     img {
@@ -47,8 +50,8 @@ export default {
         text-align: center;
     }
 
-    .highlight:hover {
-        color: #40FF98;
+    .highlight:hover * {
+        color: #40FF98!important;
     }
 
     .bordered {
@@ -65,9 +68,10 @@ export default {
         background-color: white;
     }
     .padding {
-        padding: 150px;
+        padding: 180px;
     }
-   
+    
+  
 
     
     @media (max-width: 768px) {

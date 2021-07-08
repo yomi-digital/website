@@ -9,7 +9,7 @@
                     </div>
                 
                     <div class="column is-10-desktop is-offset-2-desktop is-full-mobile ">
-                        <p class="content alignLeft">{{ $t('message.portfolioContent') }}</p>
+                        <p class="content alignLeft contentFont">{{ $t('message.portfolioContent') }}</p>
                     </div>
                 </div>
             </div>   
@@ -265,6 +265,10 @@ export default {
     .alignLeft {
         text-align: left;
     }
+
+    .contentFont {
+        font-family: "Obviously Medi";
+    }
   
     .rightArrow {
         height:20px;
@@ -321,6 +325,7 @@ export default {
         font-size: 20px;
         padding-top: 10px;  
         cursor: pointer;
+        font-family: "Obviously Semi";
     }
 
     .button:hover {

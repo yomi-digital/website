@@ -1,5 +1,5 @@
 <template>
-    <div class="servizi white">
+    <div id="serviceList" class="servizi white">
          <div class="columns is-multiline -has-text-centered is-mobile">
             <div class="column is-full thirdTall">
                <div class="columns is-multiline has-text-centered is-mobile">
@@ -142,6 +142,7 @@ export default {
         font-size: 25px;
         line-height: 30px;
         font-weight: 500;
+        font-family: "Obviously";
     }
     .serviceTitle:hover {
         cursor: pointer;

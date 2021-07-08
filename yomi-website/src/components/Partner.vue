@@ -66,5 +66,8 @@ export default {
             padding: 30px;
         }
     }
+    #contact {
+        padding: 0 40px;
+    }
 
     </style>

@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
 import Home from './components/Home.vue'
 import Menu from './components/Menu.vue'
 import Team from './components/Team.vue'
@@ -27,6 +28,7 @@ import Partner from './components/Partner.vue'
 import Join from './components/Join.vue'
 import Footer from './components/Footer.vue'
 import Servizi from './components/Servizi.vue'
+
 
 export default {
   name: 'App',
@@ -63,9 +65,11 @@ html, body{
 
 @media (max-width: 768px) {
   body, html {
-    overflow-x: hidden;
+    overflow-x:hidden;
   }
 }
+
+
 
   
 </style>

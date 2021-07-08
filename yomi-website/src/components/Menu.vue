@@ -3,62 +3,25 @@
         <div class="columns has-text-centered is-multiline is-mobile">
             <div class="column is-full bordered">
                 <div class="columns is-mobile menuBar">
-                    <div class="column is-half fontWhite rightBorder">
-                        <div 
-                            label="Launch component modal"
-                            size="is-medium"
-                            @click="isComponentModalActive = true"
-                        >
-                            <p class=" fontWhite">MENU</p>
+                    <div class="column is-1-desktop is-3-mobile fontWhite rightBorder menuSection">
+                      <div class="columns has-text-centered is-mobile">
+                        <div class="column is-full">
+                          <Slide
+                            :closeOnNavigation="true"
+                          >
+                            <a href="#whoWeAre" style="color: white;"><p>CHI SIAMO</p></a>
+                            <a href="#portafolio" style="color: white;"><p>PORTFOLIO</p></a>
+                            <a href="#servizi" style="color: white;"><p>SERVIZI</p></a>
+                            <a href="#contact" style="color: white;"><p>CONTATTI</p></a>
+                            <br>
+                            <a href="https://www.instagram.com/yomi_digitalhub/" style="color: white;" target="_blank"><p>INSTAGRAM</p></a>
+                            <a href="https://www.facebook.com/YOMI-107740754843280/" style="color: white;" target="_blank"><p>FACEBOOK</p></a>
+                            <a href="https://www.linkedin.com/company/yomidigitalhub/" style="color: white;" target="_blank"><p>LINKEDIN</p></a>
+                          </Slide> 
                         </div>
-                        <b-modal
-                            v-model="isComponentModalActive"
-                            >
-                            <template>
-                                <div class="white"> 
-                                    <div class="columns is-mobile is-multiline has-text-centered littePad">
-                                        <div class="column is-full littleTopPad">
-                                            <div class="columns is-mobile is-multiline black-text littePad">
-                                                <div class="column is-full topBorder">
-                                                    <a href="#whoWeAre" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">CHI SIAMO</p></a>
-                                                </div>
-                                                <div class="column is-full topBorder">                                       
-                                                    <a href="#portafolio" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">PORTFOLIO</p></a>
-                                                </div>
-                                                <div class="column is-full topBorder">                                           
-                                                    <a href="#servizi" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">SERVIZI</p></a>
-                                                </div>
-                                                <div class="column is-full topBorder bottomBorder">                                                  
-                                                    <a href="#contact" style="color: black;" @click="closeModal"><p class="floatLeft littleLeftPad">CONTATTI</p></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column is-full littleTopPad">
-                                            <div class="columns is-mobile is-multiline black-text littePad ">
-                                                <div class="column is-full topBorder">
-                                                    <a href="https://www.instagram.com/yomi_digitalhub/" style="color: black;" target="_blank"><p class="floatLeft littleLeftPad">INSTAGRAM</p></a>
-                                                </div>
-                                                <div class="column is-full topBorder">
-                                                    <a href="https://www.facebook.com/YOMI-107740754843280/" style="color: black;" target="_blank"><p class="floatLeft littleLeftPad">FACEBOOK</p></a>
-                                                </div>
-                                                <div class="column is-full topBorder bottomBorder">
-                                                    <a href="https://www.linkedin.com/company/yomidigitalhub/" style="color: black;" target="_blank"><p class="floatLeft littleLeftPad">LINKEDIN</p></a>
-                                                </div>                                   
-                                            </div>
-                                        </div>
-                                        <div class="column is-full littleTopPad">
-                                            <div class="columns is-mobile is-multiline black-text littePad ">
-                                                <div class="column is-full topBorder">
-                                                    <p class="floatLeft littleLeftPad">VIA ERCOLANO 62, 97100 RAGUSA (RG)</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </template>
-                        </b-modal>
+                      </div>
                     </div>
-                    <div class="column is-half">
+                    <div class="column is-10-desktop is-6-mobile">
                         <div class="columns is-mobile">
                             <div class="column fontWhite rightBorder">
                                 <a href="https://www.facebook.com/YOMI-107740754843280/" style="color: white;" target="_blank"><p>FB</p></a>
@@ -66,10 +29,23 @@
                             <div class="column fontWhite rightBorder">
                                 <a href="https://www.instagram.com/yomi_digitalhub/" style="color: white;" target="_blank"><p>IG</p></a>
                             </div>
-                            <div class="column fontWhite">
+                            <div class="column fontWhite rightBorder">
                                 <a href="https://www.linkedin.com/company/yomidigitalhub/" style="color: white;" target="_blank"><p>IN</p></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="is-1-desktop is-3-mobile laguageContainer">
+                      <div class="">
+                        <select class="language" v-model="$i18n.locale">
+                            <option
+                                v-for="(lang, i) in langs"
+                                :key="`lang-${i}`"
+                                :value="lang"
+                            >
+                                {{ lang }}
+                            </option>
+                        </select>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +70,7 @@
                         
                     </div>
                     <div class="column">
-                        <div class="fontWhite textLeft">
+                        <div class=" textLeft mediumFont">
                             <p>
                                 {{ $t('message.promote1') }}
                                 <br>
@@ -120,11 +96,12 @@
 </template>
 
 <script>
-
+  import { Slide } from 'vue-burger-menu'
     export default {
         data() {
             return {
                 isComponentModalActive: false,
+                langs: ['en', 'it'] 
             }
         },
         methods: {
@@ -133,11 +110,188 @@
             }
         },
         name: 'Menu',
+        components: {
+          Slide
+        }
     }
 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+  .bm-burger-button {
+    z-index: 1;
+    left: 40%;
+    top: 30%;
+
+  }
+  .bm-burger-button span {
+    background: white!important;
+  }
+
+  @media (max-width: 768px) {
+    .bm-burger-button {
+      z-index: 1;
+      left: 33%;
+      top: 30%;
+
+    }
+    .language{
+      margin-left: 15px;
+    }
+  }
+</style>
+
 <style scoped>
+.textLeft {
+  text-align: left;
+}
+.black-text {
+  color: black;
+}
+
+.mediumFont{
+  font-family: "Obviously Medi";
+  font-size: 25px;
+  
+  color: white !important;
+  
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 10%;
+
+}
+
+.white {
+  background-color: white;
+}
+
+.fontWhite {
+  font-family: "Obviously";
+  color: white !important;
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 10%;
+  font-style: normal;
+}
+
+.bigWhite {
+  font-size: 50px;
+  color: white !important;
+  font-weight: 500;
+  font-family: "Obviously Wide Medi";
+}
+.biggerLight {
+  font-size: 20px;
+  color: #e5e5e5;
+  font-family: "Obviously";
+  font-style: italic;
+}
+
+.padding {
+  padding: 150px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  font-size: 16px;
+  color: white !important;
+  position: absolute;
+  left: 55px;
+  bottom: 133px;
+}
+.absolute:hover {
+  color: #40ff98!important;
+  text-decoration: underline;
+}
+
+.bordered {
+  border: solid white 1px;
+}
+
+.rightBorder {
+  border-right: solid white 1px;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.biggerImage {
+  height: 250px;
+}
+.topBorder {
+  border-top: solid black 1px;
+}
+.bottomBorder {
+  border-bottom: solid black 1px;
+}
+.littePad {
+  padding: 30px;
+}
+.littleTopPad {
+  padding-top: 50px;
+}
+.littleLeftPad {
+  padding-left: 25px;
+}
+
+.laguageContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  }
+
+.language {
+  background: none;
+  border: black;
+  font-size: 40px;
+  color: white;
+  position: inherit;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .padding {
+    padding: 50px;
+  }
+  #whoWeAre {
+  padding: 10px 10px!important;
+  }
+  .floatLeft {
+    float: none;
+  }
+  .absolute {
+    left: 72px;
+  }
+  #menuArrow {
+    display: none;
+  }
+  .bm-burger-button {
+    left: 40px;
+  }
+}
+
+#whoWeAre {
+  padding: 10px 50px;
+}
+
+.menuSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+
 
 </style>

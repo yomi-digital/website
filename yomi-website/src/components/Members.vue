@@ -1,5 +1,5 @@
 <template>
-    <div class="white">
+    <div id="membersBody" class="white">
         <div class="columns has-text-centered is-multiline padding">
             <div class="column is-one-quarter border">
                 <div class="minHeight  text-vcentered ">
@@ -113,10 +113,17 @@ export default {
         .padding {
             padding: 30px;
         }
+        #membersBody {
+        padding: 0!important;
+    }
     }
 
     .minHeight {
-        min-height: 400px;
+        min-height: 300px;
+    }
+
+    #membersBody {
+        padding: 0 50px;
     }
 
 </style>
