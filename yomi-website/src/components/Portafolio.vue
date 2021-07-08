@@ -22,193 +22,153 @@
                             <!-- PORTFOLIO MODALS -->
                             <!-- THE HUB -->
                             <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
-                                <div class="columns is-mobile is-multiline">                     
-                                    <div 
-                                        class="column is-full flexCenter"
-                                        label="Launch component modal"
-                                        size="is-medium"
-                                        @click="isTheHubModalActive = true"
-                                    >
-                                    <div class="columns is-mobile">
-                                        <div class="column is-half">
-                                            <p class="numberContent alignLeft">THE HUB</p>
-                                        </div>
-                                        <div class="column is-half alignLeft flexCenter">
-                                            <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <b-modal
-                                        v-model="isTheHubModalActive"
+                                <div class="columns is-mobile is-multiline">   
+                                    <div class="column is-full flexCenter">
+                                        <div 
+                                            class="columns is-mobile"
+                                            @click="theHubisOpen = !theHubisOpen; rotateArrow('1')"
+                                            size="is-medium"  
                                         >
-                                        <template>
+                                            <div class="column is-half">
+                                                <p class="numberContent alignLeft">THE HUB</p>
+                                            </div>
+                                            <div class="column is-half alignLeft flexCenter">
+                                                <img id="rotateArrow1" class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <b-collapse
+                                        animation="slide"
+                                        v-model="theHubisOpen"
+                                        >
+                                        <template>                  
                                             <div class="white">
                                                 <div class="columns is-mobile modalsPad is-multiline">
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="columns is-multiline is-mobile">
-                                                            <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">THE HUB</p>
-                                                            </div>
-                                                            <div class="column is-full">
-                                                                <p class="alignLeft modalsDescription">
-                                                                    {{ $t('message.theHubContent') }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="modalsImage">
-                                                            image
-                                                        </div>
+                                                    <div class="column is-full">
+                                                        <p class="alignLeft modalsDescription">
+                                                            {{ $t('message.theHubContent') }}
+                                                        </p>
                                                     </div>
                                                 </div>  
                                             </div>         
                                         </template>
-                                    </b-modal>                                       
+                                    </b-collapse>                                       
                                 </div>
                             </div>
 
-                            <!-- NETWORK REVOLUTION -->
+                            <!-- 4Ambassador -->
+
                             <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
-                                <div class="columns is-mobile is-multiline">                     
-                                    <div 
-                                        class="column is-full flexCenter"
-                                        label="Launch component modal"
-                                        size="is-medium"
-                                        @click="isAmbassadorModalActive = true"
-                                    >
-                                        <div class="columns is-mobile">
+                                <div class="columns is-mobile is-multiline">   
+                                    <div class="column is-full flexCenter">
+                                        <div 
+                                            class="columns is-mobile"
+                                            @click="ambassadorIsOpen = !ambassadorIsOpen; rotateArrow('2')"
+                                            size="is-medium"  
+                                        >
                                             <div class="column is-half">
                                                 <p class="numberContent alignLeft">4AMBASSADOR</p>
                                             </div>
                                             <div class="column is-half alignLeft flexCenter">
-                                                <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                                <img id="rotateArrow2" class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
                                             </div>
-                                        </div>                                 
+                                        </div>
                                     </div>
-                                    <b-modal
-                                        v-model="isAmbassadorModalActive"
+                                    
+                                    <b-collapse
+                                        animation="slide"
+                                        v-model="ambassadorIsOpen"
                                         >
-                                        <template>
+                                        <template>                  
                                             <div class="white">
                                                 <div class="columns is-mobile modalsPad is-multiline">
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="columns is-multiline is-mobile">
-                                                            <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">4AMBASSADOR</p>
-                                                            </div>
-                                                            <div class="column is-full">
-                                                                <p class="alignLeft modalsDescription">
-                                                                    {{ $t('message.ambassadorContent') }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="modalsImage">
-                                                            image
-                                                        </div>
+                                                    <div class="column is-full">
+                                                        <p class="alignLeft modalsDescription">
+                                                            {{ $t('message.ambassadorContent') }}
+                                                        </p>
                                                     </div>
                                                 </div>  
                                             </div>         
                                         </template>
-                                    </b-modal>                                       
+                                    </b-collapse>                                       
                                 </div>
                             </div>
 
                             <!-- DIGITAL ORACLES -->
+
                             <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
-                                <div class="columns is-mobile is-multiline">                     
-                                    <div 
-                                        class="column is-full flexCenter"
-                                        label="Launch component modal"
-                                        size="is-medium"
-                                        @click="isDigitalModalActive = true"
-                                    >
-                                        <div class="columns is-mobile">
+                                <div class="columns is-mobile is-multiline">   
+                                    <div class="column is-full flexCenter">
+                                        <div 
+                                            class="columns is-mobile"
+                                            @click="digitalIsOpen = !digitalIsOpen; rotateArrow('3')"
+                                            size="is-medium"  
+                                        >
                                             <div class="column is-half">
                                                 <p class="numberContent alignLeft">DIGITAL ORACLES</p>
                                             </div>
                                             <div class="column is-half alignLeft flexCenter">
-                                                <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                                <img id="rotateArrow3" class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </div>
-                                    <b-modal
-                                        v-model="isDigitalModalActive"
+                                    
+                                    <b-collapse
+                                        animation="slide"
+                                        v-model="digitalIsOpen"
                                         >
-                                        <template>
+                                        <template>                  
                                             <div class="white">
                                                 <div class="columns is-mobile modalsPad is-multiline">
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="columns is-multiline is-mobile">
-                                                            <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">DIGITAL ORACLES</p>
-                                                            </div>
-                                                            <div class="column is-full">
-                                                                <p class="alignLeft modalsDescription">
-                                                                    {{ $t('message.digitalOraclesContent') }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="modalsImage">
-                                                            image
-                                                        </div>
+                                                    <div class="column is-full">
+                                                        <p class="alignLeft modalsDescription">
+                                                            {{ $t('message.digitalOraclesContent') }}
+                                                        </p>
                                                     </div>
                                                 </div>  
                                             </div>         
                                         </template>
-                                    </b-modal>                                       
+                                    </b-collapse>                                       
                                 </div>
                             </div>
 
-                            <!-- EINAUDISTORE -->
+
+                            <!-- NFT -->
+
                             <div class="column is-10-desktop is-offset-2-desktop is-full-mobile borders">
-                                <div class="columns is-mobile is-multiline">                     
-                                    <div 
-                                        class="column is-full flexCenter"
-                                        label="Launch component modal"
-                                        size="is-medium"
-                                        @click="isNFTModalActive = true"
-                                    >
-                                         <div class="columns is-mobile">
+                                <div class="columns is-mobile is-multiline">   
+                                    <div class="column is-full flexCenter">
+                                        <div 
+                                            class="columns is-mobile"
+                                            @click="nftIsOpen = !nftIsOpen; rotateArrow('4')"
+                                            size="is-medium"  
+                                        >
                                             <div class="column is-half">
                                                 <p class="numberContent alignLeft">NFT STUDIO</p>
                                             </div>
                                             <div class="column is-half alignLeft flexCenter">
-                                                <img class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
+                                                <img id="rotateArrow4" class="rightArrow" src="/assets/img/vectors/Arrow4.svg" alt="arrow" />
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
-                                    <b-modal
-                                        v-model="isNFTModalActive"
+                                    
+                                    <b-collapse
+                                        animation="slide"
+                                        v-model="nftIsOpen"
                                         >
-                                        <template>
+                                        <template>                  
                                             <div class="white">
                                                 <div class="columns is-mobile modalsPad is-multiline">
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="columns is-multiline is-mobile">
-                                                            <div class="column is-full ">
-                                                                <p class="alignLeft modalsTitle">NFT STUDIO</p>
-                                                            </div>
-                                                            <div class="column is-full">
-                                                                <p class="alignLeft modalsDescription">
-                                                                    {{ $t('message.nftContent') }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="column is-half-desktop is-full-mobile">
-                                                        <div class="modalsImage">
-                                                            image
-                                                        </div>
+                                                    <div class="column is-full">
+                                                        <p class="alignLeft modalsDescription">
+                                                            {{ $t('message.nftContent') }}
+                                                        </p>
                                                     </div>
                                                 </div>  
                                             </div>         
                                         </template>
-                                    </b-modal>                                       
+                                    </b-collapse>                                       
                                 </div>
                             </div>
                         </div>
@@ -239,15 +199,18 @@
 export default {
     data() {
             return {
-                isTheHubModalActive: false,
-                isAmbassadorModalActive: false,
-                isDigitalModalActive: false,
-                isNFTModalActive: false, 
+                theHubisOpen: false,
+                ambassadorIsOpen: false,
+                digitalIsOpen: false,
+                nftIsOpen: false,
             }
         },
         methods: {
             closeModal: function(){
                 this.isComponentModalActive = false
+            },
+            rotateArrow: function(elId){
+                document.getElementById('rotateArrow'+elId).classList.toggle('rotated');
             }
         },
     name: 'Portafolio',
@@ -256,6 +219,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+    .rotated {
+        transform: rotate(90deg)
+    }
     .title {
         color: white;
         font-size: 45px;

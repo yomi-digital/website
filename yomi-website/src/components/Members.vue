@@ -3,56 +3,56 @@
         <div class="columns has-text-centered is-multiline padding">
             <div class="column is-one-quarter border">
                 <div class="minHeight  text-vcentered ">
-                    <p class="name"><strong>SEBASTIANO CATAUDO</strong></p><br>
-                    <p>CTO, Blockchain Guru<br>Co-founder</p>
+                    <p class="name"><b>SEBASTIANO CATAUDO</b></p><br>
+                    <i>CTO, Blockchain Guru<br>Co-founder</i>
                 </div>
             </div>
     
             <div class="column is-one-quarter border "> 
                 <div class="minHeight text-vcentered">
-                    <p class="name"><strong>LIVIO LOMBARDO</strong></p><br>
-                    <p>Finance & Administration<br>Co-founder</p>
+                    <p class="name"><b>LIVIO LOMBARDO</b></p><br>
+                    <i>Finance & Administration<br>Co-founder</i>
                 </div>
             </div>
     
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><strong>ROBERTO DIANO</strong></p><br>
-                    <p>Sales<br>Co-founder</p>
+                    <p class="name"><b>ROBERTO DIANO</b></p><br>
+                    <i>Sales<br>Co-founder</i>
                 </div>
             </div>
 
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><strong>GIORGIA GUIDETTI</strong></p><br>
-                    <p>Marketing Specialist</p>
+                    <p class="name"><b>GIORGIA GUIDETTI</b></p><br>
+                    <i>Marketing Specialist</i>
                 </div>
             </div>
 
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><strong>ALAN DEVALIS</strong></p><br>
-                    <p>Full Stack Developer</p>
+                    <p class="name"><b>ALAN DEVALIS</b></p><br>
+                    <i>Full Stack Developer</i>
                 </div>
             </div>
 
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><strong>STEFANO RANIOLO</strong></p><br>
-                    <p>Front end Developer</p>
+                    <p class="name"><b>STEFANO RANIOLO</b></p><br>
+                    <i>Front end Developer</i>
                 </div>
             </div>
     
         
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><strong>SIMONE CALABRESE</strong></p><br>
-                    <p>Junior Developer</p>
+                    <p class="name"><b>SIMONE CALABRESE</b></p><br>
+                    <i>Junior Developer</i>
                 </div>
             </div>
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p>maybe you?</p>
+                    <p class="maybeYou">maybe you?</p>
                 </div>
             </div>
         </div>
@@ -76,7 +76,13 @@ export default {
         padding: 100px;
     }
 
-
+    .maybeYou {
+        color: #000000;
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 25px;
+        font-style: bold;
+    } 
     .text-vcentered {
         display: flex;
         flex-wrap: nowrap;
@@ -87,8 +93,13 @@ export default {
 
     .name {
         font-size: 30px;
+        font-weight: 500;
+        color: #000000;
     }
 
+    i {
+        color: #000000;
+    }
     .job {
         font: 20px;
     }
@@ -105,7 +116,7 @@ export default {
     }
 
     .minHeight {
-        min-height: 500px;
+        min-height: 400px;
     }
 
 </style>

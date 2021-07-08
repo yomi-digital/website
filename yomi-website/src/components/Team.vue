@@ -32,7 +32,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  
+    p {
+        font-weight: 500;
+        
+        color: #000000;
+    }
+
     img {
         width: 100%;
     }

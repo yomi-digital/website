@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="column is-full smallPadding">
-                    <img src="/assets/img/vectors/arrow2.svg" alt="arrow" />
+                    <img src="/assets/img/vectors/Arrow2.svg" alt="arrow" />
                 </div>
             </div>
         </div>

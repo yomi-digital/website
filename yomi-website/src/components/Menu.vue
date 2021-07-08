@@ -9,7 +9,7 @@
                             size="is-medium"
                             @click="isComponentModalActive = true"
                         >
-                            <p class="menu fontWhite">MENU</p>
+                            <p class=" fontWhite">MENU</p>
                         </div>
                         <b-modal
                             v-model="isComponentModalActive"
@@ -84,7 +84,7 @@
                         </p>
                         <div class="floatLeft logoMenu">
                             <div>
-                                <img id="menuArrow" src="/assets/img/vectors/arrow1.svg" alt="arrow" />
+                                <img id="menuArrow" src="/assets/img/vectors/Arrow1.svg" alt="arrow" />
                             </div>
                             <div class="relative">
                                 <img class="biggerImage" src="/assets/img/vectors/scrollDown.svg" alt="arrow" />
@@ -139,107 +139,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    
-    .textLeft {
-        text-align: left;
-    }
-    .black-text {
-        color: black;
-    }
-
-    .white {
-        background-color: white;
-    }
-    .menu {
-        cursor: pointer;
-    }
-    .fontWhite{
-        color: white;
-        font-size: 35px;
-    }
-   
-    .bigWhite {
-        font-size: 60px;
-        color: white;
-    }
-    .biggerLight{
-        font-size: 20px;
-        color: #E5E5E5;
-        font-style: italic;
-    }
-
-    .padding {
-        padding: 150px;
-    }
-
-    .relative {
-        position: relative;
-    }
-
-    .absolute {
-        font-size: 16px;
-        color: white;
-        position: absolute;
-        left: 62px;
-        bottom: 133px;
-    }
-    .absolute:hover {
-        color: #40FF98;
-        text-decoration: underline;
-    }
-
-    .bordered {
-        border: solid white 1px;
-    }
-
-    .rightBorder {
-        border-right: solid white 1px;
-    }
-
-    .floatLeft {
-        float: left;
-    }
-
-    .biggerImage {
-        height: 250px;
-    }
-    .topBorder {
-        border-top: solid black 1px;
-    }
-    .bottomBorder {
-        border-bottom: solid black 1px;
-    }
-    .littePad {
-        padding: 30px;
-    }
-    .littleTopPad {
-        padding-top: 50px;
-    }
-    .littleLeftPad {
-        padding-left: 25px
-    }
-    
-   
-    @media (max-width: 768px) {
-        .padding {
-            padding: 50px;
-        }
-      
-        .floatLeft {
-            float: none;
-        }
-        .absolute {
-            left: 110px;
-        }
-        #menuArrow {
-            display: none;
-        }
-    }
-
-    #whoWeAre {
-        padding-top: 10px;
-      
-    }
-    
 
 </style>

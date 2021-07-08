@@ -1,8 +1,5 @@
 <template>
   <div>
-    <head>
-      <link rel="stylesheet" href="/public/assets/fonts/stylesheet.css">
-    </head>
     <Home></Home>
     <Menu></Menu>
     <Service></Service>
@@ -51,25 +48,24 @@ export default {
 <style>
 
 #app {
-  font-family: "Obviously";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-
 }
-  html, body{
-    font-family: "Obviously";
-    background-color: black!important;
-    scroll-behavior: smooth;
-  }
 
-  @media (max-width: 768px) {
-      body, html {
-        overflow-x: hidden;
-      }
-    }
+html, body{
+  font-family: "Obviously"!important;
+  background-color: black!important;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
 
   
 </style>

@@ -26,7 +26,7 @@
                 <img src="/assets/img/vectors/logo.svg" alt="logo" />
             </div>
             <div id="arrow">
-                <img src="/assets/img/vectors/arrow1.svg" alt="arrow" />
+                <img src="/assets/img/vectors/Arrow1.svg" alt="arrow" />
             </div>
     
         </div>
@@ -45,51 +45,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  
 
-    #logo {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-    }
-
-    #arrow {
-        position: absolute;
-        left: 50%;
-        top: 95%;
-        transform: translate(-50%,-50%);
-    }
-    #logo img {
-        height: 200px;
-    }
-    
-
-    img {
-        max-height: 100vh;
-        width: auto;
-    }
-    @media (max-width: 768px) {
-        .hideMobile {
-            display: none;
-        }
-    }
-    
-    .flexCenter {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .language {
-        background: none;
-        border: black;
-        border-bottom: 1px white solid;
-        color: white;
-        height: 30px;
-        float: right;
-        position: absolute;
-        right: 30px;
-        top: 15px;
-  }
 </style>
