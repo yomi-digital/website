@@ -186,8 +186,8 @@
                             VUOI SCOPRIRE DI PIÙ?
                         </p>                         
                     </div>
-                    <div class="column is-10-desktop is-offset-2-desktop is-full-mobile ">
-                         <b-button rounded type='is-dark button' class="left">Download PDF</b-button>
+                    <div class="column is-10-desktop is-offset-2-desktop is-full-mobile pdf">
+                         <b-button rounded type='is-dark button' class="left"><p class="pdfText">Download PDF</p></b-button>
                     </div>
                 </div>
             </div>
@@ -270,6 +270,10 @@ export default {
     .contentFont {
         font-family: "Obviously Medi";
     }
+
+    .pdfText {
+        font-family: "Obviously"
+    }
   
     .rightArrow {
         height:20px;
@@ -341,7 +345,8 @@ export default {
             margin-top: 0px;
         }
         .thirdColumn {
-            padding: 20px
+            padding: 20px;
+            margin-right: 15px;
         }
         .smallPadding{
             padding: 10px;
@@ -377,6 +382,9 @@ export default {
         }
         .contentFont {
             font-size: 20px;
+        }
+        .pdf {
+            margin-left: 20px;
         }
     }
 

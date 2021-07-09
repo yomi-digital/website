@@ -3,42 +3,42 @@
         <div class="columns has-text-centered is-multiline padding">
             <div class="column is-one-quarter border">
                 <div class="minHeight  text-vcentered ">
-                    <p class="name"><b>SEBASTIANO CATAUDO</b></p><br>
+                    <p class="name">SEBASTIANO CATAUDO</p><br>
                     <i>CTO, Blockchain Guru<br>Co-founder</i>
                 </div>
             </div>
     
             <div class="column is-one-quarter border "> 
                 <div class="minHeight text-vcentered">
-                    <p class="name"><b>LIVIO LOMBARDO</b></p><br>
+                    <p class="name">LIVIO LOMBARDO</p><br>
                     <i>Finance & Administration<br>Co-founder</i>
                 </div>
             </div>
     
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><b>ROBERTO DIANO</b></p><br>
+                    <p class="name">ROBERTO DIANO</p><br>
                     <i>Sales<br>Co-founder</i>
                 </div>
             </div>
 
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><b>GIORGIA GUIDETTI</b></p><br>
+                    <p class="name">GIORGIA GUIDETTI</p><br>
                     <i>Marketing Specialist</i>
                 </div>
             </div>
 
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><b>ALAN DEVALIS</b></p><br>
+                    <p class="name">ALAN DEVALIS</p><br>
                     <i>Full Stack Developer</i>
                 </div>
             </div>
 
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><b>STEFANO RANIOLO</b></p><br>
+                    <p class="name">STEFANO RANIOLO</p><br>
                     <i>Front end Developer</i>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         
             <div class="column is-one-quarter border">
                 <div class="minHeight text-vcentered">
-                    <p class="name"><b>SIMONE CALABRESE</b></p><br>
+                    <p class="name">SIMONE CALABRESE</p><br>
                     <i>Junior Developer</i>
                 </div>
             </div>
@@ -89,12 +89,14 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        font-family: "Obviously Medi";
     }
 
     .name {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 500;
         color: #000000;
+        font-family: "Obviously Medi";
     }
 
     i {

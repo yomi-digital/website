@@ -35,10 +35,12 @@ export default {
         line-height: 55px;
         font-weight: 500;
         float: left;
+        font-family: "Obviously";
     }
 
     .headText {
         font-size: 20px;
+        font-family: "Obviously Medi";
     }
     .content {
         font-size: 20px;
