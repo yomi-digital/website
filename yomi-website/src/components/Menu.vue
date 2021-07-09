@@ -70,8 +70,8 @@
                         
                     </div>
                     <div class="column">
-                        <div class=" textLeft mediumFont">
-                            <p>
+                        <div class="textLeft mediumFont">
+                            <p class="promoteTextMobile">
                                 {{ $t('message.promote1') }}
                                 <br>
                                 {{ $t('message.promote2') }}
@@ -79,7 +79,7 @@
                             </p>
                         </div> 
                         <br>
-                        <div class="biggerLight textLeft">
+                        <div class="biggerLight textLeft contentHomeMobile">
                             <p>
                                 {{ $t('message.ourHub') }}
                             </p>
@@ -200,7 +200,7 @@
 }
 
 .absolute {
-  font-size: 16px;
+  font-size: 13px;
   color: white !important;
   position: absolute;
   left: 55px;
@@ -270,13 +270,27 @@
     float: none;
   }
   .absolute {
-    left: 72px;
+    left: 70px;
+    top: 135px;
   }
   #menuArrow {
     display: none;
   }
   .bm-burger-button {
     left: 40px;
+  }
+  .bigWhite {
+    font-size: 30px;
+  }
+  .biggerImage {
+    margin-top: 20px;
+  }
+  .promoteTextMobile {
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .contentHomeMobile {
+    font-size: 16px;
   }
 }
 

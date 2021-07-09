@@ -72,7 +72,7 @@ const messages = {
   it: {
     message: {
       whoWeAre1: 'YOMI È UN DIGITAL',
-      whoWeAre2: 'HUB HIT-TECH',
+      whoWeAre2: 'HUB HI-TECH',
       promote1: 'Promuoviamo la diffusione della tecnologia per il raggiungimento di una realtà più etica e democratica.',
       promote2: 'La tecnologia, dal greco discorso sull’arte, era un mezzo di crescita al servizio dell’altro. Oggi dopo la rivoluzione digitale, è lo strumento che rende concrete le proprie idee e i propri desideri.',
       ourHub: 'Il nostro hub è un luogo fisico e digitale libero, dove tutti hanno la possibilità di esprimere il proprio io e le proprie idee senza il timore di non essere ascoltati.',

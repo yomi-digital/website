@@ -8,7 +8,7 @@
                <div class="columns is-mobile is-multiline">
                     <div class="column is-one-quarter-desktop is-full-mobile">
                         <p class="headText">E-MAIL</p> 
-                        <a href="mailto:info@yomi.digital" style="color: white; cursor: pointer;"><p class="content">info@yomi.digital</p></a>
+                        <a href="mailto:info@yomi.digital" style="color: white; cursor: pointer;"><p class="content">hey@yomi.digital</p></a>
                     </div>
                     <div class="column is-one-quarter-desktop is-full-mobile">
                         <p class="headText">{{ $t('message.phone') }}</p> 
@@ -52,6 +52,9 @@ export default {
     @media (max-width: 768px) {
        .firstPad {
             padding: 30px;
+        }
+        .title {
+            font-size: 30px;
         }
     }
 

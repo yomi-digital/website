@@ -17,7 +17,7 @@
                         <p class="textColorBlack">VIA ERCOLANO 62, 97100 RAGUSA (RG)</p>
                     </div>
                     <div class="column is-full">
-                        <a href="mailto:info@yomi.digital"><p class="email">INFO@YOMI.DIGITAL</p></a>
+                        <a href="mailto:info@yomi.digital"><p class="email">HEY@YOMI.DIGITAL</p></a>
                     </div>
                 </div>
             </div>

@@ -46,10 +46,12 @@ export default {
         line-height: 55px;
         font-weight: 500;
         float: left;
+        font-family: "Obviously Wide Medi";
     }
     .content {
         font-size: 20px;
         text-align: left;
+        font-family: "Obviously Medi";
     }
 
     .partners {
@@ -64,6 +66,9 @@ export default {
         }
         .firstPad {
             padding: 30px;
+        }
+        .title {
+            font-size: 32px;
         }
     }
     #contact {

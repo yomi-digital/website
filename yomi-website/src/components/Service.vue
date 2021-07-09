@@ -87,10 +87,12 @@ export default {
         }
 
         .bigText {
-            font-size: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 25px;
         }
         .smallerText{
-            font-size: 25px;
+            font-size: 20px;
         }
         .smallPadding {
             padding: 60px;

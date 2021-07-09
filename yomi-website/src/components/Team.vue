@@ -8,7 +8,7 @@
                 </div>
                 <div id="teamBody" class="column is-full padding">
                     <div class="column is-half biggerFont alignLeft">
-                        <p>
+                        <p class="teamContentMobile">
                         {{ $t('message.team1') }}
                         <br><br>
                         {{ $t('message.team2') }}
@@ -82,6 +82,9 @@ export default {
             height: 120px;
             width: auto;
             max-width: none;
+        }
+        .teamContentMobile {
+            font-size: 20px;
         }
     }
 

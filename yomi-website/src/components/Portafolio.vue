@@ -229,6 +229,7 @@ export default {
         line-height: 55px;
         font-weight: 500;
         float: left;
+        font-family: "Obviously Wide Medi";
     }
 
     .leftPad{
@@ -370,6 +371,12 @@ export default {
         }
         .leftPad {
             padding-left: 0;
+        }
+        .title {
+            font-size: 35px;
+        }
+        .contentFont {
+            font-size: 20px;
         }
     }
 
