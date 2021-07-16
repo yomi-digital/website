@@ -436,6 +436,10 @@ p.footerLink2:hover {
     -o-filter: grayscale(0%);
 }
 
+.rightArrow {
+    cursor: pointer;
+}
+
 
 /* END SLIDEDOWN */
 
