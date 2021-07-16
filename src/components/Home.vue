@@ -283,6 +283,30 @@
                       <p class="portofolioContent">
                         {{ $t("message.umiContent") }}
                       </p>
+                      <div class="bordered fadeIn">
+                        <div
+                          class="gridButton fadeIn d-flex justify-content-between"
+                        >
+                          <a
+                            class="smallLink fadeIn mb-0"
+                            href="https://nft.stargraph.it/"
+                            target="_blank"
+                            >stargraph</a
+                          >
+                          <a
+                            class="smallLink fadeIn mb-0"
+                            href="https://www.impssbl.com/"
+                            target="_blank"
+                            >impssbl</a
+                          >
+                          <a
+                            class="smallLink fadeIn mb-0"
+                            href="https://hexarchia.com/"
+                            target="_blank"
+                            >hexarchia</a
+                          >
+                        </div>
+                      </div>
                     </div>
                   </transition>
                 </div>
@@ -543,38 +567,46 @@
           <div class="mt-5">
             <p>{{ $t("message.partnerContent") }}</p>
           </div>
-          <div class="mt-5 mb-5" style="padding: 150px 0">
-            <carousel autoplay loop centerMode :speed="600" navigationEnabled>
-              <slide>
-                <a href="https://quadrans.io/">
-                  <img
-                    class="partnerLogo"
-                    src="/assets/img/partners/quadrans.svg"
-                /></a>
-              </slide>
-              <slide>
-                <a href="https://www.digitalocean.com/">
-                  <img
-                    class="partnerLogo"
-                    src="/assets/img/partners/oracles.png"
-                /></a>
-              </slide>
-              <slide>
-                <a href="https://nftstud.io/">
-                  <img
-                    class="partnerLogo"
-                    src="/assets/img/partners/nftstudio.svg"
-                /></a>
-              </slide>
-              <slide>
-                <a href="https://www.stargraph.it/">
-                  <img
-                    class="partnerLogo"
-                    src="/assets/img/partners/stargraph.png"
-                  />
-                </a>
-              </slide>
-            </carousel>
+          <div class="mt-5 mb-5">
+            <div class="row">
+              <div class="col-6 col-lg-3 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://quadrans.io/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                       style="background-image: url('/assets/img/partners/quadrans.svg')"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://digitaloracles.com/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/oracles.png')"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://nftstud.io/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/nftstudio.svg')"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://www.stargraph.it/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                       style="background-image: url('/assets/img/partners/stargraph.png')"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="lineWhite"></div>
@@ -612,13 +644,8 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
-
 export default {
-  components: {
-    Carousel,
-    Slide,
-  },
+  components: {},
   data() {
     return {
       toggle: false,

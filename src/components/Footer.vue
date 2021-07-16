@@ -11,8 +11,7 @@
               >{{ $t("message.returnHome") }} </a
             ><br /><br /><br />
             <a href="" class="footerLink">{{ $t("message.politics") }} </a
-            ><br />
-            <a href="" class="footerLink">{{ $t("message.termsOfUse") }} </a>
+            >
           </div>
           <div class="col-12 col-lg-4 col-md-12">
             <a

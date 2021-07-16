@@ -76,7 +76,8 @@ const messages = {
             termsOfUse: 'TERMS OF USE',
             service: 'SERVICES',
             phone: 'PHONE NUMBER',
-            cta: 'DO YOU WANT MORE INFO?'
+            cta: 'DO YOU WANT MORE INFO?',
+            seeMore: 'see more'
         }
     },
     it: {
@@ -129,7 +130,8 @@ const messages = {
             termsOfUse: 'TERMINI DI UTILIZZO',
             service: 'SERVIZI',
             phone: 'TELEFONO',
-            cta: 'VUOI SAPERE DI PIÙ?'
+            cta: 'VUOI SAPERE DI PIÙ?',
+            seeMore: 'scopri di più'
         }
     }
 };
