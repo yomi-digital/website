@@ -264,24 +264,48 @@
               <div class="p-mobile">
                 <div
                   @click="
-                    firstOpen = !firstOpen;
-                    rotateArrow('1');
+                    fifthOpen = !fifthOpen;
+                    rotateArrow('4');
                   "
-                  class="portfolioToggle"
+                  class="mt-4 portfolioToggle"
                 >
                   <div class="d-flex justify-content-between">
-                    <p>THE HUB</p>
+                    <p>UMI</p>
                     <img
-                      id="rotateArrow1"
+                      id="rotateArrow4"
                       class="rightArrow"
                       src="/assets/img/Arrow4.svg"
                       alt="arrow"
                     />
                   </div>
                   <transition name="slide">
-                    <div class="child" v-show="firstOpen">
+                    <div class="child" v-show="fifthOpen">
                       <p class="portofolioContent">
-                        {{ $t("message.theHubContent") }}
+                        {{ $t("message.umiContent") }}
+                      </p>
+                    </div>
+                  </transition>
+                </div>
+                <div
+                  @click="
+                    fourthOpen = !fourthOpen;
+                    rotateArrow('5');
+                  "
+                  class="mt-4 portfolioToggle"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p>NFT STUDIO</p>
+                    <img
+                      id="rotateArrow5"
+                      class="rightArrow"
+                      src="/assets/img/Arrow4.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                  <transition name="slide">
+                    <div class="child" v-show="fourthOpen">
+                      <p class="portofolioContent">
+                        {{ $t("message.nftContent") }}
                       </p>
                     </div>
                   </transition>
@@ -336,52 +360,29 @@
                 </div>
                 <div
                   @click="
-                    fourthOpen = !fourthOpen;
-                    rotateArrow('4');
+                    firstOpen = !firstOpen;
+                    rotateArrow('1');
                   "
                   class="mt-4 portfolioToggle"
                 >
                   <div class="d-flex justify-content-between">
-                    <p>NFT STUDIO</p>
+                    <p>THE HUB</p>
                     <img
-                      id="rotateArrow4"
+                      id="rotateArrow1"
                       class="rightArrow"
                       src="/assets/img/Arrow4.svg"
                       alt="arrow"
                     />
                   </div>
                   <transition name="slide">
-                    <div class="child" v-show="fourthOpen">
+                    <div class="child" v-show="firstOpen">
                       <p class="portofolioContent">
-                        {{ $t("message.nftContent") }}
+                        {{ $t("message.theHubContent") }}
                       </p>
                     </div>
                   </transition>
                 </div>
-                <div
-                  @click="
-                    fifthOpen = !fifthOpen;
-                    rotateArrow('4');
-                  "
-                  class="mt-4 portfolioToggle"
-                >
-                  <div class="d-flex justify-content-between">
-                    <p>UMI</p>
-                    <img
-                      id="rotateArrow4"
-                      class="rightArrow"
-                      src="/assets/img/Arrow4.svg"
-                      alt="arrow"
-                    />
-                  </div>
-                  <transition name="slide">
-                    <div class="child" v-show="fifthOpen">
-                      <p class="portofolioContent">
-                        {{ $t("message.umiContent") }}
-                      </p>
-                    </div>
-                  </transition>
-                </div>
+
                 <div class="mt-5">
                   <div>
                     <span class="cta">
@@ -555,7 +556,7 @@
                 <a href="https://www.digitalocean.com/">
                   <img
                     class="partnerLogo"
-                    src="/assets/img/partners/digital_ocean.svg"
+                    src="/assets/img/partners/oracles.svg"
                 /></a>
               </slide>
               <slide>
