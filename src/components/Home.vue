@@ -202,7 +202,7 @@
                 </p>
               </div>
               <em v-show="toggle7">
-                {{ $t("message.mobileDevDescription") }}
+                {{ $t("message.mobileDevContent") }}
               </em>
             </div>
           </div>
