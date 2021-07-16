@@ -556,7 +556,7 @@
                 <a href="https://www.digitalocean.com/">
                   <img
                     class="partnerLogo"
-                    src="/assets/img/partners/oracles.svg"
+                    src="/assets/img/partners/oracles.png"
                 /></a>
               </slide>
               <slide>
