@@ -1,12 +1,12 @@
 <template>
-  <div id="Menu">
+  <div id="Menu" class="fixedElement">
     <div class="menu">
       <div class="row">
         <div
           class="col-12 col-lg-7 col-md-6 text-center justify-content-center"
           style="position: relative;"
         >
-          <Slide :closeOnNavigation="true">
+          <Slide :isOpen="open" :closeOnNavigation="true">
             <a class="sitebar" href="#who">CHI SIAMO</a>
             <a class="sitebar" href="#portfolio">PORTFOLIO</a>
             <a class="sitebar" href="#services">SERVIZI</a>
@@ -40,7 +40,7 @@
             >
           </Slide>
           <div class="py-3">
-            <span class="menuLink m-0">MENU</span>
+            <span @click="toogleMenu" class="menuLink m-0">MENU</span>
           </div>
         </div>
         <div class="col-12 col-lg-5 col-md-6 text-center b-menu-top">
@@ -108,9 +108,16 @@ export default {
       isComponentModalActive: false,
       langs: ["en", "it"],
       langBool: false,
+      open: false
     };
   },
-  methods: {},
+  methods: {
+    toogleMenu(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      this.open = !this.open;
+    }
+  },
   name: "Menu",
   components: {
     Slide,
@@ -119,6 +126,18 @@ export default {
     console.log(this.$i18n.locale);
   },
 };
+
+
+$(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() < 580 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+  if ($(this).scrollTop() > 580 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
