@@ -14,17 +14,21 @@
             >
           </div>
           <div class="col-12 col-lg-4 col-md-12">
-            <a
+            <a href="#Home" class="footerLink"
+              >{{ $t("message.returnHome") }} </a
+            ><br />
+            <a href="" class="footerLink">{{ $t("message.politics") }} </a
+            >
+          </div>
+          <div class="col-12 col-lg-4 col-md-12">
+                        <a
               href="https://www.google.com/maps?q=Via+Ercolano,+62,+97100+Ragusa,+RG,+Italia"
               class="footerLink2"
               >VIA ERCOLANO 62, 97100 Ragusa </a
-            ><br /><br /><br />
+            >
             <a href="mailto:hey@yomi.digital" class="footerLink2"
               >HEY@YOMI.DIGITAL</a
-            ><br />
-          </div>
-          <div class="col-12 col-lg-4 col-md-12">
-            <br /><br /><br />
+            >
             <div class="text-mobile-center" style="text-align: right">
               <p class="footerLink2">P.IVA: 01652950880</p>
             </div>
