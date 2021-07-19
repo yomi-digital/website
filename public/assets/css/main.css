@@ -61,6 +61,13 @@ h2.serviceText {
     line-height: 42px;
 }
 
+h2.footerTitle {
+    font-family: "Obviously Wide Medi";
+    color: white;
+    font-size: 25px;
+    line-height: 42px;
+}
+
 p.serviceTitle {
     font-family: "Obviously";
     color: white;

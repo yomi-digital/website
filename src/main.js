@@ -27,6 +27,11 @@ Vue.use(VueCarousel);
 // TRANSLATIONS
 const messages = {
     en: {
+        menu: {
+            chiSiamo: "About us",
+            portfolio: "Portfolio",
+            services: "Services",
+        },
         message: {
             team: "TEAM",
             whoWeAre1: 'YOMI IS A HI-TECH',
@@ -71,7 +76,7 @@ const messages = {
             team2: 'A digital laboratory in continuous evolution and experimentation, which makes the passion for innovation its main strength.',
             partnerContent: 'Together we invent, think, create, collaborate, build, test, learn and win.',
             joinTeam: 'FIND OUT HOW TO JOIN THE TEAM',
-            returnHome: 'RETURN HOME',
+            returnHome: 'BACK TO TOP',
             politics: 'PRIVACY POLICY',
             termsOfUse: 'TERMS OF USE',
             service: 'SERVICES',
@@ -81,6 +86,11 @@ const messages = {
         }
     },
     it: {
+        menu: {
+            chiSiamo: "Chi Siamo",
+            portfolio: "Portfolio",
+            services: "Servizi",
+        },
         message: {
             team: "TEAM",
             whoWeAre1: 'YOMI È UN DIGITAL',
@@ -125,7 +135,7 @@ const messages = {
             team2: 'Un laboratorio digitale in continua evoluzione e sperimentazione, che fa della passione per l’innovazione il suo principale punto di forza.',
             partnerContent: 'Insieme inventiamo, pensiamo, creiamo, collaboriamo, costruiamo, testiamo, impariamo e vinciamo.',
             joinTeam: 'SCOPRI COME UNIRTI AL TEAM',
-            returnHome: 'TORNA ALLA HOME',
+            returnHome: 'TORNA SU',
             politics: 'POLITICA SULLA RISERVATEZZA',
             termsOfUse: 'TERMINI DI UTILIZZO',
             service: 'SERVIZI',

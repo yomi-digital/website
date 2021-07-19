@@ -628,12 +628,12 @@
                   >hey@yomi.digital</a
                 >
               </div>
-              <div>
+              <!-- <div>
                 <p class="contactLabel m-0">TELEFONO</p>
                 <a class="contactContent" href="tel:+393331231234"
                   >+39 333 12 31 234</a
                 >
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
