@@ -131,10 +131,10 @@ export default {
 $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
   var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() < 580 && isPositionFixed){
+  if ($(this).scrollTop() < 600 && isPositionFixed){
     $el.css({'position': 'static', 'top': '0px'}); 
   } 
-  if ($(this).scrollTop() > 580 && !isPositionFixed){ 
+  if ($(this).scrollTop() > 600 && !isPositionFixed){ 
     $el.css({'position': 'fixed', 'top': '0px'}); 
   }
 });
