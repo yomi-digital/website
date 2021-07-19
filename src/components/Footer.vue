@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-12 col-lg-4 col-md-12">
             <div class="text-left">
-              <img style="height: 150px" src="/assets/img/yomi_square.png" />
+              <img class="m-auto" style="height: 100px" src="/assets/img/yomi_square.svg" />
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-12">
