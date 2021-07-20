@@ -33,7 +33,8 @@
             <a
               href="https://www.google.com/maps?q=Via+Ercolano,+62,+97100+Ragusa,+RG,+Italia"
               class="footerLink"
-              >VIA ERCOLANO 62,<br> 97100 Ragusa
+              >VIA ERCOLANO 62,<br />
+              97100 Ragusa
             </a>
 
             <div class="text-mobile-center">
@@ -42,6 +43,13 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="px-100 mt-4">
+      <hr />
+      <p class="copyright">
+        &copy; Copyright {{ new Date().getFullYear() }}
+        © All Rights Reserved – YOMI.
+      </p>
     </div>
   </div>
 </template>
