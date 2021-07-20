@@ -569,16 +569,16 @@
           </div>
           <div class="mt-5 mb-5">
             <div class="row">
-              <div class="col-6 col-lg-3 col-md-6 text-center">
+              <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
                   <a href="https://quadrans.io/" target="_blank">
                     <div
                       class="partnerLogo"
-                       style="background-image: url('/assets/img/partners/quadrans.svg')"
+                      style="background-image: url('/assets/img/partners/quadrans.svg')"
                   /></a>
                 </div>
               </div>
-              <div class="col-6 col-lg-3 col-md-6 text-center">
+              <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
                   <a href="https://digitaloracles.com/" target="_blank">
                     <div
@@ -587,7 +587,7 @@
                   /></a>
                 </div>
               </div>
-              <div class="col-6 col-lg-3 col-md-6 text-center">
+              <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
                   <a href="https://nftstud.io/" target="_blank">
                     <div
@@ -596,12 +596,32 @@
                   /></a>
                 </div>
               </div>
-              <div class="col-6 col-lg-3 col-md-6 text-center">
+              <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
                   <a href="https://www.stargraph.it/" target="_blank">
                     <div
                       class="partnerLogo"
-                       style="background-image: url('/assets/img/partners/stargraph.png')"
+                      style="background-image: url('/assets/img/partners/stargraph.png')"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://www.copystudio.it/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/copystudio.png')"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://labchain.it/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/labchain.svg')"
                     />
                   </a>
                 </div>

@@ -7,7 +7,7 @@
       <div class="m-100">
         <div class="row">
           <div class="col-12 col-lg-4 col-md-12">
-            <div>
+            <div class="mb-5">
               <img style="height: 120px" src="/assets/img/yomi_square.svg" />
             </div>
           </div>
@@ -26,7 +26,7 @@
             <a href="" class="footerLink">{{ $t("message.politics") }} </a>
           </div>
           <div class="col-12 col-lg-4 col-md-12">
-            <h2 class="footerTitle">{{ $t("menu.contacts") }}</h2>
+            <h2 class="footerTitle mt-mobile-30">{{ $t("menu.contacts") }}</h2>
             <a href="mailto:hey@yomi.digital" class="footerLink"
               >HEY@YOMI.DIGITAL</a
             ><br /><br />
@@ -36,20 +36,19 @@
               >VIA ERCOLANO 62,<br />
               97100 Ragusa
             </a>
-
             <div class="text-mobile-center">
               <p class="footerLink">P.IVA: 01652950880</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="px-100 mt-4">
       <hr />
-      <p class="copyright">
-        &copy; Copyright {{ new Date().getFullYear() }}
-        © All Rights Reserved – YOMI.
-      </p>
+      <div>
+        <p class="copyright">
+          &copy; Copyright {{ new Date().getFullYear() }}
+          © All Rights Reserved – YOMI.
+        </p>
+      </div>
     </div>
   </div>
 </template>

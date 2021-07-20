@@ -44,36 +44,36 @@
           </div>
         </div>
         <div class="col-12 col-lg-5 col-md-6 text-center b-menu-top">
-          <div class="row">
-            <div class="col-2 offset-2 p-0 button-menu">
+          <div class="d-flex justify-content-between">
+            <div class="flex-fill p-0  button-menu">
               <div class="b-menu-left py-3">
                 <a target="_blank" href="https://www.linkedin.com/company/yomidigitalhub/">
                   <span class="menuLink m-0">IN</span>
                 </a>
               </div>
             </div>
-            <div class="col-2 p-0">
+            <div class="flex-fill p-0">
               <a href="https://www.facebook.com/YOMI-107740754843280/">
                 <div class="b-menu-left py-3 button-menu">
                   <span class="menuLink">FB</span>
                 </div>
               </a>
             </div>
-            <div class="col-2 p-0">
+            <div class="flex-fill p-0">
               <div class="b-menu-left py-3 button-menu">
                 <a target="_blank" href="https://www.instagram.com/yomi_digitalhub/">
                   <span class="menuLink m-0">IG</span>
                 </a>
               </div>
             </div>
-            <div class="col-2 p-0">
+            <div class="flex-fill p-0">
               <div class="b-menu-left b-menu-right py-3 button-menu py-3">
                 <a target="_blank" href="https://twitter.com/YOMI_DIGITALHUB">
                   <span class="menuLink m-0">TW</span>
                 </a>
               </div>
             </div>
-            <div class="col-2 p-0 button-menu">
+            <div class="flex-fill p-0 button-menu">
               <div class="py-3">
                 <a
                   class="menuLink"

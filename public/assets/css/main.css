@@ -75,6 +75,12 @@ p.serviceTitle {
     font-size: 25px;
 }
 
+p.copyright {
+    font-family: "Obviously";
+    color: black;
+    font-size: 16px;
+}
+
 .blackText {
     color: black;
 }
@@ -486,6 +492,9 @@ a.smallLink:hover {
     .hideMobile {
         display: none !important;
     }
+    .mt-100 {
+        margin-top: 25px;
+    }
     .mt-200 {
         margin-top: 50px;
     }
@@ -508,6 +517,13 @@ a.smallLink:hover {
     }
     .p-mobile {
         padding: 0 30px;
+    }
+    .mt-mobile-30 {
+        margin-top: 30px;
+    }
+    h2,
+    .h2 {
+        font-size: calc(1.325rem + -0.1vw) !important;
     }
     .divider {
         height: 30px;
