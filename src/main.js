@@ -31,6 +31,7 @@ const messages = {
             chiSiamo: "About us",
             portfolio: "Portfolio",
             services: "Services",
+            contacts: "Contacts"
         },
         message: {
             team: "TEAM",
@@ -90,6 +91,7 @@ const messages = {
             chiSiamo: "Chi Siamo",
             portfolio: "Portfolio",
             services: "Servizi",
+            contacts: "Contatti"
         },
         message: {
             team: "TEAM",

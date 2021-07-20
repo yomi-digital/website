@@ -63,9 +63,10 @@ h2.serviceText {
 
 h2.footerTitle {
     font-family: "Obviously Wide Medi";
-    color: white;
+    color: black;
     font-size: 25px;
     line-height: 42px;
+    text-transform: uppercase;
 }
 
 p.serviceTitle {

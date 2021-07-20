@@ -7,12 +7,12 @@
       <div class="m-100">
         <div class="row">
           <div class="col-12 col-lg-4 col-md-12">
-            <div class="text-left">
-              <img class="m-auto" style="height: 100px" src="/assets/img/yomi_square.svg" />
+            <div>
+              <img style="height: 120px" src="/assets/img/yomi_square.svg" />
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-12">
-            <h2 class="footerTitle" style="color: black">NAVIGATE</h2>
+            <h2 class="footerTitle">MENU</h2>
             <a href="#who" class="footerLink">{{ $t("menu.chiSiamo") }} </a
             ><br />
             <a href="#services" class="footerLink">{{ $t("menu.services") }} </a
@@ -26,17 +26,18 @@
             <a href="" class="footerLink">{{ $t("message.politics") }} </a>
           </div>
           <div class="col-12 col-lg-4 col-md-12">
-            <h2 class="footerTitle" style="color: black">CONTACT</h2>
+            <h2 class="footerTitle">{{ $t("menu.contacts") }}</h2>
+            <a href="mailto:hey@yomi.digital" class="footerLink"
+              >HEY@YOMI.DIGITAL</a
+            ><br /><br />
             <a
               href="https://www.google.com/maps?q=Via+Ercolano,+62,+97100+Ragusa,+RG,+Italia"
-              class="footerLink2"
-              >VIA ERCOLANO 62, 97100 Ragusa
+              class="footerLink"
+              >VIA ERCOLANO 62,<br> 97100 Ragusa
             </a>
-            <a href="mailto:hey@yomi.digital" class="footerLink2"
-              >HEY@YOMI.DIGITAL</a
-            >
+
             <div class="text-mobile-center">
-              <p class="footerLink2">P.IVA: 01652950880</p>
+              <p class="footerLink">P.IVA: 01652950880</p>
             </div>
           </div>
         </div>
