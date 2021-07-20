@@ -5,13 +5,13 @@
         <hr />
       </div>
       <div class="m-100">
-        <div class="row">
-          <div class="col-12 col-lg-4 col-md-12">
+        <div class="row p-ipad-50">
+          <div class="col-12 col-lg-4 col-md-4">
             <div class="mb-5">
               <img style="height: 120px" src="/assets/img/yomi_square.svg" />
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-12">
+          <div class="col-12 col-lg-4 col-md-4">
             <h2 class="footerTitle">MENU</h2>
             <a href="#who" class="footerLink">{{ $t("menu.chiSiamo") }} </a
             ><br />
@@ -25,7 +25,7 @@
             ><br /><br />
             <a href="" class="footerLink">{{ $t("message.politics") }} </a>
           </div>
-          <div class="col-12 col-lg-4 col-md-12">
+          <div class="col-12 col-lg-4 col-md-4">
             <h2 class="footerTitle mt-mobile-30">{{ $t("menu.contacts") }}</h2>
             <a href="mailto:hey@yomi.digital" class="footerLink"
               >HEY@YOMI.DIGITAL</a
@@ -43,7 +43,7 @@
         </div>
       </div>
       <hr />
-      <div>
+      <div class="p-ipad-50">
         <p class="copyright">
           &copy; Copyright {{ new Date().getFullYear() }}
           © All Rights Reserved – YOMI.

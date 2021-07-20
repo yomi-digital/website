@@ -87,7 +87,7 @@
           </div>
         </div>
         <div class="row px-100 mt-5">
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector1.svg"
@@ -102,7 +102,7 @@
               </em>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector8.svg"
@@ -119,7 +119,7 @@
               </em>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector4.svg"
@@ -136,9 +136,8 @@
               </em>
             </div>
           </div>
-        </div>
-        <div class="row px-100 mt-150">
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector3.svg"
@@ -155,7 +154,7 @@
               </em>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector6.svg"
@@ -170,7 +169,7 @@
               </em>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector5.svg"
@@ -187,9 +186,8 @@
               </em>
             </div>
           </div>
-        </div>
-        <div class="row px-100 mt-150">
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector9.svg"
@@ -206,7 +204,7 @@
               </em>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector2.svg"
@@ -223,7 +221,7 @@
               </em>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile">
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
                 src="/assets/img/vector7.svg"
@@ -249,7 +247,7 @@
         <div class="portfolio text-left">
           <h1 class="portfolioText">PORTFOLIO</h1>
         </div>
-        <div class="px-100 mt-100">
+        <div class="px-100 mt-100 p-ipad-50">
           <div class="row">
             <div class="col-12 col-lg-7 col-md-9">
               <div class="p-mobile">
@@ -258,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="px-100 mt-80">
+        <div class="px-100 mt-80 p-ipad-50">
           <div class="row">
             <div class="col-12 col-lg-5 col-md-6">
               <div class="p-mobile">
@@ -451,7 +449,7 @@
       <div id="team">
         <div class="row">
           <div class="col-12 col-lg-6 col-md-8">
-            <div class="m-100 px-100 p-mobile">
+            <div class="m-100 px-100 p-mobile p-ipad-50">
               <p class="blackText">{{ $t("message.team1") }}</p>
               <p class="blackText">{{ $t("message.team2") }}</p>
             </div>
@@ -562,7 +560,7 @@
 
       <!-- PARTNERS -->
       <div class="bg-black px-100">
-        <div class="text-left px-100 p-mobile">
+        <div class="text-left px-100 p-mobile p-ipad-50">
           <h1 class="partnerText">PARTNERS</h1>
           <div class="mt-5">
             <p>{{ $t("message.partnerContent") }}</p>
@@ -633,7 +631,7 @@
         <div class="mt-100">
           <div id="contact" class="row">
             <div class="col-12 col-lg-7 col-md-12">
-              <div class="px-100 p-mobile">
+              <div class="px-100 p-mobile p-ipad-50">
                 <h1 class="partnerText">{{ $t("message.joinTeam") }}</h1>
               </div>
             </div>
@@ -641,7 +639,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-10 col-md-10">
-            <div class="m-100 px-100 d-flex justify-content-between p-mobile">
+            <div class="m-100 px-100 d-flex justify-content-between p-mobile p-ipad-50">
               <div>
                 <p class="contactLabel m-0">E-MAIL</p>
                 <a class="contactContent" href="mailto:hey@yomi.digital"
