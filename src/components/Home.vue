@@ -281,7 +281,7 @@
                       <p class="portofolioContent">
                         {{ $t("message.umiContent") }}
                       </p>
-                      <div class="bordered fadeIn">
+                      <div class="">
                         <div
                           class="gridButton fadeIn d-flex justify-content-between"
                         >
