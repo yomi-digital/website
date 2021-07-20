@@ -129,12 +129,14 @@ export default {
 
 
 $(window).scroll(function(e){ 
+  var offset = $('#Menu').position();
+  var offset2 = $('#Home').position();
   var $el = $('.fixedElement'); 
   var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() < 600 && isPositionFixed){
+  if ($(this).scrollTop() < parseInt(offset2.top) && isPositionFixed){
     $el.css({'position': 'static', 'top': '0px'}); 
   } 
-  if ($(this).scrollTop() > 600 && !isPositionFixed){ 
+  if ($(this).scrollTop() > parseInt(offset.top) && !isPositionFixed){ 
     $el.css({'position': 'fixed', 'top': '0px'}); 
   }
 });
