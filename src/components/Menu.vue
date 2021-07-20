@@ -45,8 +45,8 @@
         </div>
         <div class="col-12 col-lg-5 col-md-6 text-center b-menu-top">
           <div class="d-flex justify-content-between">
-            <div class="flex-fill p-0  button-menu">
-              <div class="b-menu-left py-3">
+            <div class="flex-fill p-0 button-menu">
+              <div class="b-menu-left no-borderLeft-m py-3">
                 <a target="_blank" href="https://www.linkedin.com/company/yomidigitalhub/">
                   <span class="menuLink m-0">IN</span>
                 </a>

@@ -560,6 +560,9 @@ a.smallLink:hover {
     .partnerLogo {
         height: 30px;
     }
+    .no-borderLeft-m {
+        border-left: none;
+    }
 }
 
 
