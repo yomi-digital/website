@@ -280,31 +280,16 @@
                     <div class="child" v-show="fifthOpen">
                       <p class="portofolioContent">
                         {{ $t("message.umiContent") }}
+                        <a class="linkUmi" href="https://nft.stargraph.it/" target="_blank"
+                          >Stargraph</a
+                        >,
+                        <a class="linkUmi" href="https://www.impssbl.com/" target="_blank"
+                          >Impssbl</a
+                        >,
+                        <a class="linkUmi" href="https://hexarchia.com/" target="_blank"
+                          >Hexarchia</a
+                        >   {{ $t("message.umiContent2") }}
                       </p>
-                      <div class="">
-                        <div
-                          class="gridButton fadeIn d-flex justify-content-between"
-                        >
-                          <a
-                            class="smallLink fadeIn mb-0"
-                            href="https://nft.stargraph.it/"
-                            target="_blank"
-                            >stargraph</a
-                          >
-                          <a
-                            class="smallLink fadeIn mb-0"
-                            href="https://www.impssbl.com/"
-                            target="_blank"
-                            >impssbl</a
-                          >
-                          <a
-                            class="smallLink fadeIn mb-0"
-                            href="https://hexarchia.com/"
-                            target="_blank"
-                            >hexarchia</a
-                          >
-                        </div>
-                      </div>
                     </div>
                   </transition>
                 </div>
@@ -405,7 +390,7 @@
                   </transition>
                 </div>
 
-                <div class="mt-5">
+                <!-- <div class="mt-5">
                   <div>
                     <span class="cta">
                       {{ $t("message.cta") }}
@@ -416,11 +401,11 @@
                       DOWNLOAD PDF
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="col-12 col-lg-7 col-md-6 text-center">
-              <img class="girandola" src="/assets/img/girandola3.gif" />
+            <div class="col-12 col-lg-7 col-md-6 text-center mt-5 ">
+              <img class="girandola hideMobile" src="/assets/img/girandola3.gif" />
             </div>
           </div>
         </div>
@@ -455,33 +440,43 @@
             </div>
           </div>
           <div class="mb-5">
-            <img src="/assets/img/team.svg" style="width: 100%" />
+            <img class="wave" src="/assets/img/team.svg" />
           </div>
         </div>
         <div class="row">
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Sebastiano Cataudo<br />
-                <span class="blackText teamTextD">
-                  CTO, Blockchain Guru <br />Co-founder
-                </span>
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/sebastiano-cataudo-1b404165/"
+              target="_blank"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Sebastiano Cataudo<br />
+                  <span class="blackText teamTextD">
+                    CTO, Blockchain Guru <br />Co-founder
+                  </span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                LIVIO LOMBARDO<br /><span class="blackText teamTextD">
-                  Finance & Administration <br class="myBR" />
-                  Co-founder</span
-                >
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/livio-lombardo/"
+              target="_blank"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  LIVIO LOMBARDO<br /><span class="blackText teamTextD">
+                    Finance & Administration <br class="myBR" />
+                    Co-founder</span
+                  >
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
@@ -501,35 +496,50 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right b-top">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Stefano Raniolo<br /><span class="blackText teamTextD"
-                  >Front end Developer</span
-                >
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/stefano-raniolo/"
+              target="_blankß"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Stefano Raniolo<br /><span class="blackText teamTextD"
+                    >Front end Developer</span
+                  >
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Giorgia Guidetti <br />
-                <span class="blackText teamTextD">Marketing Specialist</span>
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/giorgia-guidetti-271a52194/"
+              target="_blank"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Giorgia Guidetti <br />
+                  <span class="blackText teamTextD">Marketing Specialist</span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Alan Devalis<br />
-                <span class="blackText teamTextD">Full Stack Developer</span>
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/alan-ezequiel-devalis-b69194168/"
+              target="_blanl"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Alan Devalis<br />
+                  <span class="blackText teamTextD">Full Stack Developer</span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
@@ -546,9 +556,11 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">Maybe you?</p>
-            </div>
+            <a href="mailto:hey@yomi.digital">
+              <div class="text-center p-team">
+                <p class="blackText teamText">Maybe you?</p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
         </div>
@@ -639,7 +651,9 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-10 col-md-10">
-            <div class="m-100 px-100 d-flex justify-content-between p-mobile p-ipad-50">
+            <div
+              class="m-100 px-100 d-flex justify-content-between p-mobile p-ipad-50"
+            >
               <div>
                 <p class="contactLabel m-0">E-MAIL</p>
                 <a class="contactContent" href="mailto:hey@yomi.digital"

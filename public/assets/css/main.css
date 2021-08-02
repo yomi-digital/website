@@ -161,6 +161,11 @@ p.copyright {
     margin-top: 200px !important;
 }
 
+.py-desktop-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .bg-black {
     background-color: #000;
 }
@@ -320,6 +325,10 @@ p.portofolioContent {
     margin-top: -8%;
 }
 
+.wave {
+    width: 100%;
+}
+
 .borderWhite {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -477,12 +486,24 @@ a.smallLink:hover {
     color: #40ff98;
 }
 
+a.linkUmi {
+    color: white;
+}
+
+a.linkUmi:hover {
+    color: #40ff98;
+}
+
 .fixedElement {
     background-color: #c0c0c0;
     position: static;
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+.bm-burger-button {
+    display: none;
 }
 
 
@@ -562,6 +583,20 @@ a.smallLink:hover {
     }
     .no-borderLeft-m {
         border-left: none;
+    }
+    a.menuLink,
+    span.menuLink {
+        font-size: 16px;
+    }
+    .py-desktop-3 {
+        padding: 5px;
+    }
+    img.wave {
+        height: 200px;
+        width: auto;
+    }
+    .p-ipad-50 {
+        padding: 0 10px;
     }
 }
 

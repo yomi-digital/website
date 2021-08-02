@@ -5,7 +5,7 @@
         <img class="logo" src="/assets/img/logo.svg" />
       </div>
       <div id="arrow">
-        <a href="#Menu">
+        <a href="#Menu" class="hideMobile">
           <img src="/assets/img/arrow1.svg" />
         </a>
       </div>
