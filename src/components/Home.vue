@@ -280,15 +280,25 @@
                     <div class="child" v-show="fifthOpen">
                       <p class="portofolioContent">
                         {{ $t("message.umiContent") }}
-                        <a class="linkUmi" href="https://nft.stargraph.it/" target="_blank"
+                        <a
+                          class="linkUmi"
+                          href="https://nft.stargraph.it/"
+                          target="_blank"
                           >Stargraph</a
                         >,
-                        <a class="linkUmi" href="https://www.impssbl.com/" target="_blank"
+                        <a
+                          class="linkUmi"
+                          href="https://www.impssbl.com/"
+                          target="_blank"
                           >Impssbl</a
                         >,
-                        <a class="linkUmi" href="https://hexarchia.com/" target="_blank"
+                        <a
+                          class="linkUmi"
+                          href="https://hexarchia.com/"
+                          target="_blank"
                           >Hexarchia</a
-                        >   {{ $t("message.umiContent2") }}
+                        >
+                        {{ $t("message.umiContent2") }}
                       </p>
                     </div>
                   </transition>
@@ -405,7 +415,10 @@
               </div>
             </div>
             <div class="col-12 col-lg-7 col-md-6 text-center mt-5 ">
-              <img class="girandola hideMobile" src="/assets/img/girandola3.gif" />
+              <img
+                class="girandola hideMobile"
+                src="/assets/img/girandola3.gif"
+              />
             </div>
           </div>
         </div>
@@ -632,6 +645,16 @@
                     <div
                       class="partnerLogo"
                       style="background-image: url('/assets/img/partners/labchain.svg')"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://labchain.it/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/floc.svg')"
                     />
                   </a>
                 </div>
