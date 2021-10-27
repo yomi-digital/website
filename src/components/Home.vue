@@ -525,7 +525,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right b-top">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
             <a
               href="https://www.linkedin.com/in/stefano-raniolo/"
               target="_blankß"
