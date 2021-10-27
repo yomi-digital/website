@@ -515,6 +515,23 @@
             >
               <div class="text-center p-team">
                 <p class="blackText teamText">
+                  Marco Moshi<br /><span class="blackText teamTextD"
+                    >Account</span
+                  >
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- END | SINGLE MEMBER -->
+
+          <!-- SINGLE MEMBER -->
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right b-top">
+            <a
+              href="https://www.linkedin.com/in/stefano-raniolo/"
+              target="_blankß"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
                   Stefano Raniolo<br /><span class="blackText teamTextD"
                     >Front end Developer</span
                   >
@@ -542,14 +559,36 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+            <div class="text-center p-team">
+              <p class="blackText teamText">
+                Lucrezia Battelli<br />
+                <span class="blackText teamTextD">Frontend Developer</span>
+              </p>
+            </div>
+          </div>
+          <!-- END | SINGLE MEMBER -->
+
+          <!-- SINGLE MEMBER -->
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+            <div class="text-center p-team">
+              <p class="blackText teamText">
+                Simone Calabrese<br />
+                <span class="blackText teamTextD">Full-stack Developer</span>
+              </p>
+            </div>
+          </div>
+          <!-- END | SINGLE MEMBER -->
+
+          <!-- SINGLE MEMBER -->
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
             <a
               href="https://www.linkedin.com/in/alan-ezequiel-devalis-b69194168/"
               target="_blanl"
             >
               <div class="text-center p-team">
                 <p class="blackText teamText">
-                  Alan Devalis<br />
-                  <span class="blackText teamTextD">Full Stack Developer</span>
+                  Giuseppe Napoli<br />
+                  <span class="blackText teamTextD">Frontend Developer</span>
                 </p>
               </div>
             </a>
@@ -560,10 +599,26 @@
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
             <div class="text-center p-team">
               <p class="blackText teamText">
-                Simone Calabrese<br />
-                <span class="blackText teamTextD">Junior Developer</span>
+                Danilo Scarci<br />
+                <span class="blackText teamTextD">Full-stack Developer</span>
               </p>
             </div>
+          </div>
+          <!-- END | SINGLE MEMBER -->
+
+          <!-- SINGLE MEMBER -->
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+            <a
+              href="https://www.linkedin.com/in/alan-ezequiel-devalis-b69194168/"
+              target="_blanl"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  @inactive<br />
+                  <span class="blackText teamTextD">Senior Anon Developer</span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
