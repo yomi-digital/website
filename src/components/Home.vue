@@ -509,10 +509,7 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right b-top">
-            <a
-              href="https://www.linkedin.com/in/stefano-raniolo/"
-              target="_blankß"
-            >
+            <a href="https://www.linkedin.com/in/marco-moshi/" target="_blank">
               <div class="text-center p-team">
                 <p class="blackText teamText">
                   Marco Moshi<br /><span class="blackText teamTextD"
@@ -528,7 +525,7 @@
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
             <a
               href="https://www.linkedin.com/in/stefano-raniolo/"
-              target="_blankß"
+              target="_blank"
             >
               <div class="text-center p-team">
                 <p class="blackText teamText">
@@ -559,12 +556,17 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Lucrezia Battelli<br />
-                <span class="blackText teamTextD">Frontend Developer</span>
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/lulu-battelli/"
+              target="_blank"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Lucrezia Battelli<br />
+                  <span class="blackText teamTextD">Frontend Developer</span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
@@ -582,7 +584,7 @@
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
             <a
-              href="https://www.linkedin.com/in/alan-ezequiel-devalis-b69194168/"
+              href="https://www.linkedin.com/in/giuseppe-napoli-591614218/"
               target="_blanl"
             >
               <div class="text-center p-team">
@@ -608,17 +610,12 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-            <a
-              href="https://www.linkedin.com/in/alan-ezequiel-devalis-b69194168/"
-              target="_blanl"
-            >
               <div class="text-center p-team">
                 <p class="blackText teamText">
                   @inactive<br />
                   <span class="blackText teamTextD">Senior Anon Developer</span>
                 </p>
               </div>
-            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
