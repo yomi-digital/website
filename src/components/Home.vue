@@ -495,15 +495,20 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Roberto Diano<br />
-                <span class="blackText teamTextD">
-                  Sales <br />
-                  Co-founder
-                </span>
-              </p>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/roberto-diano-499031168/"
+              target="_blank"
+            >
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Roberto Diano<br />
+                  <span class="blackText teamTextD">
+                    Sales <br />
+                    Co-founder
+                  </span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
@@ -599,23 +604,25 @@
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Danilo Scarci<br />
-                <span class="blackText teamTextD">Full-stack Developer</span>
-              </p>
-            </div>
+            <a href="https://twitter.com/hybridcode_" target="_blank">
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Sergio Occhipinti<br />
+                  <span class="blackText teamTextD">Art Director</span>
+                </p>
+              </div>
+            </a>
           </div>
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
           <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  @inactive<br />
-                  <span class="blackText teamTextD">Senior Anon Developer</span>
-                </p>
-              </div>
+            <div class="text-center p-team">
+              <p class="blackText teamText">
+                @inactive<br />
+                <span class="blackText teamTextD">Senior Anon Developer</span>
+              </p>
+            </div>
           </div>
           <!-- END | SINGLE MEMBER -->
 
