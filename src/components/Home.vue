@@ -653,6 +653,15 @@
             <div class="row">
               <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
+                  <a href="https://polygon.technology/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/polygon-logo.png')"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-md-6 text-center">
+                <div style="padding: 30px 0">
                   <a href="https://quadrans.io/" target="_blank">
                     <div
                       class="partnerLogo"
@@ -680,10 +689,10 @@
               </div>
               <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
-                  <a href="https://www.stargraph.it/" target="_blank">
+                  <a href="https://www.impssbl.com/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/stargraph.png')"
+                      style="background-image: url('/assets/img/partners/impssbl.png')"
                     />
                   </a>
                 </div>
@@ -714,6 +723,16 @@
                     <div
                       class="partnerLogo"
                       style="background-image: url('/assets/img/partners/floc.svg')"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-md-6 text-center">
+                <div style="padding: 30px 0">
+                  <a href="https://www.stargraph.it/" target="_blank">
+                    <div
+                      class="partnerLogo"
+                      style="background-image: url('/assets/img/partners/stargraph.png')"
                     />
                   </a>
                 </div>
