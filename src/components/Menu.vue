@@ -20,13 +20,13 @@
             >
             <a
               class="sitebar-contact"
-              href="https://www.instagram.com/yomi_digitalhub/"
+              href="https://www.instagram.com/yomi_web3/"
               target="_blank"
               >INSTAGRAM</a
             >
             <a
               class="sitebar-contact"
-              href="https://twitter.com/YOMI_DIGITALHUB"
+              href="https://twitter.com/YOMI_WEB3"
               target="_blank"
               >TWITTER</a
             >
@@ -76,7 +76,7 @@
               <div class="b-menu-left py-desktop-3 button-menu">
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/yomi_digitalhub/"
+                  href="https://www.instagram.com/yomi_web3/"
                 >
                   <span class="menuLink m-0">IG</span>
                 </a>
@@ -86,7 +86,7 @@
               <div
                 class="b-menu-left b-menu-right py-desktop-3 button-menu py-desktop-3"
               >
-                <a target="_blank" href="https://twitter.com/YOMI_DIGITALHUB">
+                <a target="_blank" href="https://twitter.com/YOMI_WEB3">
                   <span class="menuLink m-0">TW</span>
                 </a>
               </div>
