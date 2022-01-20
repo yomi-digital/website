@@ -28,13 +28,14 @@
               class="sitebar-contact"
               href="https://twitter.com/YOMI_WEB3"
               target="_blank"
-              >TWITTER</a
+            >
+              TWITTER</a
             >
             <a
               class="sitebar-contact"
-              href="https://www.facebook.com/YOMI-107740754843280/"
+              href="https://medium.com/@yomi.web3"
               target="_blank"
-              >FACEBOOK</a
+              >MEDIUM</a
             >
             <a
               class="sitebar-contact mt-5"
@@ -66,18 +67,15 @@
               </div>
             </div>
             <div class="flex-fill p-0">
-              <a href="https://www.facebook.com/YOMI-107740754843280/">
+              <a href="https://medium.com/@yomi.web3" target="_blank">
                 <div class="b-menu-left py-desktop-3 button-menu">
-                  <span class="menuLink">FB</span>
+                  <span class="menuLink">M</span>
                 </div>
               </a>
             </div>
             <div class="flex-fill p-0">
               <div class="b-menu-left py-desktop-3 button-menu">
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/yomi_web3/"
-                >
+                <a target="_blank" href="https://www.instagram.com/yomi_web3/">
                   <span class="menuLink m-0">IG</span>
                 </a>
               </div>

@@ -506,6 +506,14 @@ a.linkUmi:hover {
     display: none;
 }
 
+/* TEAM */
+.member-box:hover {
+    background-color: black;
+} 
+.member-box:hover .blackText, span {
+    color: white;
+}
+/* END TEAM */
 
 /* END SLIDEDOWN */
 

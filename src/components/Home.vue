@@ -90,6 +90,27 @@
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
+                src="/assets/img/vector3.svg"
+                alt="vector1"
+                style="height: 65px;"
+              />
+              <div class="mt-2" @click="toggle4 = !toggle4">
+                <p class="serviceTitle highlight">
+                  {{ $t("message.webDevTitle") }}
+                </p>
+              </div>
+              <transition name="slide">
+                <div v-show="toggle4">
+                  <em>
+                    {{ $t("message.webDevDescription") }}
+                  </em>
+                </div>
+              </transition>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
+            <div class="text-center">
+              <img
                 src="/assets/img/vector1.svg"
                 alt="vector1"
                 style="height: 65px;"
@@ -97,9 +118,13 @@
               <div class="mt-2" @click="toggle = !toggle">
                 <p class="serviceTitle highlight">BLOCKCHAIN</p>
               </div>
-              <em v-show="toggle">
-                {{ $t("message.blockchain") }}
-              </em>
+              <transition name="slide">
+                <div v-show="toggle">
+                  <em>
+                    {{ $t("message.blockchain") }}
+                  </em>
+                </div>
+              </transition>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
@@ -114,9 +139,13 @@
                   {{ $t("message.aiTitle") }}
                 </p>
               </div>
-              <em v-show="toggle2">
-                {{ $t("message.aiDescription") }}
-              </em>
+              <transition name="slide">
+                <div v-show="toggle2">
+                  <em>
+                    {{ $t("message.aiDescription") }}
+                  </em>
+                </div>
+              </transition>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
@@ -131,27 +160,13 @@
                   {{ $t("message.erpTitle") }}
                 </p>
               </div>
-              <em v-show="toggle3">
-                {{ $t("message.erpDescription") }}
-              </em>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
-            <div class="text-center">
-              <img
-                src="/assets/img/vector3.svg"
-                alt="vector1"
-                style="height: 65px;"
-              />
-              <div class="mt-2" @click="toggle4 = !toggle4">
-                <p class="serviceTitle highlight">
-                  {{ $t("message.webDevTitle") }}
-                </p>
-              </div>
-              <em v-show="toggle4">
-                {{ $t("message.webDevDescription") }}
-              </em>
+              <transition name="slide">
+                <div v-show="toggle3">
+                  <em>
+                    {{ $t("message.erpDescription") }}
+                  </em>
+                </div>
+              </transition>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
@@ -164,9 +179,13 @@
               <div class="mt-2" @click="toggle5 = !toggle5">
                 <p class="serviceTitle highlight">E-COMMERCE</p>
               </div>
-              <em v-show="toggle5">
-                {{ $t("message.eCommerce") }}
-              </em>
+              <transition name="slide">
+                <div v-show="toggle5">
+                  <em>
+                    {{ $t("message.eCommerce") }}
+                  </em>
+                </div>
+              </transition>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
@@ -181,12 +200,15 @@
                   {{ $t("message.websiteTitle") }}
                 </p>
               </div>
-              <em v-show="toggle6">
-                {{ $t("message.websiteDescription") }}
-              </em>
+              <transition name="slide">
+                <div v-show="toggle6">
+                  <em>
+                    {{ $t("message.websiteDescription") }}
+                  </em>
+                </div>
+              </transition>
             </div>
           </div>
-
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
@@ -199,9 +221,13 @@
                   {{ $t("message.mobileDevTitle") }}
                 </p>
               </div>
-              <em v-show="toggle7">
-                {{ $t("message.mobileDevContent") }}
-              </em>
+              <transition name="slide">
+                <div v-show="toggle7">
+                  <em>
+                    {{ $t("message.mobileDevContent") }}
+                  </em>
+                </div>
+              </transition>
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
@@ -216,9 +242,13 @@
                   {{ $t("message.researchTitle") }}
                 </p>
               </div>
-              <em v-show="toggle8">
-                {{ $t("message.researchDescription") }}
-              </em>
+              <transition name="slide"
+                ><div v-show="toggle8">
+                  <em>
+                    {{ $t("message.researchDescription") }}
+                  </em>
+                </div></transition
+              >
             </div>
           </div>
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
@@ -233,9 +263,13 @@
                   {{ $t("message.consultingTitle") }}
                 </p>
               </div>
-              <em v-show="toggle9">
-                {{ $t("message.consultingDescription") }}
-              </em>
+              <transition name="slide"
+                ><div v-show="toggle9">
+                  <em>
+                    {{ $t("message.consultingDescription") }}
+                  </em>
+                </div></transition
+              >
             </div>
           </div>
         </div>
@@ -453,30 +487,18 @@
             </div>
           </div>
           <div class="mb-5">
-            <img class="wave" src="/assets/img/team.svg" />
+            <!-- BANNER SERVICE -->
+            <marquee-text>
+              <img class="wave" src="/assets/img/team.svg" />
+            </marquee-text>
+            <!-- END | BANNER SERVICE -->
           </div>
         </div>
         <div class="row">
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right">
-            <a
-              href="https://www.linkedin.com/in/sebastiano-cataudo-1b404165/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Sebastiano Cataudo<br />
-                  <span class="blackText teamTextD">
-                    CTO, Blockchain Guru <br />Co-founder
-                  </span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right">
+          <div
+            class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
+          >
             <a
               href="https://www.linkedin.com/in/livio-lombardo/"
               target="_blank"
@@ -494,7 +516,9 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right">
+          <div
+            class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
+          >
             <a
               href="https://www.linkedin.com/in/roberto-diano-499031168/"
               target="_blank"
@@ -513,13 +537,19 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right b-top">
-            <a href="https://www.linkedin.com/in/marco-moshi/" target="_blank">
+          <div
+            class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
+          >
+            <a
+              href="https://www.linkedin.com/in/sebastiano-cataudo-1b404165/"
+              target="_blank"
+            >
               <div class="text-center p-team">
                 <p class="blackText teamText">
-                  Marco Moshi<br /><span class="blackText teamTextD"
-                    >Account</span
-                  >
+                  Sebastiano Cataudo<br />
+                  <span class="blackText teamTextD">
+                    Blockchain Guru <br />Co-founder
+                  </span>
                 </p>
               </div>
             </a>
@@ -527,7 +557,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-top member-box">
             <a
               href="https://www.linkedin.com/in/stefano-raniolo/"
               target="_blank"
@@ -535,8 +565,8 @@
               <div class="text-center p-team">
                 <p class="blackText teamText">
                   Stefano Raniolo<br /><span class="blackText teamTextD"
-                    >Front end Developer</span
-                  >
+                    >CTO <br />CO-FOUNDER
+                  </span>
                 </p>
               </div>
             </a>
@@ -544,7 +574,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <a
               href="https://www.linkedin.com/in/giorgia-guidetti-271a52194/"
               target="_blank"
@@ -560,7 +590,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <a
               href="https://www.linkedin.com/in/lulu-battelli/"
               target="_blank"
@@ -576,7 +606,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <div class="text-center p-team">
               <p class="blackText teamText">
                 Simone Calabrese<br />
@@ -587,7 +617,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <a
               href="https://www.linkedin.com/in/giuseppe-napoli-591614218/"
               target="_blanl"
@@ -603,7 +633,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <a href="https://twitter.com/hybridcode_" target="_blank">
               <div class="text-center p-team">
                 <p class="blackText teamText">
@@ -616,7 +646,21 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
+            <a href="https://www.linkedin.com/in/marco-moshi/" target="_blank">
+              <div class="text-center p-team">
+                <p class="blackText teamText">
+                  Marco Moshi<br /><span class="blackText teamTextD"
+                    >Blockchain Advisor</span
+                  >
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- END | SINGLE MEMBER -->
+
+          <!-- SINGLE MEMBER -->
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <div class="text-center p-team">
               <p class="blackText teamText">
                 @inactive<br />
@@ -627,7 +671,7 @@
           <!-- END | SINGLE MEMBER -->
 
           <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right">
+          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
             <a href="mailto:hey@yomi.digital">
               <div class="text-center p-team">
                 <p class="blackText teamText">Maybe you?</p>
@@ -797,6 +841,7 @@ export default {
       fifthOpen: false,
     };
   },
+
   methods: {
     rotateArrow: function(elId) {
       document.getElementById("rotateArrow" + elId).classList.toggle("rotated");
