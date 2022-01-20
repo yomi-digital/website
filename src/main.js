@@ -76,6 +76,8 @@ const messages = {
         "Small Italian realities, start-ups and large international companies have relied on the professionalism of our team. The heterogeneity of our customers has allowed us to realize different projects with the most innovative technologies.",
       theHubContent:
         "Blockchain hosting platform and NFT minting with a unique system at international level.",
+      impssbl:
+        "An art project based on artificial intelligence and NFT in which characters and their stories are generated through AI algorithms",
       digitalOraclesContent:
         "Innovative platform that connects startups and investors. Monitors and rewards work done through blockchain technology.",
       quadransContent:
@@ -154,6 +156,8 @@ const messages = {
         "Piccole realtà italiane, start up e grandi compagnie internazionali si sono affidate alla professionalità del nostro team. L’eterogeneità della nostra clientela ci ha permesso di realizzare differenti progetti con le tecnologie più innovative.",
       theHubContent:
         "Piattaforma di masternode hosting di NFT minting e di staking box virtuali con un sistema unico a livello internazionale.",
+      impssbl:
+        "Un progetto artistico basato sull'intelligenza artificiale e NFT in cui i personaggi e le loro storie vengono generati tramite algoritmi di AI",
       digitalOraclesContent:
         "Piattaforma innovativa che collega startup e investitori. Monitora e ricompensa il lavoro svolto attraverso la tecnologia blockchain.",
       quadransContent:

@@ -339,13 +339,37 @@
                 </div>
                 <div
                   @click="
+                    firstOpen = !firstOpen;
+                    rotateArrow('1');
+                  "
+                  class="mt-4 portfolioToggle"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p>IMPSSBL</p>
+                    <img
+                      id="rotateArrow1"
+                      class="rightArrow"
+                      src="/assets/img/Arrow4.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                  <transition name="slide">
+                    <div class="child" v-show="firstOpen">
+                      <p class="portofolioContent">
+                        {{ $t("message.impssbl") }}
+                      </p>
+                    </div>
+                  </transition>
+                </div>
+                <div
+                  @click="
                     fourthOpen = !fourthOpen;
                     rotateArrow('5');
                   "
                   class="mt-4 portfolioToggle"
                 >
                   <div class="d-flex justify-content-between">
-                    <p>NFT STUDIO</p>
+                    <p>THE HUB</p>
                     <img
                       id="rotateArrow5"
                       class="rightArrow"
@@ -356,7 +380,7 @@
                   <transition name="slide">
                     <div class="child" v-show="fourthOpen">
                       <p class="portofolioContent">
-                        {{ $t("message.nftContent") }}
+                        {{ $t("message.theHubContent") }}
                       </p>
                     </div>
                   </transition>
@@ -405,30 +429,6 @@
                     <div class="child" v-show="thirdOpen">
                       <p class="portofolioContent">
                         {{ $t("message.digitalOraclesContent") }}
-                      </p>
-                    </div>
-                  </transition>
-                </div>
-                <div
-                  @click="
-                    firstOpen = !firstOpen;
-                    rotateArrow('1');
-                  "
-                  class="mt-4 portfolioToggle"
-                >
-                  <div class="d-flex justify-content-between">
-                    <p>THE HUB</p>
-                    <img
-                      id="rotateArrow1"
-                      class="rightArrow"
-                      src="/assets/img/Arrow4.svg"
-                      alt="arrow"
-                    />
-                  </div>
-                  <transition name="slide">
-                    <div class="child" v-show="firstOpen">
-                      <p class="portofolioContent">
-                        {{ $t("message.theHubContent") }}
                       </p>
                     </div>
                   </transition>
@@ -500,15 +500,16 @@
             class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
           >
             <a
-              href="https://www.linkedin.com/in/livio-lombardo/"
+              href="https://www.linkedin.com/in/roberto-diano-499031168/"
               target="_blank"
             >
               <div class="text-center p-team">
                 <p class="blackText teamText">
-                  LIVIO LOMBARDO<br /><span class="blackText teamTextD">
-                    Finance & Administration <br class="myBR" />
-                    Co-founder</span
-                  >
+                  Roberto Diano<br />
+                  <span class="blackText teamTextD">
+                    Sales <br />
+                    Co-founder
+                  </span>
                 </p>
               </div>
             </a>
@@ -520,16 +521,15 @@
             class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
           >
             <a
-              href="https://www.linkedin.com/in/roberto-diano-499031168/"
+              href="https://www.linkedin.com/in/livio-lombardo/"
               target="_blank"
             >
               <div class="text-center p-team">
                 <p class="blackText teamText">
-                  Roberto Diano<br />
-                  <span class="blackText teamTextD">
-                    Sales <br />
-                    Co-founder
-                  </span>
+                  LIVIO LOMBARDO<br /><span class="blackText teamTextD">
+                    Finance & Administration <br class="myBR" />
+                    Co-founder</span
+                  >
                 </p>
               </div>
             </a>
@@ -853,6 +853,3 @@ export default {
   name: "Home",
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
