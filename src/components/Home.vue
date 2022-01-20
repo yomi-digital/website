@@ -151,6 +151,48 @@
           <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
             <div class="text-center">
               <img
+                src="/assets/img/vector2.svg"
+                alt="vector1"
+                style="height: 65px;"
+              />
+              <div class="mt-2" @click="toggle8 = !toggle8">
+                <p class="serviceTitle highlight">
+                  {{ $t("message.researchTitle") }}
+                </p>
+              </div>
+              <transition name="slide"
+                ><div v-show="toggle8">
+                  <em>
+                    {{ $t("message.researchDescription") }}
+                  </em>
+                </div></transition
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
+            <div class="text-center">
+              <img
+                src="/assets/img/vector7.svg"
+                alt="vector1"
+                style="height: 50px; margin-top: 15px"
+              />
+              <div class="mt-2" @click="toggle9 = !toggle9">
+                <p class="serviceTitle highlight">
+                  {{ $t("message.consultingTitle") }}
+                </p>
+              </div>
+              <transition name="slide"
+                ><div v-show="toggle9">
+                  <em>
+                    {{ $t("message.consultingDescription") }}
+                  </em>
+                </div></transition
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
+            <div class="text-center">
+              <img
                 src="/assets/img/vector4.svg"
                 alt="vector1"
                 style="height: 65px;"
@@ -228,48 +270,6 @@
                   </em>
                 </div>
               </transition>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
-            <div class="text-center">
-              <img
-                src="/assets/img/vector2.svg"
-                alt="vector1"
-                style="height: 65px;"
-              />
-              <div class="mt-2" @click="toggle8 = !toggle8">
-                <p class="serviceTitle highlight">
-                  {{ $t("message.researchTitle") }}
-                </p>
-              </div>
-              <transition name="slide"
-                ><div v-show="toggle8">
-                  <em>
-                    {{ $t("message.researchDescription") }}
-                  </em>
-                </div></transition
-              >
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 col-md-6 mt-mobile mb-5 mt-5">
-            <div class="text-center">
-              <img
-                src="/assets/img/vector7.svg"
-                alt="vector1"
-                style="height: 50px; margin-top: 15px"
-              />
-              <div class="mt-2" @click="toggle9 = !toggle9">
-                <p class="serviceTitle highlight">
-                  {{ $t("message.consultingTitle") }}
-                </p>
-              </div>
-              <transition name="slide"
-                ><div v-show="toggle9">
-                  <em>
-                    {{ $t("message.consultingDescription") }}
-                  </em>
-                </div></transition
-              >
             </div>
           </div>
         </div>
@@ -582,7 +582,7 @@
               <div class="text-center p-team">
                 <p class="blackText teamText">
                   Giorgia Guidetti <br />
-                  <span class="blackText teamTextD">Marketing Specialist</span>
+                  <span class="blackText teamTextD">Project Manager</span>
                 </p>
               </div>
             </a>
