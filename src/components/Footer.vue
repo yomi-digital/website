@@ -31,13 +31,13 @@
               >HEY@YOMI.DIGITAL</a
             ><br /><br />
             <a
-              href="https://www.google.com/maps?q=Via+Ercolano,+62,+97100+Ragusa,+RG,+Italia"
+              href="https://goo.gl/maps/Du12UPN75cFw7TXS9"
               class="footerLink"
-              >VIA ERCOLANO 62,<br />
-              97100 Ragusa
+              >VIALE LEGIONI ROMANE 7,<br />
+              20147 MILANO
             </a>
             <div class="text-mobile-center">
-              <p class="footerLink">P.IVA: 01652950880</p>
+              <p class="blackText footerLink">P.IVA: 12188060961</p>
             </div>
           </div>
         </div>
