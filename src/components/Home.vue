@@ -489,7 +489,10 @@
           <div class="mb-5">
             <!-- BANNER SERVICE -->
             <marquee-text>
-              <img class="wave" src="/assets/img/team.svg" />
+              <div class="d-flex">
+                <img class="wave" src="/assets/img/team.svg" />
+                <img class="wave" src="/assets/img/team.svg" />
+              </div>
             </marquee-text>
             <!-- END | BANNER SERVICE -->
           </div>
@@ -773,10 +776,10 @@
               </div>
               <div class="col-6 col-lg-4 col-md-6 text-center">
                 <div style="padding: 30px 0">
-                  <a href="https://www.stargraph.it/" target="_blank">
+                  <a href="https://www.bankless.community/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/stargraph.png')"
+                      style="background-image: url('/assets/img/partners/bankless.png')"
                     />
                   </a>
                 </div>
