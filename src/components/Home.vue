@@ -19,7 +19,7 @@
           </div>
           <div
             class="mt-5 scroll-container hideMobile"
-            style="position: relative;"
+            style="position: relative"
           >
             <img
               v-class-on-scroll="{ class: 'rotating', offset: -510 }"
@@ -27,9 +27,7 @@
             />
             <div class="scroll-down-btn">
               <a href="#services">
-                <span class="scroll-down-text highlight">
-                  SCROLL DOWN
-                </span>
+                <span class="scroll-down-text highlight"> SCROLL DOWN </span>
               </a>
             </div>
           </div>
@@ -92,7 +90,7 @@
               <img
                 src="/assets/img/vector3.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle4 = !toggle4">
                 <p class="serviceTitle highlight">
@@ -113,7 +111,7 @@
               <img
                 src="/assets/img/vector1.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle = !toggle">
                 <p class="serviceTitle highlight">BLOCKCHAIN</p>
@@ -132,7 +130,7 @@
               <img
                 src="/assets/img/vector8.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle2 = !toggle2">
                 <p class="serviceTitle highlight">
@@ -153,7 +151,7 @@
               <img
                 src="/assets/img/vector2.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle8 = !toggle8">
                 <p class="serviceTitle highlight">
@@ -195,7 +193,7 @@
               <img
                 src="/assets/img/vector4.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle3 = !toggle3">
                 <p class="serviceTitle highlight">
@@ -216,7 +214,7 @@
               <img
                 src="/assets/img/vector6.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle5 = !toggle5">
                 <p class="serviceTitle highlight">E-COMMERCE</p>
@@ -235,7 +233,7 @@
               <img
                 src="/assets/img/vector5.svg"
                 alt="vector1"
-                style="height: 65px;"
+                style="height: 65px"
               />
               <div class="mt-2" @click="toggle6 = !toggle6">
                 <p class="serviceTitle highlight">
@@ -256,7 +254,7 @@
               <img
                 src="/assets/img/vector9.svg"
                 alt="vector1"
-                style="height: 45px; margin-top:20px"
+                style="height: 45px; margin-top: 20px"
               />
               <div class="mt-2" @click="toggle7 = !toggle7">
                 <p class="serviceTitle highlight">
@@ -294,7 +292,7 @@
           <div class="row">
             <div class="col-12 col-lg-5 col-md-6">
               <div class="p-mobile">
-                <div
+                <!-- <div
                   @click="
                     fifthOpen = !fifthOpen;
                     rotateArrow('4');
@@ -434,7 +432,7 @@
                   </transition>
                 </div>
 
-                <!-- <div class="mt-5">
+                <div class="mt-5">
                   <div>
                     <span class="cta">
                       {{ $t("message.cta") }}
@@ -446,9 +444,10 @@
                     </a>
                   </div>
                 </div> -->
+                <ListPortfolio />
               </div>
             </div>
-            <div class="col-12 col-lg-7 col-md-6 text-center mt-5 ">
+            <div class="col-12 col-lg-7 col-md-6 text-center mt-5">
               <img
                 class="girandola hideMobile"
                 src="/assets/img/girandola3.gif"
@@ -478,212 +477,7 @@
       <!-- END | BANNER TEAM -->
 
       <!-- TEAM -->
-      <div id="team">
-        <div class="row">
-          <div class="col-12 col-lg-6 col-md-8">
-            <div class="m-100 px-100 p-mobile p-ipad-50">
-              <p class="blackText">{{ $t("message.team1") }}</p>
-              <p class="blackText">{{ $t("message.team2") }}</p>
-            </div>
-          </div>
-          <div class="mb-5">
-            <!-- BANNER SERVICE -->
-            <marquee-text>
-              <div class="d-flex">
-                <img class="wave" src="/assets/img/team.svg" />
-                <img class="wave" src="/assets/img/team.svg" />
-              </div>
-            </marquee-text>
-            <!-- END | BANNER SERVICE -->
-          </div>
-        </div>
-        <div class="row">
-          <!-- SINGLE MEMBER -->
-          <div
-            class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
-          >
-            <a
-              href="https://www.linkedin.com/in/roberto-diano-499031168/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Roberto Diano<br />
-                  <span class="blackText teamTextD">
-                    Sales <br />
-                    Co-founder
-                  </span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div
-            class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
-          >
-            <a
-              href="https://www.linkedin.com/in/livio-lombardo/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  LIVIO LOMBARDO<br /><span class="blackText teamTextD">
-                    Finance & Administration <br class="myBR" />
-                    Co-founder</span
-                  >
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div
-            class="col-12 col-lg-3 col-md-4 b-top b-bottom b-right member-box"
-          >
-            <a
-              href="https://www.linkedin.com/in/sebastiano-cataudo-1b404165/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Sebastiano Cataudo<br />
-                  <span class="blackText teamTextD">
-                    Blockchain Guru <br />Co-founder
-                  </span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-top member-box">
-            <a
-              href="https://www.linkedin.com/in/stefano-raniolo/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Stefano Raniolo<br /><span class="blackText teamTextD"
-                    >CTO <br />CO-FOUNDER
-                  </span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <a
-              href="https://www.linkedin.com/in/giorgia-guidetti-271a52194/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Giorgia Guidetti <br />
-                  <span class="blackText teamTextD">Project Manager</span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <a
-              href="https://www.linkedin.com/in/lulu-battelli/"
-              target="_blank"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Lucrezia Battelli<br />
-                  <span class="blackText teamTextD">Frontend Developer</span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Simone Calabrese<br />
-                <span class="blackText teamTextD">Full-stack Developer</span>
-              </p>
-            </div>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <a
-              href="https://www.linkedin.com/in/giuseppe-napoli-591614218/"
-              target="_blanl"
-            >
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Giuseppe Napoli<br />
-                  <span class="blackText teamTextD">Frontend Developer</span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <a href="https://twitter.com/hybridcode_" target="_blank">
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Sergio Occhipinti<br />
-                  <span class="blackText teamTextD">Art Director</span>
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <a href="https://www.linkedin.com/in/marco-moshi/" target="_blank">
-              <div class="text-center p-team">
-                <p class="blackText teamText">
-                  Marco Moshi<br /><span class="blackText teamTextD"
-                    >Blockchain Advisor</span
-                  >
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                @inactive<br />
-                <span class="blackText teamTextD">Senior Anon Developer</span>
-              </p>
-            </div>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-
-          <!-- SINGLE MEMBER -->
-          <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-            <a href="mailto:hey@yomi.digital">
-              <div class="text-center p-team">
-                <p class="blackText teamText">Maybe you?</p>
-              </div>
-            </a>
-          </div>
-          <!-- END | SINGLE MEMBER -->
-        </div>
-      </div>
+      <Team />
 
       <!-- END | TEAM -->
 
@@ -703,7 +497,9 @@
                   <a href="https://polygon.technology/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/polygon-logo.png')"
+                      style="
+                        background-image: url('/assets/img/partners/polygon-logo.png');
+                      "
                   /></a>
                 </div>
               </div>
@@ -712,7 +508,9 @@
                   <a href="https://quadrans.io/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/quadrans.svg')"
+                      style="
+                        background-image: url('/assets/img/partners/quadrans.svg');
+                      "
                   /></a>
                 </div>
               </div>
@@ -721,7 +519,9 @@
                   <a href="https://digitaloracles.com/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/oracles.png')"
+                      style="
+                        background-image: url('/assets/img/partners/oracles.png');
+                      "
                   /></a>
                 </div>
               </div>
@@ -730,7 +530,9 @@
                   <a href="https://nftstud.io/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/nftstudio.svg')"
+                      style="
+                        background-image: url('/assets/img/partners/nftstudio.svg');
+                      "
                   /></a>
                 </div>
               </div>
@@ -739,7 +541,9 @@
                   <a href="https://www.impssbl.com/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/impssbl.png')"
+                      style="
+                        background-image: url('/assets/img/partners/impssbl.png');
+                      "
                     />
                   </a>
                 </div>
@@ -749,7 +553,9 @@
                   <a href="https://www.copystudio.it/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/copystudio.png')"
+                      style="
+                        background-image: url('/assets/img/partners/copystudio.png');
+                      "
                     />
                   </a>
                 </div>
@@ -759,7 +565,9 @@
                   <a href="https://labchain.it/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/labchain.svg')"
+                      style="
+                        background-image: url('/assets/img/partners/labchain.svg');
+                      "
                     />
                   </a>
                 </div>
@@ -769,7 +577,9 @@
                   <a href="https://labchain.it/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/floc.svg')"
+                      style="
+                        background-image: url('/assets/img/partners/floc.svg');
+                      "
                     />
                   </a>
                 </div>
@@ -779,7 +589,9 @@
                   <a href="https://www.bankless.community/" target="_blank">
                     <div
                       class="partnerLogo"
-                      style="background-image: url('/assets/img/partners/bankless.png')"
+                      style="
+                        background-image: url('/assets/img/partners/bankless.png');
+                      "
                     />
                   </a>
                 </div>
@@ -824,8 +636,14 @@
 </template>
 
 <script>
+import ListPortfolio from "@/components/ListPortfolio.vue";
+import Team from "@/components/Team.vue";
+
 export default {
-  components: {},
+  components: {
+    ListPortfolio,
+    Team,
+  },
   data() {
     return {
       toggle: false,
@@ -846,7 +664,7 @@ export default {
   },
 
   methods: {
-    rotateArrow: function(elId) {
+    rotateArrow: function (elId) {
       document.getElementById("rotateArrow" + elId).classList.toggle("rotated");
     },
     pulsation() {

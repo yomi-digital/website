@@ -53,3 +53,20 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Obviously Comp Medi';
+    src: url('Obviously-CompMedi.woff2') format('woff2'),
+        url('Obviously-CompMedi.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obviously Cond Medi';
+    src: url('Obviously-CondMedi.woff2') format('woff2'),
+        url('Obviously-CondMedi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
