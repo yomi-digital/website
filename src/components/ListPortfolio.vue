@@ -104,6 +104,28 @@
 
       <div class="d-flex align-items-center">
         <p>-</p>
+        <a href="https://musess.art/" target="_blank" class="mx-2">Musess</a>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a
+          href="https://fastlovestudios.com/pages/w3st"
+          target="_blank"
+          class="mx-2"
+          >Relic Tickets</a
+        >
+      </div>
+
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a href="https://twitter.com/RelicTickets" target="_blank" class="mx-2"
+          >W3ST</a
+        >
+      </div>
+
+      <div class="d-flex align-items-center">
+        <p>-</p>
         <a href="https://nftberlin.org/" target="_blank" class="mx-2"
           >NFT Berlin
         </a>
@@ -143,6 +165,12 @@
       <div class="d-flex align-items-center">
         <p>-</p>
         <a href="https://well-b.space/" target="_blank" class="mx-2">Well-b </a>
+      </div>
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a href="https://www.meetcenter.it/en/home-page/" target="_blank" class="mx-2"
+          >MEET
+        </a>
       </div>
     </div>
   </div>
