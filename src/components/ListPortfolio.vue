@@ -198,4 +198,9 @@ p {
   margin: 0;
   line-height: 1;
 }
+@media screen and (max-width: 767px) {
+  a {
+    font-size: 16px;
+  }
+}
 </style>
