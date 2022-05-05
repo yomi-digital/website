@@ -30,7 +30,7 @@
               <p class="blackText teamText">
                 Roberto Diano<br />
                 <span class="blackText teamTextD">
-                  Sales <br />
+                  Administration <br />
                   Co-founder
                 </span>
               </p>
@@ -98,7 +98,9 @@
             <div class="text-center p-team">
               <p class="blackText teamText">
                 Giorgia Guidetti <br />
-                <span class="blackText teamTextD">Project Manager</span>
+                <span class="blackText teamTextD"
+                  >Project Manager <br />CO-FOUNDER</span
+                >
               </p>
             </div>
           </a>
@@ -161,6 +163,22 @@
         <!-- SINGLE MEMBER -->
         <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
           <a
+            href="https://www.linkedin.com/in/michela-giuffrida/"
+            target="_blank"
+          >
+            <div class="text-center p-team">
+              <p class="blackText teamText">
+                Michela Giuffrida<br /><span class="blackText teamTextD"
+                  >Brand Manager</span
+                >
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- SINGLE MEMBER -->
+        <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
+          <a
             href="https://www.linkedin.com/in/ruben-pari-8384391b1/"
             target="_blank"
           >
@@ -177,7 +195,10 @@
 
         <!-- SINGLE MEMBER -->
         <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-          <a href="https://www.linkedin.com/in/andrea-folino-085922158/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/andrea-folino-085922158/"
+            target="_blank"
+          >
             <div class="text-center p-team">
               <p class="blackText teamText">
                 Andrea Folino<br /><span class="blackText teamTextD"
@@ -191,16 +212,32 @@
 
         <!-- SINGLE MEMBER -->
         <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-          <a href="https://www.linkedin.com/in/marco-moshi/" target="_blank">
+          <a href="https://www.linkedin.com/in/danilo-giudice/" target="_blank">
             <div class="text-center p-team">
               <p class="blackText teamText">
-                Marco Moshi<br /><span class="blackText teamTextD"
-                  >Blockchain Advisor</span
+                Danilo Giudice<br /><span class="blackText teamTextD"
+                  >Business Development</span
                 >
               </p>
             </div>
           </a>
         </div>
+        <!-- END | SINGLE MEMBER -->
+
+        <!-- SINGLE MEMBER -->
+        <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
+          <a href="https://www.linkedin.com/in/marco-moshi/" target="_blank">
+            <div class="text-center p-team">
+              <p class="blackText teamText">
+                Marco Moshi<br /><span class="blackText teamTextD"
+                  >Advisor</span
+                >
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- END | SINGLE MEMBER -->
+
         <!-- END | SINGLE MEMBER -->
 
         <!-- SINGLE MEMBER -->
@@ -215,7 +252,7 @@
         <!-- END | SINGLE MEMBER -->
 
         <!-- SINGLE MEMBER -->
-        <div class="col-12 col-lg-9 col-md-4 b-bottom b-right member-box">
+        <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
           <a href="mailto:hey@yomi.digital">
             <div class="text-center p-team">
               <p class="blackText teamText">Maybe you?</p>
