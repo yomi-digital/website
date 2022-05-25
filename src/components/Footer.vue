@@ -33,7 +33,7 @@
             <a
               href="https://goo.gl/maps/Du12UPN75cFw7TXS9"
               class="footerLink"
-              >VIALE LEGIONI ROMANE 7,<br />
+              >VIALE LEGIONI ROMANE 7<br />
               20147 MILANO
             </a>
             <div class="text-mobile-center">

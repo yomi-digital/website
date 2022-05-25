@@ -33,9 +33,9 @@
             >
             <a
               class="sitebar-contact"
-              href="https://medium.com/@yomi.web3"
+              href="https://discord.gg/w54Jbd4Qhz"
               target="_blank"
-              >MEDIUM</a
+              >DISCORD</a
             >
             <a
               class="sitebar-contact mt-5"
@@ -67,9 +67,9 @@
               </div>
             </div>
             <div class="flex-fill p-0">
-              <a href="https://medium.com/@yomi.web3" target="_blank">
+              <a href="https://discord.gg/w54Jbd4Qhz" target="_blank">
                 <div class="b-menu-left py-desktop-3 button-menu">
-                  <span class="menuLink">M</span>
+                  <span class="menuLink">D</span>
                 </div>
               </a>
             </div>
