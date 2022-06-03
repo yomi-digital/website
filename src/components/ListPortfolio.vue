@@ -14,7 +14,7 @@
       <div class="d-flex align-items-center">
         <p>-</p>
         <a
-          href="https://opensea.io/collection/autonomous-designs"
+          href="https://adesgin.wtf"
           target="_blank"
           class="mx-2"
           >Autonomous Design</a
@@ -110,7 +110,7 @@
       <div class="d-flex align-items-center">
         <p>-</p>
         <a
-          href="https://fastlovestudios.com/pages/w3st"
+          href="https://twitter.com/RelicTickets"
           target="_blank"
           class="mx-2"
           >Relic Tickets</a
@@ -119,7 +119,7 @@
 
       <div class="d-flex align-items-center">
         <p>-</p>
-        <a href="https://twitter.com/RelicTickets" target="_blank" class="mx-2"
+        <a href="https://misphits.xyz/" target="_blank" class="mx-2"
           >W3ST</a
         >
       </div>
