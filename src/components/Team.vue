@@ -177,20 +177,6 @@
         </div>
 
         <!-- SINGLE MEMBER -->
-        <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
-          <a
-            href="https://www.linkedin.com/in/ruben-pari-8384391b1/"
-            target="_blank"
-          >
-            <div class="text-center p-team">
-              <p class="blackText teamText">
-                Ruben Pari<br /><span class="blackText teamTextD"
-                  >Backend Developer</span
-                >
-              </p>
-            </div>
-          </a>
-        </div>
         <!-- END | SINGLE MEMBER -->
 
         <!-- SINGLE MEMBER -->
@@ -246,6 +232,17 @@
             <p class="blackText teamText">
               @inactive<br />
               <span class="blackText teamTextD">Senior Anon Developer</span>
+            </p>
+          </div>
+        </div>
+        <!-- END | SINGLE MEMBER -->
+
+        <!-- SINGLE MEMBER -->
+        <div class="col-12 col-lg-3 col-md-4 b-bottom b-right member-box">
+          <div class="text-center p-team">
+            <p class="blackText teamText">
+              @arrakis<br />
+              <span class="blackText teamTextD">Anon Graphic Designer</span>
             </p>
           </div>
         </div>

@@ -14,10 +14,10 @@
       <div class="d-flex align-items-center">
         <p>-</p>
         <a
-          href="https://adesgin.wtf"
+          href="https://adesign.wtf/"
           target="_blank"
           class="mx-2"
-          >Autonomous Design</a
+          >aDesign</a
         >
       </div>
 
