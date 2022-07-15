@@ -1,6 +1,9 @@
 <template>
   <div id="Header" style="position: relative">
-    <div class="main-img-container">
+    <div
+      class="main-img-container"
+      style="background-image: url('/assets/img/header_website.svg')"
+    >
       <div id="logo">
         <img class="logo" src="/assets/img/logo.svg" />
       </div>
@@ -14,14 +17,8 @@
 </template>
 
 <script>
-
-
 export default {
   name: "Header",
-    components: {
-
-  },
+  components: {},
 };
-
 </script>
-

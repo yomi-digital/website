@@ -4,7 +4,7 @@
       <div class="row">
         <div
           class="col-12 col-lg-7 col-md-6 text-center justify-content-center"
-          style="position: relative;"
+          style="position: relative"
         >
           <Slide :isOpen="open" :closeOnNavigation="true">
             <a class="sitebar" href="#who">CHI SIAMO</a>
@@ -41,21 +41,31 @@
               class="sitebar-contact mt-5"
               href="mailto:hey@yomi.digital"
               target="_blank"
-              style="text-align: left;"
+              style="text-align: left"
             >
               hey@yomi.digital</a
             >
           </Slide>
-          <div
-            @click="toogleMenu"
-            class="py-desktop-3"
-            style="cursor: pointer;"
-          >
+          <div @click="toogleMenu" class="py-desktop-3" style="cursor: pointer">
             <span class="menuLink m-0">MENU</span>
           </div>
         </div>
         <div class="col-12 col-lg-5 col-md-6 text-center b-menu-top">
           <div class="d-flex justify-content-between">
+            <div class="flex-fill p-0 button-menu" @click="changeSite()">
+              <div class="b-menu-left no-borderLeft-m py-desktop-3">
+                <div v-if="!changed">
+                  <span class="menuLink m-0"
+                    ><i class="fa-solid fa-toggle-off"></i
+                  ></span>
+                </div>
+                <div v-if="changed">
+                  <span class="menuLink m-0"
+                    ><i class="fa-solid fa-toggle-on"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
             <div class="flex-fill p-0 button-menu">
               <div class="b-menu-left no-borderLeft-m py-desktop-3">
                 <a
@@ -125,6 +135,7 @@ export default {
       langs: ["en", "it"],
       langBool: false,
       open: false,
+      changed: false,
     };
   },
   methods: {
@@ -132,6 +143,14 @@ export default {
       e.preventDefault();
       e.stopPropagation();
       this.open = !this.open;
+    },
+    changeSite() {
+      const app = this;
+      app.changed = !app.changed;
+      setTimeout(function () {
+        app.$emit("switch");
+        console.log("change");
+      }, 1000);
     },
   },
   name: "Menu",
@@ -143,7 +162,7 @@ export default {
   },
 };
 
-$(window).scroll(function(e) {
+$(window).scroll(function (e) {
   var offset = $("#Menu").position();
   var offset2 = $("#Home").position();
   var $el = $(".fixedElement");
