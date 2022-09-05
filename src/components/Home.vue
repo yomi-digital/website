@@ -1,7 +1,13 @@
 <template>
   <div id="Home">
     <div class="container-home">
+      <canvas
+        class="scene"
+        id="bubble"
+        style="width: 100%; height: 100vh"
+      ></canvas>
       <!-- CHI SIAMO -->
+      <div></div>
       <div id="who" class="row">
         <div class="col-12 col-lg-7 col-md-6 bg-black pb-150">
           <div class="px-100">
