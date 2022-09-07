@@ -1,7 +1,10 @@
 <template>
-  <div><canvas id="canvas"></canvas>
-  
-  <h1 @click="change()">ciao</h1>
+  <div>
+    <canvas
+      @mouseenter="changeOn()"
+      @mouseleave="changeOff()"
+      id="canvas"
+    ></canvas>
   </div>
 </template>
 
@@ -13,6 +16,7 @@ export default {
   data() {
     return {
       noise: {},
+      isModify: false,
     };
   },
   mounted() {
@@ -234,31 +238,43 @@ export default {
       scene.add(mesh);
 
       for (var i = 0; i < 8064; i++) {
-        mesh.geometry.faces[i].color = new THREE.Color(0x66F7A0);
+        mesh.geometry.faces[i].color = new THREE.Color(0x66f7a0);
       }
 
       var update = function () {
         for (var i = 0; i < mesh.geometry.vertices.length; i++) {
           var v = mesh.geometry.vertices[i];
-          v.normalize().multiplyScalar(
-            0.15 *
-              app.noise.simplex3(
-                v.x * 1 + Date.now() * 0.001,
-                v.y * 1,
-                v.z * 1
-              ) +
-              1
-          );
+          if (app.isModify) {
+            v.normalize().multiplyScalar(
+              0.18 *
+                app.noise.simplex2(
+                  v.x * 1 + Date.now() * 0.0008,
+                  v.y * 1,
+                  v.z * 2
+                ) +
+                1
+            );
+          } else {
+            v.normalize().multiplyScalar(
+              0.15 *
+                app.noise.simplex3(
+                  v.x * 1 + Date.now() * 0.001,
+                  v.y * 1,
+                  v.z * 1
+                ) +
+                1
+            );
+          }
         }
         mesh.geometry.computeVertexNormals();
         mesh.geometry.normalsNeedUpdate = true;
         mesh.geometry.verticesNeedUpdate = true;
       };
 
-      let light = new THREE.PointLight(0xC52184, 3, 4.5);
+      let light = new THREE.PointLight(0xc52184, 3, 4.5);
       light.position.set(0, 0, 1.5);
       scene.add(light);
-      light = new THREE.PointLight(0x66F7A0, 2, 5);
+      light = new THREE.PointLight(0x66f7a0, 2, 5);
       light.position.set(0, 1.5, 1.4);
       scene.add(light);
 
@@ -269,9 +285,14 @@ export default {
       }
       render();
     },
-    change() {
-        
-    }
+    changeOn() {
+      const app = this;
+      app.isModify = true;
+    },
+    changeOff() {
+      const app = this;
+      app.isModify = false;
+    },
   },
 };
 </script>

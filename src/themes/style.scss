@@ -1,0 +1,158 @@
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+// -- COLORS --
+:root {
+  --primary-color: black;
+  --font-color: white;
+}
+
+.bg-darker {
+  background-color: var(--primary-color);
+}
+.bg-light {
+  background-color: var(--font-color);
+}
+
+a {
+  &:hover {
+    color: unset;
+  }
+}
+
+// -- MIXINS --
+@mixin btn {
+  padding: 10px 50px;
+  border: 1px solid var(--font-color);
+  border-radius: 100px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--font-color);
+  @include secondary-font();
+  font-size: 1.875rem;
+  font-weight: 500;
+  &:hover {
+    transition: all 0.3s;
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    transition: all 0.3s;
+  }
+}
+@mixin navlink {
+  @include secondary-font();
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.625rem;
+  line-height: 1;
+}
+@mixin title-font {
+  font-family: "Mortend";
+}
+@mixin secondary-font {
+  font-family: "Degular Demo";
+}
+
+//  -- FONTS --
+
+.big-title {
+  @include secondary-font();
+  font-size: 18.75rem;
+  color: var(--font-color);
+  line-height: 0.9;
+}
+
+.marquee-title {
+  @include title-font();
+  font-size: 9.375rem;
+  font-weight: 700;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: var(--font-color);
+  line-height: 1;
+}
+
+.marquee-title-2 {
+  @include secondary-font();
+  font-size: 12.5rem;
+  font-weight: 500;
+  color: var(--font-color);
+  line-height: 1;
+}
+
+.nav-link-light {
+  @include navlink();
+  color: var(--font-color);
+}
+
+.nav-link-dark {
+  @include navlink();
+  color: var(--primary-color);
+}
+// -- POSITIONING --
+.full-h {
+  height: 100vh;
+}
+.negative-position {
+  margin-right: 20vw;
+  margin-bottom: 10vh;
+}
+
+.no-overflow-x {
+  overflow-x: hidden;
+}
+
+.reverse-top {
+
+
+}
+
+.reverse-bottom {
+
+}
+
+// -- MAIN ELEMENT --
+
+.loader {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+    @include title-font();
+    color: var(--font-color);
+    font-size: 5.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-break: break-all !important;
+    background-color: var(--primary-color);
+  }
+  .divider {
+    width: 100%;
+    height: 13px;
+    background-color: var(--font-color);
+  }
+}
+
+.navbar-custom {
+}
+// -- BUTTONS --
+.btn-primary {
+  @include btn();
+}

@@ -10,7 +10,10 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "three": "^0.144.0",
+    "typewriter-vue": "^0.5.19",
     "vue": "^2.6.11",
+    "vue-marquee-text-component": "1.2.0",
+    "vue-progressbar": "^0.7.5",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
