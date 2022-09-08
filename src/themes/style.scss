@@ -10,11 +10,13 @@ html {
   background-color: var(--primary-color);
   overflow-x: hidden;
 }
-
-// -- COLORS --
+//   =======================================================================================
+// --===================================== COLORS =====================================--
+//   =======================================================================================
 :root {
   --primary-color: black;
   --font-color: white;
+  --lighter-color: #1b1b1b;
 }
 
 .bg-darker {
@@ -22,12 +24,6 @@ html {
 }
 .bg-light {
   background-color: var(--font-color);
-}
-
-a {
-  &:hover {
-    color: unset;
-  }
 }
 
 // -- MIXINS --
@@ -64,8 +60,15 @@ a {
 @mixin secondary-font {
   font-family: "Degular Demo";
 }
-
-//  -- FONTS --
+//   =======================================================================================
+//    --===================================== FONTS =====================================--
+//   =======================================================================================
+h3 {
+  @include secondary-font();
+  font-size: 5rem;
+  color: var(--font-color);
+  font-weight: 400;
+}
 
 .big-title {
   @include secondary-font();
@@ -94,13 +97,21 @@ a {
 .nav-link-light {
   @include navlink();
   color: var(--font-color);
+  &:hover {
+    color: var(--font-color) !important;
+  }
 }
 
 .nav-link-dark {
   @include navlink();
   color: var(--primary-color);
+  &:hover {
+    color: var(--primary-color) !important;
+  }
 }
-// -- POSITIONING --
+//   =======================================================================================
+// --===================================== POSITIONING =====================================--
+//   =======================================================================================
 .full-h {
   height: 100vh;
 }
@@ -113,16 +124,17 @@ a {
   overflow-x: hidden;
 }
 
-.reverse-top {
-
-
+.vh100 {
+  height: 100vh;
 }
+//   =======================================================================================
+// --===================================== MAIN ELEMENT =====================================--
+//   =======================================================================================
 
-.reverse-bottom {
-
+.custom-card {
+  background-color: var(--lighter-color);
+  border-radius: 33px;
 }
-
-// -- MAIN ELEMENT --
 
 .loader {
   width: 100%;
@@ -150,9 +162,57 @@ a {
   }
 }
 
-.navbar-custom {
+.marquee-rotated {
+  transform: rotate(90deg);
+  overflow: unset !important;
+  * {
+    line-height: 0.5;
+  }
+  .marquee-text-content {
+    &:hover {
+      * {
+        -moz-animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+      }
+    }
+  }
+  .marquee-text-text {
+    margin-top: -74px;
+  }
 }
-// -- BUTTONS --
+
+.agile {
+  .agile__actions {
+    position: absolute;
+    top: calc(50% - 0.6rem);
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+  }
+  .slide {
+    text-align: center;
+    img {
+      max-height: 100px;
+      max-width: 200px;
+      height: auto;
+      width: auto;
+    }
+  }
+}
+
+//   =======================================================================================
+//   --===================================== BUTTONS =====================================--
+//   =======================================================================================
+
 .btn-primary {
   @include btn();
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: var(--font-color);
+  i {
+    font-size: 1.2rem;
+  }
 }

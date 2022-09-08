@@ -4,73 +4,82 @@
       <div class="navbar-custom no-overflow-x">
         <div class="container-fluid p-0">
           <div class="row p-0">
-            <div
-              class="col-12 col-md-6 col-lg-2 p-0 bg-light"
-              :class="{ 'full-h': isDesktop }"
-            >
-              <div class="reverse-top">
-                <a class="nav-link-dark" href="">
-                  <MarqueeText :repeat="30">
+            <div class="col-12 col-md-6 col-lg-2 p-0 bg-light">
+              <div class="vh100">
+                <a class="nav-link-dark" href="/#/about">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    :repeat="20"
+                    :duration="3"
+                  >
                     <div>ABOUT&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-2 p-0 bg-darker"
-              :class="{ 'full-h': isDesktop }"
-            >
-              <div class="reverse-bottom">
+            <div class="col-12 col-md-6 col-lg-2 p-0 bg-darker">
+              <div class="vh100">
                 <a class="nav-link-light" href="">
-                  <MarqueeText :repeat="30">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    reverse
+                    :repeat="20"
+                    :duration="3"
+                  >
                     <div>OUR TEAM&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-2 p-0 bg-light"
-              :class="{ 'full-h': isDesktop }"
-            >
-              <div class="reverse-top">
+            <div class="col-12 col-md-6 col-lg-2 p-0 bg-light">
+              <div class="vh100">
                 <a class="nav-link-dark" href="">
-                  <MarqueeText :repeat="30">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    :repeat="20"
+                    :duration="3"
+                  >
                     <div>SERVICE&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-2 p-0 bg-darker"
-              :class="{ 'full-h': isDesktop }"
-            >
-              <div class="reverse-bottom">
+            <div class="col-12 col-md-6 col-lg-2 p-0 bg-darker">
+              <div class="vh100">
                 <a class="nav-link-light" href="">
-                  <MarqueeText :repeat="30">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    reverse
+                    :repeat="20"
+                    :duration="3"
+                  >
                     <div>OUR BLOG&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-2 p-0 bg-light"
-              :class="{ 'full-h': isDesktop }"
-            >
-              <div class="reverse-top">
+            <div class="col-12 col-md-6 col-lg-2 p-0 bg-light">
+              <div class="vh100">
                 <a class="nav-link-dark" href="">
-                  <MarqueeText :repeat="30">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    :repeat="20"
+                    :duration="3"
+                  >
                     <div>PORTFOLIO&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-2 p-0 bg-darker"
-              :class="{ 'full-h': isDesktop }"
-            >
-              <div class="reverse-bottom">
+            <div class="col-12 col-md-6 col-lg-2 p-0 bg-darker">
+              <div class="vh100">
                 <a class="nav-link-light" href="">
-                  <MarqueeText :repeat="30">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    reverse
+                    :repeat="30"
+                    :duration="3"
+                  >
                     <div>INTERNAL&nbsp;</div>
                   </MarqueeText></a
                 >

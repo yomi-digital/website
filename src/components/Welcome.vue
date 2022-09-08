@@ -11,10 +11,10 @@
             ENTER
           </div>
         </div>
-        <MarqueeText :repeat="10" reverse>
+        <MarqueeText :repeat="10" reverse :duration="5">
           <div class="marquee-title">WELCOME TO YOMI&nbsp;</div>
         </MarqueeText>
-        <MarqueeText :repeat="10">
+        <MarqueeText :repeat="10" :duration="5">
           <div class="marquee-title-2">WELCOME TO YOMI&nbsp;</div>
         </MarqueeText>
       </div>

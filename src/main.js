@@ -9,6 +9,7 @@ import "./themes/animation.scss";
 
 import MarqueeText from "vue-marquee-text-component";
 import VueProgressBar from "vue-progressbar";
+import VueAgile from "vue-agile";
 
 const options = {
   color: "#ffffff",
@@ -25,7 +26,7 @@ const options = {
 };
 
 Vue.use(VueProgressBar, options);
-
+Vue.use(VueAgile);
 Vue.component("marquee-text", MarqueeText);
 Vue.config.productionTip = false;
 
