@@ -1,10 +1,10 @@
 <template>
   <Transition enter-active-class="bounce-in-right">
     <div v-if="isEnter">
-      <div class="navbar-custom no-overflow-x">
+      <div class="navbar-custom no-overflow-x" style="overflow-y: hidden">
         <div class="container-fluid p-0">
           <div class="row p-0">
-            <div class="col-12 col-md-6 col-lg-2 p-0 bg-light">
+            <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
               <div class="vh100">
                 <a class="nav-link-dark" href="/#/about">
                   <MarqueeText
@@ -17,7 +17,7 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 p-0 bg-darker">
+            <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
               <div class="vh100">
                 <a class="nav-link-light" href="/#/team">
                   <MarqueeText
@@ -31,7 +31,7 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 p-0 bg-light">
+            <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
               <div class="vh100">
                 <a class="nav-link-dark" href="">
                   <MarqueeText
@@ -44,7 +44,7 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 p-0 bg-darker">
+            <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
               <div class="vh100">
                 <a class="nav-link-light" href="">
                   <MarqueeText
@@ -58,7 +58,7 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 p-0 bg-light">
+            <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
               <div class="vh100">
                 <a class="nav-link-dark" href="">
                   <MarqueeText
@@ -71,7 +71,7 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 p-0 bg-darker">
+            <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
               <div class="vh100">
                 <a class="nav-link-light" href="">
                   <MarqueeText

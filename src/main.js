@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import vmodal from "vue-js-modal";
 
 import "./fonts/stylesheet.css";
 import "./themes/style.scss";
@@ -29,6 +30,7 @@ Vue.use(VueProgressBar, options);
 Vue.use(VueAgile);
 Vue.component("marquee-text", MarqueeText);
 Vue.config.productionTip = false;
+Vue.use(vmodal);
 
 new Vue({
   router,

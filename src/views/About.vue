@@ -39,9 +39,6 @@ export default {
     Typewriter,
   },
   data() {
-    // return {
-    //   replace: [{ from: "the", to: "sto cazzo?" }],
-    // };
   },
 };
 </script>
