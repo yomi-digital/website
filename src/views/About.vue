@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
+  <div class="about pt-5">
+    <ButtonNav />
     <div class="container-fluid full-h" style="position: relative">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8">
@@ -31,14 +32,18 @@
 <script>
 import FooterExt from "@/components/FooterExt.vue";
 import Typewriter from "typewriter-vue";
+import ButtonNav from "@/components/ButtonNav.vue";
+
+import checkViewport from "@/mixins/checkViewport";
 
 export default {
   name: "about",
+  mixins: [checkViewport],
   components: {
     FooterExt,
     Typewriter,
+    ButtonNav,
   },
-  data() {
-  },
+  data() {},
 };
 </script>

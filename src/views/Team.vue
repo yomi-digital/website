@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
+  <div>
+    <ButtonNav />
+    <!-- TEAM SECTION -->
     <div
       v-if="!showTeam"
       class="container-fluid full-h"
@@ -36,7 +38,20 @@
         />
       </div>
     </div>
+
+    <!-- TEAM SHOW -->
     <div v-if="showTeam" class="container-fluid">
+      <div class="my-5 text-start">
+        <div
+          @click="showTeam = !showTeam"
+          class="d-flex align-items-center pointer"
+        >
+          <i
+            class="fa-solid fa-arrow-left color-primary ms-3 me-3 heartbeat"
+            style="font-size: 3rem"
+          ></i>
+        </div>
+      </div>
       <div class="mt-5">
         <MarqueeText :repeat="10" reverse :duration="5">
           <h4>KNOW MORE ABOUT US</h4>
@@ -102,9 +117,11 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-import FooterExt from "@/components/FooterExt.vue";
 import Typewriter from "typewriter-vue";
 import MarqueeText from "vue-marquee-text-component";
+
+import FooterExt from "@/components/FooterExt.vue";
+import ButtonNav from "@/components/ButtonNav.vue";
 
 export default {
   name: "team",
@@ -113,6 +130,7 @@ export default {
     FooterExt,
     Typewriter,
     MarqueeText,
+    ButtonNav,
   },
   data() {
     return {

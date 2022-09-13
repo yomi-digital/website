@@ -17,7 +17,8 @@ html {
   --primary-color: black;
   --font-color: white;
   --lighter-color: #1b1b1b;
-  --high-contrast-color: #EFF3F2;
+  --high-contrast-color: #eff3f2;
+  --colored: #84ff9d;
 }
 
 .bg-darker {
@@ -25,6 +26,10 @@ html {
 }
 .bg-light {
   background-color: var(--font-color);
+}
+
+.color-primary {
+  color: var(--font-color);
 }
 
 // -- MIXINS --
@@ -78,6 +83,7 @@ html {
     color: var(--font-color);
   }
 }
+
 .cta {
   @include secondary-font();
   font-weight: 400;
@@ -87,6 +93,7 @@ html {
   color: var(--font-color);
   text-transform: uppercase;
 }
+
 h2 {
   @include secondary-font();
   font-size: 5.313rem;
@@ -109,6 +116,7 @@ h4 {
   color: var(--font-color);
   font-weight: 700;
 }
+
 h5 {
   @include title-font();
   color: var(--primary-color);
@@ -117,14 +125,24 @@ h5 {
   text-transform: uppercase;
   font-size: 1.875rem;
 }
+
+h6 {
+  @include secondary-font();
+  color: var(--font-color);
+  font-weight: 400;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+}
+
 p {
   @include title-font();
   color: var(--primary-color);
-  text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
 }
+
 p.label {
   @include secondary-font();
   color: var(--primary-color);
@@ -150,12 +168,13 @@ p.label {
   line-height: 1;
 }
 
-.marquee-title-2 {
+.marquee-title-2,
+h1 {
   @include secondary-font();
   font-size: 12.5rem;
   font-weight: 500;
   color: var(--font-color);
-  line-height: 1;
+  line-height: 0.9;
 }
 
 .nav-link-light {
@@ -172,6 +191,26 @@ p.label {
   &:hover {
     color: var(--primary-color) !important;
   }
+}
+
+.text-service-one,
+.text-service-two {
+  @include secondary-font();
+  font-weight: 400;
+  font-style: normal !important;
+}
+
+.text-service-one {
+  font-size: 1.875rem;
+  color: var(--font-color);
+}
+
+.text-service-two {
+  font-size: 1.563rem;
+  color: var(--colored);
+}
+.uppercase {
+  text-transform: uppercase;
 }
 //   =======================================================================================
 // --===================================== POSITIONING =====================================--
@@ -243,7 +282,7 @@ p.label {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('~@/assets/images/team1.png');
+  background-image: url("~@/assets/images/team1.png");
   margin: auto;
 }
 
@@ -355,6 +394,14 @@ ul {
 //   =======================================================================================
 //   --===================================== BUTTONS =====================================--
 //   =======================================================================================
+.btn-close {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  top: 20px;
+  right: 50px;
+  z-index: 9999;
+}
 
 .btn-primary {
   @include btn();
@@ -390,10 +437,40 @@ button {
   }
 }
 
+.toggler-service {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--font-color);
+  border-radius: 100px;
+  position: relative;
+  z-index: 999;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 //   =======================================================================================
 // --===================================== MISCELLANEUS =====================================--
 //   =======================================================================================
 
 .pointer {
   cursor: pointer !important;
+}
+.pointer-link {
+  box-shadow: inset 0 0 0 0 white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset 4000px 0 0 0 var(--high-contrast-color) !important;
+    * {
+      color: var(--primary-color) !important;
+    }
+  }
 }
