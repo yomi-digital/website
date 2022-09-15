@@ -6,14 +6,14 @@
       :isEnter="isEnter"
       @enterWebsite="enterWebsite()"
     />
-    <Section :isEnter="isEnter" />
+    <Navbar :isEnter="isEnter" />
   </div>
 </template>
 <script>
 import checkViewport from "@/mixins/checkViewport";
 import Loader from "@/components/Loader.vue";
 import Welcome from "@/components/Welcome.vue";
-import Section from "@/components/Section.vue";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: "home",
@@ -21,7 +21,7 @@ export default {
   components: {
     Loader,
     Welcome,
-    Section,
+    Navbar,
   },
   data() {
     return {

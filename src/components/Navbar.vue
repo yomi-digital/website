@@ -60,7 +60,7 @@
             </div>
             <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
               <div class="vh100">
-                <a class="nav-link-dark" href="">
+                <a class="nav-link-dark" href="/#/portfolio">
                   <MarqueeText
                     class="marquee-rotated"
                     :repeat="20"

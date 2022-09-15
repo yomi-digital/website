@@ -1,0 +1,334 @@
+[
+  {
+    "name": "dao punk",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design"
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "niftyz",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "procol labs",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 Platform"
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "xone",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design"
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "ibiza token",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "nft berlin",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "proof of story",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "musess",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "cult&rain",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "house of sangu",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "enchanted valley",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "hexarchia",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "stargraph",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "london trade art",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "martix",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "well b",
+    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgLinkFirst": "../assets/images/dao-link1.png",
+    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "services": {
+      "web": "Landing",
+      "contract": "Smart Contract",
+      "webdesign": "Webdesign",
+      "branding": "Branding",
+      "consulting": "Consulting",
+      "business": "Model Business",
+      "logo": "Logo design",
+      "ux": "Ux Design",
+      "umi": "UMI Platform",
+      "web2": "Web2 "
+    },
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  }
+]

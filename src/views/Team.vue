@@ -83,7 +83,7 @@
         <div class="d-flex align-items-end justify-content-between">
           <i @click="closeModal()" class="fa-solid fa-xmark pointer"></i>
           <div>
-            <p class="ms-4 label">MEMBER #{{ selected.id }}</p>
+            <div class="ms-4 mb-2 label">MEMBER #{{ selected.id }}</div>
             <h5>#{{ selected.name }} //</h5>
           </div>
         </div>
@@ -91,16 +91,16 @@
           <div class="row justify-content-end">
             <div class="col-12 col-md-6 col-lg-6">
               <div class="mb-5">
-                <p class="label">ALIAS</p>
-                <p class="mt-2">{{ selected.alias }}</p>
+                <div class="label">ALIAS</div>
+                <div class="title-team mt-2">{{ selected.alias }}</div>
               </div>
               <div class="mb-5">
-                <p class="label">ROLE</p>
-                <p class="mt-2">{{ selected.role }}</p>
+                <div class="label">ROLE</div>
+                <div class="title-team mt-2">{{ selected.role }}</div>
               </div>
               <div class="mb-5">
-                <p class="label">DISORDER</p>
-                <p class="mt-2">{{ selected.disorder }}</p>
+                <div class="label">DISORDER</div>
+                <div class="title-team mt-2">{{ selected.disorder }}</div>
               </div>
             </div>
           </div>
