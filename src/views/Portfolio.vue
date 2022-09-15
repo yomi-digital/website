@@ -16,12 +16,14 @@
           :key="project.name"
         >
           <div class="left-img">
-            <img  src="../assets/images/dao-link2.png" alt="" />
+            <img src="../assets/images/dao-link2.png" alt="" />
           </div>
           <div class="right-img">
             <img src="../assets/images/dao-link2.png" alt="" />
           </div>
-          <a :href="'/#/portfolio/' + project.name.replace(' ', '-')">{{ project.name }}</a>
+          <a :href="'/#/portfolio/' + project.name.split(' ').join('-')">{{
+            project.name
+          }}</a>
         </div>
       </div>
     </div>

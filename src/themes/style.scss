@@ -1,7 +1,4 @@
-canvas {
-  max-width: 100%;
-  max-height: 100%;
-}
+
 
 body,
 html {
@@ -307,6 +304,7 @@ h1 {
     font-weight: 700;
     font-size: 4.375rem;
     line-height: 1;
+    text-transform: uppercase;
   }
   .cta-text {
     @include secondary-font();
@@ -316,11 +314,21 @@ h1 {
     line-height: 1;
   }
   &:hover {
-    background-color: var(--primary-color);
-    transition: all 0.3s;
-    .cta-text,
-    .cta-title {
-      color: var(--font-color) !important;
+    i {
+      position: relative;
+      animation: mymove 3s infinite;
+    }
+
+    @keyframes mymove {
+      0% {
+        left: 0px;
+      }
+      50% {
+        left: 100px;
+      }
+      100%{
+        left: 0;
+      }
     }
   }
 }

@@ -221,11 +221,18 @@ export default {
       );
       camera.position.z = 4;
 
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      // renderer.setSize(window.innerWidth, window.innerHeight);
+      // window.onresize = function () {
+      //   camera.aspect = window.innerWidth / window.innerHeight;
+      //   camera.updateProjectionMatrix();
+      //   renderer.setSize(window.innerWidth, window.innerHeight);
+      // };
+
+      renderer.setSize(480, 250);
       window.onresize = function () {
-        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.aspect = 480 / 250;
         camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(480, 250);
       };
 
       var geo = new THREE.SphereGeometry(1, 64, 64);
