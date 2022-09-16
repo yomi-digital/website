@@ -7,6 +7,9 @@ import Services from "../views/Services.vue";
 import Portfolio from "../views/Portfolio.vue";
 import Project from "../views/Project.vue";
 import Internal from "../views/Internal.vue";
+import Testing from "../views/Testing.vue";
+import Blog from "../views/Blog.vue";
+import Article from "../views/Article.vue";
 
 Vue.use(VueRouter);
 
@@ -50,6 +53,21 @@ const routes = [
     path: "/internal-project",
     name: "internal",
     component: Internal,
+  },
+  {
+    path: "/testing",
+    name: "testing",
+    component: Testing,
+  },
+  {
+    path: "/blog",
+    name: "blog",
+    component: Blog,
+  },
+  {
+    path: "/blog/:id",
+    name: "Article",
+    component: Article,
   },
 ];
 

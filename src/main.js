@@ -29,6 +29,8 @@ const options = {
 Vue.use(VueProgressBar, options);
 Vue.use(VueAgile);
 Vue.component("marquee-text", MarqueeText);
+
+Vue.use(require("vue-moment"));
 Vue.config.productionTip = false;
 Vue.use(vmodal);
 

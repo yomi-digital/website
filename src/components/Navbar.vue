@@ -46,7 +46,7 @@
             </div>
             <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
               <div class="vh100">
-                <a class="nav-link-light" href="">
+                <a class="nav-link-light" href="/#/blog">
                   <MarqueeText
                     class="marquee-rotated"
                     reverse
