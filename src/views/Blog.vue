@@ -3,32 +3,60 @@
     <div class="gap-2"></div>
     <ButtonNav />
     <div class="container p-5 mt-5 mb-5">
-      <div class="row justify-content-center">
-        <div
-          v-for="post in posts"
-          :key="post.title"
-          class="col-12 -col-md-6 col-lg-5 mb-5"
-        >
-          <router-link :to="{ name: 'Article', params: { id: post.slug } }">
-            <div class="preview-post">
-              <div class="preview-img">
-                <img :src="'/contents/' + post.preview_pic" alt="" />
-              </div>
-              <div class="d-flex align-items-center mt-1 mb-3">
-                <p>{{ moment(post.post_date).format("MMM D, YYYY") }}</p>
-                <p>.</p>
-                <p>{{ post.read_time }}</p>
-              </div>
-              <h2>{{ post.title }}</h2>
-              <div class="d-flex align-items-center mt-4">
-                <div class="author-pic">
-                  <img :src="'/contents/' + post.author_img" alt="" />
+      <h4 class="text-center">BLOG NEWS</h4>
+      <h6 class="mt-5 text-center">Latest news update</h6>
+      <div class="gap"></div>
+      <div v-for="post in posts" :key="post.title">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <!-- <router-link :to="{ name: 'Article', params: { id: post.slug } }"> -->
+            <div class="blog-card p-4">
+              <div
+                class="bg-image"
+                v-bind:style="{
+                  backgroundImage: 'url(' + contents + post.preview_pic + ')',
+                }"
+              ></div>
+              <div class="blog-card-content">
+                <div class="blog-title">{{ post.title }}</div>
+                <div class="blog-category mt-3">
+                  <em>{{ post.category }}</em>
                 </div>
-                <p>{{ post.author }}</p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-5"
+                >
+                  <img src="../assets/images/arrow.svg" alt="" />
+                  <p class="blog-cta">read more</p>
+                </div>
               </div>
             </div>
-          </router-link>
+            <!-- </router-link> -->
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <div>
+              <div class="d-flex align-items-center mt-1 mb-3">
+                <div class="blog-date secondary-color">
+                  {{ moment(post.post_date).format("MMM D, YYYY") }}
+                </div>
+                <p class="ms-2 me-2">.</p>
+                <div class="blog-date secondary-color">
+                  {{ post.read_time }}
+                </div>
+              </div>
+              <div class="blog-title secondary-color">{{ post.title }}</div>
+              <div class="gap"></div>
+              <div @click="togglePost(post)" class="btn-blog">READ</div>
+            </div>
+          </div>
         </div>
+        <Transition name="slide">
+          <div v-if="isOpen === post.title" class="row mt-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-5">
+              <p v-html="post.body_text"></p>
+            </div>
+          </div>
+        </Transition>
+        <div class="divider mt-5 mb-5"></div>
       </div>
     </div>
     <FooterExt />
@@ -54,6 +82,8 @@ export default {
     return {
       posts: [],
       author: [],
+      contents: process.env.VUE_APP_API_CONTENTS_URL,
+      isOpen: "",
     };
   },
   mounted() {
@@ -70,6 +100,15 @@ export default {
         console.log(app.posts);
       } catch (e) {
         alert(e.message);
+      }
+    },
+    togglePost(post) {
+      const app = this;
+      console.log("opening");
+      if (app.isOpen === post.title) {
+        app.isOpen = "";
+      } else {
+        app.isOpen = post.title;
       }
     },
     moment: function (date) {

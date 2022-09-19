@@ -10,7 +10,7 @@
         <div class="gap"></div>
         <div class="project-header">
           <div class="preview-img">
-            <img src="../assets/images/dao-cover.jpeg" alt="" />
+            <img :src="contents + project.imgCover" alt="" />
             <MarqueeText class="title-project" :repeat="10" :duration="5">
               {{ project.name }}&nbsp;
             </MarqueeText>
@@ -105,6 +105,7 @@ export default {
   },
   data() {
     return {
+      contents: process.env.VUE_APP_API_CONTENTS_URL,
       projects: projects,
       project: {},
       nextProject: {},
@@ -132,8 +133,8 @@ export default {
       app.nextProject = app.projects[app.projects.indexOf(app.project) + 1];
     },
     showProject(uri) {
-      location.href = uri
-      location.reload()
+      location.href = uri;
+      location.reload();
     },
   },
 };

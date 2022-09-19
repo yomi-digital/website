@@ -1,7 +1,44 @@
 @media screen and (max-width: 767px) {
+  body,
+  html {
+    font-size: 10px;
+  }
+  
+  .agile .slide img {
+    max-width: 80px;
+    max-height: 50px;
+  }
+
+  .box-character-img {
+    width: 50vw !important;
+  }
+
+  .btn-close-custom {
+    img {
+      width: 40px;
+      height: 10px;
+    }
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+  .marquee-rotated {
+    transform: rotate(0deg);
+  }
+
+  .marquee-text-text {
+    line-height: 0.5;
+    margin-top: 10px;
+  }
+
   .vm--container {
     .vm--modal {
       width: 90vw !important;
     }
+  }
+
+  .vh16 {
+    height: 16.6666vh;
   }
 }

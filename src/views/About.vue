@@ -4,7 +4,7 @@
     <div class="container-fluid full-h" style="position: relative">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8">
-          <div class="py-3 px-5">
+          <div class="py-3 px-5" :class="{'mt-3': isMobile}">
             <typewriter :type-interval="22" :replace-interval="200">
               <h2>
                 Imagine the possibilities. We realize them. <br /><br />
@@ -14,11 +14,6 @@
             </typewriter>
           </div>
         </div>
-
-        <div class="gap"></div>
-        <div class="gap"></div>
-        <div class="gap mb-3"></div>
-        <div class="gap mb-5"></div>
       </div>
       <div class="box-character-img" style="width: 360px; height: 100%">
         <img src="../assets/images/ch1.png" alt="" />

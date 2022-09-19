@@ -3,9 +3,15 @@
     <div v-if="isEnter">
       <div class="navbar-custom no-overflow-x" style="overflow-y: hidden">
         <div class="container-fluid p-0">
-          <div class="row p-0">
-            <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
-              <div class="vh100">
+          <div :class="{ 'p-0 row': !isMobile }">
+            <div
+              class="p-0 bg-light"
+              :class="{
+                'col-12 col-md-2 col-lg-2': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
                 <a class="nav-link-dark" href="/#/about">
                   <MarqueeText
                     class="marquee-rotated"
@@ -17,8 +23,14 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
-              <div class="vh100">
+            <div
+              class="p-0 bg-darker"
+              :class="{
+                'col-12 col-md-2 col-lg-2': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
                 <a class="nav-link-light" href="/#/team">
                   <MarqueeText
                     class="marquee-rotated"
@@ -31,8 +43,14 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
-              <div class="vh100">
+            <div
+              class="p-0 bg-light"
+              :class="{
+                'col-12 col-md-2 col-lg-2': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
                 <a class="nav-link-dark" href="/#/services">
                   <MarqueeText
                     class="marquee-rotated"
@@ -44,8 +62,14 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
-              <div class="vh100">
+            <div
+              class="p-0 bg-darker"
+              :class="{
+                'col-12 col-md-2 col-lg-2': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
                 <a class="nav-link-light" href="/#/blog">
                   <MarqueeText
                     class="marquee-rotated"
@@ -58,8 +82,14 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-2 col-lg-2 p-0 bg-light">
-              <div class="vh100">
+            <div
+              class="p-0 bg-light"
+              :class="{
+                'col-12 col-md-2 col-lg-2': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
                 <a class="nav-link-dark" href="/#/portfolio">
                   <MarqueeText
                     class="marquee-rotated"
@@ -71,8 +101,14 @@
                 >
               </div>
             </div>
-            <div class="col-12 col-md-2 col-lg-2 p-0 bg-darker">
-              <div class="vh100">
+            <div
+              class="p-0 bg-darker"
+              :class="{
+                'col-12 col-md-2 col-lg-2': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
                 <a class="nav-link-light" href="/#/internal-project">
                   <MarqueeText
                     class="marquee-rotated"

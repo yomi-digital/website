@@ -16,10 +16,10 @@
           :key="project.name"
         >
           <div class="left-img">
-            <img src="../assets/images/dao-link2.png" alt="" />
+            <img :src="contents + project.imgLinkFirst" alt="" />
           </div>
           <div class="right-img">
-            <img src="../assets/images/dao-link2.png" alt="" />
+            <img :src="contents + project.imgLinkSecond" alt="" />
           </div>
           <a :href="'/#/portfolio/' + project.name.split(' ').join('-')">{{
             project.name
@@ -49,6 +49,7 @@ export default {
     return {
       service: "",
       projects: projects,
+      contents: process.env.VUE_APP_API_CONTENTS_URL,
     };
   },
   mounted() {

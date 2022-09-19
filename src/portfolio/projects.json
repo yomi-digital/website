@@ -1,7 +1,7 @@
 [
   {
     "name": "dao punk",
-    "imgCover": "../assets/images/dao-cover.jpeg",
+    "imgCover": "dao-cover.jpeg",
     "imgLinkFirst": "dao-link1.png",
     "imgLinkSecond": "dao-link2.png",
     "services": {
@@ -20,9 +20,9 @@
   },
   {
     "name": "niftyz",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -41,9 +41,9 @@
   },
   {
     "name": "procol labs",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -62,9 +62,9 @@
   },
   {
     "name": "xone",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -81,9 +81,9 @@
   },
   {
     "name": "ibiza token",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -102,9 +102,9 @@
   },
   {
     "name": "nft berlin",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -123,9 +123,9 @@
   },
   {
     "name": "proof of story",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -144,9 +144,9 @@
   },
   {
     "name": "musess",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -165,9 +165,9 @@
   },
   {
     "name": "cult&rain",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -186,9 +186,9 @@
   },
   {
     "name": "house of sangu",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -207,9 +207,9 @@
   },
   {
     "name": "enchanted valley",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -228,9 +228,9 @@
   },
   {
     "name": "hexarchia",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -249,9 +249,9 @@
   },
   {
     "name": "stargraph",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -270,9 +270,9 @@
   },
   {
     "name": "london trade art",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -291,9 +291,9 @@
   },
   {
     "name": "martix",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
@@ -312,9 +312,9 @@
   },
   {
     "name": "well b",
-    "imgCover": "../assets/images/dao-cover.jpeg",
-    "imgLinkFirst": "../assets/images/dao-link1.png",
-    "imgLinkSecond": "../assets/images/dao-link1.png",
+    "imgCover": "dao-cover.jpeg",
+    "imgLinkFirst": "dao-link1.png",
+    "imgLinkSecond": "dao-link2.png",
     "services": {
       "web": "Landing",
       "contract": "Smart Contract",
