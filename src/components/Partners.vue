@@ -9,15 +9,27 @@
         <div class="row">
           <div class="col-6 col-lg-4 col-md-6 text-center">
             <div style="padding: 30px 0">
-              <a href="https://polygon.technology/" target="_blank">
+              <a href="https://protocol.ai/" target="_blank">
                 <div
                   class="partnerLogo"
                   style="
-                    background-image: url('/assets/img/partners/polygon-logo.png');
+                    background-image: url('/assets/img/partners/protocol.svg');
                   "
               /></a>
             </div>
           </div>
+          <div class="col-6 col-lg-4 col-md-6 text-center">
+            <div style="padding: 30px 0">
+              <a href="https://niftyz.io/#/" target="_blank">
+                <div
+                  class="partnerLogo"
+                  style="
+                    background-image: url('/assets/img/partners/niftyz.svg');
+                  "
+              /></a>
+            </div>
+          </div>
+
           <div class="col-6 col-lg-4 col-md-6 text-center">
             <div style="padding: 30px 0">
               <a href="https://quadrans.io/" target="_blank">
@@ -42,29 +54,6 @@
           </div>
           <div class="col-6 col-lg-4 col-md-6 text-center">
             <div style="padding: 30px 0">
-              <a href="https://www.bankless.community/" target="_blank">
-                <div
-                  class="partnerLogo"
-                  style="
-                    background-image: url('/assets/img/partners/bankless.png');
-                  "
-                />
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-4 col-md-6 text-center">
-            <div style="padding: 30px 0">
-              <a href="https://nftstud.io/" target="_blank">
-                <div
-                  class="partnerLogo"
-                  style="
-                    background-image: url('/assets/img/partners/nftstudio.svg');
-                  "
-              /></a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-4 col-md-6 text-center">
-            <div style="padding: 30px 0">
               <a href="https://ibizatoken.com/" target="_blank">
                 <div
                   class="partnerLogo"
@@ -74,17 +63,7 @@
               /></a>
             </div>
           </div>
-          <div class="col-6 col-lg-4 col-md-6 text-center">
-            <div style="padding: 30px 0">
-              <a href="https://niftyz.io/#/" target="_blank">
-                <div
-                  class="partnerLogo"
-                  style="
-                    background-image: url('/assets/img/partners/niftyz.svg');
-                  "
-              /></a>
-            </div>
-          </div>
+
           <div class="col-6 col-lg-4 col-md-6 text-center">
             <div style="padding: 30px 0">
               <a href="https://nftberlin.org/" target="_blank">
@@ -92,17 +71,6 @@
                   class="partnerLogo"
                   style="
                     background-image: url('/assets/img/partners/nftberlin.svg');
-                  "
-              /></a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-4 col-md-6 text-center">
-            <div style="padding: 30px 0">
-              <a href="https://protocol.ai/" target="_blank">
-                <div
-                  class="partnerLogo"
-                  style="
-                    background-image: url('/assets/img/partners/protocol.svg');
                   "
               /></a>
             </div>

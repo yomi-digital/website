@@ -3,6 +3,16 @@
     <div class="d-flex flex-wrap">
       <div class="d-flex align-items-center">
         <p>-</p>
+        <a href="https://onchain.storage/" target="_blank" class="mx-2"
+          >ONCHAIN.STORAGE</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a href="https://retriev.org/" target="_blank" class="mx-2">RETRIEV</a>
+      </div>
+      <div class="d-flex align-items-center">
+        <p>-</p>
         <a href="https://mego.cx/" target="_blank" class="mx-2">MEGO</a>
       </div>
 
@@ -13,26 +23,19 @@
 
       <div class="d-flex align-items-center">
         <p>-</p>
-        <a
-          href="https://adesign.wtf/"
-          target="_blank"
-          class="mx-2"
-          >aDesign</a
+        <a href="https://adesign.wtf/" target="_blank" class="mx-2">aDesign</a>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a href="https://www.daopunks.io/" target="_blank" class="mx-2"
+          >DAOPUNK</a
         >
       </div>
 
       <div class="d-flex align-items-center">
         <p>-</p>
-        <a href="https://munnizza.land/" target="_blank" class="mx-2"
-          >Munnizzaland</a
-        >
-      </div>
-
-      <div class="d-flex align-items-center">
-        <p>-</p>
-        <a href="https://hexarchia.com/" target="_blank" class="mx-2"
-          >Hexarchia</a
-        >
+        <a href="https://niftyz.io/" target="_blank" class="mx-2">NIFTYZ</a>
       </div>
 
       <div class="d-flex align-items-center">
@@ -62,6 +65,28 @@
       <div class="d-flex align-items-center">
         <p>-</p>
         <a
+          href="https://www.meetcenter.it/en/home-page/"
+          target="_blank"
+          class="mx-2"
+          >MEET
+        </a>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a href="https://burnghost.com" target="_blank" class="mx-2"
+          >BURNGHOST
+        </a>
+      </div>
+      
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a href="https://xone.gg/" target="_blank" class="mx-2">Xone</a>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <p>-</p>
+        <a
           href="https://www.enchantedvalleynft.com/"
           target="_blank"
           class="mx-2"
@@ -85,21 +110,9 @@
 
       <div class="d-flex align-items-center">
         <p>-</p>
-        <a href="https://www.daopunks.io/" target="_blank" class="mx-2"
-          >Daopunk</a
-        >
-      </div>
-
-      <div class="d-flex align-items-center">
-        <p>-</p>
         <a href="https://nft.ibizatoken.com/" target="_blank" class="mx-2"
           >Ibiza token</a
         >
-      </div>
-
-      <div class="d-flex align-items-center">
-        <p>-</p>
-        <a href="https://xone.gg/" target="_blank" class="mx-2">Xone</a>
       </div>
 
       <div class="d-flex align-items-center">
@@ -109,19 +122,14 @@
 
       <div class="d-flex align-items-center">
         <p>-</p>
-        <a
-          href="https://twitter.com/RelicTickets"
-          target="_blank"
-          class="mx-2"
+        <a href="https://twitter.com/RelicTickets" target="_blank" class="mx-2"
           >Relic Tickets</a
         >
       </div>
 
       <div class="d-flex align-items-center">
         <p>-</p>
-        <a href="https://misphits.xyz/" target="_blank" class="mx-2"
-          >W3ST</a
-        >
+        <a href="https://misphits.xyz/" target="_blank" class="mx-2">W3ST</a>
       </div>
 
       <div class="d-flex align-items-center">
@@ -165,12 +173,6 @@
       <div class="d-flex align-items-center">
         <p>-</p>
         <a href="https://well-b.space/" target="_blank" class="mx-2">Well-b </a>
-      </div>
-      <div class="d-flex align-items-center">
-        <p>-</p>
-        <a href="https://www.meetcenter.it/en/home-page/" target="_blank" class="mx-2"
-          >MEET
-        </a>
       </div>
     </div>
   </div>

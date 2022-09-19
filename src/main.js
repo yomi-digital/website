@@ -52,9 +52,9 @@ const messages = {
       aiTitle: "ARTIFICIAL INTELLIGENCE",
       aiDescription:
         "AI can be a valuable support, allowing human capital to take care of high value-added activities.",
-      erpTitle: "ERP SOFTWARE",
+      erpTitle: "SECURITY AUDIT",
       erpDescription:
-        "Basement and Weesell are built for business process simplification. They model themselves entirely to your needs.",
+        "We help web3 developers write secure smart contracts.",
       webDevTitle: "WEB3 DEVELOPMENT",
       webDevDescription:
         "We update and work to provide efficient tools by making decentralized online ecosystem based on blockchain.",
@@ -132,9 +132,9 @@ const messages = {
       aiTitle: "INTELLIGENZA ARTIFICIALE",
       aiDescription:
         "l’AI può essere un valido supporto, consentendo al capitale umano di occuparsi delle attività ad alto valore aggiunto.",
-      erpTitle: "GESTIONALI",
+      erpTitle: "AUDIT DI SICUREZZA",
       erpDescription:
-        "Basement e Weesell sono stati realizzati per la semplificazione dei processi aziendali. Si modellano interamente alle vostre esigenze.",
+        "Aiutiamo gli sviluppatori a realizzare Smart Contract sicuri e affidabili.",
       webDevTitle: "SVILUPPO WEB3",
       webDevDescription:
         "Ci aggiorniamo e lavoriamo per fornire strumenti efficienti per la creazione di ecosistemi decentralizzati basati su blockchain.",
