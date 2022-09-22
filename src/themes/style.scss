@@ -372,6 +372,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.blog-text {
+  * {
+    color: var(--font-color) !important;
+  }
+}
+
 .cta-banner {
   background-color: var(--font-color);
   transition: all 0.3s;
@@ -573,9 +579,15 @@ h1 {
     }
   }
 }
+
+.navbar-custom {
+  .marquee-text-text {
+    line-height: 0.5;
+    margin-top: -74px;
+  }
+}
 .marquee-text-text {
   line-height: 0.5;
-  margin-top: -74px;
 }
 
 ul {

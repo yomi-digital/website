@@ -6,7 +6,7 @@
       <h4 class="text-center">BLOG NEWS</h4>
       <h6 class="mt-5 text-center">Latest news update</h6>
       <div class="gap"></div>
-      <div v-for="post in posts" :key="post.title">
+      <div v-for="post in posts" :key="post.index">
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-6 col-lg-5">
             <!-- <router-link :to="{ name: 'Article', params: { id: post.slug } }"> -->
@@ -14,14 +14,19 @@
               <div
                 class="bg-image"
                 v-bind:style="{
-                  backgroundImage: 'url(' + contents + post.preview_pic + ')',
+                  backgroundImage:
+                    'url(' +
+                    ipfs +
+                    '/ipfs/' +
+                    post.metadata.preview_img.replace('ipfs://', '') +
+                    ')',
                 }"
               ></div>
               <div class="blog-card-content">
-                <div class="blog-title">{{ post.title }}</div>
-                <div class="blog-category mt-3">
+                <div class="blog-title">{{ post.metadata.title }}</div>
+                <!-- <div class="blog-category mt-3">
                   <em>{{ post.category }}</em>
-                </div>
+                </div> -->
                 <div
                   class="d-flex align-items-center justify-content-between mt-5"
                 >
@@ -36,14 +41,12 @@
             <div>
               <div class="d-flex align-items-center mt-1 mb-3">
                 <div class="blog-date secondary-color">
-                  {{ moment(post.post_date).format("MMM D, YYYY") }}
-                </div>
-                <p class="ms-2 me-2">.</p>
-                <div class="blog-date secondary-color">
-                  {{ post.read_time }}
+                  {{ moment(post.metadata.timestamp).format("MMM D, YYYY") }}
                 </div>
               </div>
-              <div class="blog-title secondary-color">{{ post.title }}</div>
+              <div class="blog-title secondary-color">
+                {{ post.metadata.title }}
+              </div>
               <div class="gap"></div>
               <div @click="togglePost(post)" class="btn-blog">READ</div>
             </div>
@@ -52,7 +55,7 @@
         <Transition name="slide">
           <div v-if="isOpen === post.title" class="row mt-5">
             <div class="col-12 col-md-10 col-lg-8 pt-5">
-              <p v-html="post.body_text"></p>
+              <p class="blog-text" v-html="post.metadata.body_text"></p>
             </div>
           </div>
         </Transition>
@@ -84,6 +87,7 @@ export default {
       author: [],
       contents: process.env.VUE_APP_API_CONTENTS_URL,
       isOpen: "",
+      ipfs: process.env.VUE_APP_IPFS,
     };
   },
   mounted() {
@@ -93,9 +97,7 @@ export default {
     async fetchPost() {
       const app = this;
       try {
-        const api_blog = await axios.get(
-          process.env.VUE_APP_API_BLOG_URL + "news"
-        );
+        const api_blog = await axios.get(process.env.VUE_APP_API_BLOG_URL);
         app.posts = api_blog.data;
         console.log(app.posts);
       } catch (e) {
