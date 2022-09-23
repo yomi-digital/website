@@ -3,10 +3,14 @@
   html {
     font-size: 10px;
   }
-  
+
   .agile .slide img {
     max-width: 80px;
     max-height: 50px;
+  }
+
+  .blog-card {
+    height: 350px;
   }
 
   .box-character-img {
@@ -20,16 +24,25 @@
     }
   }
 
+  .cta-banner {
+    .cta-text {
+      font-size: 1.3rem;
+    }
+  }
+
   h2 {
     font-size: 4rem;
   }
+  
   .marquee-rotated {
     transform: rotate(0deg);
   }
 
-  .marquee-text-text {
-    line-height: 0.5;
-    margin-top: 10px;
+  .navbar-custom {
+    .marquee-text-text {
+      line-height: 0.5;
+      margin-top: 20px;
+    }
   }
 
   .vm--container {

@@ -5,12 +5,16 @@
     <div class="container p-5 mt-5 mb-5">
       <h4 class="text-center">BLOG NEWS</h4>
       <h6 class="mt-5 text-center">Latest news update</h6>
-      <div class="gap"></div>
-      <div v-for="post in posts" :key="post.index">
+      <div v-if="!isMobile" class="gap"></div>
+      <div
+        v-for="post in posts"
+        :key="post.index"
+        :class="{ 'mt-5': isMobile }"
+      >
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-6 col-lg-5">
             <!-- <router-link :to="{ name: 'Article', params: { id: post.slug } }"> -->
-            <div class="blog-card p-4">
+            <div class="blog-card p-4" @click="togglePost(post)">
               <div
                 class="bg-image"
                 v-bind:style="{
@@ -37,7 +41,7 @@
             </div>
             <!-- </router-link> -->
           </div>
-          <div class="col-12 col-md-6 col-lg-5">
+          <div class="col-12 col-md-6 col-lg-5" :class="{ 'mt-5': isMobile }">
             <div>
               <div class="d-flex align-items-center mt-1 mb-3">
                 <div class="blog-date secondary-color">
@@ -47,8 +51,14 @@
               <div class="blog-title secondary-color">
                 {{ post.metadata.title }}
               </div>
-              <div class="gap"></div>
-              <div @click="togglePost(post)" class="btn-blog">READ</div>
+              <div v-if="!isMobile" class="gap"></div>
+              <div
+                @click="togglePost(post)"
+                class="btn-blog"
+                :class="{ 'mt-5': isMobile }"
+              >
+                READ
+              </div>
             </div>
           </div>
         </div>
@@ -70,6 +80,7 @@
 // @ is an alias to /src
 
 // import Loader from "@/components/Loader.vue";
+import checkViewport from "@/mixins/checkViewport.js";
 import ButtonNav from "@/components/ButtonNav.vue";
 import axios from "axios";
 import FooterExt from "@/components/FooterExt.vue";
@@ -77,6 +88,7 @@ import moment from "moment";
 
 export default {
   name: "Blog",
+  mixins: [checkViewport],
   components: {
     ButtonNav,
     FooterExt,

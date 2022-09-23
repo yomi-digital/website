@@ -15,11 +15,11 @@
           v-for="project in projects"
           :key="project.name"
         >
-          <div class="left-img">
-            <img :src="contents + project.imgLinkFirst" alt="" />
+          <div v-if="!isMobile" class="left-img">
+            <img :src="'/portfolio/' + project.imgLinkFirst" alt="" />
           </div>
-          <div class="right-img">
-            <img :src="contents + project.imgLinkSecond" alt="" />
+          <div v-if="!isMobile" class="right-img">
+            <img :src="'/portfolio/' + project.imgLinkSecond" alt="" />
           </div>
           <a :href="'/#/portfolio/' + project.name.split(' ').join('-')">{{
             project.name
@@ -49,7 +49,6 @@ export default {
     return {
       service: "",
       projects: projects,
-      contents: process.env.VUE_APP_API_CONTENTS_URL,
     };
   },
   mounted() {

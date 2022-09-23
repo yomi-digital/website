@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="portofolio-inner">
     <ButtonNav />
     <div v-if="Object.keys(project).length > 0">
       <div class="container mt-5 pt-5">
@@ -7,10 +7,10 @@
         <h6 class="mt-5 text-center">
           explore our portfolio and discover the latest projects
         </h6>
-        <div class="gap"></div>
-        <div class="project-header">
+        <div v-if="!isMobile" class="gap"></div>
+        <div class="project-header" :class="{ 'mt-5': isMobile }">
           <div class="preview-img">
-            <img :src="contents + project.imgCover" alt="" />
+            <img :src="'/portfolio/' + project.imgCover" alt="" />
             <MarqueeText class="title-project" :repeat="10" :duration="5">
               {{ project.name }}&nbsp;
             </MarqueeText>
@@ -73,7 +73,8 @@
           "
         >
           <div
-            class="d-flex align-items-start justify-content-around pt-5 pb-4 px-5"
+            class="d-flex align-items-start justify-content-around pt-5 pb-4"
+            :class="{ 'px-5': !isMobile, 'px-2': isMobile }"
           >
             <div class="cta-text">[view others]</div>
             <div class="cta-title">{{ nextProject.name }}</div>
@@ -105,7 +106,6 @@ export default {
   },
   data() {
     return {
-      contents: process.env.VUE_APP_API_CONTENTS_URL,
       projects: projects,
       project: {},
       nextProject: {},
