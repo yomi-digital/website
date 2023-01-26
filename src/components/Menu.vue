@@ -14,7 +14,7 @@
             <br />
             <a
               class="sitebar-contact"
-              href="https://www.linkedin.com/company/yomidigitalhub/"
+              href="https://www.linkedin.com/company/yomiweb3/"
               target="_blank"
               >LINKEDIN</a
             >
@@ -60,7 +60,7 @@
               <div class="b-menu-left no-borderLeft-m py-desktop-3">
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/company/yomidigitalhub/"
+                  href="https://www.linkedin.com/company/yomiweb3/"
                 >
                   <span class="menuLink m-0">IN</span>
                 </a>
