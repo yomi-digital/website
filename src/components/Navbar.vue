@@ -2,12 +2,12 @@
   <Transition enter-active-class="bounce-in-right">
     <div v-if="isEnter">
       <div class="navbar-custom no-overflow-x" style="overflow-y: hidden">
-        <div class="container-fluid p-0">
-          <div :class="{ 'p-0 row': !isMobile }">
+        <div class="container-fluid height-navbar p-0">
+          <div :class="{ 'p-0 m-0 row': !isMobile }">
             <div
               class="p-0 bg-light"
               :class="{
-                'col-12 col-md-2 col-lg-2': !isMobile,
+                'column-navbar': !isMobile,
                 'vh16': isMobile,
               }"
             >
@@ -16,9 +16,9 @@
                   <MarqueeText
                     class="marquee-rotated"
                     :repeat="20"
-                    :duration="3"
+                    :duration="7"
                   >
-                    <div>ABOUT&nbsp;</div>
+                    <div>{{ $t("menu.about") }}&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
@@ -26,7 +26,7 @@
             <div
               class="p-0 bg-darker"
               :class="{
-                'col-12 col-md-2 col-lg-2': !isMobile,
+                'column-navbar': !isMobile,
                 'vh16': isMobile,
               }"
             >
@@ -36,9 +36,9 @@
                     class="marquee-rotated"
                     reverse
                     :repeat="20"
-                    :duration="3"
+                    :duration="7"
                   >
-                    <div>OUR TEAM&nbsp;</div>
+                    <div>{{ $t("menu.team") }}&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
@@ -46,7 +46,7 @@
             <div
               class="p-0 bg-light"
               :class="{
-                'col-12 col-md-2 col-lg-2': !isMobile,
+                'column-navbar': !isMobile,
                 'vh16': isMobile,
               }"
             >
@@ -55,14 +55,14 @@
                   <MarqueeText
                     class="marquee-rotated"
                     :repeat="20"
-                    :duration="3"
+                    :duration="7"
                   >
-                    <div>SERVICE&nbsp;</div>
+                    <div>{{ $t("menu.service") }}&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
-            <div
+            <!-- <div
               class="p-0 bg-darker"
               :class="{
                 'col-12 col-md-2 col-lg-2': !isMobile,
@@ -75,9 +75,29 @@
                     class="marquee-rotated"
                     reverse
                     :repeat="20"
-                    :duration="3"
+                    :duration="7"
                   >
                     <div>OUR BLOG&nbsp;</div>
+                  </MarqueeText></a
+                >
+              </div>
+            </div> -->
+            <div
+              class="p-0 bg-darker"
+              :class="{
+                'column-navbar': !isMobile,
+                'vh16': isMobile,
+              }"
+            >
+              <div :class="{ vh100: !isMobile }">
+                <a class="nav-link-light" href="/#/portfolio">
+                  <MarqueeText
+                    class="marquee-rotated"
+                    reverse
+                    :repeat="20"
+                    :duration="7"
+                  >
+                    <div>{{ $t("menu.portfolio") }}&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
@@ -85,43 +105,26 @@
             <div
               class="p-0 bg-light"
               :class="{
-                'col-12 col-md-2 col-lg-2': !isMobile,
+                'column-navbar': !isMobile,
                 'vh16': isMobile,
               }"
             >
               <div :class="{ vh100: !isMobile }">
-                <a class="nav-link-dark" href="/#/portfolio">
+                <a class="nav-link-dark" href="/#/internal-project">
                   <MarqueeText
                     class="marquee-rotated"
-                    :repeat="20"
-                    :duration="3"
-                  >
-                    <div>PORTFOLIO&nbsp;</div>
-                  </MarqueeText></a
-                >
-              </div>
-            </div>
-            <div
-              class="p-0 bg-darker"
-              :class="{
-                'col-12 col-md-2 col-lg-2': !isMobile,
-                'vh16': isMobile,
-              }"
-            >
-              <div :class="{ vh100: !isMobile }">
-                <a class="nav-link-light" href="/#/internal-project">
-                  <MarqueeText
-                    class="marquee-rotated"
-                    reverse
                     :repeat="30"
-                    :duration="3"
+                    :duration="7"
                   >
-                    <div>INTERNAL&nbsp;</div>
+                    <div>{{ $t("menu.internal") }}&nbsp;</div>
                   </MarqueeText></a
                 >
               </div>
             </div>
           </div>
+        </div>
+        <div class="footer-top">
+         <changeLanguage />
         </div>
       </div>
     </div>
@@ -131,13 +134,16 @@
 <script>
 import checkViewport from "@/mixins/checkViewport";
 import MarqueeText from "vue-marquee-text-component";
+import changeLanguage from "../components/changeLanguage.vue";
 
 export default {
   name: "loader",
+  topFooter: false,
   mixins: [checkViewport],
   props: ["isEnter"],
   components: {
     MarqueeText,
+    changeLanguage
   },
   data() {
     return {};

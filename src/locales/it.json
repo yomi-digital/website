@@ -1,0 +1,72 @@
+{
+  "menu":{
+    "about": "chi siamo",
+    "team": "team",
+    "service": "servizi",
+    "portfolio": "portafoglio",
+    "internal": "interni",
+    "talk":"parliamo"
+  },
+  "about":{
+    "firstText":"Siamo un laboratorio di innovazione e sviluppo che trascende i confini fisici per costruire spazi digitali liberi.",
+    "secondText":"Il nostro desiderio più grande è quello di rendere il Web 3.0 accessibile a tutti e costruire un futuro decentralizzato in cui gli utenti hanno pieno controllo dei propri dati, identità e destino."
+  },
+  "team":{
+    "text":"Le competenze e la determinazione del nostro team sono alla base della nostra capacità di superare i limiti della tecnologia e sviluppare prodotti digitali che colpiscono nel segno."
+  },
+  "header": {
+    "story3": "Scale Platform",
+    "disruptors": "Disruptores",
+    "disruptors1": "Portfolio",
+    "disruptors2": "Q&A",
+    "insights": "Insights",
+    "tools": "Limited Partners",
+    "connect": "Conectar",
+    "contact": "Contacte",
+    "companies": "Empresas",
+    "home":"Inicio",
+    "legal":"legal"
+  },
+  "home": {
+    "head": "Acercando el futuro <br /> al presente",
+    "sub-head": "Apoyamos a compañías con la visión",
+    "line-head": "de <span class='w-l'></span> cambiar <span class='w-l'></span> el <span class='w-l'></span> mundo",
+    "box-1-red": "disruptores",
+    "box-2-red": "nuestro proceso",
+    "more":"Más",
+    "btn-box-2":"Conócenos",
+    "da":"por"
+  },
+  "disruptors": {
+    "description": "Descripción",
+    "area": "Áreas",
+    "coinvestor": "Coinversores"
+  },
+  "general":{
+    "btn-load":"Cargar más",
+    "red-insight":"SEDE CENTRAL",
+    "related":"relacionado",
+    "impact":"Impactos",
+    "prev":"Previamente",
+    "next":"Siguiente",
+    "milestones":"hitos",
+    "latest":"Últimos",
+    "where":"Dónde encontrarnos",
+    "map":"Ver en el mapa",
+    "copia":"Copia",
+    "copiato":"Copiado!"
+  },
+  "limited":{
+    "user": "Usuario",
+    "password": "Contraseña",
+    "download": "Descargar",
+    "document": "Documentos",
+    "link": "Enlaces"
+  },
+  "footer":{
+    "reserve":"Todos los derechos reservados",
+    "esg":"Política ESG",
+    "privacy":"Política de privacidad",
+    "cookie":"Política de cookies"
+  }
+}

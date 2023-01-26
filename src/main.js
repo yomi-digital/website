@@ -2,6 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import vmodal from "vue-js-modal";
+import i18n from "./i18n";
+
+
+const lang = localStorage.getItem("lang") || "en";
+document.documentElement.lang = lang;
 
 import "./fonts/stylesheet.css";
 import "./themes/style.scss";
@@ -36,5 +41,6 @@ Vue.use(vmodal);
 
 new Vue({
   router,
+  i18n,
   render: (h) => h(App),
 }).$mount("#app");

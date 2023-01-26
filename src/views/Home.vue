@@ -1,18 +1,18 @@
 <template>
   <div>
     <Loader :isLoading="isLoading" />
-    <Welcome
+    <!-- <Welcome
       :isLoading="isLoading"
       :isEnter="isEnter"
       @enterWebsite="enterWebsite()"
-    />
-    <Navbar :isEnter="isEnter" />
+    /> -->
+    <Navbar :isLoading="isLoading" :isEnter="isEnter" />
   </div>
 </template>
 <script>
 import checkViewport from "@/mixins/checkViewport";
 import Loader from "@/components/Loader.vue";
-import Welcome from "@/components/Welcome.vue";
+/* import Welcome from "@/components/Welcome.vue"; */
 import Navbar from "@/components/Navbar.vue";
 
 export default {
@@ -20,7 +20,7 @@ export default {
   mixins: [checkViewport],
   components: {
     Loader,
-    Welcome,
+    /* Welcome, */
     Navbar,
   },
   data() {
@@ -42,9 +42,13 @@ export default {
         setTimeout(function () {
           app.isLoading = false;
           window.localStorage.setItem("loaded", "yes");
+          if(!app.isLoading){
+            app.enterWebsite()
+          }
         }, 5000);
       } else {
         app.isLoading = false;
+        app.enterWebsite()
       }
     },
     enterWebsite() {

@@ -4,22 +4,25 @@
     <!-- TEAM SECTION -->
     <div
       v-if="!showTeam"
-      class="container-fluid full-h"
+      class="container-fluid full-h pd-container"
       style="position: relative"
     >
       <div class="row">
-        <div class="col-12 col-md-12 col-lg-11">
-          <div class="py-3 px-5">
-            <typewriter :type-interval="22" :replace-interval="200">
-              <h2>
-                The hard work and sheer determination of our team are at the
-                root of our ability to push the boundaries of technology and
-                provide digital products that cut through the noise.
-              </h2>
-            </typewriter>
+        <div class="col-12 col-md-12 col-lg-12">
+          <div class="" :class="{ 'mt-3': isMobile }">
+            <h2 class="enter-page">{{ $t("menu.team") }}</h2>
           </div>
         </div>
-        <Transition enter-active-class="fade-in">
+        <div class="col-12 col-lg-6 ms-2 mt-5">
+          <p
+            class="text-service-one"
+            :class="{ 'mt-3': isMobile }"
+          >
+            {{ $t("team.text") }}
+          </p>
+        
+        </div>
+        <!-- <Transition enter-active-class="fade-in">
           <div
             style="position: absolute; bottom: 50px; left: 0"
             @click="showTeam = !showTeam"
@@ -28,20 +31,18 @@
           >
             KNOW MORE
           </div>
-        </Transition>
+        </Transition> -->
       </div>
-      <div class="box-character-img">
-        <img
-          src="../assets/images/ch2.png"
-          alt=""
-          style="width: 700px; heigh 100;"
-        />
-      </div>
+      <div class="box-character-img position-second-box-charger" style="width: 475px; ">
+          <img class="imgTeam" src="../assets/images/team-img.png" alt="" />
+        </div>
     </div>
-
+    <MarqueeText class="title-project" :repeat="6" :duration="8" style="z-index:1">
+        <h4>&nbsp;KNOW MORE ABOUT US&nbsp;</h4>
+      </MarqueeText>
     <!-- TEAM SHOW -->
-    <div v-if="showTeam" class="container-fluid">
-      <div class="my-5 text-start">
+    <div v-if="!showTeam" class="container-fluid">
+      <!-- <div class="my-5 text-start">
         <div
           @click="showTeam = !showTeam"
           class="d-flex align-items-center pointer"
@@ -51,12 +52,8 @@
             style="font-size: 3rem"
           ></i>
         </div>
-      </div>
-      <div class="mt-5">
-        <MarqueeText :repeat="10" reverse :duration="5">
-          <h4>KNOW MORE ABOUT US</h4>
-        </MarqueeText>
-      </div>
+      </div> -->
+
       <div class="mt-5">
         <div class="row">
           <div
@@ -111,24 +108,24 @@
       </modal>
     </div>
 
-    <FooterExt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-import Typewriter from "typewriter-vue";
+
 import MarqueeText from "vue-marquee-text-component";
 
-import FooterExt from "@/components/FooterExt.vue";
+import Footer from "@/components/Footer.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 
 export default {
   name: "team",
   mixins: [checkViewport],
   components: {
-    FooterExt,
-    Typewriter,
+    Footer,
+
     MarqueeText,
     ButtonNav,
   },
