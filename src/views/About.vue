@@ -21,9 +21,9 @@
             </p>
           </div>
         </div>
-        <div class="box-character-img" style="width: 475px; height: 100%">
+        <div class="box-character-img position-first-box-charger" style="width: 475px; height: 100%">
           <img src="../assets/images/about-img.png" alt="" />
-        </div>
+      </div>
       </div>
       <MarqueeText class="title-project" :repeat="6" :duration="8" style="z-index:1">
         <h4>&nbsp;IMAGINE THE POSSIBILITIES. WE REALIZE THEM.&nbsp;</h4>

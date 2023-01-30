@@ -36,7 +36,6 @@ html {
   color: var(--font-color) !important;
 }
 
-
 // -- MIXINS --
 @mixin btn {
   padding: 10px 50px;
@@ -126,7 +125,7 @@ a {
 .cta {
   @include secondary-font();
   font-weight: 400;
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   line-height: 98.4%;
   text-align: center;
   color: var(--font-color);
@@ -303,7 +302,7 @@ h1 {
   height: 100vh;
 }
 
-.pd-container{
+.pd-container {
   padding: 1rem 3rem;
 }
 //   =======================================================================================
@@ -428,29 +427,75 @@ h1 {
     object-fit: cover;
     object-position: bottom;
   }
-  .imgTeam{
+  .imgTeam {
     max-height: 550px;
   }
 }
-.position-first-box-charger{
+.position-first-box-charger {
   top: 4rem;
   left: 60%;
 }
-.position-second-box-charger{
+.position-second-box-charger {
   bottom: 3rem;
   left: 50%;
 }
 
+.border-image {
+  border: 1px solid white;
+  img {
+    opacity: 0;
+  }
+}
 .box-team-container {
-  background-color: var(--high-contrast-color);
+  position: relative;
   width: 190px;
   height: 280px;
   border-radius: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("~@/assets/images/team1.png");
   margin: auto;
+  overflow: hidden;
+  &:hover  .bk-team{
+    animation: enterText 0.4s;
+    opacity: 0.9;
+  }
+  @keyframes enterText {
+    to{
+      opacity: 0.9;
+    }
+    from{
+      opacity: 0;
+    }
+  }
+  .bk-team {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #84ff9d;
+    z-index: 99;
+    animation: test 1s;
+    opacity: 0;
+    
+
+    
+    p {
+      @include title-font();
+      text-align: center;
+      font-size: 1.56rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    transform: scale(2.5);
+    margin-top: 8.5rem;
+    object-fit: cover;
+    
+  }
 }
 
 .custom-card {
@@ -644,6 +689,8 @@ ul {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      padding-top: 5rem;
+      transform: scale(1.4);
     }
   }
 }
@@ -656,9 +703,9 @@ ul {
     background-color: var(--high-contrast-color);
     border-radius: 18px;
     position: relative;
-    padding: 2.5rem 4rem;
+    padding: 1.5rem 3rem;
     height: auto !important;
-    width: 45vw !important;
+    width: 50vw !important;
     top: unset !important;
     left: unset !important;
   }
@@ -758,14 +805,14 @@ button {
   border-bottom: 1px solid var(--font-color);
 }
 
-.height-navbar{
+.height-navbar {
   height: calc(100vh - 100px);
   overflow: hidden;
 }
-.column-navbar{
+.column-navbar {
   width: calc(100vw / 5);
 }
-.buble-text{
+.buble-text {
   padding: 10px 30px;
   border: 1px solid var(--font-color);
   border-radius: 100px;
@@ -773,14 +820,34 @@ button {
   display: inline-block;
   text-transform: uppercase;
 }
-.text-lang{
+.text-lang {
   @include title-font();
   margin-bottom: 0px;
   font-size: 1.25rem;
   font-weight: 700;
   cursor: pointer;
 }
-.footer-top{
+.footer-top {
   height: 100px;
   color: white;
+}
+
+.banner {
+  width: 100vw;
+  height: 210px;
+  background-color: white;
+  padding: 0rem 3rem;
+  a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+  h3,
+  p {
+    color: black;
+  }
+
+}
+.vm--overlay {
+  pointer-events: none !important;
 }

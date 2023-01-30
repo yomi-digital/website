@@ -1,0 +1,90 @@
+[
+  {
+    "id": "001",
+    "name": "Sebastiano",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Sebastiano.webp"
+  },
+  {
+    "id": "002",
+    "name": "Roberto",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Roberto.webp"
+  },
+  {
+    "id": "003",
+    "name": "Livio",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Livio.webp"
+  },
+  {
+    "id": "004",
+    "name": "Stefano",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Stefano.webp"
+  },
+  {
+    "id": "005",
+    "name": "Andrea",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Andrea.webp"
+  },
+  {
+    "id": "006",
+    "name": "Giorgia",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Giorgia.webp"
+  },
+  {
+    "id": "007",
+    "name": "Elisea",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Elisea.webp"
+  },
+  {
+    "id": "008",
+    "name": "Giuseppe",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Giuseppe.webp"
+  },
+  {
+    "id": "009",
+    "name": "Lucrezia",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Lucrezia.webp"
+  },
+  {
+    "id": "010",
+    "name": "Simone",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Simone.webp"
+  },
+  {
+    "id": "011",
+    "name": "Mario Rossi",
+    "alias": "Lorem Ipsum",
+    "role": "CO-FOUNDER",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Anonymous.webp"
+  }
+]
