@@ -42,7 +42,8 @@
       :duration="8"
       style="z-index: 1"
     >
-      <h4>&nbsp;KNOW MORE ABOUT US&nbsp;</h4>
+    <h4>&nbsp;{{$t("banner.team")}}&nbsp;</h4>
+
     </MarqueeText>
     <!-- TEAM SHOW -->
     <div v-show="teams != ''" class="container-fluid">
@@ -70,24 +71,20 @@
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{'border-image' : !showImage}"
             >
-              <div class="bk-team"><p>MORE ABOUT</p></div>
+              <div class="bk-team"><p class="text-strong">MORE ABOUT</p></div>
               <img :src="'/team/' + team.imageProfile" alt="" />
             </div>
           </div>
           <div
+          @click="toggleForm()"
             class="box-team-container justify-content-center d-flex my-5 pointer"
             :class="{'border-image' : !showImage}"
           >
-            <div class="bk-team opacity-100 text-uppercase"><p>maybe you?</p></div>
+            <div class="bk-team opacity-100 text-uppercase"><p class="text-strong">maybe you?</p></div>
           </div>
         </div>
       </div>
-      <div class="mt-5 text-center">
-        <a href="#" class="cta underline">
-          contact us to
-          join the team
-        </a>
-      </div>
+   
       <div class="gap"></div>
       <div v-if="!isMobile" class="gap"></div>
       <modal name="team" class="team-card">
@@ -122,6 +119,11 @@
           <img :src="'/team/' + selected.imageProfile" alt="" />
         </div>
       </modal>
+      <formTeam @onBackClick="
+          () => {
+            showImage = !showImage;
+          }
+        " />
     </div>
     <bannerPortfolio />
     <Footer />
@@ -135,6 +137,7 @@ import MarqueeText from "vue-marquee-text-component";
 
 import Footer from "@/components/Footer.vue";
 import bannerPortfolio from "@/components/bannerPortfolio.vue";
+import formTeam from "@/components/formTeam.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import teams from "@/team/teams.json";
 
@@ -145,7 +148,8 @@ export default {
     Footer,
     MarqueeText,
     ButtonNav,
-    bannerPortfolio
+    bannerPortfolio,
+    formTeam
   },
   data() {
     return {
@@ -176,7 +180,7 @@ export default {
     closeModal() {
       const app = this;
       console.log('click');
-      document.querySelector('.vm--modal').classList.add('slide-out-right');
+      document.querySelector('.vm--modal').classList.add('slit-out-vertical');
       setTimeout(function () {
         app.$modal.hide("team");
       }, 800);
@@ -188,6 +192,12 @@ export default {
       app.selected = team;
       app.showImage = false;
       app.$modal.show("team");
+     
+    },
+    toggleForm() {
+      const app = this;
+      app.showImage = false;
+      app.$modal.show("form");
      
     },
 

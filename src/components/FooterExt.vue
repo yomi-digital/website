@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="custom-card py-4 px-4">
-      <h3>Partners</h3>
+    <div class="custom-card py-4 px-4 mb-2">
+      <h6 class="title-carousel">Build better together!</h6>
       <div class="mt-5 mb-5">
         <agile
           infinite
@@ -25,7 +25,7 @@
         </agile>
       </div>
     </div>
-    <div class="custom-card mt-1 py-4 px-4">
+    <!-- <div class="custom-card mt-1 py-4 px-4">
       <h3 class="border-bottom-light pb-3 mb-5">
         Contact Us
         <i class="fa-regular fa-paper-plane ms-3" style="font-size: 3rem"></i>
@@ -72,7 +72,7 @@
           >
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

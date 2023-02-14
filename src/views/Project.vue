@@ -2,21 +2,55 @@
   <div class="portofolio-inner">
     <ButtonNav />
     <div v-if="Object.keys(project).length > 0">
-      <div class="container mt-5 pt-5">
-        <h4 class="text-center">PROUD OF</h4>
-        <h6 class="mt-5 text-center">
-          explore our portfolio and discover the latest projects
-        </h6>
-        <div v-if="!isMobile" class="gap"></div>
-        <div class="project-header" :class="{ 'mt-5': isMobile }">
-          <div class="preview-img">
-            <img :src="'/portfolio/' + project.imgCover" alt="" />
-            <MarqueeText class="title-project" :repeat="10" :duration="5">
-              {{ project.name }}&nbsp;
-            </MarqueeText>
+      <div class="container-fluid pd-container mt-5 ">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="">PROUD OF</h2>
+          </div>
+          <div class="col-4">
+            <h6 class="mt-5 sub-title-project">
+              Explore our portfolio and discover the latest projects
+            </h6>
           </div>
         </div>
-        <div class="row mt-5 pb-5 px-2 b-bottom-light">
+    </div>
+      <div class="container mt-5 pt-5">
+        
+        <div v-if="!isMobile" class="gap"></div>
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="project-header" :class="{ 'mt-5': isMobile }">
+              <div class="preview-img">
+                <img
+                  :src="'/portfolio/' + project.imgCover"
+                  alt=""
+                  class="test"
+                />
+                <MarqueeText class="title-project" :repeat="10" :duration="5">
+                  {{ project.name }}&nbsp;
+                </MarqueeText>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-10 offset-1 pt-5 pb-5 px-2 d-flex justify-content-between b-bottom-light"
+          >
+            <div class="d-flex align-items-center">
+              <h6 class="me-3">
+                <i
+                  class="fa-solid fa-arrow-up"
+                  style="transform: rotate(45deg)"
+                ></i>
+              </h6>
+              <a :href="project.link" target="_blank"
+                ><h6 class="underline">{{ project.name }}</h6></a
+              >
+            </div>
+            <h6 v-html="project.category"></h6>
+          </div>
+        </div>
+
+        <!-- <div class="row mt-5 pb-5 px-2 b-bottom-light">
           <div class="col-6">
             <div class="d-flex align-items-center">
               <h6 class="me-3">
@@ -33,10 +67,10 @@
           <div v-if="project.category" class="col-6 text-end">
             <h6 v-html="project.category.replace(' ', '<br/>')"></h6>
           </div>
-        </div>
+        </div> -->
 
         <div class="row mt-5 pb-5 px-2">
-          <div class="mb-5">
+          <!-- <div class="col-10 offset-1 mb-5">
             <h6 class="mb-4">OUR CONTRIBUTION</h6>
             <div class="d-flex">
               <i
@@ -48,9 +82,20 @@
                 style="color: white; font-size: 0.5rem"
               ></i>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="">
+          </div> -->
+          <div class="col-10 offset-1 d-flex justify-content-between">
+            <div class="w-50">
+              <h6 style="font-weight: 500" class="mb-4">OUR CONTRIBUTION</h6>
+              <div class="d-flex mb-4">
+                <i
+                  class="fa-solid fa-circle me-2"
+                  style="color: white; font-size: 0.5rem"
+                ></i>
+                <i
+                  class="fa-solid fa-circle me-2"
+                  style="color: white; font-size: 0.5rem"
+                ></i>
+              </div>
               <p
                 class="m-0"
                 v-for="service in Object.keys(project.services)"
@@ -59,13 +104,13 @@
                 {{ project.services[service] }}
               </p>
             </div>
-          </div>
-          <div class="col-6 text-end mt-3">
-            <p>{{ project.description }}</p>
+            <div class="w-50 text-end mt-4">
+              <p>{{ project.description }}</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="cta-banner mt-5">
+      <!-- <div class="cta-banner mt-5">
         <a
           v-if="nextProject"
           @click="
@@ -82,16 +127,22 @@
               <i class="fa-solid fa-arrow-right"></i>
             </div></div
         ></a>
-      </div>
+      </div> -->
       <div class="gap"></div>
     </div>
+    <div class="mb-2">
+      <bannerPortfolio />
+    </div>
     <FooterExt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
 import FooterExt from "@/components/FooterExt.vue";
+import Footer from "@/components/Footer.vue";
+import bannerPortfolio from "@/components/bannerPortfolio.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
@@ -101,6 +152,8 @@ export default {
   mixins: [checkViewport],
   components: {
     FooterExt,
+    Footer,
+    bannerPortfolio,
     ButtonNav,
     MarqueeText,
   },
@@ -139,3 +192,75 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.test {
+  &:hover {
+    animation: animate 0.2s linear infinite;
+  }
+}
+@keyframes animate {
+  0% {
+    object-position: 0 0;
+    filter: hue-rotate(0deg);
+    border-radius: 7px;
+  }
+  10% {
+    object-position: 5px 0;
+    filter: hue-rotate(1080deg);
+    border-radius: 7px;
+  }
+  20% {
+    object-position: -5px 0;
+    filter: hue-rotate(0deg);
+
+    border-radius: 7px;
+  }
+  30% {
+    object-position: 15px 0;
+    filter: hue-rotate(1080deg);
+
+    border-radius: 7px;
+  }
+  40% {
+    object-position: 5px 0;
+    filter: hue-rotate(0deg);
+
+    border-radius: 7px;
+  }
+  50% {
+    object-position: -20px 0;
+    filter: hue-rotate(1080deg);
+
+    border-radius: 7px;
+  }
+  60% {
+    object-position: -30px 0;
+    filter: hue-rotate(0deg);
+
+    border-radius: 7px;
+  }
+  70% {
+    object-position: 0 -20px;
+    filter: hue-rotate(1080deg);
+
+    border-radius: 7px;
+  }
+  80% {
+    object-position: -40px -20px;
+    filter: hue-rotate(0deg);
+
+    border-radius: 7px;
+  }
+  81% {
+    background-position: 10px 0;
+    filter: hue-rotate(1080deg);
+
+    border-radius: 7px;
+  }
+  100% {
+    background-position: 0 0;
+    filter: hue-rotate(360deg);
+    border-radius: 7px;
+  }
+}
+</style>

@@ -5,6 +5,7 @@ import vmodal from "vue-js-modal";
 import i18n from "./i18n";
 
 
+
 const lang = localStorage.getItem("lang") || "en";
 document.documentElement.lang = lang;
 

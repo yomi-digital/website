@@ -1,172 +1,109 @@
 <template>
-  <div class="pt-5">
+  <div class="services">
     <ButtonNav />
+    <div class="container-fluid pd-container mt-5">
+      <div class="row margin-btm">
+        <div class="col-12">
+          <h2 class="">SERVICES</h2>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid p-0">
-      <div class="mt-5 mb-5">
-        <MarqueeText :repeat="10" :duration="5">
-          <h4>OUR SERVICES&nbsp;</h4>
-        </MarqueeText>
-      </div>
-      <div class="mt-5 mb-5">
-        <h6 class="text-center">
-          DISCOVER OUR SERVICES AND START A PROJECT WITH US
-        </h6>
-      </div>
-      <div class="mb-5">
-        <div>
-          <div
-            class="d-flex justify-content-center"
-            :class="{ 'pointer-link': service !== 'web3' }"
-          >
-            <h1 @click="service = 'web3'" class="text-center m-0">WEB3</h1>
-            <div
-              v-show="service === 'web3'"
-              class="toggler-service pointer"
-              @click="resetService()"
-            >
-              <img src="../assets/images/close.svg" alt="" />
-            </div>
+      <div class="row margin-btm pt-5">
+        <div class="col-12 service-content">
+          
+          <MarqueeText :repeat="10" :duration="6" >
+            <h4>{{$t('service.firstBanner')}}&nbsp;</h4>
+          </MarqueeText>
+          <div @click="showTextFirst ='blockchain'" :class="{ active : showTextFirst === 'blockchain' }" class="single-service position-one transform-rotate-one lft-40 ">
+            <p class="text-strong">Blockchain</p>
           </div>
-          <Transition name="slide">
-            <div
-              v-if="service === 'web3'"
-              class="mt-5 row justify-content-center"
-            >
-              <div class="col-12 col-md-8 col-lg-7">
-                <div class="text-service-one text-center">
-                  We provide efficient tools by building decentralized
-                  ecosystems based on blockchain technology.
-                </div>
-                <div class="text-service-two text-center mt-5">
-                  Smart Contracts, Minting Button, Web3/Web2 Integration,
-                  Generative Layering Script, UMI - NFT, Minting Interface ,
-                  Consulting, Technical, Documentation, API Integration, FIAT
-                  Payments, Security Audit, Notarization System, Tokenization
-                  System
-                </div>
-              </div>
-            </div>
-          </Transition>
+          <div  @click="showTextFirst ='metaverse'" :class="{ active : showTextFirst === 'metaverse' }" class="single-service position-two transform-rotate-two lft-10">
+            <p class="text-strong">Metaverse</p>
+          </div>
+          <div  @click="showTextFirst ='ai'" :class="{ active : showTextFirst === 'ai' }" class="single-service position-two transform-rotate-three lft-75">
+            <p class="text-strong">Ai</p>
+          </div>
         </div>
-        <div>
-          <div
-            class="d-flex justify-content-center"
-            :class="{ 'pointer-link': service !== 'web2' }"
-          >
-            <h1 @click="service = 'web2'" class="text-center m-0">WEB2</h1>
-            <div
-              v-show="service === 'web2'"
-              class="toggler-service pointer"
-              @click="resetService()"
-            >
-              <img src="../assets/images/close.svg" alt="" />
-            </div>
-          </div>
-          <Transition name="slide">
-            <div
-              v-if="service === 'web2'"
-              class="mt-5 row justify-content-center"
-            >
-              <div class="col-12 col-md-8 col-lg-7">
-                <div class="text-service-one text-center">
-                  We provide efficient tools by building decentralized
-                  ecosystems based on blockchain technology.
-                </div>
-                <div class="text-service-two text-center mt-5">
-                  Smart Contracts, Minting Button, Web3/Web2 Integration,
-                  Generative Layering Script, UMI - NFT, Minting Interface ,
-                  Consulting, Technical, Documentation, API Integration, FIAT
-                  Payments, Security Audit, Notarization System, Tokenization
-                  System
-                </div>
-              </div>
-            </div>
-          </Transition>
-        </div>
-        <div>
-          <div
-            class="d-flex justify-content-center"
-            :class="{ 'pointer-link': service !== 'consulting' }"
-          >
-            <h1 @click="service = 'consulting'" class="text-center m-0">
-              CONSULTING
-            </h1>
-            <div
-              v-show="service === 'consulting'"
-              class="toggler-service pointer"
-              @click="resetService()"
-            >
-              <img src="../assets/images/close.svg" alt="" />
-            </div>
-          </div>
-          <Transition name="slide">
-            <div
-              v-if="service === 'consulting'"
-              class="mt-5 row justify-content-center"
-            >
-              <div class="col-12 col-md-8 col-lg-7">
-                <div class="text-service-one text-center">
-                  We provide efficient tools by building decentralized
-                  ecosystems based on blockchain technology.
-                </div>
-                <div class="text-service-two text-center mt-5">
-                  Smart Contracts, Minting Button, Web3/Web2 Integration,
-                  Generative Layering Script, UMI - NFT, Minting Interface ,
-                  Consulting, Technical, Documentation, API Integration, FIAT
-                  Payments, Security Audit, Notarization System, Tokenization
-                  System
-                </div>
-              </div>
-            </div>
-          </Transition>
-        </div>
-        <div>
-          <div
-            class="d-flex justify-content-center"
-            :class="{ 'pointer-link': service !== 'design' }"
-          >
-            <h1 @click="service = 'design'" class="text-center m-0">DESIGN</h1>
-            <div
-              v-show="service === 'design'"
-              class="toggler-service pointer"
-              @click="resetService()"
-            >
-              <img src="../assets/images/close.svg" alt="" />
-            </div>
-          </div>
-          <Transition name="slide">
-            <div
-              v-if="service === 'design'"
-              class="mt-5 row justify-content-center"
-            >
-              <div class="col-12 col-md-8 col-lg-7">
-                <div class="text-service-one text-center">
-                  We provide efficient tools by building decentralized
-                  ecosystems based on blockchain technology.
-                </div>
-                <div class="text-service-two text-center mt-5">
-                  Smart Contracts, Minting Button, Web3/Web2 Integration,
-                  Generative Layering Script, UMI - NFT, Minting Interface ,
-                  Consulting, Technical, Documentation, API Integration, FIAT
-                  Payments, Security Audit, Notarization System, Tokenization
-                  System
-                </div>
-              </div>
-            </div>
-          </Transition>
+        <div class="col-8 offset-2 block-text">
+          <p v-if="showTextFirst == ''">{{ $t('service.firstDescription') }}</p>
+          <p class="active-text fade-in" v-if="showTextFirst == 'blockchain'">Smart Contracts / Blockchain Protocols / NFTs & Tokenization / DApps / Notarization / DeFi / MEGO Suite</p>
+          <p class="active-text fade-in" v-if="showTextFirst == 'ai'">Machine learning / Process Automation</p>
+          <p class="active-text fade-in" v-if="showTextFirst == 'metaverse'">dApp Integration / API Integration / NFT Marketplace Integration</p>
         </div>
       </div>
+      <div class="row margin-btm pt-5">
+        <div class="col-12 service-content">
+          <MarqueeText :repeat="10" :duration="6" reverse>
+            <h4>{{$t('service.secondBanner')}}&nbsp;</h4>
+          </MarqueeText>
+          <div @click="showTextSecond ='marketplace'" :class="{ active : showTextSecond === 'marketplace' }" class="single-service position-one transform-rotate-two lft-10">
+            <p class="text-strong">marketplace</p>
+          </div>
+          <div @click="showTextSecond ='app'" :class="{ active : showTextSecond === 'app' }" class="single-service position-three transform-rotate-two lft-15">
+            <p class="text-strong">app</p>
+          </div>
+          <div @click="showTextSecond ='commerce'" :class="{ active : showTextSecond === 'commerce' }" class="single-service position-one transform-rotate-three lft-40 ms-5">
+            <p class="text-strong">E-commerce</p>
+          </div>
+          <div @click="showTextSecond ='website'" :class="{ active : showTextSecond === 'website' }" class="single-service position-one transform-rotate-three lft-75">
+            <p class="text-strong">website</p>
+          </div>
+          <div @click="showTextSecond ='landing'" :class="{ active : showTextSecond === 'landing' }" class="single-service position-two transform-rotate-one lft-50">
+            <p class="text-strong">landing</p>
+          </div>
+          <div @click="showTextSecond ='web3'" :class="{ active : showTextSecond === 'web3' }" class="single-service position-five transform-rotate-two lft-75">
+            <p class="text-strong">web3 <br> integration</p>
+          </div>
+         
+        </div>
+        <div class="col-8 offset-2 block-text">
+          <p  v-if="showTextSecond == ''">{{ $t('service.secondDescription') }}</p>
+          <p class="active-text fade-in" v-if="showTextSecond == 'marketplace'">Smart Contracts / Blockchain Protocols / NFTs & Tokenization / DApps / Notarization / DeFi / MEGO Suite</p>
+          <p class="active-text fade-in" v-if="showTextSecond == 'app'">Machine learning / Process Automation</p>
+          <p class="active-text fade-in" v-if="showTextSecond == 'website'">dApp Integration / API Integration / NFT Marketplace Integration</p>
+          <p class="active-text fade-in" v-if="showTextSecond == 'landing'">dApp Integration / API Integration / NFT Marketplace Integration dApp Integration / API Integration / NFT Marketplace Integration</p>
+          <p class="active-text fade-in" v-if="showTextSecond == 'commerce'">bellu u e-commerce</p>
+          <p class="active-text fade-in" v-if="showTextSecond == 'web3'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor numquam harum, laudantium iure consectetur doloribus inventore debitis alias enim quisquam sit voluptatem exercitationem magni cupiditate deleniti distinctio asperiores natus quam?</p>
+        </div>
+      </div>
+      <div class="row margin-btm pt-5">
+        <div class="col-12 service-content">
+          <MarqueeText :repeat="10" :duration="6">
+            <h4>{{$t('service.thirdBanner')}}&nbsp;</h4>
+          </MarqueeText>
+          <div class="single-service position-one  transform-rotate-one lft-50">
+            <p class="text-strong">ux/ui design</p>
+          </div>
+          <div class="single-service position-three  transform-rotate-two lft-25 ms-5">
+            <p class="text-strong">branding</p>
+          </div>
+        </div>
+        <div class="col-8 offset-2 block-text">
+          <p>{{ $t('service.thirdDescription') }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center link-portfolio">
+          <Bubble :resizeHeightBubble="250" :resizeWidthBubble="480"  />
+          <a class="w-50 m-auto" href="#/internal-project">KNOW MORE ABOUT MEGO TICKETS</a>
+        </div>
+      </div>
+
+    
       <div class="gap"></div>
       <div v-if="isDesktop" class="gap"></div>
     </div>
     <FooterExt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import MarqueeText from "vue-marquee-text-component";
 import checkViewport from "@/mixins/checkViewport";
-
+import Footer from "@/components/Footer.vue";
+import Bubble from "@/components/Bubble.vue";
 import FooterExt from "@/components/FooterExt.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 
@@ -174,21 +111,22 @@ export default {
   name: "about",
   mixins: [checkViewport],
   components: {
+    Footer,
     FooterExt,
+    Bubble,
     MarqueeText,
     ButtonNav,
   },
   data() {
     return {
-      service: "",
+      showTextFirst:"",
+      showTextSecond:"",
+      showTextThird:"",
+      
     };
   },
   methods: {
-    resetService() {
-      const app = this;
-      app.service = "unset";
-      console.log("service is:", app.service);
-    },
+
   },
 };
 </script>

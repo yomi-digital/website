@@ -13,14 +13,27 @@ const THREE = window.THREE;
 
 export default {
   name: "bubble",
+  props: {
+    resizeHeightBubble: {
+      type: Number,
+      required: true,
+    },
+    resizeWidthBubble: {
+      type: Number,
+      required: true,
+    },
+  },
   data() {
     return {
       noise: {},
+
       isModify: false,
     };
   },
   mounted() {
     const app = this;
+    console.log("Height received:", this.resizeHeightBubble);
+    console.log("Width received:", this.resizeWidthBubble);
     setTimeout(() => {
       !(function (t) {
         var o = (t.noise = {});
@@ -228,11 +241,11 @@ export default {
       //   renderer.setSize(window.innerWidth, window.innerHeight);
       // };
 
-      renderer.setSize(480, 250);
+      renderer.setSize(this.resizeWidthBubble, this.resizeHeightBubble);
       window.onresize = function () {
-        camera.aspect = 480 / 250;
+        camera.aspect = this.resizeWidthBubble / this.resizeHeightBubble;
         camera.updateProjectionMatrix();
-        renderer.setSize(480, 250);
+        renderer.setSize(this.resizeWidthBubble, this.resizeHeightBubble);
       };
 
       var geo = new THREE.SphereGeometry(1, 64, 64);

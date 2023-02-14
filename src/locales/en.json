@@ -9,61 +9,27 @@
   },
   "about":{
     "firstText":"We are a laboratory of innovation and development that transcends physical boundaries to build free digital spaces.",
-    "secondText":"Our greatest desire is to deliver Web 3.0 to the world, i.e. a fair decentralized internet in which users control their own data, identity and destiny."
+    "secondText":"Our greatest desire is to deliver Web 3.0 to the world, i.e. a fair decentralized internet in which users control their own data, identity and destiny.",
+    "link": "meet the team"
   },
   "team":{
-    "text":"It’s our team's commitment that allows us to push technology boundaries and create digital products that cut through the noise."
+    "text":"It’s our team's commitment that allows us to push technology boundaries and create digital products that cut through the noise.",
+    "contact": "contact us to join the team"
   },
-  "header": {
-    "menu": "Menu",
-    "story3": "Scale Platform",
-    "disruptors": "Disruptors",
-    "disruptors1": "Portfolio",
-    "disruptors2": "Q&A",
-    "insights": "Insights",
-    "tools": "Limited Partners",
-    "connect": "Connect",
-    "contact": "Contact",
-    "companies": "Companies",
-    "home":"Home",
-    "legal":"legal"
+  "banner":{
+    "about": "IMAGINE THE POSSIBILITIES WE REALIZE THEM",
+    "team": "KNOW MORE ABOUT US"
   },
-  "home": {
-    "head": "Bringing the future <br /> into the present",
-    "sub-head": "We passionately support companies that are on a mission",
-    "line-head": "to <span class='w-l'></span> change <span class='w-l'></span> the <span class='w-l'></span> world",
-    "box-1-red": "disruptors",
-    "box-2-red": "our process",
-    "more":"More",
-    "btn-box-2":"Get to know us",
-    "da":"by"
+  "service":{
+    "firstBanner":"WEB3 TECHNOLOGY",
+    "secondBanner":"WEB2 DEVELOPMENT",
+    "thirdBanner":"DESIGN EXPERIENCES",
+    "firstDescription":"We help you explore Web3 technologies and implement innovative solutions related to digital assets, Blockchain, NFTs, AI, and the metaverse.",
+    "secondDescription":"We leverage on latest generation frameworks and programming languages to provide performing digital products.",
+    "thirdDescription":"We create unique experiences that connect people and brands in meaningful ways"
   },
-  "disruptors": {
-    "description": "Description",
-    "area": "Area",
-    "coinvestor": "Coinvestor"
-  },
-  "general":{
-    "btn-load":"Load more",
-    "red-insight":"HEADQUARTERS",
-    "related":"related",
-    "impact":"Impacts",
-    "prev":"Previous",
-    "next":"Next",
-    "milestones":"milestones",
-    "latest":"latest",
-    "where":"Where to find us",
-    "map":"View on map",
-    "copia":"Copy",
-    "copiato":"Copied!"
-  },
-  "limited":{
-    "user": "Username",
-    "password": "Password",
-    "download": "Download",
-    "document": "Documents",
-    "link": "Links"
-  },
+
+
   "footer":{
     "reserve":"All rights reserved",
     "esg":"ESG Policy",
