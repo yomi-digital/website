@@ -1,12 +1,12 @@
 <template>
   <div class="banner cta-banner">
     <a href="/#/portfolio">
-      <div class="d-flex align-items-center justify-content-between h-100">
-        <div class="pb-5 mb-5 text-uppercase"><p>view portfolio</p></div>
+      <div :class="isMobile ? 'flex-column justify-content-center' : 'justify-content-between'"  class="d-flex align-items-center  h-100">
+        <div :class="{'mb-5' : !isMobile}" class="pb-5 text-uppercase"><p>view portfolio</p></div>
         <div>
           <h3 id="nameProject" class="text-uppercase cta-title mb-0">Project</h3>
         </div>
-        <div class="pb-3">
+        <div v-if="!isMobile" class="pb-3">
           <img src="../assets/images/arrow-right.svg" alt="">
         </div>
       </div>
@@ -16,9 +16,10 @@
 
 <script>
 import projects from "@/portfolio/projects.json";
-
+import checkViewport from "@/mixins/checkViewport";
 export default {
   name: "bannerPortfolio",
+  mixins: [checkViewport],
   data() {
     return {
       projects: projects,

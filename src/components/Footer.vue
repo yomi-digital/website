@@ -1,14 +1,14 @@
 <template>
   <footer class="custom-card">
-    <changeLanguage />>
+    <changeLanguage />
     <div
         class=""
-        :class="{ 'd-flex align-items-end justify-content-between ps-4 pe-4 pb-4': !isMobile }"
+        :class="{ 'd-flex align-items-end justify-content-between ps-4 pe-4 pb-4': !isMobile, 'top-btm' : isMobile }"
       >
-      <div class="d-flex align-items-center">
+      <div :class="isMobile ? 'flex-column  mt-4' : 'align-items-center'" class="d-flex">
 
           <ul  :class="{ 'me-5 pe-5': !isMobile }">
-            <li><a href="/">Menu</a></li>
+            <li v-if="!isMobile"><a href="/">Menu</a></li>
             <li><a href="/">Privacy Policy</a></li>
             <li><a href="/">Legal Terms</a></li>
             <li>
@@ -18,14 +18,14 @@
               >
             </li>
           </ul>
-          <ul>
+          <ul :class="{'mt-5' : isMobile}">
             <li><a class="text-capitalize" href="/#/team">{{$t("menu.team")}}</a></li>
             <li><a class="text-capitalize" href="/#/services">{{$t("menu.service")}}</a></li>
             <li><a class="text-capitalize" href="/#/portfolio">{{$t("menu.portfolio")}}</a></li>
             <li><a class="text-capitalize" href="/#/mego">{{$t("menu.internal")}}</a></li>
           </ul>
       </div>
-        <div class="d-flex-align-items-center" :class="{ 'mt-5': isMobile }">
+        <div class="d-flex align-items-center" :class="{ 'mt-5 justify-content-center': isMobile }">
           <a
             class="btn-social me-3"
             href="https://discord.gg/w54Jbd4Qhz"

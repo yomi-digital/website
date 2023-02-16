@@ -1,5 +1,5 @@
 <template>
-  <modal name="form" class="team-card">
+  <modal name="form" class="team-card form">
     <div>
       <div class="pb-4">
         <div>
@@ -8,7 +8,7 @@
             class="d-flex justify-content-between align-items-center align-content-center w-100"
           >
             <h5 class="mb-0 w-75 text-uppercase">
-              #this could be you, join the team
+              #{{$t("team.formTitle")}}
             </h5>
             <i @click="closeModal()" class="fa-solid fa-xmark pointer mb-1"></i>
           </div>
@@ -18,19 +18,19 @@
         <div class="row justify-content-end">
           <div class="col-12">
             <div class="mb-5">
-              <div class="label">your name</div>
+              <div class="label">{{$t("team.formName")}}</div>
               <input v-model="name" type="text" placeholder="" />
             </div>
             <div class="mb-5">
-              <div class="label">your email</div>
+              <div class="label">{{$t("team.formEmail")}}</div>
               <input v-model="email" type="text" placeholder="" />
             </div>
             <div class="mb-5">
-              <div class="label">desidered position</div>
+              <div class="label">{{$t("team.formPosition")}}</div>
               <input v-model="position" type="text" placeholder="" />
             </div>
             <div class="mb-5 dropZoneContainer">
-              <div class="label">something about you</div>
+              <div class="label">{{$t("team.formYou")}}</div>
               <!-- <label for="upload-photo"><i class="fa-regular fa-plus"></i></label>
               <input type="file" name="photo" id="upload-photo" /> -->
               <div class="d-flex">

@@ -1,16 +1,14 @@
 <template>
-  <div
-    :class="{
-      'p-4 d-flex justify-content-between align-items-center': !isMobile,
-    }"
-  >
-    <div>
-      <p class="buble-text">{{ $t("menu.talk") }}</p>
-    </div>
-    <div class="d-flex">
-      <p @click="handleChangeIt()" class="text-lang">IT</p>
-      <p style="cursor:default" class="text-lang">/</p>
-      <p @click="handleChangeEn()" class="text-lang">EN</p>
+  <div  class="p-4 ">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="#/contacts">
+        <p :class="{'mb-0': isMobile,}" class="buble-text">{{ $t("menu.talk") }}</p>
+      </a>
+      <div class="d-flex">
+        <p @click="handleChangeIt()" class="text-lang">IT</p>
+        <p style="cursor: default" class="text-lang">/</p>
+        <p @click="handleChangeEn()" class="text-lang">EN</p>
+      </div>
     </div>
   </div>
 </template>

@@ -2,38 +2,77 @@
   body,
   html {
     font-size: 10px;
+    overflow-x: hidden;
   }
 
   .agile .slide img {
     max-width: 80px;
     max-height: 50px;
   }
+  .nav-link-dark,
+  .nav-link-light {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 10rem;
+  }
 
   .blog-card {
     height: 350px;
   }
-
-  .box-character-img {
-    width: 50vw !important;
+  /*   .full-h{
+    min-height: 90vh;
+  } */
+  ul li a {
+    font-size: 16px;
   }
-
-  .btn-close-custom {
+  .top-btm {
+    padding: 1rem;
+    margin: 1rem;
+    border-top: 1px solid var(--font-color);
+  }
+  .box-character-img {
+    width: 100% !important;
+    top: 0;
+    left: 0%;
     img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .position-first-box-charger {
+    left: 20%;
+    img {
+      object-fit: contain;
+      transform: scale(1.2);
+    }
+  }
+  .container-image {
+    position: relative;
+    height: 350px;
+  }
+  .btn-close-custom {
+    right: 25px;
+    svg {
       width: 40px;
       height: 10px;
     }
   }
-
+  .banner {
+    padding: 0rem 1rem;
+    text-align: center;
+    height: 160px;
+  }
   .cta-banner {
-    .cta-text {
-      font-size: 1.3rem;
+    .cta-title {
+      font-size: 25px;
     }
   }
-
   h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
-  
+
   .marquee-rotated {
     transform: rotate(0deg);
   }
@@ -41,7 +80,7 @@
   .navbar-custom {
     .marquee-text-text {
       line-height: 0.5;
-      margin-top: 20px;
+      margin-top: 0px;
     }
   }
 
@@ -50,8 +89,47 @@
       width: 90vw !important;
     }
   }
-
+  .custom-card {
+    width: 98%;
+    margin: auto;
+    padding: 1.5rem 0rem;
+  }
+  .buble-text {
+    padding: 8px 24px;
+  }
   .vh16 {
     height: 16.6666vh;
+  }
+  p {
+    font-size: 20px;
+  }
+  .text-lang {
+    font-size: 18px;
+  }
+
+  .services {
+    .single-service{
+      position: unset;
+      margin: 1.5rem auto;
+      width: 90%;
+      max-width: 300px;
+      padding: 1.3rem 2rem;
+      p{
+        font-size: 20px;
+      }
+    }
+    .block-text{
+      width: 90%;
+      min-height: 200px;
+      margin: 1.5rem auto;
+    }
+    .transform-rotate-one,
+    .transform-rotate-two,
+    .transform-rotate-three {
+      transform: none;
+    }
+  }
+  .footer-top {
+    line-height: 50px;
   }
 }

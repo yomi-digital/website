@@ -5,7 +5,7 @@
     "service": "servizi",
     "portfolio": "portafoglio",
     "internal": "interni",
-    "talk":"parliamo"
+    "talk":"contattaci"
   },
   "about":{
     "firstText":"Siamo un laboratorio di innovazione e sviluppo che trascende i confini fisici per costruire spazi digitali liberi.",
@@ -14,7 +14,19 @@
   },
   "team":{
     "text":"Le competenze e la determinazione del nostro team sono alla base della nostra capacità di superare i limiti della tecnologia e sviluppare prodotti digitali che colpiscono nel segno.",
-    "contact": "contattaci per unirti al team"
+    "contact": "contattaci per unirti al team",
+    "more":"DI PIU'",
+    "you":"forse tu",
+    "formTitle":"potresti esssere tu, unisciti al team",
+    "formName":"Il tuo nome",
+    "formEmail":"La tua email",
+    "formPosition":"posizione desiderata",
+    "formYou":"Qualcosa su di te",
+    "formLink":"Inserisci il tuo link..."
+  },
+  "contacts":{
+    "title":"Get in touch",
+    "description":"Raccontaci di più sul tuo progetto ed esplora tutte le possibilità per portarlo al livello successivo."
   },
   "banner":{
     "about": "IMMAGINIAMO LE POSSIBILITA' E LE REALIZZIAMO",

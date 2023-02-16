@@ -11,7 +11,7 @@
                 'vh16': isMobile,
               }"
             >
-              <div :class="{ vh100: !isMobile }">
+              <div :class="isMobile ? 'h-100' : 'vh-100'">
                 <a class="nav-link-dark" href="/#/about">
                   <MarqueeText
                     class="marquee-rotated"
@@ -30,7 +30,7 @@
                 'vh16': isMobile,
               }"
             >
-              <div :class="{ vh100: !isMobile }">
+              <div :class="isMobile ? 'h-100' : 'vh-100'">
                 <a class="nav-link-light" href="/#/team">
                   <MarqueeText
                     class="marquee-rotated"
@@ -50,7 +50,7 @@
                 'vh16': isMobile,
               }"
             >
-              <div :class="{ vh100: !isMobile }">
+              <div :class="isMobile ? 'h-100' : 'vh-100'">
                 <a class="nav-link-dark" href="/#/services">
                   <MarqueeText
                     class="marquee-rotated"
@@ -69,7 +69,7 @@
                 'vh16': isMobile,
               }"
             >
-              <div :class="{ vh100: !isMobile }">
+              <div :class="isMobile ? 'h-100' : 'vh-100'">
                 <a class="nav-link-light" href="/#/blog">
                   <MarqueeText
                     class="marquee-rotated"
@@ -89,7 +89,7 @@
                 'vh16': isMobile,
               }"
             >
-              <div :class="{ vh100: !isMobile }">
+              <div :class="isMobile ? 'h-100' : 'vh-100'">
                 <a class="nav-link-light" href="/#/portfolio">
                   <MarqueeText
                     class="marquee-rotated"
@@ -109,7 +109,7 @@
                 'vh16': isMobile,
               }"
             >
-              <div :class="{ vh100: !isMobile }">
+              <div :class="isMobile ? 'h-100' : 'vh-100'">
                 <a class="nav-link-dark" href="/#/internal-project">
                   <MarqueeText
                     class="marquee-rotated"

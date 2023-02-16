@@ -15,13 +15,13 @@
           <MarqueeText :repeat="10" :duration="6" >
             <h4>{{$t('service.firstBanner')}}&nbsp;</h4>
           </MarqueeText>
-          <div @click="showTextFirst ='blockchain'" :class="{ active : showTextFirst === 'blockchain' }" class="single-service position-one transform-rotate-one lft-40 ">
+          <div  @click="showTextFirst ='blockchain'" :class="{ active : showTextFirst === 'blockchain', 'lft-40' : !isMobile }" class="single-service position-one transform-rotate-one">
             <p class="text-strong">Blockchain</p>
           </div>
-          <div  @click="showTextFirst ='metaverse'" :class="{ active : showTextFirst === 'metaverse' }" class="single-service position-two transform-rotate-two lft-10">
+          <div  @click="showTextFirst ='metaverse'" :class="{ active : showTextFirst === 'metaverse','lft-10' : !isMobile }" class="single-service position-two transform-rotate-two">
             <p class="text-strong">Metaverse</p>
           </div>
-          <div  @click="showTextFirst ='ai'" :class="{ active : showTextFirst === 'ai' }" class="single-service position-two transform-rotate-three lft-75">
+          <div  @click="showTextFirst ='ai'" :class="{ active : showTextFirst === 'ai', 'lft-75' : !isMobile }" class="single-service position-two transform-rotate-three">
             <p class="text-strong">Ai</p>
           </div>
         </div>
@@ -37,22 +37,22 @@
           <MarqueeText :repeat="10" :duration="6" reverse>
             <h4>{{$t('service.secondBanner')}}&nbsp;</h4>
           </MarqueeText>
-          <div @click="showTextSecond ='marketplace'" :class="{ active : showTextSecond === 'marketplace' }" class="single-service position-one transform-rotate-two lft-10">
+          <div @click="showTextSecond ='marketplace'" :class="{ active : showTextSecond === 'marketplace', 'lft-10' : !isMobile }" class="single-service position-one transform-rotate-two">
             <p class="text-strong">marketplace</p>
           </div>
-          <div @click="showTextSecond ='app'" :class="{ active : showTextSecond === 'app' }" class="single-service position-three transform-rotate-two lft-15">
+          <div @click="showTextSecond ='app'" :class="{ active : showTextSecond === 'app', 'lft-15' : !isMobile }" class="single-service position-three transform-rotate-two">
             <p class="text-strong">app</p>
           </div>
-          <div @click="showTextSecond ='commerce'" :class="{ active : showTextSecond === 'commerce' }" class="single-service position-one transform-rotate-three lft-40 ms-5">
+          <div @click="showTextSecond ='commerce'" :class="{ active : showTextSecond === 'commerce', 'lft-40 ms-5' : !isMobile }" class="single-service position-one transform-rotate-three">
             <p class="text-strong">E-commerce</p>
           </div>
-          <div @click="showTextSecond ='website'" :class="{ active : showTextSecond === 'website' }" class="single-service position-one transform-rotate-three lft-75">
+          <div @click="showTextSecond ='website'" :class="{ active : showTextSecond === 'website', 'lft-75' : !isMobile }" class="single-service position-one transform-rotate-three">
             <p class="text-strong">website</p>
           </div>
-          <div @click="showTextSecond ='landing'" :class="{ active : showTextSecond === 'landing' }" class="single-service position-two transform-rotate-one lft-50">
+          <div @click="showTextSecond ='landing'" :class="{ active : showTextSecond === 'landing', 'lft-50' : !isMobile }" class="single-service position-two transform-rotate-one lft-50">
             <p class="text-strong">landing</p>
           </div>
-          <div @click="showTextSecond ='web3'" :class="{ active : showTextSecond === 'web3' }" class="single-service position-five transform-rotate-two lft-75">
+          <div @click="showTextSecond ='web3'" :class="{ active : showTextSecond === 'web3', 'lft-75' : !isMobile }" class="single-service position-five transform-rotate-two">
             <p class="text-strong">web3 <br> integration</p>
           </div>
          
@@ -85,7 +85,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center link-portfolio">
-          <Bubble :resizeHeightBubble="250" :resizeWidthBubble="480"  />
+          <Bubble :resizeHeightBubble="isMobile ? 180 : 250" :resizeWidthBubble="isMobile ? 200 : 480"  />
           <a class="w-50 m-auto" href="#/internal-project">KNOW MORE ABOUT MEGO TICKETS</a>
         </div>
       </div>

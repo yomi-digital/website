@@ -10,6 +10,7 @@ import Internal from "../views/Internal.vue";
 import Testing from "../views/Testing.vue";
 import Blog from "../views/Blog.vue";
 import Article from "../views/Article.vue";
+import Contacts from "../views/Contacts.vue";
 import Err from "../views/Err.vue";
 
 Vue.use(VueRouter);
@@ -64,6 +65,11 @@ const routes = [
     path: "/blog",
     name: "blog",
     component: Blog,
+  },
+  {
+    path: "/contacts",
+    name: "contacts",
+    component: Contacts,
   },
   {
     path: "/blog/:id",

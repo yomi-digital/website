@@ -3,10 +3,7 @@
     <Geisha v-if="geisha" :enterGeisha="enterGeisha" />
     <div class="fade-in" v-show="!geisha">
       <ButtonNav />
-      <div
-        class="container-fluid full-h pd-container"
-        style="position: relative"
-      >
+      <div class="container-fluid full-h pd-container">
         <div class="row">
           <div class="col-12">
             <div class="" :class="{ 'mt-3': isMobile }">
@@ -15,7 +12,7 @@
               <!--  </typewriter> -->
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-5 mt-5">
+          <div class="col-11 col-md-6 col-lg-5 mt-5">
             <p class="text-service-one" :class="{ 'mt-3': isMobile }">
               {{ $t("about.firstText") }}
             </p>
@@ -23,15 +20,17 @@
               {{ $t("about.secondText") }}
             </p>
           </div>
-        </div>
-        <div
-          class="box-character-img position-first-box-charger"
-          style="width: 475px; height: 100%"
-        >
-          <img src="../assets/images/about-img.png" alt="" />
+          <div v-if="isMobile" class="col-12 mt-5">
+            <a style="position: relative; z-index: 100;" class="cta underline" href="#/team">{{ $t("about.link") }}</a>
+          </div>
+          <div :class="{'container-image' : isMobile}">
+            <div class="box-character-img position-first-box-charger">
+              <img src="../assets/images/about-img.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="pd-container mb-4">
+      <div v-if="!isMobile" class="pd-container mb-4">
         <a class="cta underline" href="#/team">{{ $t("about.link") }}</a>
       </div>
       <MarqueeText
@@ -40,7 +39,7 @@
         :duration="8"
         style="z-index: 1"
       >
-        <h4>&nbsp;{{$t("banner.about")}}&nbsp;</h4>
+        <h4>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
       </MarqueeText>
 
       <Footer />

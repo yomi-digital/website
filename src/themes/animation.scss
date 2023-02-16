@@ -535,3 +535,29 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: 767px) {
+  @-webkit-keyframes zoomInGesha {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(5);
+      transform: scale(5);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomInGesha {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(5);
+      transform: scale(5);
+      opacity: 1;
+    }
+  }
+}

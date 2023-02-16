@@ -2,7 +2,7 @@
   <div>
     <ButtonNav />
     <!-- TEAM SECTION -->
-    <div class="container-fluid full-h pd-container" style="position: relative">
+    <div :class="{'full-h' : !isMobile}" class="container-fluid pd-container">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-12">
           <div class="" :class="{ 'mt-3': isMobile }">
@@ -25,15 +25,17 @@
           </div>
         </Transition> -->
       </div>
-      <div
-        class="box-character-img position-second-box-charger"
-        style="width: 475px"
-      >
-        <img
-          class="imgTeam fade-in-max"
-          src="../assets/images/team-img.png"
-          alt=""
-        />
+      <div :class="{'container-image' : isMobile}">
+        <div
+          class="box-character-img position-second-box-charger"
+          
+        >
+          <img
+            class="imgTeam fade-in-max"
+            src="../assets/images/team-img.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <MarqueeText
@@ -71,7 +73,7 @@
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{'border-image' : !showImage}"
             >
-              <div class="bk-team"><p class="text-strong">MORE ABOUT</p></div>
+              <div class="bk-team"><p class="text-strong">{{ $t("team.more") }}</p></div>
               <img :src="'/team/' + team.imageProfile" alt="" />
             </div>
           </div>
@@ -80,7 +82,7 @@
             class="box-team-container justify-content-center d-flex my-5 pointer"
             :class="{'border-image' : !showImage}"
           >
-            <div class="bk-team opacity-100 text-uppercase"><p class="text-strong">maybe you?</p></div>
+            <div class="bk-team opacity-100 text-uppercase"><p class="text-strong">{{ $t("team.you")}}?</p></div>
           </div>
         </div>
       </div>
