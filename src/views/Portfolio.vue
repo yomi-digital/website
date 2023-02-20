@@ -4,11 +4,11 @@
     <div class="container-fluid pd-container mt-5 ">
       <div class="row">
         <div class="col-12">
-          <h2 class="">PROUD OF</h2>
+          <h2 class="">{{$t('portfolio.title')}}</h2>
         </div>
-        <div class="col-4">
+        <div class="col-12col-md-4">
           <h6  class="mt-5 sub-title-project">
-            Explore our portfolio and discover the latest projects
+            {{$t('portfolio.description')}}
           </h6>
 
         </div>

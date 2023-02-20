@@ -4,11 +4,33 @@
     font-size: 10px;
     overflow-x: hidden;
   }
-
-  .agile .slide img {
-    max-width: 80px;
-    max-height: 50px;
+  .pd-container {
+    padding: 1rem 2rem;
   }
+  .agile__nav-button {
+    color: black;
+    i {
+      color: white;
+    }
+  }
+
+  .agile .slide {
+    .box-team-container {
+      img {
+        transform: scale(5) translateY(15px);
+      }
+    }
+  }
+  .agile {
+    .agile__actions {
+      width: 90%;
+    }
+    .slide img {
+      max-width: 160px;
+      max-height: 100px;
+    }
+  }
+
   .nav-link-dark,
   .nav-link-light {
     display: flex;
@@ -20,11 +42,10 @@
   .blog-card {
     height: 350px;
   }
-  /*   .full-h{
-    min-height: 90vh;
-  } */
-  ul li a {
-    font-size: 16px;
+
+  ul li a,
+  .link-footer {
+    font-size: 16px !important;
   }
   .top-btm {
     padding: 1rem;
@@ -33,7 +54,7 @@
   }
   .box-character-img {
     width: 100% !important;
-    top: 0;
+    top: 1rem;
     left: 0%;
     img {
       height: 100%;
@@ -50,12 +71,12 @@
   }
   .container-image {
     position: relative;
-    height: 350px;
+    height: 370px;
   }
   .btn-close-custom {
     right: 25px;
     svg {
-      width: 40px;
+      width: 45px;
       height: 10px;
     }
   }
@@ -70,7 +91,7 @@
     }
   }
   h2 {
-    font-size: 5rem;
+    font-size: 80px;
   }
 
   .marquee-rotated {
@@ -91,8 +112,20 @@
   }
   .custom-card {
     width: 98%;
+    min-height: 240px;
     margin: auto;
     padding: 1.5rem 0rem;
+  }
+  .small-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto !important;
+    margin: 5px auto;
+    p {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
   }
   .buble-text {
     padding: 8px 24px;
@@ -100,25 +133,29 @@
   .vh16 {
     height: 16.6666vh;
   }
-  p {
+  p,
+  .text-strong,
+  .info-member h6,
+  .link-internal a,
+  .submit-form {
     font-size: 20px;
+  }
+  .grey-text {
+    color: var(--grey-text);
   }
   .text-lang {
     font-size: 18px;
   }
 
   .services {
-    .single-service{
+    .single-service {
       position: unset;
       margin: 1.5rem auto;
       width: 90%;
       max-width: 300px;
       padding: 1.3rem 2rem;
-      p{
-        font-size: 20px;
-      }
     }
-    .block-text{
+    .block-text {
       width: 90%;
       min-height: 200px;
       margin: 1.5rem auto;
@@ -129,7 +166,172 @@
       transform: none;
     }
   }
+  .close-icon {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    line-height: 22px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    border: 1px solid var(--font-color);
+    border-radius: 300px;
+    z-index: 999;
+  }
+  .info-member {
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+      color: var(--grey-text);
+      font-size: 15px;
+      line-height: 86, 7%;
+      text-transform: uppercase;
+    }
+    h6 {
+      color: var(--font-color);
+      margin-bottom: 3rem;
+    }
+  }
+  .link-portfolia a {
+    font-weight: 600;
+  }
+  .project-header {
+    .preview-img {
+      height: 500px;
+      width: 100%;
+    }
+  }
+  .link-internal {
+    width: 100%;
+    p {
+      margin-bottom: 5rem;
+    }
+    a {
+      padding: 1.5rem 3rem;
+      font-weight: 700;
+    }
+  }
+  .contacts {
+    padding-top: 2rem;
+    h5 {
+      font-size: 40px;
+    }
+  }
+  .contacts input {
+    width: 100%;
+  }
+  .submit-form {
+    padding: 0.7rem 3rem;
+  }
+  .vm--container{
+    .vm--modal{
+      label{
+        width: 100%;
+      }
+    }
+  }
+  .bk-team{
+    /* display: none!important; */
+  }
+  .box-team-container{
+    cursor: auto!important;
+  }
   .footer-top {
     line-height: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body,
+  html {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+  .pd-container {
+    padding: 1rem 2rem;
+  }
+  h2 {
+    font-size: 10rem;
+    width: 90%;
+  }
+  .box-character-img {
+    width: 100% !important;
+    bottom: 0;
+    left: 0%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .text-service-one{
+    position: relative;
+    z-index: 99;
+  }
+  .box-team-container img{
+    transform: scale(2.2);
+  }
+  .position-first-box-charger {
+    left: 27%;
+    top: 12rem;
+    height: 90%;
+    img {
+      object-fit: contain;
+      transform: scale(0.9);
+    }
+  }
+  .position-second-box-charger{
+    top: 400px;
+    img{
+      transform: scale(1.1);
+    }
+  }
+  #nameProject{
+    text-align: center;
+  }
+  .services {
+    .single-service {
+      position: unset;
+      margin: 1.5rem auto;
+      width: 90%;
+      max-width: 300px;
+      padding: 1.3rem 2rem;
+    }
+    .block-text {
+      width: 90%;
+      min-height: 200px;
+      margin: 1.5rem auto;
+      p{
+        font-size: 25px;
+      }
+    }
+    .transform-rotate-one,
+    .transform-rotate-two,
+    .transform-rotate-three {
+      transform: none;
+    }
+  }
+  ul li a,
+  .link-footer {
+    font-size: 20px !important;
+  }
+  .vm--container .vm--modal{
+    width: 65vw!important;
+  }
+  .team-card{
+    .team-img-card img{
+      width: 250px;
+      max-height: 380px;
+      transform: scale(1.3);
+
+    }
+  }
+  .small-card{
+    display: none;
   }
 }

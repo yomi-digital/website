@@ -6,7 +6,7 @@
         <div class="col-12">
           <h2 class="">Mego</h2>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-lg-5">
           <h6 class="mt-5 sub-title-project">
             MEGO is our answer to traditional ticketing processes, with high
             costs, inauthenticity, and limited options for customizing landing
@@ -16,14 +16,14 @@
       </div>
       <div class="row mt-5 mb-5">
         <div class="col-12 text-center mt-5 mb-5">
-          <Bubble :resizeHeightBubble="500" :resizeWidthBubble="960" />
+          <Bubble :resizeHeightBubble="isMobile || isTablet ? 320 : 500" :resizeWidthBubble="isMobile || isTablet ? 200 : 960"   />
         </div>
       </div>
       <MarqueeText :repeat="8" :duration="6">
         <h4 class="text-uppercase">nft cross-chain ticketing system&nbsp;</h4>
       </MarqueeText>
       <div class="row mt-5">
-        <div class="col-8 offset-2 text-center link-internal">
+        <div class="col-12 col-md-8 offset-0 offset-md-2 text-center link-internal">
           <p>IF YOU WANT TO KNOW MORE</p>
           <a href=""
             >try now

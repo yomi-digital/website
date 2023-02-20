@@ -9,11 +9,11 @@
   },
   "about":{
     "firstText":"Siamo un laboratorio di innovazione e sviluppo che trascende i confini fisici per costruire spazi digitali liberi.",
-    "secondText":"Il nostro desiderio più grande è quello di rendere il Web 3.0 accessibile a tutti e costruire un futuro decentralizzato in cui gli utenti hanno pieno controllo dei propri dati, identità e destino.",
+    "secondText":"Il nostro desiderio più grande è quello di rendere il Web 3.0 accessibile a tutti e costruire una società  decentralizzata in cui gli utenti hanno pieno controllo dei propri dati, identità e destino.",
     "link": "incontra il nostro team"
   },
   "team":{
-    "text":"Le competenze e la determinazione del nostro team sono alla base della nostra capacità di superare i limiti della tecnologia e sviluppare prodotti digitali che colpiscono nel segno.",
+    "text":"La dedizione della nostra squadra ci permette di spingerci oltre i confini e costruire progetti digitali distintivi che si fanno notare.",
     "contact": "contattaci per unirti al team",
     "more":"DI PIU'",
     "you":"forse tu",
@@ -32,13 +32,35 @@
     "about": "IMMAGINIAMO LE POSSIBILITA' E LE REALIZZIAMO",
     "team": "SAPERNE DI PIU' SU DI NOI"
   },
+  "portfolio":{
+    "title":"orgogliosi di",
+    "description":"Esplora il nostro portfolio per scoprire i nostri ultimi progetti"
+  },
   "service":{
     "firstBanner":"TECNOLOGIA WEB3",
     "secondBanner":"SVILUPPO WEB2",
     "thirdBanner":"ESPERIENZE DI DESIGN",
     "firstDescription":"Vi aiutiamo a esplorare le tecnologie Web3 e a implementare soluzioni innovative relative a beni digitali, Blockchain, NFT, AI e metaverso.",
     "secondDescription":"Sfruttiamo framework e linguaggi di programmazione di ultima generazione per fornire prodotti digitali performanti.",
-    "thirdDescription":"Creiamo esperienze uniche che mettono in contatto persone e marchi in modo significativo"
+    "thirdDescription":"Creiamo esperienze uniche che mettono in contatto persone e marchi in modo significativo",
+    "blockchain":"Blockchain",
+    "blockchain_description":"Smart Contracts / Protocolli Blockchain / NFTs & Tokenizzazione / DApps / Notarizzazione / DeFi / MEGO Tickets",
+    "ia":"Intelligenza artificiale",
+    "ia_description":"Machine learning / Automazione dei processi",
+    "metaverse":"Metaverso",
+    "metaverse_description":"Integrazione dApp / Integrazioni API / Integrazioni Marketplace NFT",
+    "marketplace":"Marketplace",
+    "marketplace_description":"Nft & web2 marketplace / Pagamenti in Crypto & Fiat",
+    "website":"Siti",
+    "website_description":"Sviluppo landing page / Sviluppo siti internet / Integrazioni web3",
+    "app":"App",
+    "app_description":"Web app / Costruzione modalità di gioco / Sviluppo /  Pubblicazione in app store",
+    "branding":"Branding",
+    "branding_description":"Corporate brand identity (progettazione logo e linee guida) / Visual Identity e applicazioni / Consulenza dell’immagine del brand",
+    "design":"UI/UX Design",
+    "design_description":"Landing / Siti internet / Marketplace / interfacce app disegnate su Figma",
+    "mego_ticket":"SAPERNE DI PIU' SUI BIGLIETTI MEGO"
+
   },
   
 
@@ -46,6 +68,7 @@
     "reserve":"Todos los derechos reservados",
     "esg":"Política ESG",
     "privacy":"Política de privacidad",
-    "cookie":"Política de cookies"
+    "cookie":"Política de cookies",
+    "title_carousel":"Costruiamo insieme per un futuro migliore"
   }
 }

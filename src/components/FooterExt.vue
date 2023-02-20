@@ -1,14 +1,10 @@
 <template>
   <div>
-    <div class="custom-card py-4 px-4 mb-2">
-      <h6 class="title-carousel">Build better together!</h6>
+    <div :class="{'d-flex flex-column justify-content-center' : isMobile}" class="custom-card py-4 px-4 mb-2">
+      <h6 :class="{'text-center' : isMobile}" class="title-carousel">{{$t("footer.title_carousel")}}!</h6>
       <div class="mt-5 mb-5">
         <agile
-          infinite
-          :autoplay-speed="5000"
-          :dots="false"
-          :slidesToShow="3"
-          :centerMode="true"
+        :options="myOptions"
         >
           <div class="slide">
             <img src="../assets/partners/polygon-logo.png" alt="" />
@@ -81,6 +77,49 @@ import checkViewport from "@/mixins/checkViewport";
 
 export default {
   mixins: [checkViewport],
+  data() {
+    return {
+      myOptions: {
+        navButtons: false,
+
+        responsive: [
+          {
+            breakpoint: 300,
+            settings: {
+              dots: false,
+              slidesToShow: 1,
+              navButtons: true,
+              centerMode:true,
+              autoplaySpeed: 5000,
+            },
+          },
+
+          {
+            breakpoint: 600,
+            settings: {
+              navButtons: true,
+              dots: false,
+              infinite : true,
+              slidesToShow: 2,
+              centerMode:true,
+              autoplaySpeed: 5000,
+            },
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              navButtons: true,
+              dots: false,
+              infinite : true,
+              slidesToShow: 3,
+              centerMode:true,
+              autoplaySpeed: 5000,
+            },
+          },
+        ],
+      },
+    };
+  },
   components: {},
 };
 </script>

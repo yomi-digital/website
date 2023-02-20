@@ -3,44 +3,53 @@
     <Geisha v-if="geisha" :enterGeisha="enterGeisha" />
     <div class="fade-in" v-show="!geisha">
       <ButtonNav />
-      <div class="container-fluid full-h pd-container">
-        <div class="row">
-          <div class="col-12">
-            <div class="" :class="{ 'mt-3': isMobile }">
-              <!--  <typewriter :type-interval="22" :replace-interval="200"> -->
-              <h2>{{ $t("menu.about") }}</h2>
-              <!--  </typewriter> -->
+      <div class="full-h position-relative">
+        <div class="container-fluid">
+          <div class="row pd-container">
+            <div class="col-12">
+              <div class="" :class="{ 'mt-3': isMobile }">
+                <!--  <typewriter :type-interval="22" :replace-interval="200"> -->
+                <h2>{{ $t("menu.about") }}</h2>
+                <!--  </typewriter> -->
+              </div>
             </div>
-          </div>
-          <div class="col-11 col-md-6 col-lg-5 mt-5">
-            <p class="text-service-one" :class="{ 'mt-3': isMobile }">
-              {{ $t("about.firstText") }}
-            </p>
-            <p class="text-service-one mt-5" :class="{ 'mt-3': isMobile }">
-              {{ $t("about.secondText") }}
-            </p>
-          </div>
-          <div v-if="isMobile" class="col-12 mt-5">
-            <a style="position: relative; z-index: 100;" class="cta underline" href="#/team">{{ $t("about.link") }}</a>
-          </div>
-          <div :class="{'container-image' : isMobile}">
-            <div class="box-character-img position-first-box-charger">
-              <img src="../assets/images/about-img.png" alt="" />
+            <div class="col-11 col-md-6 col-lg-6 mt-5">
+              <p class="text-service-one" :class="{ 'mt-3': isMobile }">
+                {{ $t("about.firstText") }}
+              </p>
+              <p class="text-service-one mt-5" :class="{ 'mt-3': isMobile }">
+                {{ $t("about.secondText") }}
+              </p>
+            </div>
+            <div v-if="isMobile" class="col-12 mt-4">
+              <a
+                style="position: relative; z-index: 100"
+                class="cta underline"
+                href="#/team"
+                >{{ $t("about.link") }}</a
+              >
+            </div>
+            <div :class="{ 'container-image': isMobile }">
+              <div class="box-character-img position-first-box-charger">
+                <img src="../assets/images/about-img.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
+        <div class="position-absolute" style="bottom: 0px">
+          <div v-if="!isMobile" class="pd-container mb-4">
+            <a class="cta underline" href="#/team">{{ $t("about.link") }}</a>
+          </div>
+          <MarqueeText
+            class="title-project"
+            :repeat="6"
+            :duration="8"
+            style="z-index: 1"
+          >
+            <h4>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
+          </MarqueeText>
+        </div>
       </div>
-      <div v-if="!isMobile" class="pd-container mb-4">
-        <a class="cta underline" href="#/team">{{ $t("about.link") }}</a>
-      </div>
-      <MarqueeText
-        class="title-project"
-        :repeat="6"
-        :duration="8"
-        style="z-index: 1"
-      >
-        <h4>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
-      </MarqueeText>
 
       <Footer />
     </div>

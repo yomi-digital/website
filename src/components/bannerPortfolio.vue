@@ -6,7 +6,7 @@
         <div>
           <h3 id="nameProject" class="text-uppercase cta-title mb-0">Project</h3>
         </div>
-        <div v-if="!isMobile" class="pb-3">
+        <div v-if="!isMobile && !isTablet" class="pb-3">
           <img src="../assets/images/arrow-right.svg" alt="">
         </div>
       </div>

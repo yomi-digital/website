@@ -17,15 +17,15 @@
       <div class="container-fluid mt-4">
         <div class="row justify-content-end">
           <div class="col-12">
-            <div class="mb-5">
+            <div :class="isMobile ? 'mb-3' : 'mb-5'">
               <div class="label">{{$t("team.formName")}}</div>
               <input v-model="name" type="text" placeholder="" />
             </div>
-            <div class="mb-5">
+            <div :class="isMobile ? 'mb-3' : 'mb-5'">
               <div class="label">{{$t("team.formEmail")}}</div>
               <input v-model="email" type="text" placeholder="" />
             </div>
-            <div class="mb-5">
+            <div :class="isMobile ? 'mb-3' : 'mb-5'">
               <div class="label">{{$t("team.formPosition")}}</div>
               <input v-model="position" type="text" placeholder="" />
             </div>
@@ -33,15 +33,15 @@
               <div class="label">{{$t("team.formYou")}}</div>
               <!-- <label for="upload-photo"><i class="fa-regular fa-plus"></i></label>
               <input type="file" name="photo" id="upload-photo" /> -->
-              <div class="d-flex">
-                <div class="w-50 me-2">
+              <div :class="{'flex-column' : isMobile}" class="d-flex">
+                <div :class="{'w-50 me-2' : !isMobile, 'mt-2' : isMobile}" >
                   <input
                     @change="onNftCover"
                     type="file"
                     id="drop_zone"
                     class="FileUpload"
                   />
-                  <label class="dropZoneOverlay"
+                  <label  class="dropZoneOverlay"
                     ><i class="fa-regular fa-plus"></i
                   ></label>
                   <span v-if="coverUrl" style="color: black">{{
@@ -51,7 +51,7 @@
                   }}</span>
                   <span v-else style="color:#757575f2">CV/Portfolio...</span>
                 </div>
-                <div class="w-50 ms-2">
+                <div :class="{'w-50 ms-2' : !isMobile}">
                   <input
                     type="text"
                     id=""
@@ -79,8 +79,10 @@
 </template>
 
 <script>
+import checkViewport from "@/mixins/checkViewport";
 export default {
   name: "formTeam",
+  mixins: [checkViewport],
   data() {
     return {
       name: "",

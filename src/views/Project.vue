@@ -7,7 +7,7 @@
           <div class="col-12">
             <h2 class="">PROUD OF</h2>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <h6 class="mt-5 sub-title-project">
               Explore our portfolio and discover the latest projects
             </h6>
@@ -18,11 +18,11 @@
         
         <div v-if="!isMobile" class="gap"></div>
         <div class="row">
-          <div class="col-10 offset-1">
+          <div :class="{ 'p-0': isMobile }" class="col-12 col-lg-10 offset-0 offset-lg-1">
             <div class="project-header" :class="{ 'mt-5': isMobile }">
               <div class="preview-img">
                 <img
-                  :src="'/portfolio/' + project.imgCover"
+                  :src="'https://yomi.dance/portfolio/' + project.imgCover"
                   alt=""
                   class="test"
                 />
@@ -33,7 +33,8 @@
             </div>
           </div>
           <div
-            class="col-10 offset-1 pt-5 pb-5 px-2 d-flex justify-content-between b-bottom-light"
+          :class="isMobile ? 'px-4 py-5' : ' pt-5 pb-5 px-2'"
+            class="col-12 col-lg-10 offset-0 offset-lg-1 d-flex justify-content-between b-bottom-light"
           >
             <div class="d-flex align-items-center">
               <h6 class="me-3">
@@ -70,7 +71,7 @@
         </div> -->
 
         <div class="row mt-5 pb-5 px-2">
-          <!-- <div class="col-10 offset-1 mb-5">
+          <!-- <div class="col-12 col-lg-10 offset-0 offset-lg-1 mb-5">
             <h6 class="mb-4">OUR CONTRIBUTION</h6>
             <div class="d-flex">
               <i
@@ -83,10 +84,11 @@
               ></i>
             </div>
           </div> -->
-          <div class="col-10 offset-1 d-flex justify-content-between">
-            <div class="w-50">
-              <h6 style="font-weight: 500" class="mb-4">OUR CONTRIBUTION</h6>
-              <div class="d-flex mb-4">
+          <!-- <div class="col-12 col-lg-10 offset-0 offset-lg-1 d-flex justify-content-between"> -->
+            <div :class="{'px-4 py-5' : isMobile}" class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 order-1 order-md-0">
+
+              <h6 style="font-weight: 500" :class="isMobile ? 'mb-5' : 'mb-4'">OUR CONTRIBUTION</h6>
+              <div v-if="!isMobile" class="d-flex mb-4">
                 <i
                   class="fa-solid fa-circle me-2"
                   style="color: white; font-size: 0.5rem"
@@ -98,16 +100,20 @@
               </div>
               <p
                 class="m-0"
+                :class="isMobile ? 'grey-text mb-3' : null"
                 v-for="service in Object.keys(project.services)"
                 :key="service"
               >
                 {{ project.services[service] }}
               </p>
             </div>
-            <div class="w-50 text-end mt-4">
-              <p>{{ project.description }}</p>
-            </div>
-          </div>
+              <div :class="{'ms-3' : !isMobile && !isTablet , 'px-4 py-4' : isMobile}" class="col-12 col-md-6 col-lg-5 order-0 order-lg-1">
+
+                <div :class="isMobile ? 'text-start mb-5' : 'text-end'" class="mt-4">
+                  <p>{{ project.description }}</p>
+                </div>
+              </div>
+          <!-- </div> -->
         </div>
       </div>
       <!-- <div class="cta-banner mt-5">

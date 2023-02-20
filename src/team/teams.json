@@ -1,56 +1,56 @@
 [
   {
     "id": "001",
-    "name": "Sebastiano",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
-    "disorder": "Lore Ipsum",
-    "imageProfile": "Sebastiano.webp"
-  },
-  {
-    "id": "002",
     "name": "Roberto",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Apocop",
+    "role": "administration, co-founder",
     "disorder": "Lore Ipsum",
     "imageProfile": "Roberto.webp"
   },
   {
+    "id": "002",
+    "name": "Sebastiano",
+    "alias": "turinglabs",
+    "role": "blockchain guru & co-founder",
+    "disorder": "Lore Ipsum",
+    "imageProfile": "Sebastiano.webp"
+  },
+  {
     "id": "003",
     "name": "Livio",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Sthuckleberry",
+    "role": "finance & administration, co-founder",
     "disorder": "Lore Ipsum",
     "imageProfile": "Livio.webp"
   },
   {
     "id": "004",
     "name": "Stefano",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Steve_Rogers",
+    "role": "frontend developer & co-founder",
     "disorder": "Lore Ipsum",
     "imageProfile": "Stefano.webp"
   },
   {
     "id": "005",
     "name": "Andrea",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Six99",
+    "role": "CTO, game designer",
     "disorder": "Lore Ipsum",
     "imageProfile": "Andrea.webp"
   },
   {
     "id": "006",
     "name": "Giorgia",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Giorgi",
+    "role": "UX|UI designer",
     "disorder": "Lore Ipsum",
     "imageProfile": "Giorgia.webp"
   },
   {
     "id": "007",
     "name": "Elisea",
-    "alias": "Lorem Ipsum",
+    "alias": "Elsi",
     "role": "CO-FOUNDER",
     "disorder": "Lore Ipsum",
     "imageProfile": "Elisea.webp"
@@ -58,32 +58,32 @@
   {
     "id": "008",
     "name": "Giuseppe",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Peppe",
+    "role": "frontend developer",
     "disorder": "Lore Ipsum",
     "imageProfile": "Giuseppe.webp"
   },
   {
     "id": "009",
     "name": "Lucrezia",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Doclew",
+    "role": "frontend developer",
     "disorder": "Lore Ipsum",
     "imageProfile": "Lucrezia.webp"
   },
   {
     "id": "010",
     "name": "Simone",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "alias": "Simone9419",
+    "role": "full stack developer",
     "disorder": "Lore Ipsum",
     "imageProfile": "Simone.webp"
   },
   {
     "id": "011",
-    "name": "Mario Rossi",
-    "alias": "Lorem Ipsum",
-    "role": "CO-FOUNDER",
+    "name": "Inactive",
+    "alias": "anon",
+    "role": "full stack developer",
     "disorder": "Lore Ipsum",
     "imageProfile": "Anonymous.webp"
   }

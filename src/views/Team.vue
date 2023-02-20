@@ -2,7 +2,7 @@
   <div>
     <ButtonNav />
     <!-- TEAM SECTION -->
-    <div :class="{'full-h' : !isMobile}" class="container-fluid pd-container">
+    <div :class="{ 'full-h': !isMobile }" class="container-fluid pd-container">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-12">
           <div class="" :class="{ 'mt-3': isMobile }">
@@ -17,7 +17,7 @@
         <!-- <Transition enter-active-class="fade-in-max">
           <div
             style="position: absolute; bottom: 50px; left: 0"
-            @click="showTeam = !showTeam"
+            @clicMember Member"
             v-if="endedTypewriter"
             class="big-link ms-5"
           >
@@ -25,11 +25,8 @@
           </div>
         </Transition> -->
       </div>
-      <div :class="{'container-image' : isMobile}">
-        <div
-          class="box-character-img position-second-box-charger"
-          
-        >
+      <div :class="{ 'container-image': isMobile }">
+        <div class="box-character-img position-second-box-charger">
           <img
             class="imgTeam fade-in-max"
             src="../assets/images/team-img.png"
@@ -44,58 +41,106 @@
       :duration="8"
       style="z-index: 1"
     >
-    <h4>&nbsp;{{$t("banner.team")}}&nbsp;</h4>
-
+      <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>
     </MarqueeText>
     <!-- TEAM SHOW -->
     <div v-show="teams != ''" class="container-fluid">
-      <!-- <div class="my-5 text-start">
-        <div
-          @click="showTeam = !showTeam"
-          class="d-flex align-items-center pointer"
-        >
-          <i
-            class="fa-solid fa-arrow-left color-primary ms-3 me-3 heartbeat"
-            style="font-size: 3rem"
-          ></i>
-        </div>
-      </div> -->
-
-      <div class="mt-5 ">
-        <div class="row">
+      <div class="mt-5">
+        <div v-if="!isMobile" class="row">
           <div
             v-for="(team, index) in teams"
             :key="index"
-            class="col-12 col-md-3 col-lg-3"
+            class="col-12 col-md-4 col-lg-3"
           >
             <div
               @click="toggleTeam(team)"
-              class="box-team-container justify-content-center d-flex my-5 pointer"
-              :class="{'border-image' : !showImage}"
+              class="box-team-container justify-content-center d-flex my-5"
+              :class="{ 'border-image': !showImage }"
             >
-              <div class="bk-team"><p class="text-strong">{{ $t("team.more") }}</p></div>
-              <img :src="'/team/' + team.imageProfile" alt="" />
+              <div class="bk-team">
+                <p class="text-strong">{{ $t("team.more") }}</p>
+              </div>
+              <img :src="'https://yomi.dance/team/' + team.imageProfile" alt="" />
             </div>
           </div>
+
           <div
-          @click="toggleForm()"
+            v-if="!isMobile"
+            @click="toggleForm()"
             class="box-team-container justify-content-center d-flex my-5 pointer"
-            :class="{'border-image' : !showImage}"
+            :class="{ 'border-image': !showImage }"
           >
-            <div class="bk-team opacity-100 text-uppercase"><p class="text-strong">{{ $t("team.you")}}?</p></div>
+            <div class="bk-team opacity-100 text-uppercase">
+              <p class="text-strong">{{ $t("team.you") }}?</p>
+            </div>
           </div>
         </div>
+        <agile v-else :options="myOptions">
+          <div v-for="(team, index) in teams" :key="index" class="slide position-relative">
+            <div
+              class="box-team-container justify-content-center d-flex my-5 pointer"
+              :class="{ 'border-image': !showImage }"
+            >
+              <div class="bk-team">
+                <p class="text-strong">{{ $t("team.more") }}</p>
+              </div>
+              <img :src="'https://yomi.dance/team/' + team.imageProfile" alt="" />
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <h5 @click="showMember(team)" class="color-primary">
+                {{ team.name }}
+              </h5>
+              <i
+                @click="closeMember()"
+                v-if="checkedMobile"
+                class="fa-solid fa-xmark pointer close-icon"
+              ></i>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div
+              @click="toggleForm()"
+              class="box-team-container justify-content-center d-flex my-5 pointer"
+              :class="{ 'border-image': !showImage }"
+            >
+              <div class="bk-team opacity-100 text-uppercase">
+                <p class="text-strong">{{ $t("team.you") }}?</p>
+              </div>
+            </div>
+          </div>
+
+          <template v-if="!checkedMobile" slot="prevButton"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></template>
+          <template v-if="!checkedMobile" slot="nextButton"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></template>
+        </agile>
+        <div class="info-member" v-if="checkedMobile && isMobile">
+          <p class="">alias</p>
+          <h6>{{ selected.alias }}</h6>
+          <p class="">role</p>
+          <h6>{{ selected.role }}</h6>
+          <p class="">disorder</p>
+          <h6>{{ selected.disorder }}</h6>
+        </div>
       </div>
-   
+
       <div class="gap"></div>
       <div v-if="!isMobile" class="gap"></div>
       <modal name="team" class="team-card">
         <div class="pb-4">
           <div>
-            <div class=" mb-3 label">MEMBER #{{ selected.id }}</div>
-            <div class="d-flex justify-content-between align-items-center align-content-center w-100">
+            <div class="mb-3 label">MEMBER #{{ selected.id }}</div>
+            <div
+              class="d-flex justify-content-between align-items-center align-content-center w-100"
+            >
               <h5 class="mb-0">#{{ selected.name }} //</h5>
-              <i @click="closeModal()" class="fa-solid fa-xmark pointer mb-1"></i>
+              <i
+                @click="closeModal()"
+                class="fa-solid fa-xmark pointer mb-1"
+              ></i>
             </div>
           </div>
         </div>
@@ -118,14 +163,16 @@
           </div>
         </div>
         <div class="team-img-card">
-          <img :src="'/team/' + selected.imageProfile" alt="" />
+          <img :src="'https://yomi.dance/team/' + selected.imageProfile" alt="" />
         </div>
       </modal>
-      <formTeam @onBackClick="
+      <formTeam
+        @onBackClick="
           () => {
             showImage = !showImage;
           }
-        " />
+        "
+      />
     </div>
     <bannerPortfolio />
     <Footer />
@@ -151,24 +198,31 @@ export default {
     MarqueeText,
     ButtonNav,
     bannerPortfolio,
-    formTeam
+    formTeam,
   },
   data() {
     return {
       endedTypewriter: false,
-      showTeam: false,
+      Member: false,
       scrollPosition: 0,
+      checkedMobile: false,
       changeSection: false,
       showImage: true,
       selected: {},
-      teams: "",
+      teams: teams,
+      myOptions: {
+        dots: false,
+        slidesToShow: 1,
+        navButtons: true,
+        centerMode: true,
+        autoplaySpeed: 5000,
+      },
     };
   },
 
   mounted() {
     const app = this;
     app.calculateTypewriter();
-    app.teams = teams;
     /* setTimeout(function () {
     }, 300); */
   },
@@ -181,28 +235,34 @@ export default {
     },
     closeModal() {
       const app = this;
-      console.log('click');
-      document.querySelector('.vm--modal').classList.add('slit-out-vertical');
+      console.log("click");
+      document.querySelector(".vm--modal").classList.add("slit-out-vertical");
       setTimeout(function () {
         app.$modal.hide("team");
       }, 800);
       app.showImage = true;
-   
     },
     toggleTeam(team) {
       const app = this;
       app.selected = team;
       app.showImage = false;
       app.$modal.show("team");
-     
+    },
+    showMember(team) {
+      const app = this;
+      app.checkedMobile = true;
+      app.selected = team;
+    },
+    closeMember() {
+      const app = this;
+      app.checkedMobile = false;
+      console.log('click',app.checkedMobile);
     },
     toggleForm() {
       const app = this;
       app.showImage = false;
       app.$modal.show("form");
-     
     },
-
   },
 };
 </script>

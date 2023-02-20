@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="row mt-5 pt-4">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <input
             class="text-service-two"
             v-model="name"
@@ -19,7 +19,7 @@
             placeholder="Name"
           />
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <input
             class="text-service-two"
             v-model="company"
@@ -27,7 +27,7 @@
             placeholder="Company"
           />
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <input
             class="text-service-two"
             v-model="mobile"
@@ -35,7 +35,7 @@
             placeholder="Mobile"
           />
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <input
             class="text-service-two"
             v-model="email"
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-12">
+        <div :class="{'text-center' : isMobile}" class="col-12">
           <button class="submit-form text-service-two primary-color">
             submit
           </button>
@@ -106,9 +106,12 @@
 </template>
 
 <script>
+import checkViewport from "@/mixins/checkViewport";
 import ButtonNav from "@/components/ButtonNav.vue";
 export default {
   name: "Contacts",
+  mixins: [checkViewport],
+
   data() {
     return {
       name: "",

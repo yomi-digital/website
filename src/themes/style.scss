@@ -14,6 +14,7 @@ html {
   --lighter-color: #1b1b1b;
   --high-contrast-color: #eff3f2;
   --colored: #84ff9d;
+  --grey-text: #9c9c9c;
 }
 
 .bg-darker {
@@ -226,7 +227,9 @@ p {
   color: var(--font-color);
   line-height: 1;
 }
-
+.marquee-text-text h4{
+  text-transform: uppercase
+}
 .marquee-title-2,
 h1 {
   @include secondary-font();
@@ -448,11 +451,11 @@ h1 {
   }
 }
 .position-first-box-charger {
-  height: 100%;
-  top: 5rem;
+  height: 93%;
+  top: 3rem;
   left: 60%;
   img {
-    height: 100%;
+    height: 100vh;
     object-fit: contain;
     object-position: bottom;
   }
@@ -476,6 +479,7 @@ h1 {
 }
 .box-team-container {
   position: relative;
+  cursor: pointer;
   width: 190px;
   height: 280px;
   border-radius: 300px;
@@ -714,7 +718,7 @@ ul {
   padding: 0;
   margin: 0px;
   li {
-    a {
+    a,.link-footer {
       color: var(--font-color);
       text-decoration: none;
       @include secondary-font();
@@ -755,7 +759,7 @@ ul {
   label {
     width: 100%;
     margin-top: 0.8rem;
-    border: 1px solid #9c9c9c;
+    border: 1px solid var(--grey-text);
     background: transparent;
     border-radius: 7px;
     padding: 0.5rem 1rem;
@@ -799,7 +803,7 @@ ul {
     label,
     span {
       cursor: pointer;
-      color: #9c9c9c;
+      color: var(--grey-text);
       text-align: right;
       position: absolute;
       top: 20px;

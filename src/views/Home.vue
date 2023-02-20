@@ -35,22 +35,23 @@ export default {
   },
   methods: {
     loader() {
-      const app = this;
-      const loaded = window.localStorage.getItem("loaded");
-      if (loaded === null || loaded.length === 0) {
-        app.isLoading = true;
-        setTimeout(function () {
-          app.isLoading = false;
-          window.localStorage.setItem("loaded", "yes");
-          if(!app.isLoading){
-            app.enterWebsite()
-          }
-        }, 5000);
-      } else {
-        app.isLoading = false;
+  const app = this;
+  const loaded = window.localStorage.getItem("loaded");
+  if (loaded === null || loaded.length === 0) {
+    app.isLoading = true;
+    const timeout = this.isMobile ? 2500 : 5000;
+    setTimeout(function () {
+      app.isLoading = false;
+      window.localStorage.setItem("loaded", "yes");
+      if(!app.isLoading){
         app.enterWebsite()
       }
-    },
+    }, timeout);
+  } else {
+    app.isLoading = false;
+    app.enterWebsite()
+  }
+},
     enterWebsite() {
       const app = this;
       app.isEnter = true;

@@ -23,12 +23,14 @@
     "formPosition":"desidered position",
     "formYou":"something about you",
     "formLink":"Attach your link..."
-
-
   },
   "banner":{
-    "about": "IMAGINE THE POSSIBILITIES WE REALIZE THEM",
+    "about": "Imagine the possibilities. We realize them.",
     "team": "KNOW MORE ABOUT US"
+  },
+  "portfolio":{
+    "title":"proud of",
+    "description":"Explore our portfolio and discover the latest projects"
   },
   "service":{
     "firstBanner":"WEB3 TECHNOLOGY",
@@ -36,14 +38,34 @@
     "thirdBanner":"DESIGN EXPERIENCES",
     "firstDescription":"We help you explore Web3 technologies and implement innovative solutions related to digital assets, Blockchain, NFTs, AI, and the metaverse.",
     "secondDescription":"We leverage on latest generation frameworks and programming languages to provide performing digital products.",
-    "thirdDescription":"We create unique experiences that connect people and brands in meaningful ways"
+    "thirdDescription":"We create unique experiences that connect people and brands in meaningful ways",
+    "blockchain":"Blockchain",
+    "blockchain_description":"Smart Contracts / Blockchain Protocols / NFTs & Tokenization / DApps / Notarization / DeFi / MEGO Tickets",
+    "ia":"Artificial Intelligence",
+    "ia_description":"Machine learning / Process Automation",
+    "metaverse":"Metaverse",
+    "metaverse_description":"dApp Integration / API Integration / NFT Marketplace Integration",
+    "marketplace":"Marketplace",
+    "marketplace_description":"Nft & web2 marketplace / Crypto & fiat payment",
+    "website":"Website",
+    "website_description":"landing page development / website development / web3 integration",
+    "app":"App",
+    "app_description":"web app / gameplay / development / app store release",
+    "branding":"Branding",
+    "branding_description":"Corporate brand identity (logo design and guideline book) / Visual Identity and applications / Brand image consulting",
+    "design":"UI/UX Design",
+    "design_description":"Landing / Websites / Marketplaces /apps interface design on Figma",
+    "layout":"Layout",
+    "mego_ticket":"KNOW MORE ABOUT MEGO TICKETS"
+    
+
   },
-
-
+  
   "footer":{
     "reserve":"All rights reserved",
     "esg":"ESG Policy",
     "privacy":"Privacy Policy",
-    "cookie":"Cookies Policy"
+    "cookie":"Cookies Policy",
+    "title_carousel":"Building better together"
   }
 }
