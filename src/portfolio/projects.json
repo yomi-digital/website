@@ -1,333 +1,194 @@
 [
   {
-    "name": "dao punk",
+    "name": "Daopunks",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
       "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design"
+      "umi": "UMI"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "DAOpunks is a platform that blazes new trails, leading others to fertile promised lands where they find opportunity, meaningful work, community, and untold abundance. DAOpunks’s mission is to enable humans to liberate themselves from the soul-sucking drudgery of default world work and lead them to the rewarding, expansive freedom found in meaningful DAO work.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "niftyz",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
       "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "security": "Security Audit",
+
+      "website": "Website "
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "The Niftyz platform empowers businesses to boost their growth, by betokening and monetizing their growth, achievements, content, members and more, by using NFTs to lock and distribute their most precious information and assets to the most wanted audience.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
-    "name": "procol labs",
+    "name": "protocol labs",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
+
+      "protocol": "Protocol",
+      "decentralized": "Decentralized Storage",
       "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 Platform"
+      "ux": "UI/UX"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Onchain.storage is an ecosystem of storage products built on top of Ethereum (and Polygon) and IPFS/Filecoin. We're building the project from scratch to help Protocol Labs translate the theoretical protocol into Smart Contracts, Oracle nodes and Providers interfaces. The first protocol is called Retrieval Pinning and adds 'retrievability assurance' on top of decentralized storage.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "xone",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
       "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design"
+      "mint": "Minting Button",
+      "landing": "Landing"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Xone is the first mobile application in the metaverse. With Xone, you can create the next evolution of social media with personal 3D spaces taking the place of user profiles. Xone users can build, own and monetize their personal spaces in 3d and explore them through augmented reality technology.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
-    "name": "ibiza token",
+    "name": "Fakewhale",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "mego": "MEGO Tickets",
+      "design": "Design",
+      "website": "Website "
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Fakewhale is an organization led by artists, collectors, and entrepreneurs. Founded in January 2021, Fakewhale has been supporting the digital underground scene by collecting more than 1000 pieces since the inception of Tezos tokens.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "nft berlin",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
+      "website": "Website ",
       "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "mint": "Minting Button",
+      "mego": "MEGO Tickets",
+      "design": "Design",
+      "ux": "UI/UX"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "NFTBERLIN is a non-profit annual unconference on NFTs inspired by the community of passionate NFT artists and technologists, that provides an open, chain-agnostic platform for learning, exchanging ideas, and sharing experiences.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
-    "name": "proof of story",
+    "name": "Spaghetteth",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "mego": "MEGO Tickets"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Second edition of an event organized by the Italian eth community. 3 days of talks, project presentations and educational activities. A new way of networking.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
-    "name": "musess",
+    "name": "HNFT",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
       "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "mint": "Minting Button",
+      "mego": "MEGO Tickets"
+
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Hosted by DADA, the First Historic NFT Fest brings together the creators, innovators, and thinkers who started it all for three days of deep dive into the earliest NFT projects on blockchain up to 2019.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "cult&rain",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "security": "Security Audit"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "CULT & RAIN is a disruptive digital fashion brand, merging innovative NFT art with exclusive high-end physical redeemable. A unique platform and creative playground showcasing the best artists from around the world.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "house of sangu",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
       "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "umi": "UMI",
+      "mint": "Minting Button"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "House of Sangu is an interconnection of artists and NFT enthusiasts that works together toward the creation of an ecosystem of people that wants to help each other and grow together. <br> Sangu’s first initiative is the first edition of an NFT magazine and exhibition that every year will travel to a new country around the world",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
-    "name": "enchanted valley",
+    "name": "Zonzo",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "ui": "UI",
+      "mobile": "Mobile App"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "link": "https://google.com/",
-    "category": "web3 development"
-  },
-  {
-    "name": "hexarchia",
-    "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
-    "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
-    },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "link": "https://google.com/",
-    "category": "web3 development"
-  },
-  {
-    "name": "stargraph",
-    "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
-    "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
-    },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "link": "https://google.com/",
-    "category": "web3 development"
-  },
-  {
-    "name": "london trade art",
-    "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
-    "services": {
-      "web": "Landing",
-      "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
-    },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Zonzo is an app to discover cities by walking and playing mini-games. You can purchase an itinerary and it will guide you along an experience designed for the places you are visiting.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "martix",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
       "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "umi": "UMI"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Martix is a digital art world where you can visit and create art galleries. It was born with the aim of hosting interesting galleries and collections and organizing events within the platform itself.",
     "link": "https://google.com/",
     "category": "web3 development"
   },
   {
     "name": "well b",
     "imgCover": "dao-cover.jpeg",
-    "imgLinkFirst": "dao-link1.png",
-    "imgLinkSecond": "dao-link2.png",
     "services": {
-      "web": "Landing",
+      "ui": "UI",
+      "website": "Website ",
       "contract": "Smart Contract",
-      "webdesign": "Webdesign",
-      "branding": "Branding",
-      "consulting": "Consulting",
-      "business": "Model Business",
-      "logo": "Logo design",
-      "ux": "Ux Design",
-      "umi": "UMI Platform",
-      "web2": "Web2 "
+      "crm":"CRM"
     },
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "description": "Well-b is an innovative digital coworking that uses blockchain technology to notarize space leases and a digital platform that records all transactions from booking to accessing spaces.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "Endor",
+    "imgCover": "dao-cover.jpeg",
+    "services": {
+      "ui": "UI",
+      "landing": "Landing Page"
+      
+    },
+    "description": "Endor is a Lorem Ipsum Agency with a deep knowledge of the Web3 market. With Lorem Ipsum method they refer to the consolidated crystallization of their procedure, which ideally evolves infinitely, supporting customers in the latest communication technologies.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "PIM",
+    "imgCover": "dao-cover.jpeg",
+    "services": {
+      "ui": "UI",
+      "website": "Website"
+      
+    },
+    "description": "PRESS IS MORE is a press and communications agency operating in the art, music and entertainment sectors. Their mission is to elaborate and implement ad hoc communication and promotional strategies, both online and offline, to guarantee the best visibility and media presence.",
+    "link": "https://google.com/",
+    "category": "web3 development"
+  },
+  {
+    "name": "Aristoil",
+    "imgCover": "dao-cover.jpeg",
+    "services": {
+      "website": "Website", 
+      "system": "Notarization System",
+      "cms": "Proprietary CMS"
+    },
+    "description": "The Aristoil Cluster has established a procedure to manage and validate an accreditation system to support Aristoil 'Health Claim Indication' using Blockchain technology. A technology that allows the tracking and certain certification of the entire production chain.",
     "link": "https://google.com/",
     "category": "web3 development"
   }

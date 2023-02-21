@@ -238,8 +238,8 @@
 }
 
 .fade-in-max {
-  -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-max 1.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-max 1.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -255,6 +255,28 @@
 }
 @keyframes fade-in {
   0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-max {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-max {
+  0% {
+    opacity: 0;
+  }
+  20% {
     opacity: 0;
   }
   100% {
@@ -409,8 +431,8 @@
   }
 }
 .zoomGesha {
-  -webkit-animation: zoomInGesha 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: zoomInGesha 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: zoomInGesha 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: zoomInGesha 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: zoomInGesha 2s forwards;
 }
 

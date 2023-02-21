@@ -7,10 +7,25 @@
         :options="myOptions"
         >
           <div class="slide">
-            <img src="../assets/partners/polygon-logo.png" alt="" />
+            <img src="../assets/partners/BC_logo_twitter.png" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/bankless.png" alt="" />
+            <img src="../assets/partners/Frame.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/partners/Group (1).png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/partners/logo-full-colour-dark.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/partners/nftberlin.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/partners/Rectangle.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../assets/partners/Untitled-Artwork.png" alt="" />
           </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i
@@ -112,7 +127,7 @@ export default {
               dots: false,
               infinite : true,
               slidesToShow: 3,
-              centerMode:true,
+              centerMode:false,
               autoplaySpeed: 5000,
             },
           },
