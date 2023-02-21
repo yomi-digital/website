@@ -31,7 +31,7 @@
             </div>
             <div :class="{ 'container-image': isMobile }">
               <div class="box-character-img position-first-box-charger">
-                <img src="../assets/images/about-img.png" alt="" />
+                <img src="../assets/images/about-img.webp" alt="" />
               </div>
             </div>
           </div>

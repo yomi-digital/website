@@ -1,6 +1,6 @@
 <template>
   <div :class="{ geisha: true, zoomGesha: !enterGeisha }" >
-    <img src="../assets/images/geisha.png" alt="">
+    <img src="../assets/images/geisha.webp" alt="">
   </div>
 </template>
 

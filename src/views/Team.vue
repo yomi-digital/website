@@ -29,7 +29,7 @@
         <div class="box-character-img position-second-box-charger">
           <img
             class="imgTeam fade-in-max"
-            src="../assets/images/team-img.png"
+            src="../assets/images/team-img.webp"
             alt=""
           />
         </div>
