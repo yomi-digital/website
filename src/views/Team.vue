@@ -38,7 +38,7 @@
     <MarqueeText
       class="title-project"
       :repeat="6"
-      :duration="8"
+      :duration="$t('banner.team').length * 0.5"
       style="z-index: 1"
     >
       <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>

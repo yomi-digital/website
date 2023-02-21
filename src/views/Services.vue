@@ -12,7 +12,7 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           
-          <MarqueeText :repeat="10" :duration="6" >
+          <MarqueeText :repeat="10" :duration="$t('service.firstBanner').length * 0.5" >
             <h4>{{$t('service.firstBanner')}}&nbsp;</h4>
           </MarqueeText>
           <div  @click="showTextFirst ='blockchain'" :class="{ active : showTextFirst === 'blockchain', 'lft-40' : !isMobile }" class="single-service position-one transform-rotate-one">
@@ -34,7 +34,7 @@
       </div>
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
-          <MarqueeText :repeat="10" :duration="6" reverse>
+          <MarqueeText :repeat="10" :duration="$t('service.secondBanner').length * 0.5" reverse>
             <h4>{{$t('service.secondBanner')}}&nbsp;</h4>
           </MarqueeText>
           <div @click="showTextSecond ='marketplace'" :class="{ active : showTextSecond === 'marketplace', 'lft-15' : !isMobile }" class="single-service position-one transform-rotate-two">
@@ -69,7 +69,7 @@
       </div>
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
-          <MarqueeText :repeat="10" :duration="6">
+          <MarqueeText :repeat="10" :duration="$t('service.thirdBanner').length * 0.5">
             <h4>{{$t('service.thirdBanner')}}&nbsp;</h4>
           </MarqueeText>
           <div @click="showTextThird ='design'" :class="{active : showTextSecond === 'design'}" class="single-service position-one  transform-rotate-one lft-50">

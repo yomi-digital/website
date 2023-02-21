@@ -16,7 +16,7 @@
                   <MarqueeText
                     class="marquee-rotated"
                     :repeat="20"
-                    :duration="7"
+                    :duration="$t('menu.about').length * 0.5"
                   >
                     <div>{{ $t("menu.about") }}&nbsp;</div>
                   </MarqueeText></a
@@ -36,7 +36,7 @@
                     class="marquee-rotated"
                     reverse
                     :repeat="20"
-                    :duration="7"
+                    :duration="$t('menu.team').length * 0.5"
                   >
                     <div>{{ $t("menu.team") }}&nbsp;</div>
                   </MarqueeText></a
@@ -55,7 +55,7 @@
                   <MarqueeText
                     class="marquee-rotated"
                     :repeat="20"
-                    :duration="7"
+                    :duration="$t('menu.service').length * 0.5"
                   >
                     <div>{{ $t("menu.service") }}&nbsp;</div>
                   </MarqueeText></a
@@ -95,7 +95,7 @@
                     class="marquee-rotated"
                     reverse
                     :repeat="20"
-                    :duration="7"
+                    :duration="$t('menu.portfolio').length * 0.5"
                   >
                     <div>{{ $t("menu.portfolio") }}&nbsp;</div>
                   </MarqueeText></a
@@ -114,7 +114,7 @@
                   <MarqueeText
                     class="marquee-rotated"
                     :repeat="30"
-                    :duration="7"
+                    :duration="$t('menu.internal').length * 0.5"
                   >
                     <div>{{ $t("menu.internal") }}&nbsp;</div>
                   </MarqueeText></a

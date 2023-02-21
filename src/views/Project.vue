@@ -26,7 +26,7 @@
                   alt=""
                   class="test"
                 />
-                <MarqueeText class="title-project" :repeat="10" :duration="5">
+                <MarqueeText class="title-project" :repeat="10" :duration="project.name.length * 0.5">
                   {{ project.name }}&nbsp;
                 </MarqueeText>
               </div>
