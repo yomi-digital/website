@@ -57,7 +57,7 @@
               class="box-team-container justify-content-center d-flex my-5"
               :class="{ 'border-image': !showImage }"
             >
-              <div class="bk-team">
+              <div v-if="!isMobile" class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
               <img :src="'/team/' + team.imageProfile" alt="" />

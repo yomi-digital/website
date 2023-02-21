@@ -13,7 +13,7 @@
                 <!--  </typewriter> -->
               </div>
             </div>
-            <div class="col-11 col-md-6 col-lg-6 mt-5">
+            <div :class="{'mt-5' : !isMobile}" class="col-11 col-md-6 col-lg-6">
               <p class="text-service-one" :class="{ 'mt-3': isMobile }">
                 {{ $t("about.firstText") }}
               </p>
