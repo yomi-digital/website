@@ -21,7 +21,7 @@
           <div  @click="showTextFirst ='metaverse'" :class="{ active : showTextFirst === 'metaverse','lft-10' : !isMobile }" class="single-service position-two transform-rotate-two">
             <p class="text-strong">{{$t('service.metaverse')}}</p>
           </div>
-          <div  @click="showTextFirst ='ia'" :class="{ active : showTextFirst === 'ia', 'lft-75 me-5' : !isMobile }" class="single-service position-five transform-rotate-three">
+          <div  @click="showTextFirst ='ia'" :class="{ active : showTextFirst === 'ia', 'lft-75 me-5' : !isMobile && !isTablet }" class="single-service position-five transform-rotate-three">
             <p class="text-strong">{{$t('service.ia')}}</p>
           </div>
         </div>
