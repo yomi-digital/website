@@ -60,7 +60,7 @@
               <div class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
-              <img :src="'https://yomi.dance/team/' + team.imageProfile" alt="" />
+              <img :src="'https://website.yomi.dance/team/' + team.imageProfile" alt="" />
             </div>
           </div>
 
@@ -84,7 +84,7 @@
               <div class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
-              <img :src="'https://yomi.dance/team/' + team.imageProfile" alt="" />
+              <img :src="'https://website.yomi.dance/team/' + team.imageProfile" alt="" />
             </div>
             <div class="d-flex justify-content-center align-items-center">
               <h5 @click="showMember(team)" class="color-primary">
@@ -163,7 +163,7 @@
           </div>
         </div>
         <div class="team-img-card">
-          <img :src="'https://yomi.dance/team/' + selected.imageProfile" alt="" />
+          <img :src="'https://website.yomi.dance/team/' + selected.imageProfile" alt="" />
         </div>
       </modal>
       <formTeam

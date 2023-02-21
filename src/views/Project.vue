@@ -22,7 +22,7 @@
             <div class="project-header" :class="{ 'mt-5': isMobile }">
               <div class="preview-img">
                 <img
-                  :src="'https://yomi.dance/portfolio/' + project.imgCover"
+                  :src="'https://website.yomi.dance/portfolio/' + project.imgCover"
                   alt=""
                   class="test"
                 />

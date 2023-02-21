@@ -9,7 +9,7 @@ import Project from "../views/Project.vue";
 import Internal from "../views/Internal.vue";
 import Testing from "../views/Testing.vue";
 import Blog from "../views/Blog.vue";
-import Article from "../views/Article.vue";
+/* import Article from "../views/Article.vue"; */
 import Contacts from "../views/Contacts.vue";
 import Err from "../views/Err.vue";
 
@@ -71,11 +71,11 @@ const routes = [
     name: "contacts",
     component: Contacts,
   },
-  {
+/*   {
     path: "/blog/:id",
     name: "Article",
     component: Article,
-  },
+  }, */
   { path: '/404', component: Err },  
   { path: '*', redirect: '/404' }, 
 ];
