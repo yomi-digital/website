@@ -57,7 +57,7 @@
               class="box-team-container justify-content-center d-flex my-5"
               :class="{ 'border-image': !showImage }"
             >
-              <div v-if="!isMobile" class="bk-team">
+              <div class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
               <img :src="'/team/' + team.imageProfile" alt="" />
@@ -81,9 +81,6 @@
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{ 'border-image': !showImage }"
             >
-              <div class="bk-team">
-                <p class="text-strong">{{ $t("team.more") }}</p>
-              </div>
               <img :src="'/team/' + team.imageProfile" alt="" />
             </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -104,9 +101,7 @@
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{ 'border-image': !showImage }"
             >
-              <div class="bk-team opacity-100 text-uppercase">
-                <p class="text-strong">{{ $t("team.you") }}?</p>
-              </div>
+              
             </div>
           </div>
 
