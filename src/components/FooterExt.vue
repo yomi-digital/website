@@ -7,25 +7,25 @@
         :options="myOptions"
         >
           <div class="slide">
-            <img src="../assets/partners/BC_logo_twitter.png" alt="" />
+            <img src="../assets/partners/BC_logo_twitter.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Frame.png" alt="" />
+            <img src="../assets/partners/Frame.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Group (1).png" alt="" />
+            <img src="../assets/partners/Group (1).svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/logo-full-colour-dark.png" alt="" />
+            <img src="../assets/partners/logo-full-colour-dark.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/nftberlin.png" alt="" />
+            <img src="../assets/partners/nftberlin.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Rectangle.png" alt="" />
+            <img src="../assets/partners/Rectangle.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Untitled-Artwork.png" alt="" />
+            <img src="../assets/partners/Untitled-Artwork.webp" alt="" />
           </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i

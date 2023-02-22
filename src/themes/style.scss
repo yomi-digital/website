@@ -477,6 +477,12 @@ h1 {
     opacity: 0;
   }
 }
+.border-image-hide {
+  border: 1px solid rgba(255, 255, 255, 0);
+  img {
+    opacity: 1;
+  }
+}
 .box-team-container {
   position: relative;
   cursor: pointer;
@@ -990,12 +996,11 @@ button {
     border-radius: 100px;
     text-transform: uppercase;
     cursor: pointer;
-
     color: var(--colored);
     background-color: var(--primary-color);
     position: absolute;
-    padding: 0.8rem 1.4rem;
-    min-width: 290px;
+    padding: 0.7rem 1rem;
+    min-width: 260px;
     &:hover {
       z-index: 20;
     }

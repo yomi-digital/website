@@ -9,6 +9,10 @@
   }
   .agile__nav-button {
     color: black;
+    padding: 0px;
+    transform: scale(1.4);
+    width: 20px;
+    height: 20px;
     i {
       color: white;
     }
@@ -21,6 +25,7 @@
       }
     }
   }
+
   .agile {
     .agile__actions {
       width: 90%;
@@ -30,7 +35,9 @@
       max-height: 100px;
     }
   }
-
+  .custom-card .agile .agile__actions{
+    width: 95%;
+  }
   .nav-link-dark,
   .nav-link-light {
     display: flex;
@@ -246,6 +253,7 @@
   .footer-top {
     line-height: 50px;
   }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body,

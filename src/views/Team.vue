@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-12">
           <div class="" :class="{ 'mt-3': isMobile }">
-            <h2 class="enter-page">{{ $t("menu.team") }}</h2>
+            <h2 :class="isMobile ? 'enter-page-mobile' : 'enter-page'" >{{ $t("menu.team") }}</h2>
           </div>
         </div>
         <div class="col-12 col-lg-6 ms-2 mt-5">
@@ -55,7 +55,7 @@
             <div
               @click="toggleTeam(team)"
               class="box-team-container justify-content-center d-flex my-5"
-              :class="{ 'border-image': !showImage }"
+              :class="{ 'border-image': !showImage, 'fade-in' : showImage }"
             >
               <div class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
@@ -76,7 +76,11 @@
           </div>
         </div>
         <agile v-else :options="myOptions">
-          <div v-for="(team, index) in teams" :key="index" class="slide position-relative">
+          <div
+            v-for="(team, index) in teams"
+            :key="index"
+            class="slide position-relative"
+          >
             <div
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{ 'border-image': !showImage }"
@@ -101,7 +105,9 @@
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{ 'border-image': !showImage }"
             >
-              
+              <div class="bk-team opacity-100 text-uppercase">
+                <p class="text-strong">{{ $t("team.you") }}?</p>
+              </div>
             </div>
           </div>
 
@@ -235,7 +241,9 @@ export default {
       setTimeout(function () {
         app.$modal.hide("team");
       }, 800);
-      app.showImage = true;
+      setTimeout(function () {
+        app.showImage = true;
+      }, 100);
     },
     toggleTeam(team) {
       const app = this;
@@ -251,7 +259,7 @@ export default {
     closeMember() {
       const app = this;
       app.checkedMobile = false;
-      console.log('click',app.checkedMobile);
+      console.log("click", app.checkedMobile);
     },
     toggleForm() {
       const app = this;

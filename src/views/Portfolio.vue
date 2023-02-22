@@ -34,14 +34,16 @@
       </div>
     </div>
     <div class="gap"></div>
-    <MarqueeText
-      class="title-project"
-      :repeat="6"
-      :duration="8"
-      style="z-index: 1"
-    >
-      <h4>&nbsp;DISCOVER OUR SERVICES&nbsp;</h4>
-    </MarqueeText>
+    <a href="#/services">
+      <MarqueeText
+        class="title-project"
+        :repeat="6"
+        :duration="8"
+        style="z-index: 1"
+      >
+        <h4>&nbsp;DISCOVER OUR SERVICES&nbsp;</h4>
+      </MarqueeText>
+    </a>
     <FooterExt />
     <Footer />
   </div>
