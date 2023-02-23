@@ -13,8 +13,8 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid content-container mt-5 p-0">
-      <div class="text-center left-content">
+    <div class="container-fluid  mt-5 p-0">
+      <div class="text-center content-container ">
         <div
           class="link-portfolio"
           v-for="(project, index) in projects"
@@ -22,7 +22,7 @@
           :class="getClass(index)"
         >
           <a
-            class="list-portfolio"
+            class=""
             :href="'/#/portfolio/' + project.name.split(' ').join('-')"
             >{{ project.name }}</a
           >
