@@ -10,7 +10,7 @@
         </typewriter>
         <typewriter v-if="isMobile" :type-interval="22" :replace-interval="900">
           <div  class="mt-4">
-            LLLLLLLLLOOOOOOOOAAAAAAAAADDDDDDDDIIIIIIIIIIIIIIIIIIINNNNNGGGGGG.
+            LLLLLLLOOOOOAAAAAAAAADDDDDDDDIIIIIIIIIIIIIIIIIIINNNNNGGGGGG.
           </div>
         </typewriter>
       </div>
