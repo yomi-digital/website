@@ -431,9 +431,9 @@
   }
 }
 .zoomGesha {
-  -webkit-animation: zoomInGesha 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: zoomInGesha 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: zoomInGesha 2s forwards;
+  -webkit-animation: zoomInGesha 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: zoomInGesha 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: zoomInGesha 2.5s forwards;
 }
 
 @-webkit-keyframes zoomInGesha {
