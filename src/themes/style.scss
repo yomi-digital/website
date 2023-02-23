@@ -578,7 +578,7 @@ h1 {
   }
 
   &:hover {
-    .list-portfolio {
+    a {
       @include title-font();
       padding-top: 0.7rem;
       font-size: 3.12rem;
@@ -628,45 +628,19 @@ h1 {
 
 .project-header {
   .preview-img {
-    position: relative;
-    margin: auto;
-    height: auto;
     border-radius: 8px;
+    text-align: center;
     img {
       width: 100%;
+      max-width: 600px;
+      max-height: 400px;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
       border-radius: 10px;
+      margin: 5rem auto;
+      text-align: center;
     }
-    h4 {
-      position: absolute;
-      margin: 0;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: inline-block;
-      white-space: nowrap;
-    }
-    .title-project {
-      @include title-font();
-      font-size: 12.5rem;
-      font-weight: 500;
-      color: var(--font-color);
-      line-height: 0.9;
-      text-transform: uppercase;
-    }
-  }
-  .title-project {
-    @include title-font();
-    font-size: 12.5rem;
-    color: var(--font-color);
-    font-weight: 700;
-    white-space: nowrap;
-    position: absolute;
-    top: 50%;
-    left: -50%;
-    transform: translate(0, -50%);
-    z-index: 999;
   }
 }
 

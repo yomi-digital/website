@@ -1,7 +1,7 @@
 [
   {
     "name": "Daopunks",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "dao.png",
     "services": {
       "contract": "Smart Contract",
       "umi": "UMI"
@@ -12,7 +12,7 @@
   },
   {
     "name": "niftyz",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "niftyz.png",
     "services": {
       "consulting": "Consulting",
       "security": "Security Audit",
@@ -25,7 +25,7 @@
   },
   {
     "name": "protocol labs",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "protocol-labs.png",
     "services": {
 
       "protocol": "Protocol",
@@ -39,7 +39,7 @@
   },
   {
     "name": "xone",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "xone.png",
     "services": {
       "consulting": "Consulting",
       "mint": "Minting Button",
@@ -51,7 +51,7 @@
   },
   {
     "name": "Fakewhale",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "fakewhale logo.png",
     "services": {
       "mego": "MEGO Tickets",
       "design": "Design",
@@ -63,7 +63,7 @@
   },
   {
     "name": "nft berlin",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "nftberlin_smooth.png",
     "services": {
       "website": "Website ",
       "contract": "Smart Contract",
@@ -78,7 +78,7 @@
   },
   {
     "name": "Spaghetteth",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "Spaghetteth.png",
     "services": {
       "mego": "MEGO Tickets"
     },
@@ -88,7 +88,7 @@
   },
   {
     "name": "HNFT",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "HNFT.png",
     "services": {
       "contract": "Smart Contract",
       "mint": "Minting Button",
@@ -100,8 +100,8 @@
     "category": "web3 development"
   },
   {
-    "name": "cultrain",
-    "imgCover": "dao-cover.jpeg",
+    "name": "cult&rain",
+    "imgCover": "cult_rain.png",
     "services": {
       "security": "Security Audit"
     },
@@ -111,7 +111,7 @@
   },
   {
     "name": "house of sangu",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "sangufoundationwesitelogo.png",
     "services": {
       "contract": "Smart Contract",
       "umi": "UMI",
@@ -123,7 +123,7 @@
   },
   {
     "name": "Zonzo",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "zonzo.png",
     "services": {
       "ui": "UI",
       "mobile": "Mobile App"
@@ -145,7 +145,7 @@
   },
   {
     "name": "well b",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "well.png",
     "services": {
       "ui": "UI",
       "website": "Website ",
@@ -158,7 +158,7 @@
   },
   {
     "name": "Endor",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "logo ENDOR-01.png",
     "services": {
       "ui": "UI",
       "landing": "Landing Page"
@@ -170,7 +170,7 @@
   },
   {
     "name": "PIM",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "PIM.png",
     "services": {
       "ui": "UI",
       "website": "Website"
@@ -182,7 +182,7 @@
   },
   {
     "name": "Aristoil",
-    "imgCover": "dao-cover.jpeg",
+    "imgCover": "aristoil logo.png",
     "services": {
       "website": "Website", 
       "system": "Notarization System",

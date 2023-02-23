@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-5">
     <ButtonNav />
     <!-- TEAM SECTION -->
     <div :class="{ 'full-h': !isMobile }" class="container-fluid pd-container">
