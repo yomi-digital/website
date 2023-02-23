@@ -578,7 +578,7 @@ h1 {
   }
 
   &:hover {
-    a {
+    .list-portfolio {
       @include title-font();
       padding-top: 0.7rem;
       font-size: 3.12rem;

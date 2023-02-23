@@ -13,8 +13,8 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid  mt-5 p-0">
-      <div class="text-center content-container ">
+    <div class="container-fluid mt-5 p-0">
+      <div class="text-center content-container">
         <div
           class="link-portfolio"
           v-for="(project, index) in projects"
@@ -22,7 +22,7 @@
           :class="getClass(index)"
         >
           <a
-            class=""
+            :class="{ 'list-portfolio': !isMobile }"
             :href="'/#/portfolio/' + project.name.split(' ').join('-')"
             >{{ project.name }}</a
           >
@@ -110,29 +110,40 @@ export default {
     getCurrentSection() {
       const contentMarkers = gsap.utils.toArray(".link-portfolio");
       let activeIndex = null;
+      const containerBounds = document
+        .querySelector(".content-container")
+        .getBoundingClientRect();
+      const containerTop = containerBounds.top;
+      const containerHeight = containerBounds.height;
+
       contentMarkers.forEach((marker, index) => {
         const bounds = marker.getBoundingClientRect();
-        if (bounds.top < window.innerHeight * 0.5 && bounds.bottom > 0) {
+        const markerTop = bounds.top - containerTop;
+        if (markerTop < containerHeight * 0.5 && markerTop > 0) {
           activeIndex = index;
         }
       });
+
       if (activeIndex === null) {
-        if (contentMarkers[0].getBoundingClientRect().top >= 0) {
+        if (contentMarkers[0].getBoundingClientRect().top >= containerTop) {
           activeIndex = 0;
         } else if (
           contentMarkers[contentMarkers.length - 1].getBoundingClientRect()
-            .bottom <= window.innerHeight
+            .bottom <=
+          containerTop + containerHeight
         ) {
           activeIndex = contentMarkers.length - 1;
         } else {
           contentMarkers.forEach((marker, index) => {
             const bounds = marker.getBoundingClientRect();
-            if (bounds.top < window.innerHeight * 0.5) {
+            const markerTop = bounds.top - containerTop;
+            if (markerTop < containerHeight * 0.5) {
               activeIndex = index;
             }
           });
         }
       }
+
       this.activeIndex = activeIndex;
     },
 
