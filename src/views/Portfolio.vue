@@ -1,35 +1,31 @@
 <template>
   <div>
     <ButtonNav />
-    <div class="container-fluid pd-container mt-5 ">
+    <div class="container-fluid pd-container mt-5">
       <div class="row">
         <div class="col-12">
-          <h2 class="">{{$t('portfolio.title')}}</h2>
+          <h2 class="">{{ $t("portfolio.title") }}</h2>
         </div>
         <div class="col-12col-md-4">
-          <h6  class="mt-5 sub-title-project">
-            {{$t('portfolio.description')}}
+          <h6 class="mt-5 sub-title-project">
+            {{ $t("portfolio.description") }}
           </h6>
-
         </div>
       </div>
     </div>
-    <div class="container-fluid mt-5 p-0">
-      <div class="text-center">
+    <div class="container-fluid content-container mt-5 p-0">
+      <div class="text-center left-content">
         <div
           class="link-portfolio"
-          v-for="project in projects"
-          :key="project.name"
+          v-for="(project, index) in projects"
+          :key="index"
+          :class="getClass(index)"
         >
-          <!-- <div v-if="!isMobile" class="left-img">
-            <img :src="'/portfolio/' + project.imgLinkFirst" alt="" />
-          </div>
-          <div v-if="!isMobile" class="right-img">
-            <img :src="'/portfolio/' + project.imgLinkSecond" alt="" />
-          </div> -->
-          <a class="list-portfolio" :href="'/#/portfolio/' + project.name.split(' ').join('-')">{{
-            project.name
-          }}</a>
+          <a
+            class="list-portfolio"
+            :href="'/#/portfolio/' + project.name.split(' ').join('-')"
+            >{{ project.name }}</a
+          >
         </div>
       </div>
     </div>
@@ -56,6 +52,9 @@ import Footer from "@/components/Footer.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 export default {
   name: "about",
@@ -64,18 +63,94 @@ export default {
     Footer,
     FooterExt,
     ButtonNav,
-    MarqueeText
+    MarqueeText,
   },
   data() {
     return {
       service: "",
       projects: projects,
+      activeIndex: null,
     };
   },
+
   mounted() {
     const app = this;
+    if (window.innerWidth < 767) {
+      setTimeout(() => {
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+        app.callGsap();
+      }, 150);
+    }
     console.log(app.projects);
   },
-  methods: {},
+  methods: {
+    callGsap() {
+      const ST = ScrollTrigger.create({
+        trigger: "",
+        start: "top top",
+        scroller: ".content-container",
+        end: "bottom bottom",
+        onUpdate: this.getCurrentSection,
+      });
+
+      this.getCurrentSection();
+
+      const media = window.matchMedia("screen and (max-width: 100px)");
+      ScrollTrigger.addEventListener("refreshInit", checkSTState);
+      checkSTState();
+      function checkSTState() {
+        if (media.matches) {
+          ST.disable();
+        } else {
+          ST.enable();
+        }
+      }
+    },
+
+    getCurrentSection() {
+      const contentMarkers = gsap.utils.toArray(".link-portfolio");
+      let activeIndex = null;
+      contentMarkers.forEach((marker, index) => {
+        const bounds = marker.getBoundingClientRect();
+        if (bounds.top < window.innerHeight * 0.5 && bounds.bottom > 0) {
+          activeIndex = index;
+        }
+      });
+      if (activeIndex === null) {
+        if (contentMarkers[0].getBoundingClientRect().top >= 0) {
+          activeIndex = 0;
+        } else if (
+          contentMarkers[contentMarkers.length - 1].getBoundingClientRect()
+            .bottom <= window.innerHeight
+        ) {
+          activeIndex = contentMarkers.length - 1;
+        } else {
+          contentMarkers.forEach((marker, index) => {
+            const bounds = marker.getBoundingClientRect();
+            if (bounds.top < window.innerHeight * 0.5) {
+              activeIndex = index;
+            }
+          });
+        }
+      }
+      this.activeIndex = activeIndex;
+    },
+
+    getClass(index) {
+      return {
+        "active-link-portfolio": index === this.activeIndex,
+      };
+    },
+    scrollToProject(index) {
+      const project = this.projects[index];
+      const target = document.querySelector(
+        `#${project.name.split(" ").join("-")}`
+      );
+      if (target) {
+        gsap.to(window, { duration: 0.5, scrollTo: target });
+      }
+    },
+  },
 };
 </script>
+<style></style>

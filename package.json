@@ -19,6 +19,7 @@
     "vue-marquee-text-component": "1.2.0",
     "vue-moment": "^4.1.0",
     "vue-progressbar": "^0.7.5",
+    "gsap": "^3.11.4",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

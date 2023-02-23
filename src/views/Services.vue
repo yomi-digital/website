@@ -12,6 +12,9 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           <MarqueeText
+          @click="
+              showTextFirst = '';
+            "
             :repeat="10"
             :duration="$t('service.firstBanner').length * 0.5"
           >
@@ -53,7 +56,7 @@
             "
             :class="{
               active: showTextFirst === 'ai',
-              'lft-75 me-5': !isMobile && !isTablet,
+              'lft-75 me-5 mb-4': !isMobile && !isTablet,
             }"
             class="single-service position-five transform-rotate-three"
           >
@@ -76,6 +79,9 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           <MarqueeText
+          @click="
+              showTextSecond = '';
+            "
             :repeat="10"
             :duration="$t('service.secondBanner').length * 0.5"
             reverse
@@ -140,6 +146,9 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           <MarqueeText
+          @click="
+              showTextThird = '';
+            "
             :repeat="10"
             :duration="$t('service.thirdBanner').length * 0.5"
           >
@@ -151,7 +160,7 @@
               showTextFirst = '';
               showTextSecond = '';
             "
-            :class="{ active: showTextSecond === 'design' }"
+            :class="{ active: showTextThird === 'design' }"
             class="single-service position-one transform-rotate-one lft-50"
           >
             <p class="text-strong">{{ $t("service.design") }}</p>
@@ -163,7 +172,7 @@
               showTextSecond = '';
             "
             :class="{
-              active: showTextSecond === 'branding',
+              active: showTextThird === 'branding',
               'lft-40 ms-5': !isMobile && !isTablet,
             }"
             class="single-service position-three transform-rotate-two lft-25"
@@ -187,7 +196,8 @@
             :resizeHeightBubble="isMobile || isTablet ? 180 : 250"
             :resizeWidthBubble="isMobile || isTablet ? 200 : 480"
           />
-          <a class="w-50 m-auto" href="#/internal-project">{{
+          <a :class="{'w-50' : !isMobile}" 
+          class="m-auto" href="#/internal-project">{{
             $t("service.mego_ticket")
           }}</a>
         </div>

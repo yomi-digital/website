@@ -43,11 +43,12 @@
           <MarqueeText
             class="title-project"
             :repeat="6"
-            :duration="$t('banner.about').length * 0.3"
+            :duration="$t('banner.about').length * 0.4"
             style="z-index: 1"
           >
             <h4>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
           </MarqueeText>
+          
         </div>
       </div>
 
