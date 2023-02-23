@@ -625,15 +625,7 @@ h1 {
     }
   }
 }
-.active-link-portfolio {
-  background-color: white;
-  a {
-    @include title-font();
-    padding-top: 0.7rem;
-    font-size: 3.12rem;
-    color: var(--primary-color) !important;
-  }
-}
+
 .project-header {
   .preview-img {
     position: relative;

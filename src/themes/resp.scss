@@ -4,6 +4,13 @@
     font-size: 10px;
     overflow-x: hidden;
   }
+  @mixin title-font {
+    font-family: "Mortend";
+  }
+  
+  @mixin secondary-font {
+    font-family: "Degular Demo";
+  }
   .pd-container {
     padding: 1rem 2rem;
   }
@@ -204,6 +211,25 @@
     h6 {
       color: var(--font-color);
       margin-bottom: 3rem;
+    }
+  }
+  .active-link-portfolio {
+    background-color: white;
+    a {
+      @include title-font();
+      padding-top: 0.7rem;
+      font-size: 3.12rem;
+      color: var(--primary-color) !important;
+    }
+  }
+  .link-portfolia a{
+    &:hover{
+       @include secondary-font();
+    color: var(--font-color);
+    font-size: 3.438rem;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
     }
   }
   .link-portfolia a {
