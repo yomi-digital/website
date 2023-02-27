@@ -12,19 +12,21 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           <MarqueeText
-          @click="
-              showTextFirst = '';
-            "
+            @click="showTextFirst = ''"
             :repeat="10"
             :duration="$t('service.firstBanner').length * 0.5"
           >
             <h4>{{ $t("service.firstBanner") }}&nbsp;</h4>
           </MarqueeText>
           <div
-            @click="
-              showTextFirst = 'blockchain';
-              showTextSecond = '';
-              showTextThird = '';
+          @click="
+              if (showTextFirst === 'blockchain') {
+                showTextFirst = '';
+              } else {
+                showTextFirst = 'blockchain';
+                showTextSecond = '';
+                showTextThird = '';
+              }
             "
             :class="{
               active: showTextFirst === 'blockchain',
@@ -35,10 +37,14 @@
             <p class="text-strong">{{ $t("service.blockchain") }}</p>
           </div>
           <div
-            @click="
-              showTextFirst = 'metaverse';
-              showTextSecond = '';
-              showTextThird = '';
+          @click="
+              if (showTextFirst === 'metaverse') {
+                showTextFirst = '';
+              } else {
+                showTextFirst = 'metaverse';
+                showTextSecond = '';
+                showTextThird = '';
+              }
             "
             :class="{
               active: showTextFirst === 'metaverse',
@@ -50,9 +56,13 @@
           </div>
           <div
             @click="
-              showTextFirst = 'ai';
-              showTextSecond = '';
-              showTextThird = '';
+              if (showTextFirst === 'ai') {
+                showTextFirst = '';
+              } else {
+                showTextFirst = 'ai';
+                showTextSecond = '';
+                showTextThird = '';
+              }
             "
             :class="{
               active: showTextFirst === 'ai',
@@ -79,9 +89,7 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           <MarqueeText
-          @click="
-              showTextSecond = '';
-            "
+            @click="showTextSecond = ''"
             :repeat="10"
             :duration="$t('service.secondBanner').length * 0.5"
             reverse
@@ -89,10 +97,14 @@
             <h4>{{ $t("service.secondBanner") }}&nbsp;</h4>
           </MarqueeText>
           <div
-            @click="
-              showTextSecond = 'marketplace';
-              showTextFirst = '';
-              showTextThird = '';
+          @click="
+              if (showTextSecond === 'marketplace') {
+                showTextSecond = '';
+              } else {
+                showTextSecond = 'marketplace';
+                showTextFirst = '';
+                showTextThird = '';
+              }
             "
             :class="{
               active: showTextSecond === 'marketplace',
@@ -103,10 +115,14 @@
             <p class="text-strong">{{ $t("service.marketplace") }}</p>
           </div>
           <div
-            @click="
-              showTextSecond = 'app';
-              showTextFirst = '';
-              showTextThird = '';
+          @click="
+              if (showTextSecond === 'app') {
+                showTextSecond = '';
+              } else {
+                showTextSecond = 'app';
+                showTextFirst = '';
+                showTextThird = '';
+              }
             "
             :class="{ active: showTextSecond === 'app', 'lft-40': !isMobile }"
             class="single-service position-three transform-rotate-two"
@@ -115,9 +131,13 @@
           </div>
           <div
             @click="
-              showTextSecond = 'website';
-              showTextFirst = '';
-              showTextThird = '';
+              if (showTextSecond === 'website') {
+                showTextSecond = '';
+              } else {
+                showTextSecond = 'website';
+                showTextFirst = '';
+                showTextThird = '';
+              }
             "
             :class="{
               active: showTextSecond === 'website',
@@ -146,19 +166,22 @@
       <div class="row margin-btm pt-5">
         <div class="col-12 service-content">
           <MarqueeText
-          @click="
-              showTextThird = '';
-            "
+            @click="showTextThird = ''"
             :repeat="10"
             :duration="$t('service.thirdBanner').length * 0.5"
           >
             <h4>{{ $t("service.thirdBanner") }}&nbsp;</h4>
           </MarqueeText>
           <div
-            @click="
-              showTextThird = 'design';
-              showTextFirst = '';
-              showTextSecond = '';
+         
+             @click="
+              if (showTextThird === 'design') {
+                showTextThird = '';
+              } else {
+                showTextThird = 'design';
+                showTextSecond = '';
+                showTextFirst = '';
+              }
             "
             :class="{ active: showTextThird === 'design' }"
             class="single-service position-one transform-rotate-one lft-50"
@@ -166,10 +189,14 @@
             <p class="text-strong">{{ $t("service.design") }}</p>
           </div>
           <div
-            @click="
-              showTextThird = 'branding';
-              showTextFirst = '';
-              showTextSecond = '';
+          @click="
+              if (showTextThird === 'branding') {
+                showTextThird = '';
+              } else {
+                showTextThird = 'branding';
+                showTextSecond = '';
+                showTextFirst = '';
+              }
             "
             :class="{
               active: showTextThird === 'branding',
@@ -196,10 +223,12 @@
             :resizeHeightBubble="isMobile || isTablet ? 180 : 250"
             :resizeWidthBubble="isMobile || isTablet ? 200 : 480"
           />
-          <a :class="{'w-50' : !isMobile}" 
-          class="m-auto" href="#/internal-project">{{
-            $t("service.mego_ticket")
-          }}</a>
+          <a
+            :class="{ 'w-50': !isMobile }"
+            class="m-auto"
+            href="#/internal-project"
+            >{{ $t("service.mego_ticket") }}</a
+          >
         </div>
       </div>
 
