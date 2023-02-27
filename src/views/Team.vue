@@ -91,7 +91,7 @@
             >
               <LazyComponent>
 
-                <img :src="'/team/' + team.imageProfile" alt="" />
+                <img :src="'/team/' + team.imageProfilePreview" alt="" />
               </LazyComponent>
             </div>
             <div class="d-flex justify-content-center align-items-center">
