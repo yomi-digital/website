@@ -9,10 +9,12 @@
 </template>
 
 <script>
+import checkViewport from "@/mixins/checkViewport";
 const THREE = window.THREE;
 
 export default {
   name: "bubble",
+  mixins: [checkViewport],
   props: {
     resizeHeightBubble: {
       type: Number,
@@ -232,7 +234,11 @@ export default {
         0.1,
         1000
       );
-      camera.position.z = 4;
+      if(this.isMobile){
+        camera.position.z = 7;
+      }else{
+        camera.position.z = 4;
+      }
 
       // renderer.setSize(window.innerWidth, window.innerHeight);
       // window.onresize = function () {

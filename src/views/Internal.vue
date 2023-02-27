@@ -17,8 +17,8 @@
       <div class="row mt-5 mb-5">
         <div class="col-12 text-center mt-5 mb-5">
           <Bubble
-            :resizeHeightBubble="isMobile || isTablet ? 320 : 650"
-            :resizeWidthBubble="isMobile || isTablet ? 200 : 1150"
+            :resizeHeightBubble="isMobile || isTablet ? 400 : 650"
+            :resizeWidthBubble="isMobile || isTablet ? 260 : 1150"
           />
         </div>
       </div>

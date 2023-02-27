@@ -220,8 +220,8 @@
       <div class="row">
         <div class="col-12 text-center link-portfolio">
           <Bubble
-            :resizeHeightBubble="isMobile || isTablet ? 180 : 250"
-            :resizeWidthBubble="isMobile || isTablet ? 200 : 480"
+            :resizeHeightBubble="isMobile || isTablet ? 250 : 250"
+            :resizeWidthBubble="isMobile || isTablet ? 150 : 480"
           />
           <a
             :class="{ 'w-50': !isMobile }"
