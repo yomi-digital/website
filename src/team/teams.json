@@ -5,7 +5,8 @@
     "alias": "Apocop",
     "role": "administration, co-founder",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Roberto.webp"
+    "imageProfile": "Roberto.webp",
+    "imageProfilePreview": "Roberto-preview.webp"
   },
   {
     "id": "002",
@@ -13,7 +14,8 @@
     "alias": "turinglabs",
     "role": "blockchain guru & co-founder",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Sebastiano.webp"
+    "imageProfile": "Sebastiano.webp",
+    "imageProfilePreview": "Sebastiano-preview.webp"
   },
   {
     "id": "003",
@@ -21,7 +23,8 @@
     "alias": "Sthuckleberry",
     "role": "finance & administration, co-founder",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Livio.webp"
+    "imageProfile": "Livio.webp",
+    "imageProfilePreview": "Livio-preview.webp"
   },
   {
     "id": "004",
@@ -29,7 +32,8 @@
     "alias": "Steve_Rogers",
     "role": "frontend developer & co-founder",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Stefano.webp"
+    "imageProfile": "Stefano.webp",
+    "imageProfilePreview": "Stefano-preview.webp"
   },
   {
     "id": "005",
@@ -37,7 +41,8 @@
     "alias": "Six99",
     "role": "CTO, game designer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Andrea.webp"
+    "imageProfile": "Andrea.webp",
+    "imageProfilePreview": "Andrea-preview.webp"
   },
   {
     "id": "006",
@@ -45,7 +50,8 @@
     "alias": "Giorgi",
     "role": "Project manager",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Giorgia.webp"
+    "imageProfile": "Giorgia.webp",
+    "imageProfilePreview": "Giorgia-preview.webp"
   },
   {
     "id": "007",
@@ -53,7 +59,8 @@
     "alias": "Elsi",
     "role": "UX|UI designer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Elisea.webp"
+    "imageProfile": "Elisea.webp",
+    "imageProfilePreview": "Elisea-preview.webp"
   },
   {
     "id": "008",
@@ -61,7 +68,8 @@
     "alias": "Peppe",
     "role": "frontend developer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Giuseppe.webp"
+    "imageProfile": "Giuseppe.webp",
+    "imageProfilePreview": "Giuseppe-preview.webp"
   },
   {
     "id": "009",
@@ -69,7 +77,8 @@
     "alias": "Doclew",
     "role": "frontend developer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Lucrezia.webp"
+    "imageProfile": "Lucrezia.webp",
+    "imageProfilePreview": "Lucrezia-preview.webp"
   },
   {
     "id": "010",
@@ -77,7 +86,8 @@
     "alias": "Simone9419",
     "role": "full stack developer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Simone.webp"
+    "imageProfile": "Simone.webp",
+    "imageProfilePreview": "Simone-preview.webp"
   },
   {
     "id": "011",
@@ -85,6 +95,7 @@
     "alias": "anon",
     "role": "full stack developer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Anonymous.webp"
+    "imageProfile": "Anonymous.webp",
+    "imageProfilePreview": "Anonymous-preview.webp"
   }
 ]

@@ -192,6 +192,7 @@ p {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .label {
@@ -521,8 +522,6 @@ h1 {
   img {
     width: 100%;
     height: 100%;
-    transform: scale(2.5);
-    margin-top: 8.5rem;
     object-fit: cover;
   }
 }
@@ -1104,6 +1103,16 @@ button {
       outline: none;
     }
   }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
   input {
     width: 90%;
     margin: 3rem 0.5rem;
@@ -1121,4 +1130,13 @@ button {
     color: var(--primary-color);
     background-color: var(--font-color);
   }
+}
+.btn-disabled {
+  cursor: no-drop;
+  opacity: 0.4;
+}
+.btn-disabled:hover {
+  cursor: no-drop;
+  background: white!important;
+  color: black;
 }

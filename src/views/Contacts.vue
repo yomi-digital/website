@@ -31,7 +31,7 @@
           <input
             class="text-service-two"
             v-model="mobile"
-            type="text"
+            type="number"
             placeholder="Mobile"
           />
         </div>
@@ -50,18 +50,48 @@
             id=""
             placeholder="Your Message"
             cols="30"
-            rows="10"
+            rows="8"
+            v-model="message"
           ></textarea>
         </div>
       </div>
       <div class="row mt-5">
-        <div :class="{'text-center' : isMobile}" class="col-12">
-          <button class="submit-form text-service-two primary-color">
+        <div :class="{ 'text-center': isMobile }" class="col-12">
+          <button
+            :class="
+              email != '' &&
+              name != '' &&
+              company != '' &&
+              mobile != '' &&
+              message != ''
+                ? null
+                : 'btn-disabled'
+            "
+            v-if="!sending"
+            @click="submit()"
+            class="submit-form text-service-two primary-color"
+          >
             submit
           </button>
+          <p v-if="sending" style="color: #fff">
+            Sending application, please wait..
+          </p>
         </div>
       </div>
       <div class="gap"></div>
+      <modal name="sendEmail" class="team-card">
+        <div
+          class="w-100 d-flex justify-content-between align-top-model p-1 mb-3"
+        >
+          <i @click="closeModalSuccess()" class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="mt-5 mb-5 text-center">
+          <div class="">
+            <h5 class="text-uppercase">Email send</h5>
+          </div>
+        </div>
+        
+      </modal>
       <div class="row">
         <div class="col-12">
           <h5>Get in touch!</h5>
@@ -69,7 +99,8 @@
         <div class="col-12 mt-5">
           <p class="text-dark">
             Viale Legioni Romane <br />
-            20147 MILANO <br /> <br>
+            20147 MILANO <br />
+            <br />
 
             P.IVA: 12188060961
           </p>
@@ -106,6 +137,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import checkViewport from "@/mixins/checkViewport";
 import ButtonNav from "@/components/ButtonNav.vue";
 export default {
@@ -118,12 +150,73 @@ export default {
       company: "",
       mobile: "",
       email: "",
+      message: "",
+      sending: false,
+      success: false,
     };
   },
   components: {
     ButtonNav,
   },
+  methods: {
+    async submit() {
+      const app = this;
+      if (!app.sending) {
+        if (
+          app.name == undefined ||
+          app.name == "" ||
+          app.company == undefined ||
+          app.company == "" ||
+          app.mobile == undefined ||
+          app.mobile == "" ||
+          app.email == undefined ||
+          app.email == "" ||
+          app.message == undefined ||
+          app.message == ""
+        ) {
+
+          alert("Enter all Fields");
+        } else {
+          app.sending = true;
+          try {
+            let response = await axios.post(
+              "https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-fccddf11-6a59-4e85-879a-9e3580d3b18c/sample/sendMail",
+              {
+                form: "contacts",
+                name: app.name,
+                company: app.company,
+                mobile: app.mobile,
+                email: app.email,
+                message: app.message,
+              }
+            );
+            if (response.data.error === true) {
+              alert(response.data.message);
+            } else {
+              this.$modal.show("sendEmail");
+              setTimeout(() => {
+                this.closeModalSuccess();
+              }, 5000);
+            }
+          } catch (e) {
+            console.log(e);
+          }
+          app.sending = false;
+          app.name = "";
+          app.company = "";
+          app.mobile = "";
+          app.email = "";
+          app.message = "";
+        }
+      }
+    },
+    closeModalSuccess() {
+      this.$modal.hide("sendEmail");
+    },
+  },
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

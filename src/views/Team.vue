@@ -63,7 +63,7 @@
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
               <LazyComponent>
-                <img :src="'/team/' + team.imageProfile" alt="" />
+                <img :src="'/team/' + team.imageProfilePreview" alt="" />
               </LazyComponent>
             </div>
           </div>
