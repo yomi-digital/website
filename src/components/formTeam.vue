@@ -36,7 +36,7 @@
               <div :class="{ 'flex-column': isMobile }" class="d-flex">
                 <div :class="{ 'w-50 me-2': !isMobile, 'mt-2': isMobile }">
                   <span style="color: red" v-if="showError"
-                    >Error. Size limit: 30MB</span
+                    >Error. Size limit: 10MB</span
                   >
                   <input
                     @change="onCover"
@@ -59,6 +59,7 @@
                 <div :class="{ 'w-50 ms-2': !isMobile }">
                   <input
                     type="text"
+                    v-model="link"
                     id=""
                     class=""
                     placeholder="Attach your link..."
@@ -122,7 +123,9 @@ export default {
       name: "",
       email: "",
       position: "",
-      aboutYou: "",
+      fileBase64: "",
+      fileExt: "",
+      link: "",
       selectedCover: null,
       coverUrl: null,
       showError: false,
@@ -138,8 +141,6 @@ export default {
           app.name == "" ||
           app.position == undefined ||
           app.position == "" ||
-          app.aboutYou == undefined ||
-          app.aboutYou == "" ||
           app.email == undefined ||
           app.email == "" ||
           app.selectedCover == undefined ||
@@ -154,13 +155,13 @@ export default {
             let response = await axios.post(
               "https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-fccddf11-6a59-4e85-879a-9e3580d3b18c/sample/sendMail",
               {
-                form: "contacts",
+                form: "join",
                 name: app.name,
                 position: app.position,
-                aboutYou: app.aboutYou,
                 email: app.email,
-                selectedCover: app.selectedCover,
-                coverUrl: app.coverUrl,
+                link: app.link,
+                file: app.fileBase64,
+                file_extension: app.fileExt
               }
             );
             if (response.data.error === true) {
@@ -198,16 +199,26 @@ export default {
       this.$emit("onBackClick");
     },
     onCover(e) {
+      const app = this
       const file = e.target.files[0];
-      if (file && file.size > 30000000) {
-        this.coverUrl = null;
-        this.selectedCover = null;
-        this.showError = true;
+      if (file && file.size > 10000000) {
+        app.coverUrl = null;
+        app.selectedCover = null;
+        app.showError = true;
       } else {
-        this.selectedCover = file.name;
-        console.log(this.selectedCover);
-        this.coverUrl = this.selectedCover;
-        this.showError = false;
+        app.selectedCover = file.name;
+        app.coverUrl = app.selectedCover;
+        app.showError = false;
+        const ext = file.name.split(".")[file.name.split(".").length - 1];
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+          app.fileBase64 = reader.result
+          app.fileExt = ext
+        };
+        reader.onerror = function (error) {
+          console.log('Error: ', error);
+        };
       }
     },
   },
