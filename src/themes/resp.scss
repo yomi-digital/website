@@ -32,9 +32,7 @@
       }
     }
   }
-  .marquee-text-wrap{
-    pointer-events: none!important;
-  }
+
   .agile {
     .agile__actions {
       width: 90%;
@@ -114,12 +112,14 @@
   .marquee-rotated {
     transform: rotate(0deg);
   }
+  .marquee-text-wrap{
+    pointer-events: none!important;
+  }
 
   .navbar-custom {
     .marquee-text-text {
       line-height: 0.5;
       margin-top: 0px;
-      
     }
   }
 
