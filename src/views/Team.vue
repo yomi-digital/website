@@ -27,11 +27,13 @@
       </div>
       <div :class="{ 'container-image': isMobile }">
         <div class="box-character-img position-second-box-charger">
-          <img
-            class="imgTeam fade-in-max"
-            src="../assets/images/team-img.webp"
-            alt=""
-          />
+          <LazyComponent>
+            <img
+              class="imgTeam fade-in-max"
+              src="../assets/images/team-img.webp"
+              alt=""
+            />
+          </LazyComponent>
         </div>
       </div>
     </div>
@@ -60,7 +62,9 @@
               <div class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
-              <img :src="'/team/' + team.imageProfile" alt="" />
+              <LazyComponent>
+                <img :src="'/team/' + team.imageProfile" alt="" />
+              </LazyComponent>
             </div>
           </div>
 
@@ -85,7 +89,10 @@
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{ 'border-image': !showImage }"
             >
-              <img :src="'/team/' + team.imageProfile" alt="" />
+              <LazyComponent>
+
+                <img :src="'/team/' + team.imageProfile" alt="" />
+              </LazyComponent>
             </div>
             <div class="d-flex justify-content-center align-items-center">
               <h5 @click="showMember(team)" class="color-primary">
@@ -164,7 +171,9 @@
           </div>
         </div>
         <div class="team-img-card">
-          <img :src="'/team/' + selected.imageProfile" alt="" />
+          <LazyComponent>
+            <img :src="'/team/' + selected.imageProfile" alt="" />
+          </LazyComponent>
         </div>
       </modal>
       <formTeam
@@ -182,7 +191,7 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-
+import LazyComponent from "v-lazy-component";
 import MarqueeText from "vue-marquee-text-component";
 
 import Footer from "@/components/Footer.vue";
@@ -195,6 +204,7 @@ export default {
   name: "team",
   mixins: [checkViewport],
   components: {
+    LazyComponent,
     Footer,
     MarqueeText,
     ButtonNav,

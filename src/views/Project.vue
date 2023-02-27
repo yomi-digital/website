@@ -104,7 +104,8 @@
                 :class="isMobile ? 'text-start mb-5' : 'text-end'"
                 class="mt-4"
               >
-                <p>{{ project.description }}</p>
+                <p v-if="$i18n.locale == 'en'">{{ project.description_en }}</p>
+                <p v-if="$i18n.locale == 'it'">{{ project.description_it }}</p>
               </div>
             </div>
             <!-- </div> -->

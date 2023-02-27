@@ -35,8 +35,9 @@
               <input type="file" name="photo" id="upload-photo" /> -->
               <div :class="{'flex-column' : isMobile}" class="d-flex">
                 <div :class="{'w-50 me-2' : !isMobile, 'mt-2' : isMobile}" >
+                  <span style="color:red" v-if="showError">Error. Size limit: 30MB</span>
                   <input
-                    @change="onNftCover"
+                    @change="onCover"
                     type="file"
                     id="drop_zone"
                     class="FileUpload"
@@ -49,7 +50,7 @@
                       ? coverUrl.substring(0, 37) + "..."
                       : coverUrl
                   }}</span>
-                  <span v-else style="color:#757575f2">CV/Portfolio...</span>
+                  <span v-if="!coverUrl && !showError" style="color:#757575f2">CV/Portfolio...</span>
                 </div>
                 <div :class="{'w-50 ms-2' : !isMobile}">
                   <input
@@ -80,6 +81,7 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
+/* import axios from "axios"; */
 export default {
   name: "formTeam",
   mixins: [checkViewport],
@@ -89,8 +91,9 @@ export default {
       email: "",
       position: "",
       aboutYou: "",
-      selectedNftCover: null,
+      selectedCover: null,
       coverUrl: null,
+      showError:false
     };
   },
   methods: {
@@ -102,11 +105,20 @@ export default {
       }, 800);
       this.$emit("onBackClick");
     },
-    onNftCover(e) {
-      this.selectedNftCover = e.target.files[0].name;
-      console.log(this.selectedNftCover);
-      this.coverUrl = this.selectedNftCover;
-    },
+    onCover(e) {
+  const file = e.target.files[0];
+  if (file && file.size > 30000000) {
+    
+    this.coverUrl = null;
+    this.selectedCover = null;
+    this.showError = true; 
+  } else {
+    this.selectedCover = file.name;
+    console.log(this.selectedCover);
+    this.coverUrl = this.selectedCover;
+    this.showError = false;
+  }
+},
   },
 };
 </script>

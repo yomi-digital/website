@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import vmodal from "vue-js-modal";
 import i18n from "./i18n";
-
+import LazyComponent from "v-lazy-component";
 
 
 const lang = localStorage.getItem("lang") || "en";
@@ -17,6 +17,7 @@ import "./themes/animation.scss";
 import MarqueeText from "vue-marquee-text-component";
 import VueProgressBar from "vue-progressbar";
 import VueAgile from "vue-agile";
+import './registerServiceWorker'
 
 const options = {
   color: "#ffffff",
@@ -35,6 +36,7 @@ const options = {
 Vue.use(VueProgressBar, options);
 Vue.use(VueAgile);
 Vue.component("marquee-text", MarqueeText);
+Vue.use(LazyComponent);
 
 Vue.use(require("vue-moment"));
 Vue.config.productionTip = false;
