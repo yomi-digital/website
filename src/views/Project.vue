@@ -1,5 +1,5 @@
 <template>
-  <div class="portofolio-inner pt-5">
+  <div class="portfolio-inner pt-5">
     <ButtonNav />
     <div v-if="Object.keys(project).length > 0">
       <div class="container-fluid pd-container mt-5">
@@ -40,7 +40,7 @@
         <div class="row">
           <div
             :class="isMobile ? 'px-4 py-5' : ' pt-5 pb-5 px-2'"
-            class="col-12 col-lg-10 offset-0 offset-lg-1 d-flex justify-content-between b-bottom-light"
+            class="col-12 col-lg-10 offset-0 offset-lg-1 d-flex justify-content-between align-items-center b-bottom-light"
           >
             <div class="d-flex align-items-center">
               <h6 class="me-3">
@@ -50,7 +50,7 @@
                 ></i>
               </h6>
               <a :href="project.link" target="_blank"
-                ><h6 class="underline">{{ project.name }}</h6></a
+                ><h6 style="text-underline-offset: 4px;" class="underline">{{ project.name }}</h6></a
               >
             </div>
             <h6 v-if="$i18n.locale == 'en'" v-html="project.category_en"></h6>
