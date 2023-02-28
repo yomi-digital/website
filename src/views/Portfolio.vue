@@ -19,25 +19,30 @@
           class="link-portfolio"
           v-for="(project, index) in projects"
           :key="index"
-          :class="getClass(index)"
+          :class="{
+            'active-link-portfolio':
+              $route.query.project != undefined
+                ? decodeURIComponent($route.query.project) == project.name
+                : false,
+          }"
         >
           <a
-            :class="{ 'list-portfolio': !isMobile}"
+            :class="{ 'list-portfolio': !isMobile }"
             :href="'/#/portfolio/' + project.name.split(' ').join('-')"
             >{{ project.name }}</a
           >
         </div>
       </div>
     </div>
-    <div class="gap"></div>
+    <div v-if="!isMobile" class="gap"></div>
     <a href="#/services" class="link-title">
       <MarqueeText
-        class="title-project "
+        class="title-project mt-3"
         :repeat="6"
         :duration="8"
         style="z-index: 1"
       >
-        <h4>&nbsp;DISCOVER OUR SERVICES&nbsp;</h4>
+        <h4>&nbsp;{{ $t("banner.portfolio") }}&nbsp;</h4>
       </MarqueeText>
     </a>
     <FooterExt />
@@ -75,6 +80,13 @@ export default {
 
   mounted() {
     const app = this;
+    if (this.$route.query.project != undefined) {
+      setTimeout(function () {
+        const activeLink = document.querySelector(".active-link-portfolio");
+        activeLink.scrollIntoView();
+      }, 1000);
+    }
+    
     if (window.innerWidth < 767) {
       setTimeout(() => {
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);

@@ -91,7 +91,7 @@
             >
               
 
-                <img :src="'/team/' + team.imageProfilePreview" alt="" />
+                <img @click="showMember(team)" :src="'/team/' + team.imageProfilePreview" alt="" />
               
             </div>
             <div class="d-flex justify-content-center align-items-center">
