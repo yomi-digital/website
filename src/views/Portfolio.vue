@@ -22,7 +22,7 @@
           :class="getClass(index)"
         >
           <a
-            :class="{ 'list-portfolio': !isMobile }"
+            :class="{ 'list-portfolio': !isMobile}"
             :href="'/#/portfolio/' + project.name.split(' ').join('-')"
             >{{ project.name }}</a
           >

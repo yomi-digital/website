@@ -21,10 +21,12 @@ export default {
   name: "bannerPortfolio",
   mixins: [checkViewport],
   data() {
-    return {
-      projects: projects,
-    };
-  },
+  return {
+    projects: projects,
+    selectedProjectIndex: 0, // Inizializza la proprietà selectedProjectIndex a 0
+  };
+},
+
   mounted() {
     const app = this;
     app.randomProject();
