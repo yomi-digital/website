@@ -2,23 +2,21 @@
   <div class="pt-5">
     <ButtonNav />
     <div class="container-fluid mt-5">
-      <div class="row pd-container">
+      <div class="row pb-0 pd-container">
         <div class="col-12">
           <h2 class="">Mego</h2>
         </div>
         <div class="col-12 col-lg-5">
           <h6 class="mt-5 sub-title-project">
-            MEGO is our answer to traditional ticketing processes, with high
-            costs, inauthenticity, and limited options for customizing landing
-            pages, ticket and email.
+            {{ $t("mego.sub-title") }}
           </h6>
         </div>
       </div>
-      <div class="row mt-1 mb-1">
+      <div class="row mt-0 mb-1">
         <div class="col-12 text-center">
           <Bubble
-            :resizeHeightBubble="isMobile || isTablet ? 400 : 650"
-            :resizeWidthBubble="isMobile || isTablet ? 260 : 1150"
+            :resizeHeightBubble="isMobile || isTablet ? 300 : 650"
+            :resizeWidthBubble="isMobile || isTablet ? 170 : 1150"
           />
         </div>
       </div>
@@ -28,9 +26,9 @@
     </MarqueeText>
 
     <div class="text-center link-internal mt-5">
-      <p>IF YOU WANT TO KNOW MORE</p>
+      <p>{{ $t("mego.demo") }}</p>
       <a href=""
-        >try now
+        >{{ $t("mego.btn") }}
         <svg
           width="69"
           height="64"

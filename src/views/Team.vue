@@ -128,10 +128,8 @@
         <div class="info-member" v-if="checkedMobile && isMobile">
           <p class="">alias</p>
           <h6>{{ selected.alias }}</h6>
-          <p class="">role</p>
+          <p class="">{{ $t("team.role") }}</p>
           <h6>{{ selected.role }}</h6>
-          <p class="">disorder</p>
-          <h6>{{ selected.disorder }}</h6>
         </div>
       </div>
 
@@ -160,13 +158,10 @@
                 <div class="title-team mt-3">{{ selected.alias }}</div>
               </div>
               <div class="mb-5">
-                <div class="label">ROLE</div>
+                <div class="label">{{ $t("team.role") }}</div>
                 <div class="title-team mt-3">{{ selected.role }}</div>
               </div>
-              <div class="mb-5">
-                <div class="label">DISORDER</div>
-                <div class="title-team mt-3">{{ selected.disorder }}</div>
-              </div>
+              
             </div>
           </div>
         </div>

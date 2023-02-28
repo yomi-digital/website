@@ -22,15 +22,19 @@
     "formEmail":"your email",
     "formPosition":"desidered position",
     "formYou":"something about you",
-    "formLink":"Attach your link..."
+    "formLink":"Attach your link...",
+    "role":"role"
   },
   "banner":{
     "about": "Imagine the possibilities. We realize them.",
-    "team": "KNOW MORE ABOUT US"
+    "team": "KNOW MORE ABOUT US",
+    "view":"view portfolio",
+    "project":"Project"
   },
   "portfolio":{
     "title":"proud of",
-    "description":"Explore our portfolio and discover the latest projects"
+    "description":"Explore our portfolio and discover the latest projects",
+    "contribution":"our contribution"
   },
   "service":{
     "firstBanner":"WEB3 TECHNOLOGY",
@@ -57,8 +61,11 @@
     "design_description":"Landing / Websites / Marketplaces /apps interface design on Figma",
     "layout":"Layout",
     "mego_ticket":"KNOW MORE ABOUT MEGO TICKETS"
-    
-
+  },
+  "mego":{
+    "sub-title":"A crosschain ticketing system that allows to create event, manage and sell tickets. Often the web3 Apps are not so user friendly. This occurs from both admin and user side. But MEGO it’s simple, easy and fun!",
+    "demo":"IF YOU WANT TO KNOW MORE",
+    "btn":"Try now"
   },
   
   "footer":{

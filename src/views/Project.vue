@@ -5,17 +5,17 @@
       <div class="container-fluid pd-container mt-5">
         <div class="row">
           <div class="col-12">
-            <h2 class="">PROUD OF</h2>
+            <h2 class="">{{ $t("portfolio.title") }}</h2>
           </div>
           <div class="col-12 col-md-4">
             <h6 class="mt-5 sub-title-project">
-              Explore our portfolio and discover the latest projects
+              {{ $t("portfolio.description") }}
             </h6>
           </div>
         </div>
       </div>
       <div class="container mt-5 pt-5">
-        <div v-if="!isMobile" class="gap"></div>
+       <!--  <div v-if="!isMobile" class="gap"></div> -->
         <div class="row">
           <div
             :class="{ 'p-0': isMobile }"
@@ -53,7 +53,8 @@
                 ><h6 class="underline">{{ project.name }}</h6></a
               >
             </div>
-            <h6 v-html="project.category"></h6>
+            <h6 v-if="$i18n.locale == 'en'" v-html="project.category_en"></h6>
+            <h6 v-if="$i18n.locale == 'it'" v-html="project.category_it"></h6>
           </div>
           <div class="row mt-5 pb-5 px-2">
             <!-- <div class="col-12 col-lg-10 offset-0 offset-lg-1 mb-5">
@@ -75,7 +76,7 @@
               class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 order-1 order-md-0"
             >
               <h6 style="font-weight: 500" :class="isMobile ? 'mb-5' : 'mb-4'">
-                OUR CONTRIBUTION
+                {{ $t("portfolio.contribution") }}
               </h6>
               <div v-if="!isMobile" class="d-flex mb-4">
                 <i
@@ -87,14 +88,26 @@
                   style="color: white; font-size: 0.5rem"
                 ></i>
               </div>
-              <p
-                class="m-0"
-                :class="isMobile ? 'grey-text mb-3' : null"
-                v-for="service in Object.keys(project.services)"
-                :key="service"
-              >
-                {{ project.services[service] }}
-              </p>
+              <div v-if="$i18n.locale == 'en'">
+                <p
+                  class="m-0"
+                  :class="isMobile ? 'grey-text mb-3' : null"
+                  v-for="service in Object.keys(project.services_en)"
+                  :key="service"
+                >
+                  {{ project.services_en[service] }}
+                </p>
+              </div>
+              <div v-if="$i18n.locale == 'it'">
+                <p
+                  class="m-0"
+                  :class="isMobile ? 'grey-text mb-3' : null"
+                  v-for="service in Object.keys(project.services_it)"
+                  :key="service"
+                >
+                  {{ project.services_it[service] }}
+                </p>
+              </div>
             </div>
             <div
               :class="{ 'ms-3': !isMobile && !isTablet, 'px-4 py-4': isMobile }"

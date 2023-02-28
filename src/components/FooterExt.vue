@@ -25,7 +25,7 @@
             <img src="../assets/partners/Rectangle.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Untitled-Artwork.webp" alt="" />
+            <img src="../assets/partners/Untitled-Artwork.png" alt="" />
           </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i

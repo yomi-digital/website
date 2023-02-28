@@ -2,93 +2,131 @@
   {
     "name": "niftyz",
     "imgCover": "niftyz.png",
-    "services": {
+    "services_en": {
       "consulting": "Consulting",
       "security": "Security Audit",
-
-      "website": "Website "
+      "website": "Website"
+    },
+    "services_it": {
+      "consulting": "Consulenza",
+      "security": "Security Audit",
+      "website": "Sito internet"
     },
     "description_en": "The Niftyz platform empowers businesses to boost their growth, by betokening and monetizing their growth, achievements, content, members and more, by using NFTs to lock and distribute their most precious information and assets to the most wanted audience.",
     "description_it": "La piattaforma Niftyz consente alle aziende di incrementare la loro crescita, scommettendo e monetizzando i loro risultati, i loro contenuti, i loro membri e altro ancora, utilizzando gli NFT per distribuire le loro informazioni e i loro beni più preziosi al pubblico più ricercato.",
     "link": "https://niftyz.io/#/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "protocol labs",
     "imgCover": "protocol-labs.png",
-    "services": {
-
+    "services_en": {
       "protocol": "Protocol",
       "decentralized": "Decentralized Storage",
+      "branding": "Branding",
+      "ux": "UI/UX"
+    },
+    "services_it": {
+      "protocol": "Protocollo",
+      "decentralized": "Storage Decentralizzato",
       "branding": "Branding",
       "ux": "UI/UX"
     },
     "description_en": "Onchain.storage is an ecosystem of storage products built on top of Ethereum (and Polygon) and IPFS/Filecoin. We're building the project from scratch to help Protocol Labs translate the theoretical protocol into Smart Contracts, Oracle nodes and Providers interfaces. The first protocol is called Retrieval Pinning and adds 'retrievability assurance' on top of decentralized storage.",
     "description_it": "Onchain.storage è un ecosistema di prodotti di archiviazione costruito sulla base di Ethereum (e Polygon) e IPFS/Filecoin. Stiamo costruendo il progetto da zero per aiutare Protocol Labs a tradurre il protocollo teorico in Smart Contracts, Oracle nodes e interfacce Providers. Il primo protocollo si chiama Retrieval Pinning e aggiunge la 'garanzia di reperibilità' allo storage decentralizzato.",
     "link": "https://onchain.storage/#/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "Fakewhale",
     "imgCover": "fakewhale logo.png",
-    "services": {
+    "services_en": {
       "mego": "MEGO Tickets",
       "design": "Design",
       "website": "Website "
     },
+    "services_it": {
+      "mego": "MEGO Tickets",
+      "design": "Design",
+      "website": "Sito internet "
+    },
     "description_en": "Fakewhale is an organization led by artists, collectors, and entrepreneurs. Founded in January 2021, Fakewhale has been supporting the digital underground scene by collecting more than 1000 pieces since the inception of Tezos tokens.",
     "description_it": "Fakewhale è un'organizzazione guidata da artisti, collezionisti e imprenditori. Fondata nel gennaio 2021, ha sostenuto la scena digitale underground collezionando più di 1000 pezzi fin dall'inizio dei token Tezos.",
     "link": "https://fakewhale.xyz/#",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "Demotapers",
-    "imgCover": "fakewhale logo.png",
-    "services": {
+    "imgCover": "demo.png",
+    "services_en": {
       "contract": "Smart Contract",
       "mego": "MEGO Tickets",
-      "landing":"Landing"
-    
+      "landing": "Landing"
+    },
+    "services_it": {
+      "contract": "Smart Contract",
+      "mego": "MEGO Tickets",
+      "landing": "Sito internet"
     },
     "description_en": "Demotapers is a music-and-visual nft platform where musicians and visual artists unite to create unique digital artworks tailored to music tracks that collectors can collect, trade, and display.",
     "description_it": "Demotapers è una piattaforma di nft musicali e artistici nella quale musicisti e artisti figurativi si uniscono per creare opere d'arte digitali uniche su misura per i brani musicali che si possono collezionare, scambiare ed esporre.",
     "link": "https://demotapers.com/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
-    "name": "Web3Denver",
-    "imgCover": "fakewhale logo.png",
-    "services": {
+    "name": "w3bthr33",
+    "imgCover": "w3b.png",
+    "services_en": {
       "mego": "MEGO Tickets",
-      "platform":"Platform",
+      "platform": "Platform",
       "ux": "UI/UX design"
-      
-    
+    },
+    "services_it": {
+      "mego": "MEGO Tickets",
+      "platform": "Piattaforma",
+      "ux": "UI/UX design"
     },
     "description_en": "Two interesting side events of ETHDenver 2023. Two locations in which to network, talk about web3 technology and discover new trends.",
     "description_it": "Due interessanti side event di ETHDenver 2023. Due luoghi in cui fare networking, parlare di tecnologia web3 e scoprire nuove tendenze.",
     "link": "https://www.w3b3.life/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "Spaghetteth",
     "imgCover": "Spaghetteth.png",
-    "services": {
+    "services_en": {
+      "mego": "MEGO Tickets"
+    },
+    "services_it": {
       "mego": "MEGO Tickets"
     },
     "description_en": "Second edition of an event organized by the Italian eth community. 3 days of talks, project presentations and educational activities. A new way of networking.",
     "description_it": "Seconda edizione di un evento organizzato dalla comunità ETH italiana. 3 giorni di conferenze, presentazioni di progetti e attività didattiche. Un nuovo modo di fare rete.",
     "link": "https://www.spaghett-eth.com/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
 
   {
     "name": "NFTBerlin",
     "imgCover": "nftberlin_smooth.png",
-    "services": {
+    "services_en": {
       "website": "Website ",
       "contract": "Smart Contract",
       "mint": "Minting Button",
+      "mego": "MEGO Tickets",
+      "design": "Design",
+      "ux": "UI/UX"
+    },
+    "services_it": {
+      "website": "Sito internet ",
+      "contract": "Smart Contract",
+      "mint": "Bottone di minting",
       "mego": "MEGO Tickets",
       "design": "Design",
       "ux": "UI/UX"
@@ -96,137 +134,189 @@
     "description_en": "NFTBERLIN is a non-profit annual unconference on NFTs inspired by the community of passionate NFT artists and technologists, that provides an open, chain-agnostic platform for learning, exchanging ideas, and sharing experiences.",
     "description_it": "NFTBERLIN è una conferenza annuale non-profit sugli  NFT, ispirata dalla comunità di artisti e tecnici appassionati di web3, un luogo aperto e indipendente per imparare, scambiare idee e condividere esperienze.",
     "link": "https://nftberlin.org/#/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "HNFT",
     "imgCover": "HNFT.png",
-    "services": {
+    "services_en": {
       "contract": "Smart Contract",
       "mint": "Minting Button",
       "mego": "MEGO Tickets"
-
+    },
+    "services_it": {
+      "contract": "Smart Contract",
+      "mint": "Bottone di minting",
+      "mego": "MEGO Tickets"
     },
     "description_en": "Hosted by DADA, the First Historic NFT Fest brings together the creators, innovators, and thinkers who started it all for three days of deep dive into the earliest NFT projects on blockchain up to 2019.",
     "description_it": "Ospitato da DADA, il First Historic NFT Fest riunisce i creatori, gli innovatori e i pensatori che hanno dato il via a tutto ai primi progetti NFT su blockchain fino dal 2019.",
     "link": "https://hnft.community/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "xone",
     "imgCover": "xone.png",
-    "services": {
+    "services_en": {
       "consulting": "Consulting",
       "mint": "Minting Button",
       "landing": "Landing"
     },
+    "services_it": {
+      "consulting": "Consulenza",
+      "mint": "Bottone di minting",
+      "landing": "Sito internet"
+    },
     "description_en": "Xone is the first mobile application in the metaverse. With Xone, you can create the next evolution of social media with personal 3D spaces taking the place of user profiles. Xone users can build, own and monetize their personal spaces in 3d and explore them through augmented reality technology.",
     "description_it": "Xone è la prima applicazione mobile del metaverso.  Spazi personali in 3D che prendono il posto dei profili degli utenti, i quali possono costruire, possedere e monetizzare i loro spazi personali in 3D ed esplorarli attraverso la tecnologia della realtà aumentata.",
     "link": "https://xone.gg/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "Daopunks",
     "imgCover": "dao.png",
-    "services": {
+    "services_en": {
+      "contract": "Smart Contract",
+      "umi": "UMI"
+    },
+    "services_it": {
       "contract": "Smart Contract",
       "umi": "UMI"
     },
     "description_en": "DAOpunks is a platform that blazes new trails, leading others to fertile promised lands where they find opportunity, meaningful work, community, and untold abundance. DAOpunks’s mission is to enable humans to liberate themselves from the soul-sucking drudgery of default world work and lead them to the rewarding, expansive freedom found in meaningful DAO work.",
     "description_it": "DAOpunks è una piattaforma che ha la missione di consentire agli esseri umani di liberarsi dalla pesantezza del lavoro di default, e di condurli verso la libertà gratificante ed espansiva che si trova in un lavoro DAO significativo.",
     "link": "https://www.daopunks.io/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
-
 
   {
     "name": "cult&rain",
     "imgCover": "cult_rain.png",
-    "services": {
+    "services_en": {
+      "security": "Security Audit"
+    },
+    "services_it": {
       "security": "Security Audit"
     },
     "description_en": "CULT & RAIN is a disruptive digital fashion brand, merging innovative NFT art with exclusive high-end physical redeemable. A unique platform and creative playground showcasing the best artists from around the world.",
     "description_it": "CULT & RAIN è un marchio di moda digitale dirompente, che fonde l'arte innovativa degli NFT con esclusivi prodotti fisici di alta gamma riscattabili.",
     "link": " https://www.cultandrain.com/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "house of sangu",
     "imgCover": "sangufoundationwesitelogo.png",
-    "services": {
+    "services_en": {
       "contract": "Smart Contract",
       "umi": "UMI",
       "mint": "Minting Button"
     },
+    "services_it": {
+      "contract": "Smart Contract",
+      "umi": "UMI",
+      "mint": "Bottone di minting"
+    },
     "description_en": "House of Sangu is an interconnection of artists and NFT enthusiasts that works together toward the creation of an ecosystem of people that wants to help each other and grow together. <br> Sangu’s first initiative is the first edition of an NFT magazine and exhibition that every year will travel to a new country around the world",
     "description_it": "House of Sangu è una rivista, un'interconnessione di artisti e appassionati di NFT che lavorano insieme per la creazione di un ecosistema di persone che vogliono aiutarsi e crescere insieme.",
     "link": "https://thehouseofsangu.com/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "well b",
     "imgCover": "well.png",
-    "services": {
+    "services_en": {
       "ui": "UI",
       "website": "Website ",
       "contract": "Smart Contract",
-      "crm":"CRM"
+      "crm": "CRM"
+    },
+    "services_it": {
+      "ui": "UI",
+      "website": "Sito internet",
+      "contract": "Smart Contract",
+      "crm": "CRM"
     },
     "description_en": "Well-b is an innovative digital coworking that uses blockchain technology to notarize space leases and a digital platform that records all transactions from booking to accessing spaces.",
     "description_it": "Well-b è un coworking digitale innovativo che utilizza la tecnologia blockchain per autenticare i contratti di locazione degli spazi. Una piattaforma digitale che registra tutte le transazioni, dalla prenotazione all'accesso.",
     "link": "https://well-b.space/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   },
   {
     "name": "Zonzo",
     "imgCover": "zonzo.png",
-    "services": {
+    "services_en": {
+      "ui": "UI",
+      "mobile": "Mobile App"
+    },
+    "services_it": {
       "ui": "UI",
       "mobile": "Mobile App"
     },
     "description_en": "Zonzo is an app to discover cities by walking and playing mini-games. You can purchase an itinerary and it will guide you along an experience designed for the places you are visiting.",
     "description_it": "Zonzo è un'applicazione per scoprire le città camminando e giocando a minigiochi. È possibile acquistare un itinerario che vi guiderà lungo un'esperienza pensata per i luoghi che state visitando.",
     "link": "https://zonzoapp.com/",
-    "category": "web2 development"
+    "category_en": "web2 development",
+    "category_it": "sviluppo web2"
   },
 
   {
     "name": "Endor",
     "imgCover": "logo ENDOR-01.png",
-    "services": {
+    "services_en": {
       "ui": "UI",
       "landing": "Landing Page"
-      
+    },
+    "services_it": {
+      "ui": "UI",
+      "landing": "Sito internet"
     },
     "description_en": "Endor is a Lorem Ipsum Agency with a deep knowledge of the Web3 market. With Lorem Ipsum method they refer to the consolidated crystallization of their procedure, which ideally evolves infinitely, supporting customers in the latest communication technologies.",
     "description_it": "Endor è un'agenzia Lorem Ipsum con una profonda conoscenza del mercato Web3, supportano i clienti nelle più recenti tecnologie di comunicazione.",
     "link": "https://endor.studio/",
-    "category": "web2 development"
+    "category_en": "web2 development",
+    "category_it": "sviluppo web2"
   },
   {
     "name": "PIM",
     "imgCover": "PIM.png",
-    "services": {
+    "services_en": {
       "ui": "UI",
       "website": "Website"
-      
+    },
+    "services_it": {
+      "ui": "UI",
+      "website": "Sito internet"
     },
     "description_en": "PRESS IS MORE is a press and communications agency operating in the art, music and entertainment sectors. Their mission is to elaborate and implement ad hoc communication and promotional strategies, both online and offline, to guarantee the best visibility and media presence.",
     "description_it": "PRESS IS MORE è un'agenzia di stampa e comunicazione che opera nei settori dell'arte, della musica e dello spettacolo.",
     "link": "https://pressismore.it/#/",
-    "category": "web2 development"
+    "category_en": "web2 development",
+    "category_it": "sviluppo web2"
   },
   {
     "name": "Aristoil",
     "imgCover": "aristoil logo.png",
-    "services": {
-      "website": "Website", 
+    "services_en": {
+      "website": "Website",
+      "system": "Notarization System",
+      "cms": "Proprietary CMS"
+    },
+    "services_it": {
+      "website": "Sito internet",
       "system": "Notarization System",
       "cms": "Proprietary CMS"
     },
     "description_en": "The Aristoil Cluster has established a procedure to manage and validate an accreditation system to support Aristoil 'Health Claim Indication' using Blockchain technology. A technology that allows the tracking and certain certification of the entire production chain.",
     "description_it": "Il Cluster Aristoil ha stabilito una procedura per gestire e validare un sistema di accreditamento a supporto di Aristoil 'Health Claim Indication' utilizzando la tecnologia Blockchain.",
     "link": "https://aristoil.eu/",
-    "category": "web3 development"
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
   }
 ]

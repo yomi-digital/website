@@ -30,9 +30,9 @@
       </div>
     </div>
     <div class="gap"></div>
-    <a href="#/services">
+    <a href="#/services" class="link-title">
       <MarqueeText
-        class="title-project"
+        class="title-project "
         :repeat="6"
         :duration="8"
         style="z-index: 1"

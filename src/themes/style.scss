@@ -631,13 +631,15 @@ h1 {
     text-align: center;
     img {
       width: 100%;
-      max-width: 600px;
-      max-height: 400px;
+      max-width: 500px;
+      min-width: 400px;
+      max-height: 300px;
+      min-height: 200px;
       height: 100%;
       object-fit: contain;
       object-position: center;
       border-radius: 10px;
-      margin: 5rem auto;
+      margin: auto;
       text-align: center;
     }
   }
@@ -693,6 +695,9 @@ h1 {
 .portofolio-inner {
   .marquee-text-text {
     line-height: 0.9;
+    h4{
+      font-size: 7.5rem;
+    }
   }
 }
 .marquee-text-text {
@@ -730,7 +735,7 @@ ul {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 15vw;
+    width: 15.5vw;
     height: auto;
     img {
       width: 100%;
@@ -765,6 +770,7 @@ ul {
     position: relative;
     padding: 2rem 3rem;
     height: auto !important;
+    min-height: 55vh;
     width: 55vw !important;
     top: unset !important;
     left: unset !important;
@@ -960,7 +966,9 @@ button {
   text-transform: none;
   line-height: 92.7%;
 }
-
+.link-title:hover *{
+  color: var(--colored)!important;
+}
 .services {
   .service-content {
     position: relative;
@@ -980,7 +988,7 @@ button {
     color: var(--colored);
     background-color: var(--primary-color);
     position: absolute;
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
     min-width: 260px;
     &:hover {
       z-index: 20;
@@ -990,6 +998,7 @@ button {
       margin-bottom: 0px;
       line-height: normal;
       text-align: center;
+      padding-top: 4px;
     }
   }
   .active {
