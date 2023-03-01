@@ -22,12 +22,13 @@
       </div>
     </div>
     <MarqueeText :repeat="8" :duration="6">
-      <h4 class="text-uppercase">nft cross-chain ticketing system&nbsp;</h4>
+      <h4 class="text-uppercase">{{$t("banner.internal")}}&nbsp;</h4>
+      <!-- SISTEMA DI TICKETING NFT CROSS-CHAIN -->
     </MarqueeText>
 
     <div class="text-center link-internal mt-5">
       <p>{{ $t("mego.demo") }}</p>
-      <a href=""
+      <a href="https://mego.cx/" target="_blank"
         >{{ $t("mego.btn") }}
         <svg
           width="69"

@@ -30,7 +30,8 @@
     "team": "KNOW MORE ABOUT US",
     "view":"view portfolio",
     "project":"Project",
-    "portfolio":"discover our services"
+    "portfolio":"discover our services",
+    "internal":"nft cross-chain ticketing system"
   },
   "portfolio":{
     "title":"proud of",

@@ -42,11 +42,6 @@ const routes = [
     component: Portfolio,
   },
   {
-    path: "/portfolio",
-    name: "portfolio",
-    component: Portfolio,
-  },
-  {
     path: "/portfolio/:id",
     name: "project",
     component: Project,
@@ -84,8 +79,10 @@ const router = new VueRouter({
   routes,
   // eslint-disable-next-line no-unused-vars
   scrollBehavior (to, from, savedPosition) {
+    if(to.name != 'portfolio' || !to.query?.project)
     return { x: 0, y: 0 }
   },
 });
+
 
 export default router;

@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid mt-5 p-0">
+    <div :class="{'mb-5' : isMobile}" class="container-fluid mt-5 p-0">
       <div class="text-center content-container">
         <div
           class="link-portfolio"
@@ -81,10 +81,10 @@ export default {
   mounted() {
     const app = this;
     if (this.$route.query.project != undefined) {
+      const activeLink = document.querySelector(".active-link-portfolio");
       setTimeout(function () {
-        const activeLink = document.querySelector(".active-link-portfolio");
         activeLink.scrollIntoView();
-      }, 1000);
+      }, 500);
     }
     
     /* if (window.innerWidth < 767) {

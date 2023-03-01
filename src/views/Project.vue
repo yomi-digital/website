@@ -221,56 +221,67 @@ export default {
     filter: hue-rotate(0deg);
     border-radius: 7px;
   }
+
   10% {
     object-position: calc(50% + 5px) calc(50% - 10px);
     filter: hue-rotate(1080deg);
     border-radius: 7px;
   }
+
   20% {
     object-position: calc(50% - 5px) calc(50% + 10px);
     filter: hue-rotate(0deg);
     border-radius: 7px;
   }
+
   30% {
     object-position: calc(50% + 15px) calc(50% - 10px);
     filter: hue-rotate(1080deg);
     border-radius: 7px;
   }
+
   40% {
     object-position: calc(50% + 5px) calc(50% + 10px);
     filter: hue-rotate(0deg);
     border-radius: 7px;
   }
+
   50% {
     object-position: calc(50% - 20px) calc(50% - 10px);
     filter: hue-rotate(1080deg);
     border-radius: 7px;
   }
+
   60% {
     object-position: calc(50% - 30px) calc(50% + 10px);
     filter: hue-rotate(0deg);
     border-radius: 7px;
   }
+
   70% {
     object-position: 50% calc(50% - 20px);
     filter: hue-rotate(1080deg);
     border-radius: 7px;
   }
+
   80% {
     object-position: calc(50% - 40px) calc(50% - 20px);
     filter: hue-rotate(0deg);
     border-radius: 7px;
   }
+
   81% {
     background-position: 10px 0;
     filter: hue-rotate(1080deg);
     border-radius: 7px;
   }
+
   100% {
     background-position: 0 0;
     filter: hue-rotate(360deg);
     border-radius: 7px;
   }
+
 }
 
 
