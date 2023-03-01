@@ -3,12 +3,12 @@
     <div>
       <div class="pb-4">
         <div>
-          <div class="mb-4 label">MEMBER IN PROGRESS</div>
+          <div class="mb-4 label">{{ $t('form.progress') }}</div>
           <div
             class="d-flex justify-content-between align-items-center align-content-center w-100"
           >
             <h5 class="mb-0 w-75 text-uppercase">
-              #{{ $t("team.formTitle") }}
+              #{{ $t("form.formTitle") }}
             </h5>
             <i @click="closeModal()" class="fa-solid fa-xmark pointer mb-1"></i>
           </div>
@@ -18,19 +18,19 @@
         <div class="row justify-content-end">
           <div class="col-12">
             <div :class="isMobile ? 'mb-3' : 'mb-5'">
-              <div class="label">{{ $t("team.formName") }}</div>
+              <div class="label">{{ $t("form.formName") }}</div>
               <input v-model="name" type="text" placeholder="" />
             </div>
             <div :class="isMobile ? 'mb-3' : 'mb-5'">
-              <div class="label">{{ $t("team.formEmail") }}</div>
+              <div class="label">{{ $t("form.formEmail") }}</div>
               <input v-model="email" type="text" placeholder="" />
             </div>
             <div :class="isMobile ? 'mb-3' : 'mb-5'">
-              <div class="label">{{ $t("team.formPosition") }}</div>
+              <div class="label">{{ $t("form.formPosition") }}</div>
               <input v-model="position" type="text" placeholder="" />
             </div>
             <div class="mb-5 dropZoneContainer">
-              <div class="label">{{ $t("team.formYou") }}</div>
+              <div class="label">{{ $t("form.formYou") }}</div>
               <!-- <label for="upload-photo"><i class="fa-regular fa-plus"></i></label>
               <input type="file" name="photo" id="upload-photo" /> -->
               <div :class="{ 'flex-column': isMobile }" class="d-flex">
@@ -62,7 +62,7 @@
                     v-model="link"
                     id=""
                     class=""
-                    placeholder="Attach your link..."
+                    :placeholder="$t('form.inputLink')"
                   />
                   <label class=""><i class="fa-regular fa-plus"></i></label>
                 </div>
@@ -83,7 +83,7 @@
                 "
                 class="submit-form text-service-two primary-color"
               >
-                submit
+                {{$t('form.submit')}}
               </button>
             </div>
           </div>
@@ -91,24 +91,20 @@
       </div>
     </div>
     <modal name="sendEmail" class="team-card">
-      <div
-        class="w-100 d-flex justify-content-between align-top-model p-1 mb-3"
-      >
-        <i @click="closeModalSuccess()" class="fa-solid fa-circle-xmark"></i>
-      </div>
-      <div class="mt-5 mb-5 text-center">
-        <div class="">
-          <h5 class="text-uppercase">Email send</h5>
+        <div
+          class="w-100 d-flex justify-content-between flex-row-reverse align-top-model"
+        >
+          <i @click="closeModalSuccess()" class="fa-solid fa-circle-xmark pointer"></i>
         </div>
-      </div>
-      <div
-        class="round-time-bar mt-5 pt-5"
-        data-style="smooth"
-        style="--duration: 7"
-      >
-        <div></div>
-      </div>
-    </modal>
+        <div class="mt-5 mb-5 text-center">
+          <div class="card-sent">
+            <img src="../assets/images/Check_ring.png" alt="">
+            <h6 class="text-uppercase">{{ $t("email.title") }}</h6>
+            <p>{{ $t("email.subtitle") }}</p>
+          </div>
+        </div>
+        
+      </modal>
   </modal>
 </template>
 

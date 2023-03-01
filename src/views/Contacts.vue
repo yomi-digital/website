@@ -5,8 +5,7 @@
       <div class="row">
         <div class="col-12">
           <h5>
-            Tell us more about your project and explore all the possibilities to
-            bring it to the next level!
+            {{$t('form.contactTitle')}}
           </h5>
         </div>
       </div>
@@ -16,7 +15,7 @@
             class="text-service-two"
             v-model="name"
             type="text"
-            placeholder="Name"
+            :placeholder="$t('form.formName')"
           />
         </div>
         <div class="col-12 col-md-6">
@@ -24,7 +23,7 @@
             class="text-service-two"
             v-model="company"
             type="text"
-            placeholder="Company"
+            :placeholder="$t('form.formCompany')"
           />
         </div>
         <div class="col-12 col-md-6">
@@ -32,7 +31,7 @@
             class="text-service-two"
             v-model="mobile"
             type="number"
-            placeholder="Mobile"
+            :placeholder="$t('form.formMobile')"
           />
         </div>
         <div class="col-12 col-md-6">
@@ -40,7 +39,7 @@
             class="text-service-two"
             v-model="email"
             type="text"
-            placeholder="Email"
+            :placeholder="$t('form.formEmail')"
           />
         </div>
         <div class="col-12">
@@ -48,7 +47,7 @@
             class="text-service-two"
             name=""
             id=""
-            placeholder="Your Message"
+            :placeholder="$t('form.formMessage')"
             cols="30"
             rows="8"
             v-model="message"
@@ -71,7 +70,7 @@
             @click="submit()"
             class="submit-form text-service-two primary-color"
           >
-            submit
+            {{$t('form.submit')}}
           </button>
           <p v-if="sending" style="color: #fff">
             Sending application, please wait..
@@ -81,20 +80,22 @@
       <div class="gap"></div>
       <modal name="sendEmail" class="team-card">
         <div
-          class="w-100 d-flex justify-content-between align-top-model p-1 mb-3"
+          class="w-100 d-flex justify-content-between flex-row-reverse align-top-model"
         >
-          <i @click="closeModalSuccess()" class="fa-solid fa-circle-xmark"></i>
+          <i @click="closeModalSuccess()" class="fa-solid fa-circle-xmark pointer"></i>
         </div>
         <div class="mt-5 mb-5 text-center">
-          <div class="">
-            <h5 class="text-uppercase">Email send</h5>
+          <div class="card-sent">
+            <img src="../assets/images/Check_ring.png" alt="">
+            <h6 class="text-uppercase">{{ $t("email.title") }}</h6>
+            <p>{{ $t("email.subtitle") }}</p>
           </div>
         </div>
         
       </modal>
       <div class="row">
         <div class="col-12">
-          <h5>Get in touch!</h5>
+          <h5>{{$t('menu.talk')}}</h5>
         </div>
         <div class="col-12 mt-5">
           <p class="text-dark">

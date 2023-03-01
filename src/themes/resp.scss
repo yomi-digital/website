@@ -128,6 +128,7 @@
   .vm--container {
     .vm--modal {
       width: 90vw !important;
+      min-height: 42vh!important;
     }
   }
   .custom-card {
@@ -277,6 +278,22 @@
   }
   .box-team-container {
     cursor: auto !important;
+  }
+  .card-sent {
+    padding: 1rem;
+    img {
+      width: 47px;
+      margin-bottom: 3rem
+    }
+    h6 {
+      font-size: 40px;
+      margin-bottom: 2.5rem
+  
+    }
+    p {
+      font-size: 18px;
+      width: 100%;
+    }
   }
   .footer-top {
     line-height: 50px;

@@ -5,7 +5,7 @@
     "service": "servizi",
     "portfolio": "portafoglio",
     "internal": "interni",
-    "talk":"contattaci"
+    "talk":"Contattaci"
   },
   "about":{
     "firstText":"Siamo un laboratorio di innovazione e sviluppo che trascende i confini fisici per costruire spazi digitali liberi.",
@@ -16,14 +16,24 @@
     "text":"La dedizione della nostra squadra ci permette di spingerci oltre i confini e costruire progetti digitali distintivi che si fanno notare.",
     "contact": "contattaci per unirti al team",
     "more":"DI PIU'",
-    "you":"...E tu",
+    "you":"...E tu"
+    
+  },
+  "form":{
     "formTitle":"potresti esssere tu, unisciti al team",
-    "formName":"Il tuo nome",
-    "formEmail":"La tua email",
+    "formName":"Nome",
+    "formEmail":"Email",
+    "formMobile":"Numero",
+    "formCompany":"La tua compagnia",
+    "formMessage":"Lascia un messaggio",
     "formPosition":"posizione desiderata",
     "formYou":"Qualcosa su di te",
     "formLink":"Inserisci il tuo link...",
-    "role":"ruolo"
+    "contactTitle":"Parlaci del tuo progetto ed esplora con noi tutte le possibilità per portarlo ad un livello successivo!",
+    "role":"ruolo",
+    "progress":"MEMBRO IN CORSO",
+    "inputLink":"Inserisci il tuo link...",
+    "submit":"invia"
 
   },
   "contacts":{
@@ -74,7 +84,10 @@
     "demo":"PROVA LA DEMO PER SCOPRIRE MEGO TICKETS",
     "btn":"PROVA"
   },
-  
+  "email":{
+    "title":"E-mail inviata!",
+    "subtitle":"Hai inviato correttamente il tuo messaggio a hey@yomi.digital."
+  },
   "footer":{
     "reserve":"Todos los derechos reservados",
     "esg":"Política ESG",
