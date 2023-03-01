@@ -76,7 +76,7 @@
                   email != '' &&
                   name != '' &&
                   position != '' &&
-                  (link != '' || coverUrl != '')
+                  (link != '' || coverUrl != null)
                     ? null
                     : 'btn-disabled'
                 "
@@ -140,12 +140,12 @@ export default {
           app.position == "" ||
           app.email == undefined ||
           app.email == "" ||
-          app.link == undefined ||
-          app.link == "" ||
-          app.selectedCover == undefined ||
-          app.selectedCover == "" ||
-          app.coverUrl == undefined ||
-          app.coverUrl == ""
+          ((app.link == undefined ||
+          app.link == "") &&
+          (app.selectedCover == null ||
+          app.selectedCover == "") &&
+          (app.coverUrl == null ||
+          app.coverUrl == ""))
         ) {
           alert("Enter all Fields");
         } else {
