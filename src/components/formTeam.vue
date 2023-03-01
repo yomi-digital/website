@@ -76,7 +76,7 @@
                   email != '' &&
                     name != '' &&
                     position != '' &&
-                    (selectedCover != '' ||
+                    (link != '' ||
                   coverUrl != '')
                     ? null
                     : 'btn-disabled'
@@ -139,6 +139,8 @@ export default {
           app.position == "" ||
           app.email == undefined ||
           app.email == "" ||
+          app.link == undefined ||
+          app.link == "" ||
           app.selectedCover == undefined ||
           app.selectedCover == "" ||
           app.coverUrl == undefined ||
@@ -177,6 +179,7 @@ export default {
           app.position = "";
           app.aboutYou = "";
           app.email = "";
+          app.link = "";
           app.selectedCover = "";
           app.coverUrl = "";
         }
