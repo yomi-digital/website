@@ -3,7 +3,7 @@
     <div>
       <div class="pb-4">
         <div>
-          <div class="mb-4 label">{{ $t('form.progress') }}</div>
+          <div class="mb-4 label">{{ $t("form.progress") }}</div>
           <div
             class="d-flex justify-content-between align-items-center align-content-center w-100"
           >
@@ -74,16 +74,15 @@
                 @click="submit()"
                 :class="
                   email != '' &&
-                    name != '' &&
-                    position != '' &&
-                    (link != '' ||
-                  coverUrl != '')
+                  name != '' &&
+                  position != '' &&
+                  (link != '' || coverUrl != '')
                     ? null
                     : 'btn-disabled'
                 "
                 class="submit-form text-service-two primary-color"
               >
-                {{$t('form.submit')}}
+                {{ $t("form.submit") }}
               </button>
             </div>
           </div>
@@ -91,20 +90,22 @@
       </div>
     </div>
     <modal name="sendEmail" class="team-card">
-        <div
-          class="w-100 d-flex justify-content-between flex-row-reverse align-top-model"
-        >
-          <i @click="closeModalSuccess()" class="fa-solid fa-circle-xmark pointer"></i>
+      <div
+        class="w-100 d-flex justify-content-between flex-row-reverse align-top-model"
+      >
+        <i
+          @click="closeModalSuccess()"
+          class="fa-solid fa-circle-xmark pointer"
+        ></i>
+      </div>
+      <div class="mt-5 mb-5 text-center">
+        <div class="card-sent">
+          <img src="../assets/images/Check_ring.png" alt="" />
+          <h6 class="text-uppercase">{{ $t("email.title") }}</h6>
+          <p>{{ $t("email.subtitle") }}</p>
         </div>
-        <div class="mt-5 mb-5 text-center">
-          <div class="card-sent">
-            <img src="../assets/images/Check_ring.png" alt="">
-            <h6 class="text-uppercase">{{ $t("email.title") }}</h6>
-            <p>{{ $t("email.subtitle") }}</p>
-          </div>
-        </div>
-        
-      </modal>
+      </div>
+    </modal>
   </modal>
 </template>
 
@@ -159,7 +160,7 @@ export default {
                 email: app.email,
                 link: app.link,
                 file: app.fileBase64,
-                file_extension: app.fileExt
+                file_extension: app.fileExt,
               }
             );
             if (response.data.error === true) {
@@ -170,6 +171,7 @@ export default {
               setTimeout(() => {
                 app.closeModalSuccess();
               }, 5000);
+              this.$emit("onBackClick");
             }
           } catch (e) {
             console.log(e);
@@ -198,7 +200,7 @@ export default {
       this.$emit("onBackClick");
     },
     onCover(e) {
-      const app = this
+      const app = this;
       const file = e.target.files[0];
       if (file && file.size > 10000000) {
         app.coverUrl = null;
@@ -212,11 +214,11 @@ export default {
         var reader = new FileReader();
         reader.readAsDataURL(file);
         reader.onload = function () {
-          app.fileBase64 = reader.result
-          app.fileExt = ext
+          app.fileBase64 = reader.result;
+          app.fileExt = ext;
         };
         reader.onerror = function (error) {
-          console.log('Error: ', error);
+          console.log("Error: ", error);
         };
       }
     },
