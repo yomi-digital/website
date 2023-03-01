@@ -229,8 +229,7 @@
   }
 
   .link-portfolio a {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 3.1rem;
   }
   .project-header {
     .preview-img {
@@ -282,7 +281,7 @@
   .footer-top {
     line-height: 50px;
   }
-  .content-container {
+  /* .content-container {
     padding: 9rem 0rem 17rem !important;
     height: 300px;
     width: 75%;
@@ -292,9 +291,9 @@
   }
   .content-container::-webkit-scrollbar {
     width: 6px;
-  }
+  } */
 
-  .content-container::-webkit-scrollbar-track {
+  /* .content-container::-webkit-scrollbar-track {
     background: #f1f1f138;
     border-radius: 10px;
   }
@@ -307,7 +306,7 @@
 
   .content-container::-webkit-scrollbar-thumb:hover {
     background: #84ff9d;
-  }
+  } */
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body,

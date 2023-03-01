@@ -57,9 +57,9 @@ import Footer from "@/components/Footer.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+/* import { gsap } from "gsap"; */
+/* import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"; */
 
 export default {
   name: "about",
@@ -87,16 +87,16 @@ export default {
       }, 1000);
     }
     
-    if (window.innerWidth < 767) {
+    /* if (window.innerWidth < 767) {
       setTimeout(() => {
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         app.callGsap();
       }, 150);
-    }
+    } */
     console.log(app.projects);
   },
   methods: {
-    callGsap() {
+    /* callGsap() {
       const ST = ScrollTrigger.create({
         trigger: "",
         start: "top top",
@@ -117,9 +117,9 @@ export default {
           ST.enable();
         }
       }
-    },
+    }, */
 
-    getCurrentSection() {
+    /* getCurrentSection() {
       const contentMarkers = gsap.utils.toArray(".link-portfolio");
       let activeIndex = null;
       const containerBounds = document
@@ -157,14 +157,14 @@ export default {
       }
 
       this.activeIndex = activeIndex;
-    },
+    }, */
 
-    getClass(index) {
+    /* getClass(index) {
       return {
         "active-link-portfolio": index === this.activeIndex,
       };
-    },
-    scrollToProject(index) {
+    }, */
+    /* scrollToProject(index) {
       const project = this.projects[index];
       const target = document.querySelector(
         `#${project.name.split(" ").join("-")}`
@@ -172,7 +172,7 @@ export default {
       if (target) {
         gsap.to(window, { duration: 0.5, scrollTo: target });
       }
-    },
+    }, */
   },
 };
 </script>

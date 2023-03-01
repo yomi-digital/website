@@ -15,38 +15,29 @@ const THREE = window.THREE;
 export default {
   name: "bubble",
   mixins: [checkViewport],
-  props: {
-    resizeHeightBubble: {
-      type: Number,
-      required: true,
-    },
-    resizeWidthBubble: {
-      type: Number,
-      required: true,
-    },
-  },
+  props:['resizeHeightBubble','resizeWidthBubble'] ,
+
   data() {
     return {
       noise: {},
-
       isModify: false,
     };
   },
   mounted() {
     const app = this;
-    console.log("Height received:", this.resizeHeightBubble);
-    console.log("Width received:", this.resizeWidthBubble);
+    console.log("Height received:", app.resizeHeightBubble);
+    console.log("Width received:", app.resizeWidthBubble);
     setTimeout(() => {
       !(function (t) {
         var o = (t.noise = {});
         function r(t, o, r) {
-          (this.x = t), (this.y = o), (this.z = r);
+          (app.x = t), (app.y = o), (app.z = r);
         }
         (r.prototype.dot2 = function (t, o) {
-          return this.x * t + this.y * o;
+          return app.x * t + app.y * o;
         }),
           (r.prototype.dot3 = function (t, o, r) {
-            return this.x * t + this.y * o + this.z * r;
+            return app.x * t + app.y * o + app.z * r;
           });
         var n = [
             new r(1, 1, 0),
@@ -234,7 +225,7 @@ export default {
         0.1,
         1000
       );
-      if(this.isMobile){
+      if(app.isMobile){
         camera.position.z = 7;
       }else{
         camera.position.z = 4;
@@ -247,11 +238,11 @@ export default {
       //   renderer.setSize(window.innerWidth, window.innerHeight);
       // };
 
-      renderer.setSize(this.resizeWidthBubble, this.resizeHeightBubble);
+      renderer.setSize(app.resizeWidthBubble, app.resizeHeightBubble);
       window.onresize = function () {
-        camera.aspect = this.resizeWidthBubble / this.resizeHeightBubble;
+        camera.aspect = app.resizeWidthBubble / app.resizeHeightBubble;
         camera.updateProjectionMatrix();
-        renderer.setSize(this.resizeWidthBubble, this.resizeHeightBubble);
+        renderer.setSize(app.resizeWidthBubble, app.resizeHeightBubble);
       };
 
       var geo = new THREE.SphereGeometry(1, 64, 64);
