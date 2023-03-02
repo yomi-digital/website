@@ -16,13 +16,13 @@
             <img src="../assets/partners/Group (1).svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/logo-full-colour-dark.svg" alt="" />
+            <img src="../assets/partners/niftyz.png" alt="" />
           </div>
           <div class="slide">
             <img src="../assets/partners/nftberlin.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Rectangle.svg" alt="" />
+            <img src="../assets/partners/Spaghetteth.png" alt="" />
           </div>
           <div class="slide">
             <img src="../assets/partners/Untitled-Artwork.png" alt="" />

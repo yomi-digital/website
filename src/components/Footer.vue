@@ -34,7 +34,7 @@
               class="btn-social me-3"
               href="https://discord.gg/w54Jbd4Qhz"
               target="_blank"
-              >DIS</a
+              >DISC</a
             >
             <a
               class="btn-social me-3"
