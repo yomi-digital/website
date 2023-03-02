@@ -57,9 +57,7 @@ import Footer from "@/components/Footer.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
-/* import { gsap } from "gsap"; */
-/* import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin"; */
+
 
 export default {
   name: "about",
@@ -86,93 +84,11 @@ export default {
         activeLink.scrollIntoView();
       }, 500);
     }
-    
-    /* if (window.innerWidth < 767) {
-      setTimeout(() => {
-        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-        app.callGsap();
-      }, 150);
-    } */
+
     console.log(app.projects);
   },
   methods: {
-    /* callGsap() {
-      const ST = ScrollTrigger.create({
-        trigger: "",
-        start: "top top",
-        scroller: ".content-container",
-        end: "bottom bottom",
-        onUpdate: this.getCurrentSection,
-      });
 
-      this.getCurrentSection();
-
-      const media = window.matchMedia("screen and (max-width: 100px)");
-      ScrollTrigger.addEventListener("refreshInit", checkSTState);
-      checkSTState();
-      function checkSTState() {
-        if (media.matches) {
-          ST.disable();
-        } else {
-          ST.enable();
-        }
-      }
-    }, */
-
-    /* getCurrentSection() {
-      const contentMarkers = gsap.utils.toArray(".link-portfolio");
-      let activeIndex = null;
-      const containerBounds = document
-        .querySelector(".content-container")
-        .getBoundingClientRect();
-      const containerTop = containerBounds.top;
-      const containerHeight = containerBounds.height;
-
-      contentMarkers.forEach((marker, index) => {
-        const bounds = marker.getBoundingClientRect();
-        const markerTop = bounds.top - containerTop;
-        if (markerTop < containerHeight * 0.5 && markerTop > 0) {
-          activeIndex = index;
-        }
-      });
-
-      if (activeIndex === null) {
-        if (contentMarkers[0].getBoundingClientRect().top >= containerTop) {
-          activeIndex = 0;
-        } else if (
-          contentMarkers[contentMarkers.length - 1].getBoundingClientRect()
-            .bottom <=
-          containerTop + containerHeight
-        ) {
-          activeIndex = contentMarkers.length - 1;
-        } else {
-          contentMarkers.forEach((marker, index) => {
-            const bounds = marker.getBoundingClientRect();
-            const markerTop = bounds.top - containerTop;
-            if (markerTop < containerHeight * 0.5) {
-              activeIndex = index;
-            }
-          });
-        }
-      }
-
-      this.activeIndex = activeIndex;
-    }, */
-
-    /* getClass(index) {
-      return {
-        "active-link-portfolio": index === this.activeIndex,
-      };
-    }, */
-    /* scrollToProject(index) {
-      const project = this.projects[index];
-      const target = document.querySelector(
-        `#${project.name.split(" ").join("-")}`
-      );
-      if (target) {
-        gsap.to(window, { duration: 0.5, scrollTo: target });
-      }
-    }, */
   },
 };
 </script>

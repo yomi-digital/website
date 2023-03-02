@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="container mt-5 pt-5">
-       <!--  <div v-if="!isMobile" class="gap"></div> -->
+      
         <div class="row">
           <div
             :class="{ 'p-0': isMobile }"
@@ -57,20 +57,6 @@
             <h6 v-if="$i18n.locale == 'it'" v-html="project.category_it"></h6>
           </div>
           <div class="row mt-5 pb-5 px-2">
-            <!-- <div class="col-12 col-lg-10 offset-0 offset-lg-1 mb-5">
-            <h6 class="mb-4">OUR CONTRIBUTION</h6>
-            <div class="d-flex">
-              <i
-                class="fa-solid fa-circle me-2"
-                style="color: white; font-size: 0.5rem"
-              ></i>
-              <i
-                class="fa-solid fa-circle me-2"
-                style="color: white; font-size: 0.5rem"
-              ></i>
-            </div>
-          </div> -->
-            <!-- <div class="col-12 col-lg-10 offset-0 offset-lg-1 d-flex justify-content-between"> -->
             <div
               :class="{ 'px-4 py-5': isMobile }"
               class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 order-1 order-md-0"
@@ -121,30 +107,10 @@
                 <p v-if="$i18n.locale == 'it'">{{ project.description_it }}</p>
               </div>
             </div>
-            <!-- </div> -->
+           
           </div>
         </div>
       </div>
-
-      <!-- <div class="row mt-5 pb-5 px-2 b-bottom-light">
-          <div class="col-6">
-            <div class="d-flex align-items-center">
-              <h6 class="me-3">
-                <i
-                  class="fa-solid fa-arrow-up"
-                  style="transform: rotate(45deg)"
-                ></i>
-              </h6>
-              <a :href="project.link" target="_blank"
-                ><h6 class="underline">{{ project.name }}</h6></a
-              >
-            </div>
-          </div>
-          <div v-if="project.category" class="col-6 text-end">
-            <h6 v-html="project.category.replace(' ', '<br/>')"></h6>
-          </div>
-        </div> -->
-
       <div class="gap"></div>
     </div>
     <div class="mb-2">
@@ -209,82 +175,4 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.glitch{
-  &:hover img{
-    animation: animate 0.2s linear infinite;
-  }
-}
-@keyframes animate {
-  0% {
-    object-position: 50% calc(50% + 10px);
-    filter: hue-rotate(0deg);
-    border-radius: 7px;
-  }
 
-  10% {
-    object-position: calc(50% + 5px) calc(50% - 10px);
-    filter: hue-rotate(1080deg);
-    border-radius: 7px;
-  }
-
-  20% {
-    object-position: calc(50% - 5px) calc(50% + 10px);
-    filter: hue-rotate(0deg);
-    border-radius: 7px;
-  }
-
-  30% {
-    object-position: calc(50% + 15px) calc(50% - 10px);
-    filter: hue-rotate(1080deg);
-    border-radius: 7px;
-  }
-
-  40% {
-    object-position: calc(50% + 5px) calc(50% + 10px);
-    filter: hue-rotate(0deg);
-    border-radius: 7px;
-  }
-
-  50% {
-    object-position: calc(50% - 20px) calc(50% - 10px);
-    filter: hue-rotate(1080deg);
-    border-radius: 7px;
-  }
-
-  60% {
-    object-position: calc(50% - 30px) calc(50% + 10px);
-    filter: hue-rotate(0deg);
-    border-radius: 7px;
-  }
-
-  70% {
-    object-position: 50% calc(50% - 20px);
-    filter: hue-rotate(1080deg);
-    border-radius: 7px;
-  }
-
-  80% {
-    object-position: calc(50% - 40px) calc(50% - 20px);
-    filter: hue-rotate(0deg);
-    border-radius: 7px;
-  }
-
-  81% {
-    background-position: 10px 0;
-    filter: hue-rotate(1080deg);
-    border-radius: 7px;
-  }
-
-  100% {
-    background-position: 0 0;
-    filter: hue-rotate(360deg);
-    border-radius: 7px;
-  }
-
-}
-
-
-
-
-</style>

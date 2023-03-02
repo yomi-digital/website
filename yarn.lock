@@ -4389,11 +4389,6 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.npmmirror.com/graceful-fs/-/graceful-fs-4.2.10.tgz"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-gsap@^3.11.4:
-  version "3.11.4"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.4.tgz#e6d972d3509a7431b86d81d6fc3bbeb6862e5ff1"
-  integrity sha512-McHhEguHyExMMnjqKA8G+7TvxmlKQGMbjgwAilnFe1e4id7V/tFveRQ2YMZhTYu0oxHGWvbPltdVYQOu3z1SCA==
-
 gzip-size@^5.0.0:
   version "5.1.1"
   resolved "https://registry.npmmirror.com/gzip-size/-/gzip-size-5.1.1.tgz"
@@ -8522,11 +8517,6 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmmirror.com/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-v-lazy-component@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/v-lazy-component/-/v-lazy-component-2.1.0.tgz#7355129078aadca0bc429230c860af65d6573ed5"
-  integrity sha512-qnX6eK6n2m6WgY0udMNVZD4Cq9oToqtHUoDvBXTRAZr/FBZoKFnxySaN/C/35ewVsUn0sw66fMs2vfWmAQLooQ==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"

@@ -14,16 +14,6 @@
             {{ $t("team.text") }}
           </p>
         </div>
-        <!-- <Transition enter-active-class="fade-in-max">
-          <div
-            style="position: absolute; bottom: 50px; left: 0"
-            @clicMember Member"
-            v-if="endedTypewriter"
-            class="big-link ms-5"
-          >
-            KNOW MORE
-          </div>
-        </Transition> -->
       </div>
       <div :class="{ 'container-image': isMobile }">
         <div class="box-character-img position-second-box-charger">
@@ -186,9 +176,7 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-/* import LazyComponent from "v-lazy-component"; */
 import MarqueeText from "vue-marquee-text-component";
-
 import Footer from "@/components/Footer.vue";
 import bannerPortfolio from "@/components/bannerPortfolio.vue";
 import formTeam from "@/components/formTeam.vue";
@@ -228,8 +216,6 @@ export default {
   mounted() {
     const app = this;
     app.calculateTypewriter();
-    /* setTimeout(function () {
-    }, 300); */
   },
   methods: {
     calculateTypewriter() {

@@ -1,5 +1,8 @@
 <template>
-  <div :style="{ overflow: 'hidden' }" :class="geisha ? 'about pt-5 geisha' : 'about pt-5'">
+  <div
+    :style="{ overflow: 'hidden' }"
+    :class="geisha ? 'about pt-5 geisha' : 'about pt-5'"
+  >
     <Geisha v-if="geisha" :enterGeisha="enterGeisha" />
     <div class="fade-in" v-show="!geisha">
       <ButtonNav />
@@ -8,12 +11,13 @@
           <div class="row pd-container">
             <div class="col-12">
               <div class="" :class="{ 'mt-3': isMobile }">
-                <!--  <typewriter :type-interval="22" :replace-interval="200"> -->
                 <h2>{{ $t("menu.about") }}</h2>
-                <!--  </typewriter> -->
               </div>
             </div>
-            <div :class="{'mt-5' : !isMobile}" class="col-11 col-md-6 col-lg-6">
+            <div
+              :class="{ 'mt-5': !isMobile }"
+              class="col-11 col-md-6 col-lg-6"
+            >
               <p class="text-service-one" :class="{ 'mt-3': isMobile }">
                 {{ $t("about.firstText") }}
               </p>
@@ -48,7 +52,6 @@
           >
             <h4>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
           </MarqueeText>
-          
         </div>
       </div>
 
@@ -59,12 +62,10 @@
 
 <script>
 import Footer from "@/components/Footer.vue";
-/* import Typewriter from "typewriter-vue"; */
 import ButtonNav from "@/components/ButtonNav.vue";
 import Geisha from "@/components/Geisha.vue";
 import checkViewport from "@/mixins/checkViewport";
 import MarqueeText from "vue-marquee-text-component";
-/* import ResizeText from 'vue-resize-text' */
 
 export default {
   name: "about",
@@ -79,27 +80,18 @@ export default {
   components: {
     Footer,
     Geisha,
-    /* Typewriter, */
     ButtonNav,
     MarqueeText,
   },
   mounted() {
     const app = this;
-    /*  app.showText(); */
 
     setTimeout(function () {
       app.geisha = false;
     }, 2000);
   },
   methods: {
-    /* showText(){
-      setTimeout(() => {
-        document.getElementById("firstText").classList.add("d-none");
-        document.getElementById("secondText").classList.remove("d-none");
-        document.getElementById("secondText").classList.add("d-block");
-        document.getElementById("secondText").classList.add("fade-in");
-      }, 6000);
-    } */
+
   },
 };
 </script>

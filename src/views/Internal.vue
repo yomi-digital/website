@@ -23,7 +23,6 @@
     </div>
     <MarqueeText :repeat="8" :duration="6">
       <h4 class="text-uppercase">{{$t("banner.internal")}}&nbsp;</h4>
-      <!-- SISTEMA DI TICKETING NFT CROSS-CHAIN -->
     </MarqueeText>
 
     <div class="text-center link-internal mt-5">
@@ -58,7 +57,7 @@ import Footer from "@/components/Footer.vue";
 import FooterExt from "@/components/FooterExt.vue";
 import Bubble from "@/components/Bubble.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
-import projectsInternal from "@/portfolio/projectsInternal.json";
+
 import MarqueeText from "vue-marquee-text-component";
 
 export default {
@@ -73,7 +72,6 @@ export default {
   },
   data() {
     return {
-      projects: projectsInternal,
     };
   },
 };

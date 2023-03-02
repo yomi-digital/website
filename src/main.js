@@ -3,7 +3,6 @@ import App from "./App.vue";
 import router from "./router";
 import vmodal from "vue-js-modal";
 import i18n from "./i18n";
-import LazyComponent from "v-lazy-component";
 
 
 const lang = localStorage.getItem("lang") || "en";
@@ -36,7 +35,6 @@ const options = {
 Vue.use(VueProgressBar, options);
 Vue.use(VueAgile);
 Vue.component("marquee-text", MarqueeText);
-Vue.use(LazyComponent);
 
 Vue.use(require("vue-moment"));
 Vue.config.productionTip = false;
