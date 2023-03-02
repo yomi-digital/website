@@ -26,7 +26,7 @@
               <li><a class="text-capitalize" href="/#/team">{{$t("menu.team")}}</a></li>
               <li><a class="text-capitalize" href="/#/services">{{$t("menu.service")}}</a></li>
               <li><a class="text-capitalize" href="/#/portfolio">{{$t("menu.portfolio")}}</a></li>
-              <li><a class="text-capitalize" href="/#/mego">{{$t("menu.internal")}}</a></li>
+              <li><a class="text-capitalize" href="/#/internal-project">{{$t("menu.internal")}}</a></li>
             </ul>
         </div>
           <div class="d-flex align-items-center" :class="{ 'mt-5 pt-4 justify-content-center': isMobile }">
