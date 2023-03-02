@@ -88,7 +88,7 @@ export default {
     /* console.log(app.projects); */
   },
   methods: {
-
+    
   },
 };
 </script>
