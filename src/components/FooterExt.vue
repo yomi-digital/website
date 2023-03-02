@@ -25,7 +25,7 @@
             <img src="../assets/partners/Spaghetteth.png" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Untitled-Artwork.png" alt="" />
+            <img src="../assets/partners/sewernation.png" alt="" />
           </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i
