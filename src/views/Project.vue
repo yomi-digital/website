@@ -26,7 +26,7 @@
                 <img
                   :src="'/portfolio/' + project.imgCover"
                   alt=""
-                  class=""
+                  :class="project.imgCover == 'nftberlin_smooth.png' ? 'p-4' : null"
                 />
               </div>
             </div>

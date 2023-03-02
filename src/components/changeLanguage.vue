@@ -5,9 +5,9 @@
         <p :class="{'mb-0': isMobile,}" class="buble-text">{{ $t("menu.talk") }}</p>
       </a>
       <div class="d-flex">
-        <p @click="handleChangeIt()" class="text-lang">IT</p>
+        <p @click="handleChangeIt()" class="text-lang color-link">IT</p>
         <p style="cursor: default" class="text-lang">/</p>
-        <p @click="handleChangeEn()" class="text-lang">EN</p>
+        <p @click="handleChangeEn()" class="text-lang color-link">EN</p>
       </div>
     </div>
   </div>

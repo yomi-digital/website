@@ -16,7 +16,8 @@
     "text":"It’s our team's commitment that allows us to push technology boundaries and create digital products that cut through the noise.",
     "contact": "contact us to join the team",
     "more":"MORE ABOUT",
-    "you":"maybe you"
+    "you":"maybe you",
+    "role":"role"
     
   },
   "form":{
@@ -30,7 +31,6 @@
     "formYou":"something about you",
     "formLink":"Attach your link...",
     "contactTitle":"Tell us more about your project and explore all the possibilities to bring it to the next level!",
-    "role":"role",
     "progress":"MEMBER IN PROGRESS",
     "inputLink":"Attach your link...",
     "submit":"submit"

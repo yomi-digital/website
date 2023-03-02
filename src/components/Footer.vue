@@ -13,7 +13,7 @@
               <li><a href="/">Privacy Policy</a></li>
               <li><a href="/">Legal Terms</a></li>
               <li>
-                  <p class="link-footer">
+                  <p class="link-footer copyright">
                     Copyright© {{ new Date().getFullYear() }} <br> 
                     <span v-if="!isMobile">
                       All right reserved

@@ -16,8 +16,8 @@
     "text":"La dedizione della nostra squadra ci permette di spingerci oltre i confini e costruire progetti digitali distintivi che si fanno notare.",
     "contact": "contattaci per unirti al team",
     "more":"DI PIU'",
-    "you":"...E tu"
-    
+    "you":"...E tu",
+    "role":"ruolo"
   },
   "form":{
     "formTitle":"potresti esssere tu, unisciti al team",
@@ -30,7 +30,6 @@
     "formYou":"Qualcosa su di te",
     "formLink":"Inserisci il tuo link...",
     "contactTitle":"Parlaci del tuo progetto ed esplora con noi tutte le possibilità per portarlo ad un livello successivo!",
-    "role":"ruolo",
     "progress":"MEMBRO IN CORSO",
     "inputLink":"Inserisci il tuo link...",
     "submit":"invia"
