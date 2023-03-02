@@ -78,14 +78,14 @@ export default {
 
   mounted() {
     const app = this;
-    if (this.$route.query.project != undefined) {
+    if (app.$route.query.project != undefined) {
       const activeLink = document.querySelector(".active-link-portfolio");
       setTimeout(function () {
         activeLink.scrollIntoView();
       }, 500);
     }
 
-    console.log(app.projects);
+    /* console.log(app.projects); */
   },
   methods: {
 

@@ -118,7 +118,7 @@ export default {
         app.post = post.data.post;
         app.next = post.data.next;
         app.prev = post.data.prev;
-        console.log("posts:", post.data);
+        /* console.log("posts:", post.data); */
       } catch (e) {
         alert(e.message);
       }

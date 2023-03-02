@@ -154,16 +154,16 @@ export default {
     fetchProjects() {
       const app = this;
       let result = {};
-      console.log("projects", app.projects);
+      /* console.log("projects", app.projects); */
       let slugProjects = app.$route.params.id;
       slugProjects = slugProjects.split(" ").join("-");
-      console.log("slug of the project is", slugProjects);
+      /* console.log("slug of the project is", slugProjects); */
       Object.keys(app.projects).forEach((key) => {
         const item = app.projects[key];
         if (item.name.split(" ").join("-") === slugProjects) {
           result[key] = item;
           app.project = item;
-          console.log("project project is", app.project);
+          /* console.log("project project is", app.project); */
         }
       });
       app.nextProject = app.projects[app.projects.indexOf(app.project) + 1];

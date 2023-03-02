@@ -226,7 +226,6 @@ export default {
     },
     closeModal() {
       const app = this;
-      console.log("click");
       document.querySelector(".vm--modal").classList.add("slit-out-vertical");
       setTimeout(function () {
         app.$modal.hide("team");
@@ -249,7 +248,7 @@ export default {
     closeMember() {
       const app = this;
       app.checkedMobile = false;
-      console.log("click", app.checkedMobile);
+      /* console.log("click", app.checkedMobile); */
     },
     toggleForm() {
       const app = this;

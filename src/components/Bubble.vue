@@ -25,8 +25,6 @@ export default {
   },
   mounted() {
     const app = this;
-    console.log("Height received:", app.resizeHeightBubble);
-    console.log("Width received:", app.resizeWidthBubble);
     setTimeout(() => {
       !(function (t) {
         var o = (t.noise = {});

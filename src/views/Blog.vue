@@ -111,14 +111,14 @@ export default {
       try {
         const api_blog = await axios.get(process.env.VUE_APP_API_BLOG_URL);
         app.posts = api_blog.data;
-        console.log(app.posts);
+        /* console.log(app.posts); */
       } catch (e) {
         alert(e.message);
       }
     },
     togglePost(post) {
       const app = this;
-      console.log("opening");
+      /* console.log("opening"); */
       if (app.isOpen === post.title) {
         app.isOpen = "";
       } else {
