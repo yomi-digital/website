@@ -842,11 +842,20 @@ ul {
 //   =======================================================================================
 //   --===================================== BUTTONS =====================================--
 //   =======================================================================================
-.btn-close-custom {
-  position: absolute;
-  top: 20px;
-  right: 50px;
+header{
+  position: fixed;
   z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0rem 3rem;
+  margin-bottom: 2rem;
+}
+.logo{
+  width: 150px;
+}
+.btn-close-custom {
 }
 
 .btn-blog {

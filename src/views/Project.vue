@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-inner pt-5">
+  <div class="portfolio-inner 4">
     <ButtonNav />
     <div v-if="Object.keys(project).length > 0">
       <div class="container-fluid pd-container mt-5">

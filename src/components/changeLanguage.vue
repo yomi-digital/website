@@ -1,7 +1,5 @@
 <template>
   <div  class="p-4 ">
-  
-    
     <div :class="isMobile ? 'mb-2' : 'mb-5'" class="d-flex justify-content-between align-items-center">
       <a v-if="$route.path !== '/'" href="/">
         <img width="120px"  class="ps-0" src="../assets/images/YOMI_MARCHIO.png" alt="">     
