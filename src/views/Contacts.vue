@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="contacts bg-white">
     <ButtonNav color="black" />
     <div class="container-fluid full-h pd-container pt-5">
@@ -221,3 +221,4 @@ export default {
 <style>
 
 </style>
+ -->

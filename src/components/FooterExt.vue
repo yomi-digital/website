@@ -4,28 +4,41 @@
       <h6 :class="{'text-center' : isMobile}" class="title-carousel">{{$t("footer.title_carousel")}}!</h6>
       <div class="mt-5 mb-5">
         <agile
+        class="patners"
         :options="myOptions"
         >
           <div class="slide">
-            <img src="../assets/partners/BC_logo_twitter.svg" alt="" />
+            <a href="https://www.banklessconsulting.com/" target="_blank">
+              <img src="../assets/partners/BC_logo_twitter.svg" alt="" />
+            </a>
           </div>
           <div class="slide">
-            <img src="../assets/partners/Frame.svg" alt="" />
+              <img src="../assets/partners/Frame.svg" alt="" />
           </div>
           <div class="slide">
-            <img src="../assets/partners/Group (1).svg" alt="" />
+            <a href="https://quadrans.io/" target="_blank">
+              <img src="../assets/partners/Group (1).svg" alt="" />
+            </a>
           </div>
           <div class="slide">
-            <img src="../assets/partners/niftyz.png" alt="" />
+            <a href="https://niftyz.io/#/" target="_blank">
+              <img src="../assets/partners/niftyz.png" alt="" />
+            </a>
           </div>
           <div class="slide">
-            <img src="../assets/partners/nftberlin.svg" alt="" />
+            <a href="https://nftberlin.org/#/" target="_blank">
+              <img src="../assets/partners/nftberlin.svg" alt="" />
+            </a>
           </div>
           <div class="slide">
-            <img src="../assets/partners/Spaghetteth.png" alt="" />
+            <a href="https://www.spaghett-eth.com/" target="_blank">
+              <img src="../assets/partners/Spaghetteth.png" alt="" />
+            </a>
           </div>
           <div class="slide">
-            <img src="../assets/partners/sewernation.png" alt="" />
+            <a href="https://www.sewernation.xyz/" target="_blank">
+              <img src="../assets/partners/sewernation.png" alt="" />
+            </a>
           </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i

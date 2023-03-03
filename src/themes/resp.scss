@@ -1,4 +1,5 @@
 @media screen and (max-width: 767px) {
+
   body,
   html {
     font-size: 10px;
@@ -36,17 +37,12 @@
   }
 
   .agile {
-    .agile__actions {
-      width: 90%;
-    }
     .slide img {
       max-width: 160px;
       max-height: 100px;
     }
   }
-  .custom-card .agile .agile__actions {
-    width: 95%;
-  }
+
   .nav-link-dark,
   .nav-link-light {
     display: flex;
@@ -194,7 +190,7 @@
     width: 23px;
     height: 23px;
     position: absolute;
-    bottom: 10px;
+    top: -50px;
     right: 30px;
     border: 1px solid var(--font-color);
     border-radius: 300px;
@@ -306,32 +302,9 @@
   .footer-top {
     line-height: 50px;
   }
-  /* .content-container {
-    padding: 9rem 0rem 17rem !important;
-    height: 300px;
-    width: 75%;
-    margin: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  .btn-social{
+    font-size: 20px;
   }
-  .content-container::-webkit-scrollbar {
-    width: 6px;
-  } */
-
-  /* .content-container::-webkit-scrollbar-track {
-    background: #f1f1f138;
-    border-radius: 10px;
-  }
-
-  .content-container::-webkit-scrollbar-thumb {
-    background: #e54242;
-    border-radius: 10px;
-    height: 2px !important;
-  }
-
-  .content-container::-webkit-scrollbar-thumb:hover {
-    background: #84ff9d;
-  } */
   .err{
     background-size: max(900px, 80%);
   }
@@ -422,5 +395,8 @@
   }
   .small-card {
     display: none;
+  }
+  .btn-social{
+    min-width: 60px;
   }
 }

@@ -66,7 +66,7 @@
             "
             :class="{
               active: showTextFirst === 'ai',
-              'lft-75 me-5 mb-4': !isMobile && !isTablet,
+              'lft-75 me-5 mb-4': !isMobile && !isTablet && !isMiddleScreen,
             }"
             class="single-service position-five transform-rotate-three"
           >

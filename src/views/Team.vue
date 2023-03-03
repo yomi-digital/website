@@ -38,6 +38,7 @@
     <!-- TEAM SHOW -->
     <div v-show="teams != ''" class="container-fluid">
       <div class="mt-5">
+        
         <div v-if="!isMobile" class="row">
           <div
             v-for="(team, index) in teams"
@@ -69,11 +70,14 @@
             </div>
           </div>
         </div>
-        <agile v-else :options="myOptions">
+        <agile :style="{'pointer-events': checkedMobile ? 'none' : 'all'} " v-else :options="myOptions">
+          
           <div
             v-for="(team, index) in teams"
             :key="index"
-            class="slide position-relative"
+            class="slide"
+
+
           >
             <div
               class="box-team-container justify-content-center d-flex my-5 pointer"
@@ -88,11 +92,6 @@
               <h5 @click="showMember(team)" class="color-primary">
                 {{ team.name }}
               </h5>
-              <i
-                @click="closeMember()"
-                v-if="checkedMobile"
-                class="fa-solid fa-xmark pointer close-icon"
-              ></i>
             </div>
           </div>
 
@@ -115,7 +114,12 @@
             ><i class="fa-solid fa-chevron-right"></i
           ></template>
         </agile>
-        <div class="info-member" v-if="checkedMobile && isMobile">
+        <div class="info-member position-relative" v-if="checkedMobile && isMobile">
+          <i
+              @click="closeMember()"
+              v-if="checkedMobile"
+              class="fa-solid fa-xmark pointer close-icon"
+            ></i>
           <p class="">alias</p>
           <h6>{{ selected.alias }}</h6>
           <p class="">{{ $t("team.role") }}</p>
@@ -208,7 +212,7 @@ export default {
         slidesToShow: 1,
         navButtons: true,
         centerMode: true,
-        autoplaySpeed: 5000,
+        swipe:false
       },
     };
   },
@@ -258,4 +262,7 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+
+
+</style>

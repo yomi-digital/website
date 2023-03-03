@@ -12,7 +12,7 @@
       "security": "Security Audit",
       "website": "Sito internet"
     },
-    "description_en": "The Niftyz platform empowers businesses to boost their growth, by betokening and monetizing their growth, achievements, content, members and more, by using NFTs to lock and distribute their most precious information and assets to the most wanted audience.",
+    "description_en": "The Niftyz platform empowers businesses to boost their growth, by tokenising and monetizing their growth, achievements, content, members and more, by using NFTs to lock and distribute their most precious information and assets to the most wanted audience.",
     "description_it": "La piattaforma Niftyz consente alle aziende di incrementare la loro crescita, scommettendo e monetizzando i loro risultati, i loro contenuti, i loro membri e altro ancora, utilizzando gli NFT per distribuire le loro informazioni e i loro beni più preziosi al pubblico più ricercato.",
     "link": "https://niftyz.io/#/",
     "category_en": "web3 development",
@@ -62,18 +62,50 @@
     "name": "Demotapers",
     "imgCover": "demo.png",
     "services_en": {
-      "contract": "Smart Contract",
-      "mego": "MEGO Tickets",
-      "landing": "Landing"
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "admin": "Admin panel"
     },
     "services_it": {
-      "contract": "Smart Contract",
-      "mego": "MEGO Tickets",
-      "landing": "Sito internet"
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "admin": "Pannello di Amministrazione"
     },
     "description_en": "Demotapers is a music-and-visual nft platform where musicians and visual artists unite to create unique digital artworks tailored to music tracks that collectors can collect, trade, and display.",
     "description_it": "Demotapers è una piattaforma di nft musicali e artistici nella quale musicisti e artisti figurativi si uniscono per creare opere d'arte digitali uniche su misura per i brani musicali che si possono collezionare, scambiare ed esporre.",
     "link": "https://demotapers.com/",
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
+  },
+  {
+    "name": "Genrae",
+    "imgCover": "genrae.png",
+    "services_en": {
+      "contract": "Smart Contract"
+    },
+    "services_it": {
+      "contract": "Smart Contract"
+    },
+    "description_en": "Genrae by partnering with homebuyers and real estate investors resolve the problem of the elevated cost houses. Allowing buyers to have many fewer problems.",
+    "description_it": "Genrae, collaborando con gli acquirenti di case e gli investitori immobiliari, risolve il problema del costo elevato delle case. Permettendo agli acquirenti di avere molti meno problemi.",
+    "link": "https://www.genrae.com/",
+    "category_en": "web3 development",
+    "category_it": "sviluppo web3"
+  },
+  {
+    "name": "London Trade Art",
+    "imgCover": "lt-art_1.svg",
+    "services_en": {
+      "contract": "Smart Contract",
+      "minting": "NFT minting interface"
+    },
+    "services_it": {
+      "contract": "Smart Contract",
+      "minting": "Interfaccia di minting NFT"
+    },
+    "description_en": "London Trade Art is a visionary project offering a diversified art investment service with the aim of developing a new approach to art collecting through the innovative model of fractional ownership.",
+    "description_it": "London Trade Art è un progetto visionario che offre un servizio di investimento artistico diversificato con l'obiettivo di sviluppare un nuovo approccio al collezionismo d'arte attraverso il modello innovativo della proprietà frazionata.",
+    "link": "https://www.londontradeart.co.uk/en/",
     "category_en": "web3 development",
     "category_it": "sviluppo web3"
   },
