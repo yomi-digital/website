@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ overflow: 'hidden' }"
-    :class="geisha ? 'about pt-5 geisha' : 'about pt-5'"
+    :class="geisha ? 'about pt-4 geisha' : 'about pt-4'"
   >
     <Geisha v-if="geisha" :enterGeisha="enterGeisha" />
     <div class="fade-in" v-show="!geisha">

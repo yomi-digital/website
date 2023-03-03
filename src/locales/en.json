@@ -1,10 +1,10 @@
 {
   "menu":{
     "about": "about us",
-    "team": "our team",
+    "team": "team",
     "service": "services",
     "portfolio": "portfolio",
-    "internal": "mego tickets",
+    "internal": "mego",
     "talk":"let's talk"
   },
   "about":{

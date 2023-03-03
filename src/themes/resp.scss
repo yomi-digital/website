@@ -59,10 +59,18 @@
   .blog-card {
     height: 350px;
   }
-
+  .first-column a{
+    color: #84ff9d;
+  }
   ul li a,
   .link-footer {
-    font-size: 16px !important;
+    font-size: 15px !important;
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+  .footer-text{
+    font-size: 15px;
+    margin-bottom: 0px;
   }
   .top-btm {
     padding: 1rem;
@@ -385,9 +393,12 @@
       transform: none;
     }
   }
+  .footer-text{
+    font-size: 16px;
+  }
   ul li a,
   .link-footer {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   .vm--container .vm--modal {
     width: 65vw !important;

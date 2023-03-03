@@ -11,16 +11,16 @@
           'top-btm': isMobile,
         }"
       >
-      <a v-if="isMobile"  class="btn-social mt-4 d-inline-block text-uppercase" href="https://form.yomi.digital/" target="_blank">
+      <!-- <a v-if="!isMobile"  class="btn-social mt-4 d-inline-block text-uppercase" href="https://form.yomi.digital/" target="_blank">
           
           {{ $t("menu.talk") }}
      
-      </a>
+      </a> -->
         <div
           :class="isMobile ? 'mt-5 mb-5' : null"
           class="d-flex"
         >
-          <ul :class="{ 'mt-4': isMobile }">
+          <ul :class="{ 'mt-4 first-column': isMobile }">
             <li>
               <router-link
                 class="text-capitalize"
@@ -54,21 +54,28 @@
               >
             </li>
           </ul>
-          <ul class="ms-5 ps-4">
+          <ul class="ms-4 ps-3">
             <!-- <li v-if="!isMobile"><a href="/">Menu</a></li> -->
             <li :class="isMobile ? 'mt-4' : null"><a href="/">Privacy Policy</a></li>
             <li><a href="/">Legal Terms</a></li>
             <li>
-              <p class="link-footer copyright">
+              <p class="link-footer footer-text">
                 Copyright© {{ new Date().getFullYear() }} <br />
                 <span v-if="!isMobile"> All right reserved YOMI </span>
               </p>
             </li>
           </ul>
+          <div :class="isMobile ? 'mt-4' : null" class="ms-4 ps-3">
+            <p class="footer-text">
+              Viale Legioni Romane, 7 <br>
+              20147 Milano <br>
+              P. I 12188060961
+            </p>
+          </div>
         </div>
         <div
           class="d-flex align-items-center"
-          :class="{ 'mt-5 pt-4 justify-content-center': isMobile } && isTablet ? 'me-1' : null"
+          :class="isMobile ? 'mt-4 pt-4 justify-content-center' : null || isTablet ? 'me-1' : null"
         >
           <a v-if="!isMobile" class="btn-social me-3 text-uppercase" href="https://form.yomi.digital/" target="_blank">
           

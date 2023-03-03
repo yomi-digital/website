@@ -743,11 +743,13 @@ ul {
         text-underline-offset: 5px;
       }
     }
-    .copyright{
-      &:hover{
-        text-decoration: none!important;
-      }
-    }
+  }
+}
+.footer-text{
+  line-height: 125%!important;
+  font-size: 1rem;
+  &:hover{
+    text-decoration: none!important;
   }
 }
 
