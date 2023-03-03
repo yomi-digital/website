@@ -2,7 +2,7 @@
   <div>
     <footer class="custom-card">
       <changeLanguage />
-      
+
       <div
         class=""
         :class="{
@@ -11,15 +11,12 @@
           'top-btm': isMobile,
         }"
       >
-      <!-- <a v-if="!isMobile"  class="btn-social mt-4 d-inline-block text-uppercase" href="https://form.yomi.digital/" target="_blank">
+        <!-- <a v-if="!isMobile"  class="btn-social mt-4 d-inline-block text-uppercase" href="https://form.yomi.digital/" target="_blank">
           
           {{ $t("menu.talk") }}
      
       </a> -->
-        <div
-          :class="isMobile ? 'mt-5 mb-5' : null"
-          class="d-flex"
-        >
+        <div :class="isMobile ? 'mt-5 mb-5' : null" class="d-flex">
           <ul :class="{ 'mt-4 first-column': isMobile }">
             <li>
               <router-link
@@ -56,8 +53,38 @@
           </ul>
           <ul class="ms-4 ps-3">
             <!-- <li v-if="!isMobile"><a href="/">Menu</a></li> -->
-            <li :class="isMobile ? 'mt-4' : null"><a href="/">Privacy Policy</a></li>
-            <li><a href="/">Legal Terms</a></li>
+            <li :class="isMobile ? 'mt-4' : null">
+              <a
+                v-if="$i18n.locale == 'en'"
+                href="https://www.iubenda.com/privacy-policy/61064742"
+                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe"
+                title="Privacy Policy "
+                >Privacy Policy</a
+              >
+              <a
+                v-if="$i18n.locale == 'it'"
+                href="https://www.iubenda.com/privacy-policy/81694600"
+                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe"
+                title="Privacy Policy "
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                v-if="$i18n.locale == 'en'"
+                href="https://www.iubenda.com/privacy-policy/61064742/cookie-policy"
+                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
+                title="Cookie Policy "
+                >Legal Terms</a
+              >
+              <a
+              v-if="$i18n.locale == 'it'"
+                href="https://www.iubenda.com/privacy-policy/81694600/cookie-policy"
+                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
+                title="Cookie Policy "
+                >Legal Terms</a
+              >
+            </li>
             <li>
               <p class="link-footer footer-text">
                 Copyright© {{ new Date().getFullYear() }} <br />
@@ -67,24 +94,33 @@
           </ul>
           <div :class="isMobile ? 'mt-4' : null" class="ms-4 ps-3">
             <p class="footer-text">
-              Viale Legioni Romane, 7 <br>
-              20147 Milano <br>
+              Viale Legioni Romane, 7 <br />
+              20147 Milano <br />
               P. I 12188060961
             </p>
           </div>
         </div>
         <div
           class="d-flex align-items-center"
-          :class="isMobile ? 'mt-4 pt-4 justify-content-center' : null || isTablet ? 'me-1' : null"
+          :class="
+            isMobile
+              ? 'mt-4 pt-4 justify-content-center'
+              : null || isTablet
+              ? 'me-1'
+              : null
+          "
         >
-          <a v-if="!isMobile" class="btn-social me-3 text-uppercase" href="https://form.yomi.digital/" target="_blank">
-          
-              {{ $t("menu.talk") }}
-         
+          <a
+            v-if="!isMobile"
+            class="btn-social me-3 text-uppercase"
+            href="https://form.yomi.digital/"
+            target="_blank"
+          >
+            {{ $t("menu.talk") }}
           </a>
 
           <a
-            class="btn-social "
+            class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://discord.gg/w54Jbd4Qhz"
             target="_blank"
@@ -98,7 +134,7 @@
             >IG</a
           >
           <a
-            class="btn-social "
+            class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://twitter.com/YOMI_WEB3"
             target="_blank"
@@ -128,6 +164,39 @@ export default {
   mixins: [checkViewport],
   components: {
     changeLanguage,
+  },
+  mounted() {
+    (function (w, d) {
+      var loader = function () {
+        var s = d.createElement("script"),
+          tag = d.getElementsByTagName("script")[0];
+        s.src = "https://cdn.iubenda.com/iubenda.js";
+        tag.parentNode.insertBefore(s, tag);
+      };
+      if (w.addEventListener) {
+        w.addEventListener("load", loader, false);
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", loader);
+      } else {
+        w.onload = loader;
+      }
+    })(window, document);
+
+    (function (w, d) {
+      var loader = function () {
+        var s = d.createElement("script"),
+          tag = d.getElementsByTagName("script")[0];
+        s.src = "https://cdn.iubenda.com/iubenda.js";
+        tag.parentNode.insertBefore(s, tag);
+      };
+      if (w.addEventListener) {
+        w.addEventListener("load", loader, false);
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", loader);
+      } else {
+        w.onload = loader;
+      }
+    })(window, document);
   },
   methods: {
     scrollUp() {
