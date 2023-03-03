@@ -846,9 +846,12 @@ ul {
 //   =======================================================================================
 header{
   position: fixed;
+  top: 0px;
+  height: 80px;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
+  background-color: black;
   align-items: center;
   width: 100%;
   padding: 0rem 3rem;
