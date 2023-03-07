@@ -6,7 +6,9 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-12">
           <div class="" :class="{ 'mt-3': isMobile }">
-            <h2 :class="isMobile ? 'enter-page-mobile' : 'enter-page'" >{{ $t("menu.team") }}</h2>
+            <h2 :class="isMobile ? 'enter-page-mobile' : 'enter-page'">
+              {{ $t("menu.team") }}
+            </h2>
           </div>
         </div>
         <div class="col-12 col-lg-6 ms-2 mt-5">
@@ -15,30 +17,28 @@
           </p>
         </div>
       </div>
-      <div :class="{ 'container-image': isMobile }">
+      <div class="container-image">
         <div class="box-character-img position-second-box-charger">
-          
-            <img
-              class="imgTeam fade-in-max"
-              src="../assets/images/team-img.webp"
-              alt=""
-            />
-          
+          <img
+            class="imgTeam fade-in-max"
+            src="../assets/images/team-img.webp"
+            alt=""
+          />
         </div>
       </div>
     </div>
-    <MarqueeText
+    <div :class="!isMobile ? 'titleBanner-team' : null">
+      <MarqueeText
       class="title-project"
       :repeat="6"
       :duration="$t('banner.team').length * 0.4"
-      style="z-index: 1"
     >
       <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>
     </MarqueeText>
+    </div>
     <!-- TEAM SHOW -->
-    <div v-show="teams != ''" class="container-fluid">
+    <div v-show="teams != ''" class="container-fluid" :class="{'ps-0' : isMobile}">
       <div class="mt-5">
-        
         <div v-if="!isMobile" class="row">
           <div
             v-for="(team, index) in teams"
@@ -48,14 +48,13 @@
             <div
               @click="toggleTeam(team)"
               class="box-team-container justify-content-center d-flex my-5"
-              :class="{ 'border-image': !showImage, 'fade-in' : showImage }"
+              :class="{ 'border-image': !showImage, 'fade-in': showImage }"
             >
               <div class="bk-team">
                 <p class="text-strong">{{ $t("team.more") }}</p>
               </div>
-              
-                <img :src="'/team/' + team.imageProfilePreview" alt="" />
-              
+
+              <img :src="'/team/' + team.imageProfilePreview" alt="" />
             </div>
           </div>
 
@@ -70,23 +69,21 @@
             </div>
           </div>
         </div>
-        <agile :style="{'pointer-events': checkedMobile ? 'none' : 'all'} " v-else :options="myOptions">
-          
-          <div
-            v-for="(team, index) in teams"
-            :key="index"
-            class="slide"
-
-
-          >
+        <agile
+          :style="{ 'pointer-events': checkedMobile ? 'none' : 'all' }"
+          v-else
+          :options="myOptions"
+        >
+          <div v-for="(team, index) in teams" :key="index" class="slide">
             <div
               class="box-team-container justify-content-center d-flex my-5 pointer"
               :class="{ 'border-image': !showImage }"
             >
-              
-
-                <img @click="showMember(team)" :src="'/team/' + team.imageProfilePreview" alt="" />
-              
+              <img
+                @click="showMember(team)"
+                :src="'/team/' + team.imageProfilePreview"
+                alt=""
+              />
             </div>
             <div class="d-flex justify-content-center align-items-center">
               <h5 @click="showMember(team)" class="color-primary">
@@ -114,12 +111,15 @@
             ><i class="fa-solid fa-chevron-right"></i
           ></template>
         </agile>
-        <div class="info-member position-relative" v-if="checkedMobile && isMobile">
+        <div
+          class="info-member position-relative"
+          v-if="checkedMobile && isMobile"
+        >
           <i
-              @click="closeMember()"
-              v-if="checkedMobile"
-              class="fa-solid fa-xmark pointer close-icon"
-            ></i>
+            @click="closeMember()"
+            v-if="checkedMobile"
+            class="fa-solid fa-xmark pointer close-icon"
+          ></i>
           <p class="">alias</p>
           <h6>{{ selected.alias }}</h6>
           <p class="">{{ $t("team.role") }}</p>
@@ -155,14 +155,11 @@
                 <div class="label">{{ $t("team.role") }}</div>
                 <div class="title-team mt-3">{{ selected.role }}</div>
               </div>
-              
             </div>
           </div>
         </div>
         <div class="team-img-card">
-          
-            <img :src="'/team/' + selected.imageProfile" alt="" />
-          
+          <img :src="'/team/' + selected.imageProfile" alt="" />
         </div>
       </modal>
       <formTeam
@@ -212,7 +209,7 @@ export default {
         slidesToShow: 1,
         navButtons: true,
         centerMode: true,
-        swipe:false
+        swipe: false,
       },
     };
   },
@@ -262,7 +259,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-
-
-</style>
+<style scoped></style>

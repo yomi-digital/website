@@ -26,7 +26,8 @@
                 <img
                   :src="'/portfolio/' + project.imgCover"
                   alt=""
-                  :class="project.imgCover == 'nftberlin_smooth.png' ? 'p-4' : null"
+                  :style="{ 'max-width': project.imgCover === 'aristoil logo.png' && !isMobile ? '400px' : '' }"
+                  :class="project.imgCover == 'nftberlin_smooth.png' || project.imgCover == 'PIM.png' ? 'p-4' : null"
                 />
               </div>
             </div>

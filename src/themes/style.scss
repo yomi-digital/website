@@ -472,8 +472,8 @@ h1 {
 }
 .position-second-box-charger {
   width: 100%;
-  bottom: 0rem;
-  left: 0px;
+  bottom: 4.5rem;
+  left: 30px;
   img {
     object-fit: contain;
     float: right;
@@ -481,6 +481,12 @@ h1 {
   }
 }
 
+
+.titleBanner-team{
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+}
 .border-image {
   border: 1px solid white;
   img {
@@ -744,6 +750,10 @@ ul {
       }
     }
   }
+}
+.first-column a{
+  color: #84ff9d;
+  min-width: 65px;
 }
 .footer-text{
   line-height: 125%!important;

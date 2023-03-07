@@ -17,7 +17,15 @@
      
       </a> -->
         <div :class="isMobile ? 'mt-5 mb-5' : null" class="d-flex">
-          <ul :class="{ 'mt-4 first-column': isMobile }">
+          <ul class="first-column" :class="{ 'mt-4': isMobile }">
+            <li>
+              <router-link
+                class="text-capitalize"
+                to="/about"
+                @click.native="scrollUp"
+                >{{ $t("menu.about") }}</router-link
+              >
+            </li>
             <li>
               <router-link
                 class="text-capitalize"

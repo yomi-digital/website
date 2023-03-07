@@ -8,12 +8,12 @@
         </div>
         <div class="col-12col-md-4">
           <h6 class="mt-5 sub-title-project">
-            {{ $t("portfolio.description") }}
+            {{ $t("portfolio.description") }}.
           </h6>
         </div>
       </div>
     </div>
-    <div :class="{'mb-5' : isMobile}" class="container-fluid mt-5 p-0">
+    <div :class="{ 'mb-5': isMobile }" class="container-fluid mt-5 p-0">
       <div class="text-center content-container">
         <div
           class="link-portfolio"
@@ -58,7 +58,6 @@ import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
 
-
 export default {
   name: "about",
   mixins: [checkViewport],
@@ -81,15 +80,15 @@ export default {
     if (app.$route.query.project != undefined) {
       const activeLink = document.querySelector(".active-link-portfolio");
       setTimeout(function () {
-        activeLink.scrollIntoView();
+        if (activeLink) {
+          const linkPosition =
+            activeLink.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({ top: linkPosition - 200, behavior: "smooth" });
+        }
       }, 500);
     }
-
-    /* console.log(app.projects); */
   },
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 <style></style>

@@ -1,27 +1,38 @@
 <template>
   <div class="banner cta-banner">
-    <a :href="'/#/portfolio?project=' + encodeURIComponent(selectedProject.name)">
-      <div
-        :class="
-          isMobile
-            ? 'flex-column justify-content-center'
-            : 'justify-content-between'
-        "
-        class="d-flex align-items-center h-100"
-      >
+    <div
+      :class="
+        isMobile
+          ? 'flex-column justify-content-center'
+          : 'justify-content-between'
+      "
+      class="d-flex align-items-center h-100"
+    >
+      <a class="w-auto mt-5" href="/#portfolio">
         <div :class="{ 'mb-5': !isMobile }" class="pb-5 text-uppercase">
           <p style="min-width: 160px">{{ $t("banner.view") }}</p>
         </div>
-        <div>
-          <h3 id="nameProject" class="text-uppercase cta-title mb-0">
+      </a>
+      <a class="w-75 text-center"
+        :href="
+          '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
+        "
+      >
+          <h3 id="nameProject" class="text-uppercase cta-title mb-0 h-100 d-flex align-items-center justify-content-center">
             {{ selectedProject.name }}
           </h3>
-        </div>
-        <div v-if="!isMobile && !isTablet" class="pb-3">
+      </a>
+
+      <a class="text-end w-auto"
+        :href="
+          '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
+        "
+      >
+        <div v-if="!isMobile && !isTablet" class="pb-3 h-100  d-flex align-items-center justify-content-center">
           <img src="../assets/images/arrow-right.svg" alt="" />
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -34,7 +45,7 @@ export default {
   data() {
     return {
       projects: projects,
-      selectedProject:{}
+      selectedProject: {},
     };
   },
 
@@ -44,11 +55,12 @@ export default {
   },
   methods: {
     randomProject() {
+      const app = this;
       let randomProject = Math.floor(Math.random() * projects.length);
-      this.selectedProject = projects[randomProject];
+      app.selectedProject = projects[randomProject];
       setInterval(function () {
         randomProject = Math.floor(Math.random() * projects.length);
-        this.selectedProject = projects[randomProject];
+        app.selectedProject = projects[randomProject];
       }, 5000);
     },
   },

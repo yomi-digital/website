@@ -10,10 +10,10 @@
   "about":{
     "firstText":"Siamo un laboratorio di innovazione e sviluppo che trascende i confini fisici per costruire spazi digitali liberi.",
     "secondText":"Il nostro desiderio più grande è quello di rendere il Web 3.0 accessibile a tutti e costruire una società  decentralizzata in cui gli utenti hanno pieno controllo dei propri dati, identità e destino.",
-    "link": "incontra il nostro team"
+    "link": "Conosci il team"
   },
   "team":{
-    "text":"La dedizione della nostra squadra ci permette di spingerci oltre i confini e costruire progetti digitali distintivi che si fanno notare.",
+    "text":" Le competenze e la determinazione del nostro team sono alla base della nostra capacità di superare i limiti della tecnologia e sviluppare prodotti digitali che colpiscono nel segno.",
     "contact": "contattaci per unirti al team",
     "more":"DI PIU'",
     "you":"...E tu",
@@ -48,7 +48,7 @@
     "internal":"SISTEMA DI TICKETING NFT CROSS-CHAIN"
   },
   "portfolio":{
-    "title":"fieri di",
+    "title":"Progetti",
     "description":"Esplora il nostro portfolio per scoprire i nostri ultimi progetti",
     "contribution":"il nostro contributo"
   },

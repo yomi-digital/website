@@ -8,11 +8,13 @@ export default {
     };
   },
   async mounted() {
-    this.checkViewport();
+    const app = this
+    app.checkViewport();
   },
   methods: {
     checkViewport() {
       const app = this;
+      console.log('po',window.innerWidth);
       if (window.innerWidth < 768) {
         app.isMobile = true;
         app.isTablet = false;
