@@ -18,7 +18,7 @@
       </a> -->
         <div :class="isMobile ? 'mt-5 mb-5' : null" class="d-flex">
           <ul class="first-column" :class="{ 'mt-4': isMobile }">
-            <li>
+            <li data-cursor-hover>
               <router-link
                 class="text-capitalize"
                 to="/about"
@@ -26,7 +26,7 @@
                 >{{ $t("menu.about") }}</router-link
               >
             </li>
-            <li>
+            <li data-cursor-hover>
               <router-link
                 class="text-capitalize"
                 to="/team"
@@ -34,7 +34,7 @@
                 >{{ $t("menu.team") }}</router-link
               >
             </li>
-            <li>
+            <li data-cursor-hover>
               <router-link
                 class="text-capitalize"
                 to="/services"
@@ -42,7 +42,7 @@
                 >{{ $t("menu.service") }}</router-link
               >
             </li>
-            <li>
+            <li data-cursor-hover>
               <router-link
                 class="text-capitalize"
                 to="/portfolio"
@@ -50,7 +50,7 @@
                 >{{ $t("menu.portfolio") }}</router-link
               >
             </li>
-            <li>
+            <li data-cursor-hover>
               <router-link
                 class="text-capitalize"
                 to="/internal-project"
@@ -61,39 +61,59 @@
           </ul>
           <ul class="ms-4 ps-3">
             <!-- <li v-if="!isMobile"><a href="/">Menu</a></li> -->
-            <li :class="isMobile ? 'mt-4' : null">
+            <li :class="isMobile ? 'mt-4' : null" data-cursor-hover>
               <a
                 v-if="$i18n.locale == 'en'"
                 href="https://www.iubenda.com/privacy-policy/61064742"
-                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe"
+                class="
+                  iubenda-nostyle
+                  no-brand
+                  iubenda-noiframe iubenda-embed
+                  iub-legal-only
+                  iubenda-noiframe
+                "
                 title="Privacy Policy "
                 >Privacy Policy</a
               >
               <a
                 v-if="$i18n.locale == 'it'"
                 href="https://www.iubenda.com/privacy-policy/81694600"
-                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe"
+                class="
+                  iubenda-nostyle
+                  no-brand
+                  iubenda-noiframe iubenda-embed
+                  iub-legal-only
+                  iubenda-noiframe
+                "
                 title="Privacy Policy "
                 >Privacy Policy</a
               >
             </li>
-            <li>
+            <li data-cursor-hover>
               <a
                 v-if="$i18n.locale == 'en'"
                 href="https://www.iubenda.com/privacy-policy/61064742/cookie-policy"
-                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
+                class="
+                  iubenda-nostyle
+                  no-brand
+                  iubenda-noiframe iubenda-embed iubenda-noiframe
+                "
                 title="Cookie Policy "
                 >Legal Terms</a
               >
               <a
-              v-if="$i18n.locale == 'it'"
+                v-if="$i18n.locale == 'it'"
                 href="https://www.iubenda.com/privacy-policy/81694600/cookie-policy"
-                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
+                class="
+                  iubenda-nostyle
+                  no-brand
+                  iubenda-noiframe iubenda-embed iubenda-noiframe
+                "
                 title="Cookie Policy "
                 >Legal Terms</a
               >
             </li>
-            <li>
+            <li data-cursor-hover>
               <p class="link-footer footer-text">
                 Copyright© {{ new Date().getFullYear() }} <br />
                 <span v-if="!isMobile"> All right reserved YOMI </span>
@@ -119,6 +139,7 @@
           "
         >
           <a
+            data-cursor-hover
             v-if="!isMobile"
             class="btn-social me-3 text-uppercase"
             href="https://form.yomi.digital/"
@@ -128,6 +149,7 @@
           </a>
 
           <a
+            data-cursor-hover
             class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://discord.gg/w54Jbd4Qhz"
@@ -135,6 +157,7 @@
             >DS</a
           >
           <a
+            data-cursor-hover
             class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://www.instagram.com/yomi_web3/"
@@ -142,6 +165,7 @@
             >IG</a
           >
           <a
+            data-cursor-hover
             class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://twitter.com/YOMI_WEB3"
@@ -149,6 +173,7 @@
             >TW</a
           >
           <a
+            data-cursor-hover
             class="btn-social"
             href="https://www.linkedin.com/company/yomidigitalhub/"
             target="_blank"

@@ -1,14 +1,29 @@
 <template>
   <div id="app">
     <router-view />
+    <button
+      type="button"
+      title="Special button"
+      data-cursor-hover
+      data-cursor-mix-blend-mode="difference"
+    ></button>
+
+    <cursor-fx
+      color="#FFFFFF"
+      color-hover="#FF00CF"
+      outside-size="60px"
+      inside-size="10px"
+      ref="cursor"
+      id="cursor-custom"
+    />
   </div>
 </template>
 <script>
 export default {
-  mounted(){
-    const scriptIubenda = document.createElement('script')
-    scriptIubenda.type="text/javascript"
-    if(this.$i18n.locale == 'en'){
+  mounted() {
+    const scriptIubenda = document.createElement("script");
+    scriptIubenda.type = "text/javascript";
+    if (this.$i18n.locale == "en") {
       scriptIubenda.innerHTML = `
       var _iub = _iub || [];
       _iub.csConfiguration = {
@@ -49,9 +64,8 @@ export default {
           textColor: "#000000",
         },
       };
-      `
-      
-    }else{
+      `;
+    } else {
       scriptIubenda.innerHTML = `
       var _iub = _iub || [];
       _iub.csConfiguration = {
@@ -91,20 +105,34 @@ export default {
           showPurposesToggles: true,
           textColor: "#000000",
         },
-      }`
+      }`;
     }
-    document.head.append(scriptIubenda)
-    const scriptIubenda2 = document.createElement('script')
-    scriptIubenda2.type="text/javascript"
-    scriptIubenda2.src = '//cdn.iubenda.com/cs/gpp/stub.js'
-    document.head.append(scriptIubenda2)
-    const scriptIubenda3 = document.createElement('script')
-    scriptIubenda3.type="text/javascript"
-    scriptIubenda3.src = '//cdn.iubenda.com/cs/iubenda_cs.js'
-    scriptIubenda3.charset = 'UTF-8'
-    document.head.append(scriptIubenda3)
+    document.head.append(scriptIubenda);
+    const scriptIubenda2 = document.createElement("script");
+    scriptIubenda2.type = "text/javascript";
+    scriptIubenda2.src = "//cdn.iubenda.com/cs/gpp/stub.js";
+    document.head.append(scriptIubenda2);
+    const scriptIubenda3 = document.createElement("script");
+    scriptIubenda3.type = "text/javascript";
+    scriptIubenda3.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
+    scriptIubenda3.charset = "UTF-8";
+    document.head.append(scriptIubenda3);
 
-  }
-}
+    // CURSOR CUSTOM
+    this.$refs.cursor.start();
+  },
+  watch: {
+    $route(to, from) {
+      if (from.name !== undefined && to.name !== undefined) {
+        this.$refs.cursor.start();
+        this.$refs.cursor.refresh();
+      }
+    },
+  },
+};
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.cursor-fx {
+  z-index: 9999999 !important;
+}
+</style>

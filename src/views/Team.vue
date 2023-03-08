@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4">
+  <div style="margin-top: 80px" data-cursor-mix-blend-mode="difference">
     <ButtonNav />
     <!-- TEAM SECTION -->
     <div :class="{ 'full-h': !isMobile }" class="container-fluid pd-container">
@@ -29,15 +29,19 @@
     </div>
     <div :class="!isMobile ? 'titleBanner-team' : null">
       <MarqueeText
-      class="title-project"
-      :repeat="6"
-      :duration="$t('banner.team').length * 0.4"
-    >
-      <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>
-    </MarqueeText>
+        class="title-project"
+        :repeat="6"
+        :duration="$t('banner.team').length * 0.4"
+      >
+        <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>
+      </MarqueeText>
     </div>
     <!-- TEAM SHOW -->
-    <div v-show="teams != ''" class="container-fluid" :class="{'ps-0' : isMobile}">
+    <div
+      v-show="teams != ''"
+      class="container-fluid"
+      :class="{ 'ps-0': isMobile }"
+    >
       <div class="mt-5">
         <div v-if="!isMobile" class="row">
           <div
@@ -46,6 +50,7 @@
             class="col-12 col-md-4 col-lg-3"
           >
             <div
+              data-cursor-hover
               @click="toggleTeam(team)"
               class="box-team-container justify-content-center d-flex my-5"
               :class="{ 'border-image': !showImage, 'fade-in': showImage }"
@@ -61,7 +66,13 @@
           <div
             v-if="!isMobile"
             @click="toggleForm()"
-            class="box-team-container justify-content-center d-flex my-5 pointer"
+            class="
+              box-team-container
+              justify-content-center
+              d-flex
+              my-5
+              pointer
+            "
             :class="{ 'border-image': !showImage }"
           >
             <div class="bk-team opacity-100 text-uppercase">
@@ -76,7 +87,13 @@
         >
           <div v-for="(team, index) in teams" :key="index" class="slide">
             <div
-              class="box-team-container justify-content-center d-flex my-5 pointer"
+              class="
+                box-team-container
+                justify-content-center
+                d-flex
+                my-5
+                pointer
+              "
               :class="{ 'border-image': !showImage }"
             >
               <img
@@ -95,7 +112,13 @@
           <div class="slide">
             <div
               @click="toggleForm()"
-              class="box-team-container justify-content-center d-flex my-5 pointer"
+              class="
+                box-team-container
+                justify-content-center
+                d-flex
+                my-5
+                pointer
+              "
               :class="{ 'border-image': !showImage }"
             >
               <div class="bk-team opacity-100 text-uppercase">
@@ -134,12 +157,18 @@
           <div>
             <div class="mb-3 label">MEMBER #{{ selected.id }}</div>
             <div
-              class="d-flex justify-content-between align-items-center align-content-center w-100"
+              class="
+                d-flex
+                justify-content-between
+                align-items-center align-content-center
+                w-100
+              "
             >
               <h5 class="mb-0">#{{ selected.name }} //</h5>
               <i
+                data-cursor-hover
                 @click="closeModal()"
-                class="fa-solid fa-xmark pointer mb-1"
+                class="fa-solid fa-xmark mb-1"
               ></i>
             </div>
           </div>

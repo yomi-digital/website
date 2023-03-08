@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-inner 4">
+  <div class="portfolio-inner 4" data-cursor-mix-blend-mode="difference">
     <ButtonNav />
     <div v-if="Object.keys(project).length > 0">
       <div class="container-fluid pd-container mt-5">
@@ -15,19 +15,31 @@
         </div>
       </div>
       <div class="container mt-5 pt-5">
-      
         <div class="row">
           <div
             :class="{ 'p-0': isMobile }"
             class="col-12 col-lg-10 offset-0 offset-lg-1"
           >
-            <div class="project-header glitch" :class="{ 'mt-5': isMobile }">
+            <div
+              class="project-header"
+              :class="{ 'mt-5 glitch': isMobile, 'glitch-hover': !isMobile }"
+            >
               <div class="preview-img">
                 <img
                   :src="'/portfolio/' + project.imgCover"
                   alt=""
-                  :style="{ 'max-width': project.imgCover === 'aristoil logo.png' && !isMobile ? '400px' : '' }"
-                  :class="project.imgCover == 'nftberlin_smooth.png' || project.imgCover == 'PIM.png' ? 'p-4' : null"
+                  :style="{
+                    'max-width':
+                      project.imgCover === 'aristoil logo.png' && !isMobile
+                        ? '400px'
+                        : '',
+                  }"
+                  :class="
+                    project.imgCover == 'nftberlin_smooth.png' ||
+                    project.imgCover == 'PIM.png'
+                      ? 'p-4'
+                      : null
+                  "
                 />
               </div>
             </div>
@@ -35,13 +47,22 @@
         </div>
       </div>
       <MarqueeText :repeat="8" :duration="project.name.length * 0.5">
-        <h4 style="color:#84FF9D" class="text-uppercase mt-5">{{ project.name }}&nbsp;</h4>
+        <h4 style="color: #84ff9d" class="text-uppercase mt-5">
+          {{ project.name }}&nbsp;
+        </h4>
       </MarqueeText>
       <div class="container">
         <div class="row">
           <div
             :class="isMobile ? 'px-4 py-5' : ' pt-5 pb-5 px-2'"
-            class="col-12 col-lg-10 offset-0 offset-lg-1 d-flex justify-content-between align-items-center b-bottom-light"
+            class="
+              col-12 col-lg-10
+              offset-0 offset-lg-1
+              d-flex
+              justify-content-between
+              align-items-center
+              b-bottom-light
+            "
           >
             <div class="d-flex align-items-center">
               <h6 class="me-3">
@@ -51,7 +72,9 @@
                 ></i>
               </h6>
               <a :href="project.link" target="_blank"
-                ><h6 style="text-underline-offset: 4px;" class="underline">{{ project.name }}</h6></a
+                ><h6 style="text-underline-offset: 4px" class="underline">
+                  {{ project.name }}
+                </h6></a
               >
             </div>
             <h6 v-if="$i18n.locale == 'en'" v-html="project.category_en"></h6>
@@ -60,7 +83,11 @@
           <div class="row mt-5 pb-5 px-2">
             <div
               :class="{ 'px-4 py-5': isMobile }"
-              class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 order-1 order-md-0"
+              class="
+                col-12 col-md-6 col-lg-5
+                offset-0 offset-lg-1
+                order-1 order-md-0
+              "
             >
               <h6 style="font-weight: 500" :class="isMobile ? 'mb-5' : 'mb-4'">
                 {{ $t("portfolio.contribution") }}
@@ -108,7 +135,6 @@
                 <p v-if="$i18n.locale == 'it'">{{ project.description_it }}</p>
               </div>
             </div>
-           
           </div>
         </div>
       </div>

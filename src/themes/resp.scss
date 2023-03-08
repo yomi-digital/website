@@ -1,5 +1,4 @@
 @media screen and (max-width: 767px) {
-
   body,
   html {
     font-size: 10px;
@@ -13,7 +12,7 @@
     font-family: "Degular Demo";
   }
   .pd-container {
-    padding: 1rem 2rem;
+    padding: 0 2rem;
   }
   .agile__nav-button {
     color: black;
@@ -36,17 +35,24 @@
     }
   }
 
+  .container-navbar-custom {
+    padding-top: 50px;
+  }
+
+  .height-navbar {
+    height: calc(100% - 140px);
+  }
   .agile {
     .slide img {
       max-width: 160px;
       max-height: 100px;
     }
   }
-  header{
+  header {
     height: 50px;
     padding: 0rem 2rem;
-    .logo{
-      width: 110px;
+    .logo {
+      width: 20px;
     }
   }
   .nav-link-dark,
@@ -60,7 +66,7 @@
   .blog-card {
     height: 350px;
   }
-  .first-column a{
+  .first-column a {
     color: #84ff9d;
   }
   ul li a,
@@ -69,7 +75,7 @@
     display: inline-block;
     margin-bottom: 2px;
   }
-  .footer-text{
+  .footer-text {
     font-size: 15px;
     margin-bottom: 0px;
   }
@@ -140,7 +146,7 @@
   .vm--container {
     .vm--modal {
       width: 90vw !important;
-      min-height: 42vh!important;
+      min-height: 42vh !important;
     }
   }
   .custom-card {
@@ -240,7 +246,7 @@
       color: var(--primary-color) !important;
     }
   }
-  .link-portfolio:hover{
+  .link-portfolio:hover {
     background-color: white;
     a {
       @include title-font();
@@ -293,7 +299,7 @@
       }
     }
   }
-  .portfolio-inner h6{
+  .portfolio-inner h6 {
     margin-bottom: 0px;
   }
   .box-team-container {
@@ -303,25 +309,24 @@
     padding: 1rem;
     img {
       width: 47px;
-      margin-bottom: 3rem
+      margin-bottom: 3rem;
     }
     h6 {
       font-size: 40px;
-      margin-bottom: 2.5rem
-  
+      margin-bottom: 2.5rem;
     }
     p {
       font-size: 18px;
       width: 100%;
     }
   }
-  .footer-top {
+  .footer-nav {
     line-height: 50px;
   }
-  .btn-social{
+  .btn-social {
     font-size: 20px;
   }
-  .err{
+  .err {
     background-size: max(900px, 80%);
   }
 }
@@ -332,7 +337,7 @@
     overflow-x: hidden;
   }
   .pd-container {
-    padding: 1rem 2rem;
+    padding: 0 2rem;
   }
   h2 {
     font-size: 10rem;
@@ -395,7 +400,7 @@
       transform: none;
     }
   }
-  .footer-text{
+  .footer-text {
     font-size: 16px;
   }
   ul li a,
@@ -415,7 +420,7 @@
   .small-card {
     display: none;
   }
-  .btn-social{
+  .btn-social {
     min-width: 60px;
   }
 }

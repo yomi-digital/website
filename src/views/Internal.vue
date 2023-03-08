@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4">
+  <div class="pt-4" data-cursor-mix-blend-mode="difference">
     <ButtonNav />
     <div class="container-fluid mt-5">
       <div class="row pb-0 pd-container">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <MarqueeText :repeat="8" :duration="6">
-      <h4 class="text-uppercase">{{$t("banner.internal")}}&nbsp;</h4>
+      <h4 class="text-uppercase">{{ $t("banner.internal") }}&nbsp;</h4>
     </MarqueeText>
 
     <div class="text-center link-internal mt-5">
@@ -71,8 +71,7 @@ export default {
     Bubble,
   },
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>

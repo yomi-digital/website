@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <div class="post" data-cursor-mix-blend-mode="difference">
     <div class="gap-2"></div>
     <ButtonNav />
     <div class="container p-5 mt-5 mb-5">
@@ -36,7 +36,12 @@
               <div class="col-12 col-md-6 col-lg-4 prev-box">
                 <a v-if="prev.length !== 0" :href="prev.slug">
                   <div
-                    class="control-pag d-flex align-items-baseline justify-content-end"
+                    class="
+                      control-pag
+                      d-flex
+                      align-items-baseline
+                      justify-content-end
+                    "
                   >
                     <div class="d-flex align-items-center me-3">
                       <i class="fa-solid fa-arrow-right-long"></i>

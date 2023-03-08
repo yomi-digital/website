@@ -283,8 +283,13 @@
     opacity: 1;
   }
 }
-.glitch{
-  &:hover img{
+.glitch-hover {
+  &:hover img {
+    animation: animate 0.2s linear infinite;
+  }
+}
+.glitch {
+  img {
     animation: animate 0.2s linear infinite;
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4">
+  <div class="pt-4" data-cursor-mix-blend-mode="difference">
     <ButtonNav />
     <div class="container-fluid pd-container mt-5">
       <div class="row">
@@ -27,6 +27,7 @@
           }"
         >
           <a
+            data-cursor-hover
             :class="{ 'list-portfolio': !isMobile }"
             :href="'/#/portfolio/' + project.name.split(' ').join('-')"
             >{{ project.name }}</a

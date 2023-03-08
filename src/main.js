@@ -18,6 +18,13 @@ import VueProgressBar from "vue-progressbar";
 import VueAgile from "vue-agile";
 import './registerServiceWorker'
 
+import CursorFx from '@luxdamore/vue-cursor-fx';
+import '@luxdamore/vue-cursor-fx/dist/CursorFx.css';
+
+Vue.use(
+  CursorFx
+);
+
 const options = {
   color: "#ffffff",
   failedColor: "#874b4b",

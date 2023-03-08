@@ -13,22 +13,40 @@
           <p style="min-width: 160px">{{ $t("banner.view") }}</p>
         </div>
       </a>
-      <a class="w-75 text-center"
+      <a
+        class="w-75 text-center"
+        data-cursor-hover
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
         "
       >
-          <h3 id="nameProject" class="text-uppercase cta-title mb-0 h-100 d-flex align-items-center justify-content-center">
-            {{ selectedProject.name }}
-          </h3>
+        <h3
+          id="nameProject"
+          class="
+            text-uppercase
+            cta-title
+            mb-0
+            h-100
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          {{ selectedProject.name }}
+        </h3>
       </a>
 
-      <a v-if="!isMobile && !isTablet" class="text-end w-auto"
+      <a
+        v-if="!isMobile && !isTablet"
+        class="text-end w-auto"
+        data-cursor-hover
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
         "
       >
-        <div class="pb-3 h-100  d-flex align-items-center justify-content-center">
+        <div
+          class="pb-3 h-100 d-flex align-items-center justify-content-center"
+        >
           <img src="../assets/images/arrow-right.svg" alt="" />
         </div>
       </a>

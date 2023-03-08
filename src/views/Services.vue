@@ -1,5 +1,5 @@
 <template>
-  <div class="services pt-4">
+  <div class="services pt-4" data-cursor-mix-blend-mode="difference">
     <ButtonNav />
     <div class="container-fluid pd-container mt-5">
       <div class="row margin-btm">
@@ -18,8 +18,8 @@
           >
             <h4>{{ $t("service.firstBanner") }}&nbsp;</h4>
           </MarqueeText>
-          <div
-          @click="
+          <div data-cursor-hover
+            @click="
               if (showTextFirst === 'blockchain') {
                 showTextFirst = '';
               } else {
@@ -36,8 +36,8 @@
           >
             <p class="text-strong">{{ $t("service.blockchain") }}</p>
           </div>
-          <div
-          @click="
+          <div data-cursor-hover
+            @click="
               if (showTextFirst === 'metaverse') {
                 showTextFirst = '';
               } else {
@@ -54,7 +54,7 @@
           >
             <p class="text-strong">{{ $t("service.metaverse") }}</p>
           </div>
-          <div
+          <div data-cursor-hover
             @click="
               if (showTextFirst === 'ai') {
                 showTextFirst = '';
@@ -94,10 +94,10 @@
             :duration="$t('service.secondBanner').length * 0.5"
             reverse
           >
-            <h4>{{ $t("service.secondBanner") }}&nbsp;</h4>
+            <h4 data-cursor-hover>{{ $t("service.secondBanner") }}&nbsp;</h4>
           </MarqueeText>
-          <div
-          @click="
+          <div data-cursor-hover
+            @click="
               if (showTextSecond === 'marketplace') {
                 showTextSecond = '';
               } else {
@@ -114,8 +114,8 @@
           >
             <p class="text-strong">{{ $t("service.marketplace") }}</p>
           </div>
-          <div
-          @click="
+          <div data-cursor-hover
+            @click="
               if (showTextSecond === 'app') {
                 showTextSecond = '';
               } else {
@@ -129,7 +129,7 @@
           >
             <p class="text-strong">{{ $t("service.app") }}</p>
           </div>
-          <div
+          <div data-cursor-hover
             @click="
               if (showTextSecond === 'website') {
                 showTextSecond = '';
@@ -172,9 +172,8 @@
           >
             <h4>{{ $t("service.thirdBanner") }}&nbsp;</h4>
           </MarqueeText>
-          <div
-         
-             @click="
+          <div data-cursor-hover
+            @click="
               if (showTextThird === 'design') {
                 showTextThird = '';
               } else {
@@ -188,8 +187,8 @@
           >
             <p class="text-strong">{{ $t("service.design") }}</p>
           </div>
-          <div
-          @click="
+          <div data-cursor-hover
+            @click="
               if (showTextThird === 'branding') {
                 showTextThird = '';
               } else {
