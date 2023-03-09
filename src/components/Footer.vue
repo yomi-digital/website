@@ -18,7 +18,7 @@
       </a> -->
         <div :class="isMobile ? 'mt-5 mb-5' : null" class="d-flex">
           <ul class="first-column" :class="{ 'mt-4': isMobile }">
-            <li data-cursor-hover>
+            <li>
               <router-link
                 class="text-capitalize"
                 to="/about"
@@ -26,7 +26,7 @@
                 >{{ $t("menu.about") }}</router-link
               >
             </li>
-            <li data-cursor-hover>
+            <li>
               <router-link
                 class="text-capitalize"
                 to="/team"
@@ -34,7 +34,7 @@
                 >{{ $t("menu.team") }}</router-link
               >
             </li>
-            <li data-cursor-hover>
+            <li>
               <router-link
                 class="text-capitalize"
                 to="/services"
@@ -42,7 +42,7 @@
                 >{{ $t("menu.service") }}</router-link
               >
             </li>
-            <li data-cursor-hover>
+            <li>
               <router-link
                 class="text-capitalize"
                 to="/portfolio"
@@ -50,7 +50,7 @@
                 >{{ $t("menu.portfolio") }}</router-link
               >
             </li>
-            <li data-cursor-hover>
+            <li>
               <router-link
                 class="text-capitalize"
                 to="/internal-project"
@@ -61,7 +61,7 @@
           </ul>
           <ul class="ms-4 ps-3">
             <!-- <li v-if="!isMobile"><a href="/">Menu</a></li> -->
-            <li :class="isMobile ? 'mt-4' : null" data-cursor-hover>
+            <li :class="isMobile ? 'mt-4' : null">
               <a
                 v-if="$i18n.locale == 'en'"
                 href="https://www.iubenda.com/privacy-policy/61064742"
@@ -89,7 +89,7 @@
                 >Privacy Policy</a
               >
             </li>
-            <li data-cursor-hover>
+            <li>
               <a
                 v-if="$i18n.locale == 'en'"
                 href="https://www.iubenda.com/privacy-policy/61064742/cookie-policy"
@@ -113,15 +113,14 @@
                 >Legal Terms</a
               >
             </li>
-            <li data-cursor-hover>
+            <li>
               <p class="link-footer footer-text">
                 Copyright© {{ new Date().getFullYear() }} <br />
-                <span v-if="!isMobile"> All right reserved YOMI </span>
               </p>
             </li>
           </ul>
           <div :class="isMobile ? 'mt-4' : null" class="ms-4 ps-3">
-            <p class="footer-text">
+            <p class="footer-text" style="line-height: 150% !important">
               Viale Legioni Romane, 7 <br />
               20147 Milano <br />
               P. I 12188060961
@@ -139,7 +138,6 @@
           "
         >
           <a
-            data-cursor-hover
             v-if="!isMobile"
             class="btn-social me-3 text-uppercase"
             href="https://form.yomi.digital/"
@@ -149,7 +147,6 @@
           </a>
 
           <a
-            data-cursor-hover
             class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://discord.gg/w54Jbd4Qhz"
@@ -157,7 +154,6 @@
             >DS</a
           >
           <a
-            data-cursor-hover
             class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://www.instagram.com/yomi_web3/"
@@ -165,7 +161,6 @@
             >IG</a
           >
           <a
-            data-cursor-hover
             class="btn-social"
             :class="isTablet ? 'me-1' : 'me-3'"
             href="https://twitter.com/YOMI_WEB3"
@@ -173,7 +168,6 @@
             >TW</a
           >
           <a
-            data-cursor-hover
             class="btn-social"
             href="https://www.linkedin.com/company/yomidigitalhub/"
             target="_blank"

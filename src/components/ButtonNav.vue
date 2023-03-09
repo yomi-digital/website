@@ -1,11 +1,14 @@
 <template>
   <div data-cursor-mix-blend-mode="difference">
     <header id="head">
-      <a href="/" data-cursor-hover>
-        <img class="logo" src="../assets/images/YOMI_MARCHIO.png" alt=""
+      <a href="/">
+        <img
+          class="logo hoverPointer"
+          src="../assets/images/YOMI_MARCHIO.png"
+          alt=""
       /></a>
-      <div data-cursor-hover class="btn-close-custom" @click="showNav()">
-        <svg
+      <div class="btn-close-custom hoverPointer" @click="showNav()">
+        <svg class="hoverPointer"
           width="72"
           height="15"
           viewBox="0 0 72 15"
@@ -52,11 +55,29 @@ export default {
         console.log("trigger close nav from route");
       }
     },
+    showNavbar() {
+      const app = this;
+      let page = document.getElementsByTagName("html")[0];
+      let bodyPage = document.getElementsByTagName("body")[0];
+      if (app.showNavbar) {
+        page.style.overflowY = "hidden";
+        bodyPage.style.overflowY = "hidden";
+      } else {
+        page.style.overflowY = "auto";
+        bodyPage.style.overflowY = "auto";
+      }
+    },
   },
   mounted() {
     const app = this;
     app.lastScrollPosition = window.pageYOffset;
     window.addEventListener("scroll", app.onScroll);
+
+    // RESET SCROLL
+    let page = document.getElementsByTagName("html")[0];
+    let bodyPage = document.getElementsByTagName("body")[0];
+    page.style.overflowY = "auto";
+    bodyPage.style.overflowY = "auto";
   },
   beforeDestroy() {
     document.body.style.overflow = "visible";
@@ -66,15 +87,6 @@ export default {
     showNav() {
       const app = this;
       app.showNavbar = !app.showNavbar;
-      let page = document.getElementsByTagName("html")[0];
-      let bodyPage = document.getElementsByTagName("body")[0];
-      if (app.showNavbar) {
-        page.style.overflow = "hidden";
-        bodyPage.style.overflow = "hidden";
-      } else {
-        page.style.overflow = "auto";
-        bodyPage.style.overflow = "auto";
-      }
     },
   },
 };

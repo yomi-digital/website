@@ -1,25 +1,15 @@
 <template>
   <div id="app">
     <router-view />
-    <button
-      type="button"
-      title="Special button"
-      data-cursor-hover
-      data-cursor-mix-blend-mode="difference"
-    ></button>
-
-    <cursor-fx
-      color="#FFFFFF"
-      color-hover="#FF00CF"
-      outside-size="60px"
-      inside-size="10px"
-      ref="cursor"
-      id="cursor-custom"
-    />
+    <CustomCursor />
   </div>
 </template>
 <script>
+import CustomCursor from "@/components/CustomCursor.vue";
 export default {
+  components: {
+    CustomCursor,
+  },
   mounted() {
     const scriptIubenda = document.createElement("script");
     scriptIubenda.type = "text/javascript";
@@ -117,22 +107,6 @@ export default {
     scriptIubenda3.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
     scriptIubenda3.charset = "UTF-8";
     document.head.append(scriptIubenda3);
-
-    // CURSOR CUSTOM
-    this.$refs.cursor.start();
-  },
-  watch: {
-    $route(to, from) {
-      if (from.name !== undefined && to.name !== undefined) {
-        this.$refs.cursor.start();
-        this.$refs.cursor.refresh();
-      }
-    },
   },
 };
 </script>
-<style lang="scss">
-.cursor-fx {
-  z-index: 9999999 !important;
-}
-</style>

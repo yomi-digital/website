@@ -1,13 +1,16 @@
 <template>
-  <div class="pt-4" data-cursor-mix-blend-mode="difference">
+  <div
+    data-cursor-mix-blend-mode="difference"
+    :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '60px' }]"
+  >
     <ButtonNav />
-    <div class="container-fluid pd-container mt-5">
+    <div class="container-fluid px-5">
       <div class="row">
         <div class="col-12">
           <h2 class="">{{ $t("portfolio.title") }}</h2>
         </div>
-        <div class="col-12col-md-4">
-          <h6 class="mt-5 sub-title-project">
+        <div class="col-12 col-md-4">
+          <h6 class="mt-5 sub-title-project" :class="{ 'ps-4': !isMobile }">
             {{ $t("portfolio.description") }}.
           </h6>
         </div>
@@ -27,7 +30,6 @@
           }"
         >
           <a
-            data-cursor-hover
             :class="{ 'list-portfolio': !isMobile }"
             :href="'/#/portfolio/' + project.name.split(' ').join('-')"
             >{{ project.name }}</a

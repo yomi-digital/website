@@ -15,7 +15,6 @@
       </a>
       <a
         class="w-75 text-center"
-        data-cursor-hover
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
         "
@@ -39,7 +38,6 @@
       <a
         v-if="!isMobile && !isTablet"
         class="text-end w-auto"
-        data-cursor-hover
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
         "

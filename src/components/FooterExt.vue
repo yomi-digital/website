@@ -1,19 +1,21 @@
 <template>
   <div>
-    <div :class="{'d-flex flex-column justify-content-center' : isMobile}" class="custom-card py-4 px-4 mb-2">
-      <h6 :class="{'text-center' : isMobile}" class="title-carousel">{{$t("footer.title_carousel")}}!</h6>
+    <div
+      :class="{ 'd-flex flex-column justify-content-center': isMobile }"
+      class="custom-card py-4 px-4 mb-2"
+    >
+      <h6 :class="{ 'text-center': isMobile }" class="title-carousel">
+        {{ $t("footer.title_carousel") }}!
+      </h6>
       <div class="mt-5 mb-5">
-        <agile
-        class="patners"
-        :options="myOptions"
-        >
+        <agile class="patners" :options="myOptions">
           <div class="slide">
             <a href="https://www.banklessconsulting.com/" target="_blank">
               <img src="../assets/partners/BC_logo_twitter.svg" alt="" />
             </a>
           </div>
           <div class="slide">
-              <img src="../assets/partners/Frame.svg" alt="" />
+            <img src="../assets/partners/Frame.svg" alt="" />
           </div>
           <div class="slide">
             <a href="https://quadrans.io/" target="_blank">
@@ -49,54 +51,6 @@
         </agile>
       </div>
     </div>
-    <!-- <div class="custom-card mt-1 py-4 px-4">
-      <h3 class="border-bottom-light pb-3 mb-5">
-        Contact Us
-        <i class="fa-regular fa-paper-plane ms-3" style="font-size: 3rem"></i>
-      </h3>
-      <div
-        class="mt-5 mb-5"
-        :class="{ 'd-flex align-items-end justify-content-between': !isMobile }"
-      >
-        <ul>
-          <li><a href="/">Menu</a></li>
-          <li><a href="/">Privacy Policy</a></li>
-          <li><a href="/">Legal Terms</a></li>
-          <li>
-            <a href="/"
-              >Copyright© {{ new Date().getFullYear() }} all right reserved
-              YOMI</a
-            >
-          </li>
-        </ul>
-        <div class="d-flex-align-items-center" :class="{ 'mt-5': isMobile }">
-          <a
-            class="btn-social me-3"
-            href="https://discord.gg/w54Jbd4Qhz"
-            target="_blank"
-            >DIS</a
-          >
-          <a
-            class="btn-social me-3"
-            href="https://www.instagram.com/yomi_web3/"
-            target="_blank"
-            >IG</a
-          >
-          <a
-            class="btn-social me-3"
-            href="https://twitter.com/YOMI_WEB3"
-            target="_blank"
-            >TW</a
-          >
-          <a
-            class="btn-social me-3"
-            href="https://www.linkedin.com/company/yomidigitalhub/"
-            target="_blank"
-            >IN</a
-          >
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -117,7 +71,7 @@ export default {
               dots: false,
               slidesToShow: 1,
               navButtons: true,
-              centerMode:true,
+              centerMode: true,
               autoplaySpeed: 5000,
             },
           },
@@ -127,9 +81,9 @@ export default {
             settings: {
               navButtons: true,
               dots: false,
-              infinite : true,
+              infinite: true,
               slidesToShow: 2,
-              centerMode:true,
+              centerMode: true,
               autoplaySpeed: 5000,
             },
           },
@@ -138,9 +92,9 @@ export default {
             settings: {
               navButtons: true,
               dots: false,
-              infinite : true,
+              infinite: true,
               slidesToShow: 3,
-              centerMode:false,
+              centerMode: false,
               autoplaySpeed: 5000,
             },
           },

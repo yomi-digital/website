@@ -4,25 +4,17 @@
       :class="isMobile ? 'mb-2' : 'mb-5'"
       class="d-flex justify-content-between align-items-center"
     >
-      <a data-cursor-hover href="https://form.yomi.digital/" target="_blank">
+      <a href="https://form.yomi.digital/" target="_blank">
         <p :class="{ 'mb-0': isMobile }" class="buble-text">
           {{ $t("menu.talk") }}
         </p>
       </a>
       <div class="d-flex">
-        <p
-          data-cursor-hover
-          @click="handleChangeIt()"
-          class="text-lang color-link"
-        >
+        <p @click="handleChangeIt()" class="text-lang color-link hoverPointer">
           IT
         </p>
         <p style="cursor: default" class="text-lang">/</p>
-        <p
-          data-cursor-hover
-          @click="handleChangeEn()"
-          class="text-lang color-link"
-        >
+        <p @click="handleChangeEn()" class="text-lang color-link hoverPointer">
           EN
         </p>
       </div>

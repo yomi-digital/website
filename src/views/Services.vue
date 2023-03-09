@@ -18,7 +18,7 @@
           >
             <h4>{{ $t("service.firstBanner") }}&nbsp;</h4>
           </MarqueeText>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextFirst === 'blockchain') {
                 showTextFirst = '';
@@ -32,11 +32,16 @@
               active: showTextFirst === 'blockchain',
               'lft-40': !isMobile,
             }"
-            class="single-service position-one transform-rotate-one"
+            class="
+              single-service
+              position-one
+              transform-rotate-one
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.blockchain") }}</p>
           </div>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextFirst === 'metaverse') {
                 showTextFirst = '';
@@ -50,11 +55,16 @@
               active: showTextFirst === 'metaverse',
               'lft-10': !isMobile,
             }"
-            class="single-service position-two transform-rotate-two"
+            class="
+              single-service
+              position-two
+              transform-rotate-two
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.metaverse") }}</p>
           </div>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextFirst === 'ai') {
                 showTextFirst = '';
@@ -68,7 +78,12 @@
               active: showTextFirst === 'ai',
               'lft-75 me-5 mb-4': !isMobile && !isTablet && !isMiddleScreen,
             }"
-            class="single-service position-five transform-rotate-three"
+            class="
+              single-service
+              position-five
+              transform-rotate-three
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.ai") }}</p>
           </div>
@@ -94,9 +109,9 @@
             :duration="$t('service.secondBanner').length * 0.5"
             reverse
           >
-            <h4 data-cursor-hover>{{ $t("service.secondBanner") }}&nbsp;</h4>
+            <h4 class="hoverPointer">{{ $t("service.secondBanner") }}&nbsp;</h4>
           </MarqueeText>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextSecond === 'marketplace') {
                 showTextSecond = '';
@@ -110,11 +125,16 @@
               active: showTextSecond === 'marketplace',
               'lft-15': !isMobile,
             }"
-            class="single-service position-one transform-rotate-two"
+            class="
+              single-service
+              position-one
+              transform-rotate-two
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.marketplace") }}</p>
           </div>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextSecond === 'app') {
                 showTextSecond = '';
@@ -125,11 +145,16 @@
               }
             "
             :class="{ active: showTextSecond === 'app', 'lft-40': !isMobile }"
-            class="single-service position-three transform-rotate-two"
+            class="
+              single-service
+              position-three
+              transform-rotate-two
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.app") }}</p>
           </div>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextSecond === 'website') {
                 showTextSecond = '';
@@ -143,7 +168,12 @@
               active: showTextSecond === 'website',
               'lft-75': !isMobile,
             }"
-            class="single-service position-one transform-rotate-three"
+            class="
+              single-service
+              position-one
+              transform-rotate-three
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.website") }}</p>
           </div>
@@ -172,7 +202,7 @@
           >
             <h4>{{ $t("service.thirdBanner") }}&nbsp;</h4>
           </MarqueeText>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextThird === 'design') {
                 showTextThird = '';
@@ -183,11 +213,17 @@
               }
             "
             :class="{ active: showTextThird === 'design' }"
-            class="single-service position-one transform-rotate-one lft-50"
+            class="
+              single-service
+              position-one
+              transform-rotate-one
+              lft-50
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.design") }}</p>
           </div>
-          <div data-cursor-hover
+          <div
             @click="
               if (showTextThird === 'branding') {
                 showTextThird = '';
@@ -201,7 +237,13 @@
               active: showTextThird === 'branding',
               'lft-40 ms-5': !isMobile && !isTablet,
             }"
-            class="single-service position-three transform-rotate-two lft-25"
+            class="
+              single-service
+              position-three
+              transform-rotate-two
+              lft-25
+              hoverPointer
+            "
           >
             <p class="text-strong">{{ $t("service.branding") }}</p>
           </div>
@@ -217,14 +259,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 text-center link-portfolio">
+        <div class="col-12 text-center">
           <Bubble
             :resizeHeightBubble="isMobile || isTablet ? 350 : 250"
             :resizeWidthBubble="isMobile || isTablet ? 200 : 480"
           />
           <a
+            style="font-size: 2.8rem"
             :class="{ 'w-50': !isMobile }"
-            class="m-auto"
+            class="m-auto link-portfolio"
             href="#/internal-project"
             >{{ $t("service.mego_ticket") }}</a
           >

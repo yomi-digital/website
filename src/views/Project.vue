@@ -1,14 +1,18 @@
 <template>
-  <div class="portfolio-inner 4" data-cursor-mix-blend-mode="difference">
+  <div
+    class="portfolio-inner"
+    data-cursor-mix-blend-mode="difference"
+    :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '60px' }]"
+  >
     <ButtonNav />
     <div v-if="Object.keys(project).length > 0">
-      <div class="container-fluid pd-container mt-5">
+      <div class="container-fluid px-4">
         <div class="row">
           <div class="col-12">
             <h2 class="">{{ $t("portfolio.title") }}</h2>
           </div>
           <div class="col-12 col-md-4">
-            <h6 class="mt-5 sub-title-project">
+            <h6 class="mt-5 sub-title-project" :class="{ 'ps-4': !isMobile }">
               {{ $t("portfolio.description") }}
             </h6>
           </div>

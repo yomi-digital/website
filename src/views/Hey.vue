@@ -6,8 +6,8 @@
       :isLoading="isLoading"
       :isEnter="isEnter"
       :class="geisha ? 'about pt-4 geisha' : 'about'"
-      style="overlfow: hideen"
-      :style="[!isMobile ? { marginTop: '80px' } : {}]"
+      style="overlfow: hidden"
+      :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '60px' }]"
     >
       <div class="fade-in" v-show="!geisha">
         <ButtonNav />
@@ -47,9 +47,7 @@
           </div>
           <div class="position-absolute" style="bottom: 0px">
             <div v-if="!isMobile" class="pd-container mb-4">
-              <a data-cursor-hover class="cta underline" href="#/team">{{
-                $t("about.link")
-              }}</a>
+              <a class="cta underline" href="#/team">{{ $t("about.link") }}</a>
             </div>
             <MarqueeText
               class="title-project"
@@ -57,7 +55,7 @@
               :duration="$t('banner.about').length * 0.4"
               style="z-index: 1"
             >
-              <h4 data-cursor-hover>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
+              <h4>&nbsp;{{ $t("banner.about") }}&nbsp;</h4>
             </MarqueeText>
           </div>
         </div>

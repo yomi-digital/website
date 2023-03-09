@@ -13,14 +13,14 @@
               vh16: isMobile,
             }"
           >
-            <div :class="isMobile ? 'h-100' : 'vh-100'" data-cursor-hover>
+            <div :class="isMobile ? 'h-100' : 'vh-100'">
               <a class="nav-link-dark" href="/">
                 <MarqueeText
                   class="marquee-rotated"
                   :repeat="20"
                   :duration="$t('menu.about').length * 0.5"
                 >
-                  <div>{{ $t("menu.about") }}&nbsp;</div>
+                  <div class="hoverPointer">{{ $t("menu.about") }}&nbsp;</div>
                 </MarqueeText></a
               >
             </div>
