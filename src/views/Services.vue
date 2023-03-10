@@ -1,7 +1,10 @@
 <template>
-  <div class="services pt-4" data-cursor-mix-blend-mode="difference">
+  <div class="services pt-4">
     <ButtonNav />
-    <div class="container-fluid pd-container mt-5">
+    <div
+      class="container-fluid pd-container"
+      :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]"
+    >
       <div class="row margin-btm">
         <div class="col-12">
           <h2 class="">{{ $t("menu.service") }}</h2>
@@ -267,7 +270,7 @@
           <a
             style="font-size: 2.8rem"
             :class="{ 'w-50': !isMobile }"
-            class="m-auto link-portfolio"
+            class="m-auto link-portfolio color-primary"
             href="#/internal-project"
             >{{ $t("service.mego_ticket") }}</a
           >
@@ -309,6 +312,25 @@ export default {
       showTextThird: "",
     };
   },
-  methods: {},
+  mounted() {
+    this.heartBeatAnimation();
+  },
+  methods: {
+    heartBeatAnimation() {
+      const pulsatingElements = document.querySelectorAll(".single-service");
+      for (let i = 0; i < pulsatingElements.length; ++i) {
+        pulsatingElements[i].classList.add("heartbeat");
+        setTimeout(function () {
+          pulsatingElements[i].classList.remove("heartbeat");
+        }, 800);
+        setInterval(function () {
+          pulsatingElements[i].classList.add("heartbeat");
+          setTimeout(function () {
+            pulsatingElements[i].classList.remove("heartbeat");
+          }, 800);
+        }, 5000);
+      }
+    },
+  },
 };
 </script>

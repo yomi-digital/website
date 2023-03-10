@@ -1,10 +1,13 @@
 <template>
-  <div class="pt-4" data-cursor-mix-blend-mode="difference">
+  <div class="pt-4">
     <ButtonNav />
-    <div class="container-fluid mt-5">
+    <div
+      class="container-fluid"
+      :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]"
+    >
       <div class="row pb-0 pd-container">
         <div class="col-12">
-          <h2 class="">Mego</h2>
+          <h2>Mego</h2>
         </div>
         <div class="col-12 col-lg-5">
           <h6 class="mt-5 sub-title-project">

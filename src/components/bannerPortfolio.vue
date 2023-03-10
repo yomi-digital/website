@@ -1,23 +1,32 @@
 <template>
   <div class="banner cta-banner">
     <div
-      :class="
-        isMobile
-          ? 'flex-column justify-content-center'
-          : 'justify-content-between'
-      "
-      class="d-flex align-items-center h-100"
+      :class="isMobile ? 'flex-column' : ''"
+      class="d-flex align-items-center justify-content-center h-100"
     >
-      <a class="w-auto h-auto mt-5" href="/#/portfolio">
-        <div :class="{ 'mb-5 pb-5 ': !isMobile }" class="text-uppercase">
+      <a
+        class="w-auto hover-undeline"
+        href="/#/portfolio"
+        style="color: black"
+        :class="{ 'mt-4': isMobile }"
+        :style="[
+          isDesktop
+            ? {
+                position: 'absolute',
+                left: '0',
+                top: '4rem',
+                margin: '0 0 0 3rem',
+              }
+            : { height: '40%' },
+        ]"
+      >
+        <div class="text-uppercase">
           <p style="min-width: 160px">{{ $t("banner.view") }}</p>
         </div>
       </a>
       <a
         class="w-75 text-center"
-        :href="
-          '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
-        "
+        :href="'/#/portfolio/' + encodeURIComponent(selectedProject.name)"
       >
         <h3
           id="nameProject"
@@ -37,16 +46,24 @@
 
       <a
         v-if="!isMobile && !isTablet"
-        class="text-end w-auto"
+        class="text-end w-auto h-auto"
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
         "
+        :style="[
+          isDesktop
+            ? { position: 'absolute', right: '0', margin: '0 3rem 0 0' }
+            : {},
+        ]"
       >
-        <div
+        <a
+          :href="
+            '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
+          "
           class="pb-3 h-100 d-flex align-items-center justify-content-center"
         >
           <img src="../assets/images/arrow-right.svg" alt="" />
-        </div>
+        </a>
       </a>
     </div>
   </div>

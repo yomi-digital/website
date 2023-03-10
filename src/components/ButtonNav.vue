@@ -1,5 +1,5 @@
 <template>
-  <div data-cursor-mix-blend-mode="difference">
+  <div>
     <header id="head">
       <a href="/">
         <img

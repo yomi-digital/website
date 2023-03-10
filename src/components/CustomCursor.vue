@@ -68,7 +68,6 @@ export default {
         [...clickableElements].includes(target)
       ) {
         this.hover = true;
-        console.log("hover on", this.hover);
       }
     });
 
@@ -83,7 +82,6 @@ export default {
         [...clickableElements].includes(target)
       ) {
         this.hover = false;
-        console.log("hover off", this.hover);
       }
     });
   },
@@ -113,6 +111,7 @@ export default {
     z-index: 5555;
     backface-visibility: hidden;
     transition: opacity 0.6s ease;
+    mix-blend-mode: difference;
   }
 
   &__point {
@@ -128,6 +127,7 @@ export default {
     z-index: 55555555;
     backface-visibility: hidden;
     will-change: transform;
+    mix-blend-mode: difference;
   }
 
   &_hover {
@@ -137,11 +137,13 @@ export default {
       height: 50px;
       transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
       border: 2px solid fuchsia;
+      mix-blend-mode: normal;
     }
     .g-cursor__point {
       background: fuchsia;
       width: 15px;
       height: 15px;
+      mix-blend-mode: normal;
     }
   }
 }

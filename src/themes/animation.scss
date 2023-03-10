@@ -361,8 +361,8 @@
   }
 }
 .heartbeat {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 1s ease-in-out infinite both;
+  animation: heartbeat 1s ease-in-out infinite both;
 }
 @-webkit-keyframes heartbeat {
   from {
@@ -670,4 +670,9 @@
       opacity: 1;
     }
   }
+}
+.invertFilter {
+  box-shadow: fuchsia 0px 60px 90px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: all 0.5s;
 }

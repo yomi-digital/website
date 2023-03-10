@@ -1,5 +1,5 @@
 <template>
-  <div class="post" data-cursor-mix-blend-mode="difference">
+  <div class="post">
     <div class="gap-2"></div>
     <ButtonNav />
     <div class="container p-5 mt-5 mb-5">

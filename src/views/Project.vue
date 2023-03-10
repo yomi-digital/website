@@ -1,7 +1,6 @@
 <template>
   <div
     class="portfolio-inner"
-    data-cursor-mix-blend-mode="difference"
     :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '60px' }]"
   >
     <ButtonNav />

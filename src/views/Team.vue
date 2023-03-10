@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="margin-top: 80px" data-cursor-mix-blend-mode="difference">
+    <div :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]">
       <ButtonNav />
       <!-- TEAM SECTION -->
       <div>
@@ -10,7 +10,7 @@
         >
           <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
-              <div class="" :class="{ 'mt-3': isMobile }">
+              <div class="">
                 <h2 :class="isMobile ? 'enter-page-mobile' : 'enter-page'">
                   {{ $t("menu.team") }}
                 </h2>
@@ -59,13 +59,7 @@
               >
                 <div
                   @click="toggleTeam(team)"
-                  class="
-                    box-team-container
-                    justify-content-center
-                    d-flex
-                    my-5
-                    
-                  "
+                  class="box-team-container justify-content-center d-flex my-5"
                   :class="{ 'border-image': !showImage, 'fade-in': showImage }"
                 >
                   <div class="bk-team hoverPointer">
@@ -107,7 +101,10 @@
                     my-5
                     pointer
                   "
-                  :class="{ 'border-image': !showImage }"
+                  :class="{
+                    'border-image': !showImage,
+                    'invertFilter': checkedMobile,
+                  }"
                 >
                   <img
                     @click="showMember(team)"

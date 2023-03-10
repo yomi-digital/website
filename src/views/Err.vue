@@ -1,5 +1,5 @@
 <template>
-  <div class="full-h position-relative" data-cursor-mix-blend-mode="difference">
+  <div class="full-h position-relative">
     <div class="err"></div>
     <MarqueeText
       class="position-absolute index top-0"

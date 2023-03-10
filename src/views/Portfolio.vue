@@ -1,8 +1,5 @@
 <template>
-  <div
-    data-cursor-mix-blend-mode="difference"
-    :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '60px' }]"
-  >
+  <div :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]">
     <ButtonNav />
     <div class="container-fluid px-5">
       <div class="row">
