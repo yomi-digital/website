@@ -10,12 +10,17 @@ export default {
   components: {
     CustomCursor,
   },
-  mounted() {
-    setTimeout(function () {
+  beforeCreate() {
+    setTimeout(() => {
+      this.privacyPolicy();
+    }, 6000);
+  },
+  methods: {
+    privacyPolicy () {
+      const app = this;
       const scriptIubenda = document.createElement("script");
       scriptIubenda.type = "text/javascript";
-
-      if (this.$i18n.locale == "en") {
+      if (app.$i18n.locale == "en") {
         scriptIubenda.innerHTML = `
       var _iub = _iub || [];
       _iub.csConfiguration = {
@@ -109,7 +114,7 @@ export default {
       scriptIubenda3.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
       scriptIubenda3.charset = "UTF-8";
       document.head.append(scriptIubenda3);
-    }, 5500);
+    },
   },
 };
 </script>
