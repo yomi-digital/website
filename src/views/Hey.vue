@@ -7,7 +7,7 @@
       style="overlfow: hidden"
       :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]"
     >
-      <div class="fade-in" v-show="!geisha">
+      <div class="fade-in" v-show="!geisha && !isLoading">
         <ButtonNav />
         <div
           class="position-relative"
@@ -86,7 +86,7 @@ export default {
   name: "home",
   data() {
     return {
-      geisha: true,
+      geisha: false,
 
       isLoading: false,
       isEnter: false,
@@ -103,20 +103,23 @@ export default {
     Loader,
   },
   mounted() {
-    const app = this;
     this.loader();
     this.checkIsEnter();
-    setTimeout(function () {
-      app.geisha = false;
-    }, 2000);
+    this.startGeisha();
   },
   methods: {
     loader() {
       const app = this;
+      let page = document.getElementsByTagName("html")[0];
+      let bodyPage = document.getElementsByTagName("body")[0];
       const loaded = window.localStorage.getItem("loaded");
       if (loaded === null || loaded.length === 0) {
         app.isLoading = true;
         const timeout = this.isMobile ? 2500 : 5000;
+
+        page.style.overflowY = "hidden";
+        bodyPage.style.overflowY = "hidden";
+
         setTimeout(function () {
           app.isLoading = false;
           window.localStorage.setItem("loaded", "yes");
@@ -132,7 +135,14 @@ export default {
     enterWebsite() {
       const app = this;
       app.isEnter = true;
+      let page = document.getElementsByTagName("html")[0];
+      let bodyPage = document.getElementsByTagName("body")[0];
       window.localStorage.setItem("entered", "yes");
+      setTimeout(function () {
+        app.geisha = false;
+        page.style.overflowY = "auto";
+        bodyPage.style.overflowY = "auto";
+      }, 2000);
     },
     checkIsEnter() {
       const app = this;
@@ -141,6 +151,22 @@ export default {
         app.isEnter = false;
       } else {
         app.isEnter = true;
+      }
+    },
+    startGeisha() {
+      const app = this;
+      let page = document.getElementsByTagName("html")[0];
+      let bodyPage = document.getElementsByTagName("body")[0];
+
+      if (app.isEnter) {
+        page.style.overflowY = "hidden";
+        bodyPage.style.overflowY = "hidden";
+        app.geisha = true;
+        setTimeout(function () {
+          app.geisha = false;
+          page.style.overflowY = "auto";
+          bodyPage.style.overflowY = "auto";
+        }, 2000);
       }
     },
   },

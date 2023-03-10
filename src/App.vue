@@ -11,10 +11,12 @@ export default {
     CustomCursor,
   },
   mounted() {
-    const scriptIubenda = document.createElement("script");
-    scriptIubenda.type = "text/javascript";
-    if (this.$i18n.locale == "en") {
-      scriptIubenda.innerHTML = `
+    setTimeout(function () {
+      const scriptIubenda = document.createElement("script");
+      scriptIubenda.type = "text/javascript";
+
+      if (this.$i18n.locale == "en") {
+        scriptIubenda.innerHTML = `
       var _iub = _iub || [];
       _iub.csConfiguration = {
         askConsentAtCookiePolicyUpdate: true,
@@ -55,8 +57,8 @@ export default {
         },
       };
       `;
-    } else {
-      scriptIubenda.innerHTML = `
+      } else {
+        scriptIubenda.innerHTML = `
       var _iub = _iub || [];
       _iub.csConfiguration = {
         askConsentAtCookiePolicyUpdate: true,
@@ -96,17 +98,18 @@ export default {
           textColor: "#000000",
         },
       }`;
-    }
-    document.head.append(scriptIubenda);
-    const scriptIubenda2 = document.createElement("script");
-    scriptIubenda2.type = "text/javascript";
-    scriptIubenda2.src = "//cdn.iubenda.com/cs/gpp/stub.js";
-    document.head.append(scriptIubenda2);
-    const scriptIubenda3 = document.createElement("script");
-    scriptIubenda3.type = "text/javascript";
-    scriptIubenda3.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
-    scriptIubenda3.charset = "UTF-8";
-    document.head.append(scriptIubenda3);
+      }
+      document.head.append(scriptIubenda);
+      const scriptIubenda2 = document.createElement("script");
+      scriptIubenda2.type = "text/javascript";
+      scriptIubenda2.src = "//cdn.iubenda.com/cs/gpp/stub.js";
+      document.head.append(scriptIubenda2);
+      const scriptIubenda3 = document.createElement("script");
+      scriptIubenda3.type = "text/javascript";
+      scriptIubenda3.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
+      scriptIubenda3.charset = "UTF-8";
+      document.head.append(scriptIubenda3);
+    }, 5500);
   },
 };
 </script>
