@@ -75,7 +75,11 @@
                 ></i>
               </h6>
               <a :href="project.link" target="_blank"
-                ><h6 style="text-underline-offset: 4px" class="underline" :style="[isMobile ? {lineHeight: '1.3'} : {}]">
+                ><h6
+                  style="text-underline-offset: 4px"
+                  class="underline"
+                  :style="[isMobile ? { lineHeight: '1.3' } : {}]"
+                >
                   {{ project.name }}
                 </h6></a
               >
@@ -179,6 +183,7 @@ export default {
   },
   mounted() {
     this.fetchProjects();
+    this.glictchMobile();
   },
   methods: {
     fetchProjects() {
@@ -201,6 +206,16 @@ export default {
     showProject(uri) {
       location.href = uri;
       location.reload();
+    },
+    glictchMobile() {
+      const app = this;
+      if (app.project) {
+        setTimeout(function () {
+          let imgProject = document.getElementsByClassName("project-header");
+          console.log(imgProject)
+          imgProject[0].classList.remove("glitch");
+        }, 1000);
+      }
     },
   },
 };
