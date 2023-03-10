@@ -37,7 +37,7 @@ const routes = [
   },
   {
     path: "/portfolio/:id",
-    name: "project",
+    name: "single_project",
     component: Project,
   },
   {

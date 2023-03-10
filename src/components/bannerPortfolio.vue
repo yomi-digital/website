@@ -81,7 +81,13 @@ export default {
       selectedProject: {},
     };
   },
-
+  watch: {
+    $route(to, from) {
+      if (from.name == "single_project" && to.name == "single_project") {
+        window.location.reload();
+      }
+    },
+  },
   mounted() {
     const app = this;
     app.randomProject();

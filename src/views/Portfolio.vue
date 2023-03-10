@@ -59,7 +59,7 @@ import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
 
 export default {
-  name: "about",
+  name: "portfolio-page",
   mixins: [checkViewport],
   components: {
     Footer,

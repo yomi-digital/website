@@ -75,7 +75,7 @@
                 ></i>
               </h6>
               <a :href="project.link" target="_blank"
-                ><h6 style="text-underline-offset: 4px" class="underline">
+                ><h6 style="text-underline-offset: 4px" class="underline" :style="[isMobile ? {lineHeight: '1.3'} : {}]">
                   {{ project.name }}
                 </h6></a
               >
@@ -161,7 +161,7 @@ import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
 
 export default {
-  name: "project",
+  name: "single_project",
   mixins: [checkViewport],
   components: {
     FooterExt,
