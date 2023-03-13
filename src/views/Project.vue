@@ -25,7 +25,7 @@
           >
             <div
               class="project-header"
-              :class="{ 'mt-5 glitch': isMobile, 'glitch-hover': !isMobile }"
+              :class="{ 'mt-5 glitch': !isDesktop, 'glitch-hover': isDesktop }"
             >
               <div class="preview-img">
                 <img

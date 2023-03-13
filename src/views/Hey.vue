@@ -103,11 +103,26 @@ export default {
     Loader,
   },
   mounted() {
-    this.loader();
     this.checkIsEnter();
-    this.startGeisha();
   },
   methods: {
+    checkIsEnter() {
+      const app = this;
+      console.log("init check is enter");
+      const entered = window.localStorage.getItem("entered");
+      if (entered === null || entered.length === 0) {
+        // console.log("isEnter is", app.isEnter);
+        // console.log("NOT ENTERED YET, trigger loader");
+        app.isEnter = false;
+        app.loader();
+      } else {
+        app.isEnter = true;
+        // console.log("isEnter is", app.isEnter);
+        // console.log("ENTERED YET, trigger geisha");
+        app.startGeisha();
+      }
+    },
+    
     loader() {
       const app = this;
       let page = document.getElementsByTagName("html")[0];
@@ -122,39 +137,26 @@ export default {
 
         setTimeout(function () {
           app.isLoading = false;
-          window.localStorage.setItem("loaded", "yes");
           if (!app.isLoading) {
-            app.enterWebsite();
+            window.localStorage.setItem("entered", "yes");
+            page.style.overflowY = "auto";
+            bodyPage.style.overflowY = "auto";
+            // console.log(
+            //   "oversrollY abilitated",
+            //   page.style.overflowY,
+            //   bodyPage.style.overflowY
+            // );
           }
         }, timeout);
       } else {
         app.isLoading = false;
-        app.enterWebsite();
+        window.localStorage.setItem("entered", null);
       }
     },
-    enterWebsite() {
-      const app = this;
-      app.isEnter = true;
-      let page = document.getElementsByTagName("html")[0];
-      let bodyPage = document.getElementsByTagName("body")[0];
-      window.localStorage.setItem("entered", "yes");
-      setTimeout(function () {
-        app.geisha = false;
-        page.style.overflowY = "auto";
-        bodyPage.style.overflowY = "auto";
-      }, 2000);
-    },
-    checkIsEnter() {
-      const app = this;
-      const entered = window.localStorage.getItem("entered");
-      if (entered === null || entered.length === 0) {
-        app.isEnter = false;
-      } else {
-        app.isEnter = true;
-      }
-    },
+
     startGeisha() {
       const app = this;
+      // console.log("init geisha animation");
       let page = document.getElementsByTagName("html")[0];
       let bodyPage = document.getElementsByTagName("body")[0];
 
@@ -166,6 +168,11 @@ export default {
           app.geisha = false;
           page.style.overflowY = "auto";
           bodyPage.style.overflowY = "auto";
+          // console.log(
+          //   "oversrollY abilitated",
+          //   page.style.overflowY,
+          //   bodyPage.style.overflowY
+          // );
         }, 2000);
       }
     },

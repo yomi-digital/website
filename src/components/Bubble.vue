@@ -10,21 +10,26 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
+
 const THREE = window.THREE;
 
 export default {
   name: "bubble",
   mixins: [checkViewport],
-  props:['resizeHeightBubble','resizeWidthBubble'] ,
+  props: ["resizeHeightBubble", "resizeWidthBubble"],
 
   data() {
     return {
       noise: {},
       isModify: false,
+      randomNumberX: 0,
+      randomNumberY: 0,
+      randomNumberZ: 0,
     };
   },
   mounted() {
     const app = this;
+    // this.generateRandom();
     setTimeout(() => {
       !(function (t) {
         var o = (t.noise = {});
@@ -209,6 +214,13 @@ export default {
     }, 100);
   },
   methods: {
+    generateRandom() {
+      const app = this;
+      app.randomNumberX = Math.random() * (1.5 + 1) - 1;
+      app.randomNumberY = Math.random() * (1.5 + 1) - 1;
+      app.randomNumberZ = Math.random() * (2 + 1) - 1;
+      console.log(app.randomNumberX);
+    },
     initBubble() {
       const app = this;
       var renderer = new THREE.WebGLRenderer({
@@ -223,9 +235,9 @@ export default {
         0.1,
         1000
       );
-      if(app.isMobile){
+      if (app.isMobile) {
         camera.position.z = 7;
-      }else{
+      } else {
         camera.position.z = 4;
       }
 
@@ -257,29 +269,45 @@ export default {
       }
 
       var update = function () {
-        for (var i = 0; i < mesh.geometry.vertices.length; i++) {
-          var v = mesh.geometry.vertices[i];
-          if (app.isModify) {
-            v.normalize().multiplyScalar(
+        var originalVertices = mesh.geometry.vertices;
+        var targetVertices = originalVertices.slice(); // copia la forma originale
+        var lerpAmount = 0.05;
+        if (app.isModify) {
+          for (let i = 0; i < mesh.geometry.vertices.length; i++) {
+            let v = mesh.geometry.vertices[i];
+            var targetScale =
               0.18 *
                 app.noise.simplex2(
-                  v.x * 1 + Date.now() * 0.0008,
-                  v.y * 1,
-                  v.z * 2
+                  v.x * app.randomNumberX + Date.now() * 0.0008,
+                  v.y * app.randomNumberY,
+                  v.z * app.randomNumberZ
                 ) +
-                1
-            );
-          } else {
-            v.normalize().multiplyScalar(
-              0.15 *
-                app.noise.simplex3(
-                  v.x * 1 + Date.now() * 0.001,
-                  v.y * 1,
-                  v.z * 1
-                ) +
-                1
-            );
+              1;
+            targetVertices[i] = v
+              .clone()
+              .normalize()
+              .multiplyScalar(targetScale);
           }
+        } else {
+          for (let i = 0; i < mesh.geometry.vertices.length; i++) {
+            let v = mesh.geometry.vertices[i];
+            targetVertices[i] = originalVertices[i]
+              .clone()
+              .normalize()
+              .multiplyScalar(
+                0.15 *
+                  app.noise.simplex3(
+                    v.x * 1 + Date.now() * 0.001,
+                    v.y * 1,
+                    v.z * 1
+                  ) +
+                  1
+              );
+          }
+        }
+        for (var i = 0; i < mesh.geometry.vertices.length; i++) {
+          var v = mesh.geometry.vertices[i];
+          v.lerp(targetVertices[i], lerpAmount);
         }
         mesh.geometry.computeVertexNormals();
         mesh.geometry.normalsNeedUpdate = true;
@@ -300,9 +328,11 @@ export default {
       }
       render();
     },
+
     changeOn() {
       const app = this;
       app.isModify = true;
+      app.generateRandom();
     },
     changeOff() {
       const app = this;

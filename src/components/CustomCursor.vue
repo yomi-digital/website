@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div
-      v-if="isDesktop"
+      v-if="isDesktop || isMiddleScreen"
       :class="[
         'g-cursor',
         { 'g-cursor_hover': hover },

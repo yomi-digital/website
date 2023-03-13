@@ -26,7 +26,7 @@
       </a>
       <a
         class="w-75 text-center"
-        :href="'/#/portfolio/' + encodeURIComponent(selectedProject.name)"
+        :href="'/#/portfolio/' + selectedProject.name"
       >
         <h3
           id="nameProject"
@@ -84,7 +84,7 @@ export default {
   watch: {
     $route(to, from) {
       if (from.name == "single_project" && to.name == "single_project") {
-        window.location.reload();
+       this.$emit("forceClose")
       }
     },
   },

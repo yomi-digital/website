@@ -129,50 +129,57 @@
         </div>
         <div
           class="d-flex align-items-center"
-          :class="
-            isMobile
-              ? 'mt-4 pt-4 justify-content-center'
-              : null || isTablet
-              ? 'me-1'
-              : null
-          "
+          :class="{
+            'mt-4 pt-4 justify-content-center': isMobile,
+            'me-1': !isMobile,
+            'flex-column': isTablet,
+          }"
         >
-          <a
-            v-if="!isMobile"
-            class="btn-social me-3 text-uppercase"
-            href="https://form.yomi.digital/"
-            target="_blank"
+          <div
+            :class="{ 'mb-3': isTablet }"
+            :style="[isTablet ? { width: '100%' } : {}]"
           >
-            {{ $t("menu.talk") }}
-          </a>
+            <a
+              :style="[isTablet ? { width: '100%' } : {}]"
+              v-if="!isMobile"
+              class="btn-social text-uppercase"
+              :class="{ 'me-3': !isTablet }"
+              href="https://form.yomi.digital/"
+              target="_blank"
+            >
+              {{ $t("menu.talk") }}
+            </a>
+          </div>
 
-          <a
-            class="btn-social"
-            :class="isTablet ? 'me-1' : 'me-3'"
-            href="https://discord.gg/w54Jbd4Qhz"
-            target="_blank"
-            >DS</a
-          >
-          <a
-            class="btn-social"
-            :class="isTablet ? 'me-1' : 'me-3'"
-            href="https://www.instagram.com/yomi_web3/"
-            target="_blank"
-            >IG</a
-          >
-          <a
-            class="btn-social"
-            :class="isTablet ? 'me-1' : 'me-3'"
-            href="https://twitter.com/YOMI_WEB3"
-            target="_blank"
-            >TW</a
-          >
-          <a
-            class="btn-social"
-            href="https://www.linkedin.com/company/yomidigitalhub/"
-            target="_blank"
-            >IN</a
-          >
+          <div class="d-flex">
+            <a
+              class="btn-social"
+              :class="isTablet ? 'me-1' : 'me-3'"
+              href="https://discord.gg/w54Jbd4Qhz"
+              target="_blank"
+              >DS</a
+            >
+            <a
+              class="btn-social"
+              :class="isTablet ? 'me-1' : 'me-3'"
+              href="https://www.instagram.com/yomi_web3/"
+              target="_blank"
+              >IG</a
+            >
+            <a
+              class="btn-social"
+              :class="isTablet ? 'me-1' : 'me-3'"
+              href="https://twitter.com/YOMI_WEB3"
+              target="_blank"
+              >TW</a
+            >
+            <a
+              class="btn-social"
+              href="https://www.linkedin.com/company/yomidigitalhub/"
+              target="_blank"
+              >IN</a
+            >
+          </div>
         </div>
       </div>
     </footer>
