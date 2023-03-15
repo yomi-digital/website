@@ -10,38 +10,40 @@
         style="color: black"
         :class="{ 'mt-4': isMobile }"
         :style="[
-          isDesktop
+          !isMobile
             ? {
                 position: 'absolute',
                 left: '0',
                 top: '4rem',
                 margin: '0 0 0 3rem',
-              }
+              } 
             : { height: '40%' },
         ]"
       >
         <div class="text-uppercase">
-          <p style="min-width: 160px">{{ $t("banner.view") }}</p>
+          <p v-if="!isTablet" style="min-width: 160px">
+            {{ $t("banner.view") }}
+          </p>
+          <p v-if="isTablet" style="min-width: 160px">
+            {{ $t("banner.view").split(" ")[0] }}<br />
+            {{ $t("banner.view").split(" ")[1] }}
+          </p>
         </div>
       </a>
       <a
-        class="w-75 text-center"
+        class=" cta-title" :class="{'text-center': !isTablet}"
         :href="'/#/portfolio/' + selectedProject.name"
       >
-        <h3
-          id="nameProject"
-          class="
-            text-uppercase
-            cta-title
-            mb-0
-            h-100
-            d-flex
-            align-items-center
-            justify-content-center
-          "
-        >
-          {{ selectedProject.name }}
-        </h3>
+        <span v-if="!isTablet">{{ selectedProject.name }}</span>
+        <span v-if="isTablet"
+          >{{ selectedProject.name.split(" ")[0] }}
+          <span v-if="selectedProject.name.split(' ')[1]"
+            ><br />{{ selectedProject.name.split(" ")[1] }}</span
+          >
+            <span v-if="selectedProject.name.split(' ')[2]"
+            ><br />{{ selectedProject.name.split(" ")[2] }}</span
+          >
+        </span>
       </a>
 
       <a
@@ -52,17 +54,15 @@
         "
         :style="[
           isDesktop
-            ? { position: 'absolute', right: '0', margin: '0 3rem 0 0' }
+            ? { position: 'absolute', right: '0', margin: '-10px 3rem 0 0' }
             : {},
         ]"
       >
         <a
-          :href="
-            '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
-          "
-          class="pb-3 h-100 d-flex align-items-center justify-content-center"
+          :href="'/#/portfolio/' + selectedProject.name"
+          class="d-flex align-items-center justify-content-center"
         >
-          <img src="../assets/images/arrow-right.svg" alt="" />
+          <img height="52px" src="../assets/images/arrow-right.svg" alt="" />
         </a>
       </a>
     </div>
@@ -84,7 +84,7 @@ export default {
   watch: {
     $route(to, from) {
       if (from.name == "single_project" && to.name == "single_project") {
-       this.$emit("forceClose")
+        this.$emit("forceClose");
       }
     },
   },

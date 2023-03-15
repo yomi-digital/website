@@ -5,7 +5,7 @@ html {
   background-color: var(--primary-color);
   overflow-x: hidden;
   * {
-    cursor: none ;
+    cursor: none;
   }
 }
 //   =======================================================================================
@@ -432,6 +432,7 @@ h1 {
     font-size: 4.375rem;
     line-height: 1;
     text-transform: uppercase;
+    font-size-adjust: 10px
   }
   .cta-text {
     @include secondary-font();
@@ -644,9 +645,14 @@ h1 {
     font-size: 1.56rem;
     text-transform: uppercase;
     border: 1px solid var(--font-color);
-    padding: 0.4rem 1.3rem;
+    padding: 1rem 2rem;
     border-radius: 100px;
     transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.56rem;
     &:hover {
       background-color: var(--font-color);
       color: var(--primary-color);
@@ -661,9 +667,10 @@ h1 {
       }
     }
     svg {
-      width: 22px;
+      height: 30px;
+      width: 30px;
       margin-left: 1rem;
-      padding-bottom: 0.2rem;
+      // padding-bottom: 0.2rem;
     }
   }
 }
@@ -991,17 +998,26 @@ button {
   width: calc(100vw / 5);
 }
 .buble-text {
-  padding: 10px 30px;
+  padding: 10px 30px 8px 30px;
   border: 1px solid var(--font-color);
   border-radius: 100px;
   vertical-align: middle;
   display: inline-block;
-  text-transform: uppercase;
   transition: all 0.3s;
+
+  span {
+    color: var(--high-contrast-color);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+
   &:hover {
-    background-color: var(--high-contrast-color);
-    color: var(--lighter-color);
     transition: all 0.3s;
+    background-color: var(--high-contrast-color);
+    span {
+      color: var(--lighter-color);
+    }
   }
 }
 .text-lang {

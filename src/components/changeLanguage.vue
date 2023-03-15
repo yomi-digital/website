@@ -4,10 +4,10 @@
       :class="isMobile ? 'mb-2' : 'mb-5'"
       class="d-flex justify-content-between align-items-center"
     >
-      <a href="https://form.yomi.digital/" target="_blank">
-        <p :class="{ 'mb-0': isMobile }" class="buble-text">
+      <a href="https://form.yomi.digital/" target="_blank" class="buble-text">
+        <span :class="{ 'mb-0': isMobile }" class="">
           {{ $t("menu.talk") }}
-        </p>
+        </span>
       </a>
       <div class="d-flex">
         <p @click="handleChangeIt()" class="text-lang color-link hoverPointer">
