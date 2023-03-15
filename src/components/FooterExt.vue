@@ -43,7 +43,7 @@
             </a>
           </div>
           <div class="slide">
-            <a href="https://www.sewernation.xyz/" target="_blank">
+            <a href="https://board4birds.ch/" target="_blank">
               <img src="../assets/partners/b4b.png" alt="" />
             </a>
           </div>
