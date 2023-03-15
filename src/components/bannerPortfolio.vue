@@ -1,8 +1,12 @@
 <template>
   <div class="banner cta-banner">
     <div
-      :class="isMobile ? 'flex-column' : ''"
-      class="d-flex align-items-center justify-content-center h-100"
+      class="d-flex align-items-center h-100"
+      :class="{
+        'justify-content-center': !isTablet,
+        'justify-content-end': isTablet,
+        'flex-column': isMobile,
+      }"
     >
       <a
         class="w-auto hover-undeline"
@@ -16,7 +20,7 @@
                 left: '0',
                 top: '4rem',
                 margin: '0 0 0 3rem',
-              } 
+              }
             : { height: '40%' },
         ]"
       >
@@ -31,7 +35,8 @@
         </div>
       </a>
       <a
-        class=" cta-title" :class="{'text-center': !isTablet}"
+        class="cta-title"
+        :class="{ 'text-center': !isTablet, 'pe-3 text-end': isTablet }"
         :href="'/#/portfolio/' + selectedProject.name"
       >
         <span v-if="!isTablet">{{ selectedProject.name }}</span>
@@ -40,14 +45,14 @@
           <span v-if="selectedProject.name.split(' ')[1]"
             ><br />{{ selectedProject.name.split(" ")[1] }}</span
           >
-            <span v-if="selectedProject.name.split(' ')[2]"
+          <span v-if="selectedProject.name.split(' ')[2]"
             ><br />{{ selectedProject.name.split(" ")[2] }}</span
           >
         </span>
       </a>
 
       <a
-        v-if="!isMobile && !isTablet"
+        v-if="!isMobile"
         class="text-end w-auto h-auto"
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
@@ -55,7 +60,7 @@
         :style="[
           isDesktop
             ? { position: 'absolute', right: '0', margin: '-10px 3rem 0 0' }
-            : {},
+            : { margin: '-10px 1rem 0 0' },
         ]"
       >
         <a
