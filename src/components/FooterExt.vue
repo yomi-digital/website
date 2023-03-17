@@ -11,7 +11,7 @@
         <agile class="patners" :options="myOptions">
           <div class="slide">
             <a href="https://www.banklessconsulting.com/" target="_blank">
-              <img src="../assets/partners/BC_logo_twitter.svg" alt="" />
+              <BCLogo />
             </a>
           </div>
           <div class="slide">
@@ -61,7 +61,7 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-
+import BCLogo from "@/components/BCLogo.vue";
 export default {
   mixins: [checkViewport],
   data() {
@@ -107,6 +107,8 @@ export default {
       },
     };
   },
-  components: {},
+  components: {
+    BCLogo,
+  },
 };
 </script>

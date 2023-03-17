@@ -8,8 +8,11 @@ export default {
     };
   },
   async mounted() {
-    const app = this
+    const app = this;
     app.checkViewport();
+    window.addEventListener("resize", function () {
+      app.checkViewport();
+    });
   },
   methods: {
     checkViewport() {
@@ -34,29 +37,6 @@ export default {
         app.isMiddleScreen = false;
         app.isDesktop = true;
       }
-      window.addEventListener("resize", function () {
-        if (window.innerWidth < 768) {
-          app.isMobile = true;
-          app.isTablet = false;
-          app.isMiddleScreen = false;
-          app.isDesktop = false;
-        } else if (window.innerWidth < 992 && window.innerWidth > 768) {
-          app.isMobile = false;
-          app.isTablet = true;
-          app.isMiddleScreen = false;
-          app.isDesktop = false;
-        } else if (window.innerWidth > 992 && window.innerWidth < 1280) {
-          app.isMobile = false;
-          app.isTablet = false;
-          app.isMiddleScreen = true;
-          app.isDesktop = false;
-        } else if (window.innerWidth > 1280) {
-          app.isMobile = false;
-          app.isTablet = false;
-          app.isMiddleScreen = false;
-          app.isDesktop = true;
-        }
-      });
     },
   },
 };

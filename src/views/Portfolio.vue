@@ -2,6 +2,7 @@
   <div :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]">
     <ButtonNav />
     <div class="container-fluid px-5">
+      <!-- <canvas v-if="!isDesktop && !isMiddleScreen"></canvas> -->
       <div class="row">
         <div class="col-12">
           <h2 class="">{{ $t("portfolio.title") }}</h2>
@@ -14,7 +15,10 @@
       </div>
     </div>
     <div :class="{ 'mb-5': isMobile }" class="container-fluid mt-5 p-0">
-      <div class="text-center content-container">
+      <div
+        class="text-center content-container"
+        :class="{ 'scrollable-container': !isDesktop && !isMiddleScreen }"
+      >
         <div
           class="link-portfolio"
           v-for="(project, index) in projects"
@@ -24,6 +28,7 @@
               $route.query.project != undefined
                 ? decodeURIComponent($route.query.project) == project.name
                 : false,
+            'hovering-link': activeLink === index,
           }"
         >
           <a
@@ -72,6 +77,7 @@ export default {
       service: "",
       projects: projects,
       activeIndex: null,
+      activeLink: null,
     };
   },
 
@@ -87,8 +93,27 @@ export default {
         }
       }, 500);
     }
+
+    window.addEventListener("scroll", () => {
+      this.onScroll();
+    });
   },
-  methods: {},
+  methods: {
+    onScroll() {
+      const scrollableContainer = document.querySelector(
+        ".scrollable-container"
+      );
+      const linkElements = scrollableContainer.querySelectorAll("a");
+      const linkPositions = Array.from(linkElements).map(
+        (el) => el.getBoundingClientRect().top
+      );
+
+      const activeIndex = linkPositions.findIndex(
+        (pos) => pos > + 150 && pos < window.innerHeight + 150
+      );
+      this.activeLink = activeIndex >= 0 ? activeIndex : null;
+    },
+  },
 };
 </script>
 <style></style>

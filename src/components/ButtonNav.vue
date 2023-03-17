@@ -30,7 +30,7 @@
           >
             <div class="container-fluid height-navbar p-0">
               <div :class="{ 'p-0 m-0 row': !isMobile }">
-                <div
+                <div @click="showNavbar = false"
                   class="p-0 bg-light"
                   :class="{
                     'column-navbar': !isMobile,
@@ -51,7 +51,7 @@
                     >
                   </div>
                 </div>
-                <div
+                <div @click="showNavbar = false"
                   class="p-0 bg-darker"
                   :class="{
                     'column-navbar': !isMobile,
@@ -71,7 +71,7 @@
                     >
                   </div>
                 </div>
-                <div
+                <div @click="showNavbar = false"
                   class="p-0 bg-light"
                   :class="{
                     'column-navbar': !isMobile,
@@ -90,7 +90,7 @@
                     >
                   </div>
                 </div>
-                <div
+                <div @click="showNavbar = false"
                   class="p-0 bg-darker"
                   :class="{
                     'column-navbar': !isMobile,
@@ -110,7 +110,7 @@
                     >
                   </div>
                 </div>
-                <div
+                <div @click="showNavbar = false"
                   class="p-0 bg-light"
                   :class="{
                     'column-navbar': !isMobile,
@@ -171,7 +171,7 @@ export default {
       if (from.name === to.name) {
         app.showNavbar = false;
         console.log("trigger close nav from route");
-        window.location.reload()
+        window.location.reload();
       }
     },
     showNavbar() {
