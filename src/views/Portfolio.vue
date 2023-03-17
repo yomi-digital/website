@@ -95,7 +95,9 @@ export default {
     }
 
     window.addEventListener("scroll", () => {
-      this.onScroll();
+      if (this.isMobile) {
+        this.onScroll();
+      }
     });
   },
   methods: {
@@ -109,7 +111,7 @@ export default {
       );
 
       const activeIndex = linkPositions.findIndex(
-        (pos) => pos > + 150 && pos < window.innerHeight + 150
+        (pos) => pos > +150 && pos < window.innerHeight + 150
       );
       this.activeLink = activeIndex >= 0 ? activeIndex : null;
     },

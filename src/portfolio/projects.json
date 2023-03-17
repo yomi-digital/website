@@ -2,6 +2,7 @@
   {
     "name": "niftyz",
     "imgCover": "niftyz.png",
+    "imgCoverMobile": "logo_niftyz.png",
     "services_en": {
       "consulting": "Consulting",
       "security": "Security Audit",
@@ -21,6 +22,7 @@
   {
     "name": "protocol labs",
     "imgCover": "protocol-labs.png",
+    "imgCoverMobile": "logo_pl.png",
     "services_en": {
       "protocol": "Protocol",
       "decentralized": "Decentralized Storage",
@@ -42,6 +44,7 @@
   {
     "name": "Fakewhale",
     "imgCover": "fakewhale logo.png",
+    "imgCoverMobile": "logo_fakewhale.png",
     "services_en": {
       "mego": "MEGO Tickets",
       "design": "Design",
@@ -60,7 +63,8 @@
   },
   {
     "name": "Demotapers",
-    "imgCover": "demo.png",
+    "imgCover": "demot.png",
+    "imgCoverMobile": "logo_demotapers.png",
     "services_en": {
       "backend": "Backend",
       "frontend": "Frontend",
@@ -80,6 +84,7 @@
   {
     "name": "Genrae",
     "imgCover": "genrae.png",
+    "imgCoverMobile": "logo_genrae.png",
     "services_en": {
       "contract": "Smart Contract"
     },
@@ -95,6 +100,7 @@
   {
     "name": "London Trade Art",
     "imgCover": "lt-art_1.svg",
+    "imgCoverMobile": "logo_londonart.png",
     "services_en": {
       "contract": "Smart Contract",
       "minting": "NFT minting interface"
@@ -112,6 +118,7 @@
   {
     "name": "w3bthr33",
     "imgCover": "w3b.png",
+    "imgCoverMobile": "logo_w3b3.png",
     "services_en": {
       "mego": "MEGO Tickets",
       "platform": "Platform",
@@ -131,6 +138,7 @@
   {
     "name": "Spaghetteth",
     "imgCover": "Spaghetteth.png",
+    "imgCoverMobile": "logo_spagheth.png",
     "services_en": {
       "mego": "MEGO Tickets"
     },
@@ -147,6 +155,7 @@
   {
     "name": "NFTBerlin",
     "imgCover": "nftberlin_smooth.png",
+    "imgCoverMobile": "logo_nft_berlin.png",
     "services_en": {
       "website": "Website ",
       "contract": "Smart Contract",
@@ -172,6 +181,7 @@
   {
     "name": "HNFT",
     "imgCover": "HNFT.png",
+    "imgCoverMobile": "logo_hnft.png",
     "services_en": {
       "contract": "Smart Contract",
       "mint": "Minting Button",
@@ -191,6 +201,7 @@
   {
     "name": "xone",
     "imgCover": "xone.png",
+    "imgCoverMobile": "logo_xone.png",
     "services_en": {
       "consulting": "Consulting",
       "mint": "Minting Button",
@@ -210,6 +221,7 @@
   {
     "name": "Daopunks",
     "imgCover": "dao.png",
+    "imgCoverMobile": "logo_dao.png",
     "services_en": {
       "contract": "Smart Contract",
       "umi": "UMI"
@@ -228,6 +240,7 @@
   {
     "name": "cult&rain",
     "imgCover": "cult_rain.png",
+    "imgCoverMobile": "logo_cultrain.png",
     "services_en": {
       "security": "Security Audit"
     },
@@ -243,6 +256,7 @@
   {
     "name": "house of sangu",
     "imgCover": "sangufoundationwesitelogo.png",
+    "imgCoverMobile": "logo_sangu.png",
     "services_en": {
       "contract": "Smart Contract",
       "umi": "UMI",
@@ -262,6 +276,7 @@
   {
     "name": "well-b",
     "imgCover": "well.png",
+    "imgCoverMobile": "logo_wellb.png",
     "services_en": {
       "ui": "UI",
       "website": "Website ",
@@ -283,6 +298,7 @@
   {
     "name": "Zonzo",
     "imgCover": "zonzo.png",
+    "imgCoverMobile": "logo_zonzo.png",
     "services_en": {
       "ui": "UI",
       "mobile": "Mobile App"
@@ -301,6 +317,7 @@
   {
     "name": "Endor",
     "imgCover": "logo ENDOR-01.png",
+    "imgCoverMobile": "logo_endor.png",
     "services_en": {
       "ui": "UI",
       "landing": "Landing Page"
@@ -318,6 +335,7 @@
   {
     "name": "PIM",
     "imgCover": "PIM.png",
+    "imgCoverMobile": "logo_pim.png",
     "services_en": {
       "ui": "UI",
       "website": "Website"
@@ -335,6 +353,7 @@
   {
     "name": "Aristoil",
     "imgCover": "aristoil logo.png",
+    "imgCoverMobile": "logo_aristoil.png",
     "services_en": {
       "website": "Website",
       "system": "Notarization System",

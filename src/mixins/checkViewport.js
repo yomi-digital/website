@@ -17,7 +17,6 @@ export default {
   methods: {
     checkViewport() {
       const app = this;
-      console.log('inner with',window.innerWidth);
       if (window.innerWidth < 768) {
         app.isMobile = true;
         app.isTablet = false;

@@ -29,7 +29,24 @@
             >
               <div class="preview-img">
                 <img
+                  v-if="isDesktop || isMiddleScreen"
                   :src="'/portfolio/' + project.imgCover"
+                  alt=""
+                  :style="{
+                    'max-width':
+                      project.imgCover === 'aristoil logo.png' && !isMobile
+                        ? '400px'
+                        : '',
+                  }"
+                  :class="
+                    project.imgCover == 'nftberlin_smooth.png' ||
+                    project.imgCover == 'PIM.png'
+                      ? 'p-4'
+                      : null
+                  "
+                />
+                <img v-if="!isDesktop && !isMiddleScreen"
+                  :src="'/portfolio/' + project.imgCoverMobile"
                   alt=""
                   :style="{
                     'max-width':
@@ -212,7 +229,7 @@ export default {
       if (app.project) {
         setTimeout(function () {
           let imgProject = document.getElementsByClassName("project-header");
-          console.log(imgProject)
+          console.log(imgProject);
           imgProject[0].classList.remove("glitch");
         }, 1000);
       }
