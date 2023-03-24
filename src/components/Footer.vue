@@ -135,7 +135,7 @@
             'flex-column': isTablet,
           }"
         >
-          <div
+          <!-- <div
             :class="{ 'mb-3': isTablet }"
             :style="[isTablet ? { width: '100%' } : {}]"
           >
@@ -149,7 +149,7 @@
             >
               {{ $t("menu.talk") }}
             </a>
-          </div>
+          </div> -->
 
           <div class="d-flex">
             <a
