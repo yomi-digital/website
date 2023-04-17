@@ -67,14 +67,14 @@
           </div>
         </div>
 
-        <Footer />
+        <newFooter />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
+import newFooter from "@/components/newFooter.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import Geisha from "@/components/Geisha.vue";
 import checkViewport from "@/mixins/checkViewport";
@@ -96,7 +96,7 @@ export default {
   mixins: [checkViewport],
   props: ["enterGeisha"],
   components: {
-    Footer,
+    newFooter,
     Geisha,
     ButtonNav,
     MarqueeText,

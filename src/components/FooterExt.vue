@@ -4,9 +4,12 @@
       :class="{ 'd-flex flex-column justify-content-center': isMobile }"
       class="custom-card py-4 px-4 mb-2"
     >
-      <h6 :class="{ 'text-center': isMobile }" class="title-carousel">
-        {{ $t("footer.title_carousel") }}!
-      </h6>
+      <div class="d-flex justify-content-between align-items-center">
+        <h6 :class="{ 'text-center': isMobile }" class="title-carousel">
+          {{ $t("footer.title_carousel") }}!
+        </h6>
+        <p class="text-uppercase">Partners</p>
+      </div>
       <div class="mt-5 mb-5">
         <agile class="patners" :options="myOptions">
           <div class="slide">

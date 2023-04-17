@@ -281,14 +281,14 @@
       <div v-if="isDesktop" class="gap"></div>
     </div>
     <FooterExt />
-    <Footer />
+    <newFooter />
   </div>
 </template>
 
 <script>
 import MarqueeText from "vue-marquee-text-component";
 import checkViewport from "@/mixins/checkViewport";
-import Footer from "@/components/Footer.vue";
+import newFooter from "@/components/newFooter.vue";
 import Bubble from "@/components/Bubble.vue";
 import FooterExt from "@/components/FooterExt.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
@@ -297,7 +297,7 @@ export default {
   name: "about",
   mixins: [checkViewport],
   components: {
-    Footer,
+    newFooter,
     FooterExt,
     Bubble,
     MarqueeText,

@@ -168,14 +168,14 @@
       <bannerPortfolio />
     </div>
     <FooterExt />
-    <Footer />
+    <newFooter />
   </div>
 </template>
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
+import newFooter from "@/components/newFooter.vue";
 import FooterExt from "@/components/FooterExt.vue";
-import Footer from "@/components/Footer.vue";
 import bannerPortfolio from "@/components/bannerPortfolio.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
@@ -186,7 +186,7 @@ export default {
   mixins: [checkViewport],
   components: {
     FooterExt,
-    Footer,
+    newFooter,
     bannerPortfolio,
     ButtonNav,
     MarqueeText,

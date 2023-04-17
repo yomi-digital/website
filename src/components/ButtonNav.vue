@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-cursor-mix-blend-mode="difference">
     <header id="head">
       <a href="/">
         <img
@@ -7,12 +7,13 @@
           src="../assets/images/YOMI_MARCHIO.png"
           alt=""
       /></a>
-      <div class="btn-close-custom hoverPointer" @click="showNav()">
-        <svg
-          class="hoverPointer"
-          width="72"
-          height="15"
-          viewBox="0 0 72 15"
+      <div class="d-flex align-items-center">
+        <changeLanguage />
+        <div class="btn-close-custom hoverPointer" @click="showNav()">
+        <svg class="hoverPointer"
+          width="40"
+          height="17"
+          viewBox="0 0 50 15"
           :fill="color"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -20,134 +21,21 @@
           <path d="M0 13H72" :stroke="color" stroke-width="3" />
         </svg>
       </div>
+      </div>
+     
     </header>
     <div v-if="showNavbar" class="container-navbar-custom">
       <div class="bounce-in-right" v-if="showNavbar">
-        <div>
-          <div
-            class="navbar-custom no-overflow-x"
-            :style="[!isMobile ? { overflowY: 'hidden' } : {}]"
-          >
-            <div class="container-fluid height-navbar p-0">
-              <div :class="{ 'p-0 m-0 row': !isMobile }">
-                <div @click="showNavbar = false"
-                  class="p-0 bg-light"
-                  :class="{
-                    'column-navbar': !isMobile,
-                    vh16: isMobile,
-                  }"
-                >
-                  <div :class="isMobile ? 'h-100' : 'vh-100'">
-                    <a class="nav-link-dark" href="/">
-                      <MarqueeText
-                        class="marquee-rotated"
-                        :repeat="20"
-                        :duration="$t('menu.about').length * 0.5"
-                      >
-                        <div class="hoverPointer">
-                          {{ $t("menu.about") }}&nbsp;
-                        </div>
-                      </MarqueeText></a
-                    >
-                  </div>
-                </div>
-                <div @click="showNavbar = false"
-                  class="p-0 bg-darker"
-                  :class="{
-                    'column-navbar': !isMobile,
-                    vh16: isMobile,
-                  }"
-                >
-                  <div :class="isMobile ? 'h-100' : 'vh-100'">
-                    <a class="nav-link-light" href="/#/team">
-                      <MarqueeText
-                        class="marquee-rotated"
-                        reverse
-                        :repeat="20"
-                        :duration="$t('menu.team').length * 0.5"
-                      >
-                        <div>{{ $t("menu.team") }}&nbsp;</div>
-                      </MarqueeText></a
-                    >
-                  </div>
-                </div>
-                <div @click="showNavbar = false"
-                  class="p-0 bg-light"
-                  :class="{
-                    'column-navbar': !isMobile,
-                    vh16: isMobile,
-                  }"
-                >
-                  <div :class="isMobile ? 'h-100' : 'vh-100'">
-                    <a class="nav-link-dark" href="/#/services">
-                      <MarqueeText
-                        class="marquee-rotated"
-                        :repeat="20"
-                        :duration="$t('menu.service').length * 0.5"
-                      >
-                        <div>{{ $t("menu.service") }}&nbsp;</div>
-                      </MarqueeText></a
-                    >
-                  </div>
-                </div>
-                <div @click="showNavbar = false"
-                  class="p-0 bg-darker"
-                  :class="{
-                    'column-navbar': !isMobile,
-                    vh16: isMobile,
-                  }"
-                >
-                  <div :class="isMobile ? 'h-100' : 'vh-100'">
-                    <a class="nav-link-light" href="/#/portfolio">
-                      <MarqueeText
-                        class="marquee-rotated"
-                        reverse
-                        :repeat="20"
-                        :duration="$t('menu.portfolio').length * 0.5"
-                      >
-                        <div>{{ $t("menu.portfolio") }}&nbsp;</div>
-                      </MarqueeText></a
-                    >
-                  </div>
-                </div>
-                <div @click="showNavbar = false"
-                  class="p-0 bg-light"
-                  :class="{
-                    'column-navbar': !isMobile,
-                    vh16: isMobile,
-                  }"
-                >
-                  <div :class="isMobile ? 'h-100' : 'vh-100'">
-                    <a class="nav-link-dark" href="/#/internal-project">
-                      <MarqueeText
-                        class="marquee-rotated"
-                        :repeat="30"
-                        :duration="$t('menu.internal').length * 0.5"
-                      >
-                        <div>{{ $t("menu.internal") }}&nbsp;</div>
-                      </MarqueeText></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-nav">
-              <changeLanguage />
-              <div class="gap"></div>
-            </div>
-          </div>
-        </div>
+        <Navbar />
       </div>
     </div>
   </div>
 </template>
 <script>
-import checkViewport from "@/mixins/checkViewport";
-import MarqueeText from "vue-marquee-text-component";
-import changeLanguage from "../components/changeLanguage.vue";
+import Navbar from "@/components/Navbar.vue";
+import changeLanguage from "@/components/changeLanguage.vue";
 
 export default {
-  mixins: [checkViewport],
   data() {
     return {
       showNavbar: false,
@@ -155,8 +43,8 @@ export default {
     };
   },
   components: {
-    changeLanguage,
-    MarqueeText,
+    Navbar,
+    changeLanguage
   },
 
   props: {
@@ -169,9 +57,8 @@ export default {
     $route(to, from) {
       const app = this;
       if (from.name === to.name) {
-        app.showNavbar = false;
+        app.showNavbar = !app.showNavbar;
         console.log("trigger close nav from route");
-        window.location.reload();
       }
     },
     showNavbar() {

@@ -3,54 +3,58 @@
     <div :style="[!isMobile ? { marginTop: '80px' } : { marginTop: '50px' }]">
       <ButtonNav />
       <!-- TEAM SECTION -->
-      <div>
+      <div class="">
         <div
           :class="{ 'full-h': !isMobile }"
-          class="container-fluid pd-container"
+          class="container-fluid pd-container position-relative"
         >
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-              <div class="">
-                <h2 :class="isMobile ? 'enter-page-mobile' : 'enter-page'">
-                  {{ $t("menu.team") }}
-                </h2>
+            <div class="row ">
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="" :class="{ 'mt-3': isMobile }">
+                  <h2 :class="isMobile ? 'enter-page-mobile' : 'enter-page'">
+                    {{ $t("menu.team") }}
+                  </h2>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 ms-2 mt-5">
+                <p
+                  class="text-service-one fade-in-max"
+                  :class="{ 'mt-3': isMobile }"
+                >
+                  {{ $t("team.text") }}
+                </p>
               </div>
             </div>
-            <div class="col-12 col-lg-6 ms-2 mt-5">
-              <p
-                class="text-service-one fade-in-max"
-                :class="{ 'mt-3': isMobile }"
+            <div class="container-image">
+              <div class="box-character-img position-second-box-charger">
+                <img
+                  class="imgTeam fade-in-max"
+                  src="../assets/images/team-img.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="ps-special" style="bottom:30px; left: 0px; z-index: 99;">
+              <div v-if="!isMobile" class="pd-container mb-4">
+                <button @click="scrollDown" class="cta underline ps-0">{{ $t("team.link") }}</button>
+              </div>
+              <MarqueeText
+                class="title-project"
+                :repeat="6"
+                :duration="$t('banner.team').length * 0.4"
               >
-                {{ $t("team.text") }}
-              </p>
+                <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>
+              </MarqueeText>
             </div>
           </div>
-          <div class="container-image">
-            <div class="box-character-img position-second-box-charger">
-              <img
-                class="imgTeam fade-in-max"
-                src="../assets/images/team-img.webp"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div :class="!isMobile ? 'titleBanner-team' : null">
-          <MarqueeText
-            class="title-project"
-            :repeat="6"
-            :duration="$t('banner.team').length * 0.4"
-          >
-            <h4>&nbsp;{{ $t("banner.team") }}&nbsp;</h4>
-          </MarqueeText>
-        </div>
+
         <!-- TEAM SHOW -->
         <div
           v-show="teams != ''"
           class="container-fluid"
           :class="{ 'ps-0': isMobile }"
         >
-          <div class="mt-5">
+          <div id="allTeam" class="mt-5">
             <div v-if="!isMobile" class="row">
               <div
                 v-for="(team, index) in teams"
@@ -73,13 +77,7 @@
               <div
                 v-if="!isMobile"
                 @click="toggleForm()"
-                class="
-                  box-team-container
-                  justify-content-center
-                  d-flex
-                  my-5
-                  pointer
-                "
+                class="box-team-container justify-content-center d-flex my-5 pointer"
                 :class="{ 'border-image': !showImage }"
               >
                 <div class="bk-team opacity-100 text-uppercase">
@@ -88,8 +86,9 @@
               </div>
             </div>
             <agile
+              v-if="isMobile"
               :style="{ 'pointer-events': checkedMobile ? 'none' : 'all' }"
-              v-else
+              
               :options="myOptions"
             >
               <div v-for="(team, index) in teams" :key="index" class="slide">
@@ -122,13 +121,7 @@
               <div class="slide">
                 <div
                   @click="toggleForm()"
-                  class="
-                    box-team-container
-                    justify-content-center
-                    d-flex
-                    my-5
-                    pointer
-                  "
+                  class="box-team-container justify-content-center d-flex my-5 pointer"
                   :class="{ 'border-image': !showImage }"
                 >
                   <div class="bk-team opacity-100 text-uppercase">
@@ -159,20 +152,17 @@
               <h6>{{ selected.role }}</h6>
             </div>
           </div>
+          <div :class="isMobile ? 'mb-5' : null" class="link-internal mt-5 text-center">
+            <a class="py-2 px-4" href="mailto:hey@yomi.digital" target="_blank">{{ $t("team.btn") }}</a>
+          </div>
 
-          <div class="gap"></div>
           <div v-if="!isMobile" class="gap"></div>
           <modal name="team" class="team-card">
             <div class="pb-4">
               <div>
                 <div class="mb-3 label">MEMBER #{{ selected.id }}</div>
                 <div
-                  class="
-                    d-flex
-                    justify-content-between
-                    align-items-center align-content-center
-                    w-100
-                  "
+                  class="d-flex justify-content-between align-items-center align-content-center w-100"
                 >
                   <h5 class="mb-0">#{{ selected.name }} //</h5>
                   <i
@@ -210,25 +200,26 @@
         </div>
         <bannerPortfolio />
       </div>
-      <Footer />
+      <newFooter />
     </div>
   </div>
 </template>
 
 <script>
-import checkViewport from "@/mixins/checkViewport";
 import MarqueeText from "vue-marquee-text-component";
-import Footer from "@/components/Footer.vue";
+import newFooter from "@/components/newFooter.vue";
 import bannerPortfolio from "@/components/bannerPortfolio.vue";
 import formTeam from "@/components/formTeam.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import teams from "@/team/teams.json";
+import checkViewport from "@/mixins/checkViewport";
+
 
 export default {
   name: "team",
-  mixins: [checkViewport],
+  
   components: {
-    Footer,
+    newFooter,
     MarqueeText,
     ButtonNav,
     bannerPortfolio,
@@ -253,12 +244,18 @@ export default {
       },
     };
   },
+  mixins: [checkViewport],
 
   mounted() {
     const app = this;
+    console.log(this.isMobile);
     app.calculateTypewriter();
   },
   methods: {
+    scrollDown() {
+      const element = document.getElementById('allTeam');
+      element.scrollIntoView({ behavior: 'smooth' });
+    },
     calculateTypewriter() {
       const app = this;
       setTimeout(function () {

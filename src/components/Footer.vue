@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer class="custom-card">
-      <changeLanguage />
+      <Talk />
 
       <div
         class=""
@@ -191,13 +191,13 @@
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-import changeLanguage from "@/components/changeLanguage.vue";
+import Talk from "@/components/Talk.vue";
 export default {
   name: "Footer",
 
   mixins: [checkViewport],
   components: {
-    changeLanguage,
+    Talk,
   },
   mounted() {
     (function (w, d) {

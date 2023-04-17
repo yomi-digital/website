@@ -1,75 +1,53 @@
 <template>
   <div class="banner cta-banner">
     <div
+      :class="
+        isMobile
+          ? 'flex-column justify-content-center'
+          : 'justify-content-between'
+      "
       class="d-flex align-items-center h-100"
-      :class="{
-        'justify-content-center': !isTablet,
-        'justify-content-end': isTablet,
-        'flex-column': isMobile,
-      }"
     >
-      <a
-        class="w-auto hover-undeline"
-        href="/#/portfolio"
-        style="color: black"
-        :class="{ 'mt-4': isMobile }"
-        :style="[
-          !isMobile
-            ? {
-                position: 'absolute',
-                left: '0',
-                top: '4rem',
-                margin: '0 0 0 3rem',
-              }
-            : { height: '40%' },
-        ]"
-      >
-        <div class="text-uppercase">
-          <p v-if="!isTablet" style="min-width: 160px">
-            {{ $t("banner.view") }}
-          </p>
-          <p v-if="isTablet" style="min-width: 160px">
-            {{ $t("banner.view").split(" ")[0] }}<br />
-            {{ $t("banner.view").split(" ")[1] }}
-          </p>
+      <a class="w-auto h-auto mt-5 hover-underline" href="/#/portfolio">
+        <div :class="{ 'mb-5 pb-5 ': !isMobile }" class="text-uppercase">
+          <p style="min-width: 160px">{{ $t("banner.view") }}</p>
         </div>
       </a>
       <a
-        class="cta-title"
-        :class="{ 'text-center': !isTablet, 'pe-3 text-end': isTablet }"
-        :href="'/#/portfolio/' + selectedProject.name"
-      >
-        <span v-if="!isTablet">{{ selectedProject.name }}</span>
-        <span v-if="isTablet"
-          >{{ selectedProject.name.split(" ")[0] }}
-          <span v-if="selectedProject.name.split(' ')[1]"
-            ><br />{{ selectedProject.name.split(" ")[1] }}</span
-          >
-          <span v-if="selectedProject.name.split(' ')[2]"
-            ><br />{{ selectedProject.name.split(" ")[2] }}</span
-          >
-        </span>
-      </a>
-
-      <a
-        v-if="!isMobile"
-        class="text-end w-auto h-auto"
+        class="w-75 text-center"
         :href="
           '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
         "
-        :style="[
-          isDesktop
-            ? { position: 'absolute', right: '0', margin: '-10px 3rem 0 0' }
-            : { margin: '-10px 1rem 0 0' },
-        ]"
       >
-        <a
-          :href="'/#/portfolio/' + selectedProject.name"
-          class="d-flex align-items-center justify-content-center"
+        <h3
+          id="nameProject"
+          class="hover-underline text-uppercase cta-title mb-0 h-100 d-flex align-items-center justify-content-center"
         >
-          <img height="52px" src="../assets/images/arrow-right.svg" alt="" />
-        </a>
+          {{ selectedProject.name }}
+          <svg
+          class="ms-3 mb-1"
+          style="transform: rotate(35deg);"
+            width="69"
+            height="64"
+            viewBox="0 0 69 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.0794 14.6405L46.6993 25.748L-1.67205e-06 25.748L-1.12661e-06 38.2262L46.8353 38.2262L27.0794 49.3595L27.0794 64L69 38.4L69 25.6837L27.0794 6.44572e-06L27.0794 14.6405Z"
+              fill="currentColor"
+            />
+          </svg>
+        </h3>
       </a>
+
+      <div
+        v-if="!isMobile && !isTablet"
+        class="pb-3 h-100 d-flex align-items-center justify-content-center"
+        style="opacity: 0"
+      >
+        <img src="../assets/images/arrow-right.svg" alt="" />
+      </div>
     </div>
   </div>
 </template>
@@ -86,13 +64,7 @@ export default {
       selectedProject: {},
     };
   },
-  watch: {
-    $route(to, from) {
-      if (from.name == "single_project" && to.name == "single_project") {
-        this.$emit("forceClose");
-      }
-    },
-  },
+
   mounted() {
     const app = this;
     app.randomProject();

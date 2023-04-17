@@ -30,33 +30,22 @@
 
     <div class="text-center link-internal mt-5">
       <p>{{ $t("mego.demo") }}</p>
-      <a href="https://mego.cx/" target="_blank"
+      <a class="pb-2" href="https://mego.cx/" target="_blank"
         >{{ $t("mego.btn") }}
-        <svg
-          width="69"
-          height="64"
-          viewBox="0 0 69 64"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M27.0794 14.6405L46.6993 25.748L-1.67205e-06 25.748L-1.12661e-06 38.2262L46.8353 38.2262L27.0794 49.3595L27.0794 64L69 38.4L69 25.6837L27.0794 6.44572e-06L27.0794 14.6405Z"
-            fill="white"
-          />
-        </svg>
+     
       </a>
     </div>
 
     <div class="gap"></div>
     <div v-if="isDesktop" class="gap"></div>
     <FooterExt />
-    <Footer />
+    <newFooter />
   </div>
 </template>
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-import Footer from "@/components/Footer.vue";
+import newFooter from "@/components/newFooter.vue";
 import FooterExt from "@/components/FooterExt.vue";
 import Bubble from "@/components/Bubble.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
@@ -68,7 +57,7 @@ export default {
   mixins: [checkViewport],
   components: {
     FooterExt,
-    Footer,
+    newFooter,
     ButtonNav,
     MarqueeText,
     Bubble,

@@ -1,14 +1,12 @@
 <template>
-  <div class="p-4">
     <div
-      :class="isMobile ? 'mb-2' : 'mb-5'"
-      class="d-flex justify-content-between align-items-center"
+      class="d-flex justify-content-between align-items-center mt-2 me-4"
     >
-      <a href="https://form.yomi.digital/" target="_blank" class="buble-text">
-        <span :class="{ 'mb-0': isMobile }" class="">
+      <!-- <a href="https://form.yomi.digital/" target="_blank">
+        <p :class="{ 'mb-0': isMobile }" class="buble-text">
           {{ $t("menu.talk") }}
-        </span>
-      </a>
+        </p>
+      </a> -->
       <div class="d-flex">
         <p @click="handleChangeIt()" class="text-lang color-link hoverPointer">
           IT
@@ -19,7 +17,6 @@
         </p>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
