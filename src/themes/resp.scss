@@ -52,7 +52,7 @@
     height: 50px;
     padding: 0rem 2rem;
     .logo {
-      width: 20px;
+      width: 25px;
     }
   }
   .nav-link-dark,
@@ -79,6 +79,10 @@
     font-size: 11px;
     margin-bottom: 0px;
   }
+  footer .first-section p{
+    line-height: 13px;
+  }
+  
   .top-btm {
     padding: 1rem;
     margin: 1rem;
@@ -288,7 +292,7 @@
       margin-bottom: 5rem;
     }
     a {
-      padding: 1.5rem 3rem;
+      padding: 1rem 2.5rem!important;
       font-weight: 700;
     }
   }

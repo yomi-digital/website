@@ -16,24 +16,25 @@
               :class="isMobile ? 'mt-4 justify-content-between' : null"
               class="d-flex align-items-end first-section"
             >
-              <p class="footer-text mb-0" style="line-height: 150% !important">
+              <p class="footer-text mb-0">
                 Viale Legioni Romane, <br v-if="isMobile"> 7 20147 Milano <br v-if="isMobile"> P. I 12188060961
               </p>
-              <p class="ms-3 me-3 mb-1">|</p>
+              <p v-if="!isMobile" class="ms-3 me-3 mb-1">|</p>
               <a
                 v-if="$i18n.locale == 'en'"
                 href="https://www.iubenda.com/privacy-policy/61064742"
                 class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe"
                 title="Privacy Policy "
-                >Privacy Policy /&nbsp;</a
+                >Privacy Policy</a
               >
               <a
                 v-if="$i18n.locale == 'it'"
                 href="https://www.iubenda.com/privacy-policy/81694600"
                 class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iub-legal-only iubenda-noiframe"
                 title="Privacy Policy "
-                >Privacy Policy /&nbsp;</a
+                >Privacy Policy</a
               >
+              <p class="mx-1 my-0 ">&nbsp;/&nbsp;</p>
               <a
                 v-if="$i18n.locale == 'en'"
                 href="https://www.iubenda.com/privacy-policy/61064742/cookie-policy"
@@ -51,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div :class="isMobile ? 'mt-5 mb-4 flex-column' : null" class="col-12 col-md-5 d-flex  order-0 order-md-1">
+        <div :class="isMobile ? 'mb-4 flex-column' : null" class="col-12 col-md-5 d-flex  order-0 order-md-1">
           <div v-if="isMobile" class="mb-5">
             <img
                 
