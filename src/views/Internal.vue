@@ -9,7 +9,7 @@
         <div class="col-12">
           <h2>Mego</h2>
         </div>
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-6">
           <h6 class="mt-5 sub-title-project">
             {{ $t("mego.sub-title") }}
           </h6>
@@ -30,7 +30,7 @@
 
     <div class="text-center link-internal mt-5">
       <p>{{ $t("mego.demo") }}</p>
-      <a class="pb-2" href="https://mego.cx/" target="_blank"
+      <a class="" href="https://mego.cx/" target="_blank"
         >{{ $t("mego.btn") }}
      
       </a>

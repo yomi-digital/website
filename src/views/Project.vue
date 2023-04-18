@@ -16,9 +16,17 @@
             </h6>
           </div>
         </div>
+        <div class="row">
+          <div class="col-12 mt-5 ms-4">
+            <a class="btn-back" href="/#/portfolio">Back</a>
+          </div>
+        </div>
       </div>
       <div class="container mt-5 pt-5">
         <div class="row">
+          <div class="col-12 mb-5">
+            
+          </div>
           <div
             :class="{ 'p-0': isMobile }"
             class="col-12 col-lg-10 offset-0 offset-lg-1"
@@ -85,12 +93,6 @@
             "
           >
             <div class="d-flex align-items-center">
-              <h6 class="me-3">
-                <i
-                  class="fa-solid fa-arrow-up"
-                  style="transform: rotate(45deg)"
-                ></i>
-              </h6>
               <a :href="project.link" target="_blank"
                 ><h6
                   style="text-underline-offset: 4px"
@@ -100,6 +102,13 @@
                   {{ project.name }}
                 </h6></a
               >
+              <h6 class="ms-3 pt-2">
+                <i
+                  class="fa-solid fa-arrow-up"
+                  style="transform: rotate(45deg)"
+                ></i>
+              </h6>
+              
             </div>
             <h6 v-if="$i18n.locale == 'en'" v-html="project.category_en"></h6>
             <h6 v-if="$i18n.locale == 'it'" v-html="project.category_it"></h6>

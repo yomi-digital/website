@@ -659,7 +659,12 @@ h1 {
       margin-left: 1rem;
       padding-bottom: 0.2rem;
     }
+    &:hover{
+      background: var(--colored);
+      color: var(--primary-color);
+    }
   }
+  
 }
 
 .project-header {
@@ -998,7 +1003,11 @@ button {
   vertical-align: middle;
   display: inline-block;
   text-transform: uppercase;
-  margin-bottom: 0px
+  margin-bottom: 0px;
+  &:hover{
+    background: var(--colored);
+    color: var(--primary-color);
+  }
 }
 .text-lang {
   @include title-font();
@@ -1277,4 +1286,10 @@ footer{
 }
 .ps-special{
   position: absolute;
+}
+.btn-back{
+  color: var(--font-color);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: underline;
 }

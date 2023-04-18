@@ -51,14 +51,14 @@
       </MarqueeText>
     </a>
     <FooterExt />
-    <Footer />
+    <newFooter />
   </div>
 </template>
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
 import FooterExt from "@/components/FooterExt.vue";
-import Footer from "@/components/Footer.vue";
+import newFooter from "@/components/newFooter.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
@@ -66,7 +66,7 @@ export default {
   name: "portfolio-page",
   mixins: [checkViewport],
   components: {
-    Footer,
+    newFooter,
     FooterExt,
     ButtonNav,
     MarqueeText,

@@ -16,7 +16,7 @@
     "text":" Le competenze e la determinazione del nostro team sono alla base della nostra capacità di superare i limiti della tecnologia e sviluppare prodotti digitali che colpiscono nel segno.",
     "contact": "contattaci per unirti al team",
     "link": "SCORRI PER CONOSCERCI",
-    "btn":"unisciti",
+    "btn":"salta a bordo",
     "more":"DI PIU'",
     "you":"...E tu",
     "role":"ruolo"
@@ -81,7 +81,7 @@
 
   },
   "mego":{
-    "sub-title":"Un sistema di ticketing crosschain che permette di creare eventi, gestire e vendere biglietti e pass. Spesso le applicazioni web3 non sono così facili da usare, mentre MEGO è una piattaforma semplice, facile e divertente!",
+    "sub-title":"Un sistema multichain di ticketing NFT che consente di creare e gestire i tuoi tickets. Un prodotto web3 reso facilmente accessibile a chiunque. Organizza il tuo evento, emetti i biglietti e vendi su qualsiasi chain. Acquista i tickets e accedi ad esperienze esclusive legate al possesso del tuo biglietto.",
     "demo":"PROVA LA DEMO PER SCOPRIRE MEGO TICKETS",
     "btn":"Scopri"
   },
