@@ -7,7 +7,7 @@
             <div>
               <img
                 v-if="!isMobile"
-                style="width: 200px"
+                style="width: 155px"
                 src="../assets/images/YOMI-MARCHIO.png"
                 alt=""
               />
@@ -68,7 +68,7 @@
                 <li>
                   <router-link
                     class="text-capitalize"
-                    to="/about"
+                    to="/"
                     @click.native="scrollUp"
                     >{{ $t("menu.about") }}</router-link
                   >

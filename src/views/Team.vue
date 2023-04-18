@@ -153,7 +153,7 @@
             </div>
           </div>
           <div :class="isMobile ? 'mb-5' : null" class="link-internal mt-5 text-center">
-            <a class="py-2 px-4" href="mailto:hey@yomi.digital" target="_blank">{{ $t("team.btn") }}</a>
+            <a class="" href="mailto:hey@yomi.digital" target="_blank">{{ $t("team.btn") }}</a>
           </div>
 
           <div v-if="!isMobile" class="gap"></div>

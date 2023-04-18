@@ -55,12 +55,13 @@ export default {
   },
   watch: {
     $route(to, from) {
-      const app = this;
-      if (from.name === to.name) {
-        app.showNavbar = !app.showNavbar;
-        console.log("trigger close nav from route");
-      }
-    },
+  const app = this;
+  if (from.name === to.name && to.name !== 'single_project') {
+    app.showNavbar = !app.showNavbar;
+    console.log("trigger close nav from route");
+  }
+},
+
     showNavbar() {
       const app = this;
       let page = document.getElementsByTagName("html")[0];

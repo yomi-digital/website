@@ -89,7 +89,7 @@ html {
   @include secondary-font();
   font-style: normal;
   font-weight: 500;
-  font-size: 13rem;
+  font-size: 11rem;
   line-height: 0.8;
 }
 
@@ -641,9 +641,12 @@ h1 {
     @include secondary-font();
     color: var(--font-color);
     font-size: 1.56rem;
+    line-height: 1.1;
+    font-weight: 400;
+    display: inline-block;
     text-transform: uppercase;
     border: 1px solid var(--font-color);
-    padding: 0.4rem 1.3rem;
+    padding: 10px 30px;
     border-radius: 100px;
     transition: all 0.2s;
     &:hover svg {
@@ -892,7 +895,7 @@ header {
   // margin-bottom: 2rem;
 }
 .logo {
-  width: 40px;
+  width: 35px;
 }
 .btn-close-custom {
 }

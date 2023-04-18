@@ -51,23 +51,22 @@
       </MarqueeText>
     </a>
     <FooterExt />
-    <newFooter />
+    <Footer />
   </div>
 </template>
 
 <script>
 import checkViewport from "@/mixins/checkViewport";
-import newFooter from "@/components/newFooter.vue";
 import FooterExt from "@/components/FooterExt.vue";
+import Footer from "@/components/Footer.vue";
 import ButtonNav from "@/components/ButtonNav.vue";
 import projects from "@/portfolio/projects.json";
 import MarqueeText from "vue-marquee-text-component";
-
 export default {
   name: "portfolio-page",
   mixins: [checkViewport],
   components: {
-    newFooter,
+    Footer,
     FooterExt,
     ButtonNav,
     MarqueeText,
@@ -80,7 +79,6 @@ export default {
       activeLink: null,
     };
   },
-
   mounted() {
     const app = this;
     if (app.$route.query.project != undefined) {
@@ -93,7 +91,6 @@ export default {
         }
       }, 500);
     }
-
     window.addEventListener("scroll", () => {
       if (this.isMobile) {
         this.onScroll();
@@ -109,7 +106,6 @@ export default {
       const linkPositions = Array.from(linkElements).map(
         (el) => el.getBoundingClientRect().top
       );
-
       const activeIndex = linkPositions.findIndex(
         (pos) => pos > +150 && pos < window.innerHeight + 150
       );

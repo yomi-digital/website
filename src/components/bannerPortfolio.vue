@@ -14,10 +14,10 @@
         </div>
       </a>
       <a
+        v-if="$route.name === 'single_project'"
         class="w-75 text-center"
-        :href="
-          '/#/portfolio?project=' + encodeURIComponent(selectedProject.name)
-        "
+        href="#"
+        @click.prevent="reloadAndGoToPortfolio"
       >
         <h3
           id="nameProject"
@@ -25,8 +25,34 @@
         >
           {{ selectedProject.name }}
           <svg
-          class="ms-3 mb-1"
-          style="transform: rotate(35deg);"
+            class="ms-3 mb-1"
+            style="transform: rotate(35deg)"
+            width="69"
+            height="64"
+            viewBox="0 0 69 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.0794 14.6405L46.6993 25.748L-1.67205e-06 25.748L-1.12661e-06 38.2262L46.8353 38.2262L27.0794 49.3595L27.0794 64L69 38.4L69 25.6837L27.0794 6.44572e-06L27.0794 14.6405Z"
+              fill="currentColor"
+            />
+          </svg>
+        </h3>
+      </a>
+      <a
+        v-else
+        class="w-75 text-center"
+        :href="'/#/portfolio/' + selectedProject.name"
+      >
+        <h3
+          id="nameProject"
+          class="hover-underline text-uppercase cta-title mb-0 h-100 d-flex align-items-center justify-content-center"
+        >
+          {{ selectedProject.name }}
+          <svg
+            class="ms-3 mb-1"
+            style="transform: rotate(35deg)"
             width="69"
             height="64"
             viewBox="0 0 69 64"
@@ -68,8 +94,17 @@ export default {
   mounted() {
     const app = this;
     app.randomProject();
+    console.log("ecco", this.$route.name);
   },
   methods: {
+    reloadAndGoToPortfolio() {
+  const projectUrl = "/#/portfolio/" + this.selectedProject.name;
+  window.location.href = projectUrl;
+  setTimeout(() => {
+    window.location.reload();
+  }, 100);
+},
+
     randomProject() {
       const app = this;
       let randomProject = Math.floor(Math.random() * projects.length);
