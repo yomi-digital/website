@@ -250,6 +250,11 @@ export default {
     const app = this;
     console.log(this.isMobile);
     app.calculateTypewriter();
+    document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      this.closeModal();
+    }
+  });
   },
   methods: {
     scrollDown() {
