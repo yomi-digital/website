@@ -30,7 +30,7 @@
 
     <div class="text-center link-internal mt-5">
       <p>{{ $t("mego.demo") }}</p>
-      <a class="" href="https://mego.cx/" target="_blank"
+      <a class="" href="https://mego.tickets/#/" target="_blank"
         >{{ $t("mego.btn") }}
      
       </a>
