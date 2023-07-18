@@ -50,6 +50,11 @@
               <img src="../assets/partners/b4b.png" alt="" />
             </a>
           </div>
+          <div class="slide">
+            <a href="https://www.hyper-foundry.com/" target="_blank">
+              <img src="../assets/partners/Logo.png" alt="" />
+            </a>
+          </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i
           ></template>
