@@ -73,16 +73,16 @@
                   <img :src="'/team/' + team.imageProfilePreview" alt="" />
                 </div>
               </div>
-
-              <div
-                v-if="!isMobile"
-                @click="toggleForm()"
-                class="box-team-container justify-content-center d-flex my-5 pointer"
-                :class="{ 'border-image': !showImage }"
-              >
-                <div class="bk-team opacity-100 text-uppercase">
-                  <p class="text-strong">{{ $t("team.you") }}?</p>
-                </div>
+              <div v-if="!isMobile" class="col-12 col-md-4 col-lg-3">
+                  <div
+                    @click="toggleForm()"
+                    class="box-team-container justify-content-center d-flex my-5 pointer"
+                    :class="{ 'border-image': !showImage }"
+                  >
+                    <div class="bk-team opacity-100 text-uppercase">
+                      <p class="text-strong">{{ $t("team.you") }}?</p>
+                    </div>
+                  </div>
               </div>
             </div>
             <agile
