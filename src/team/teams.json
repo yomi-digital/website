@@ -46,12 +46,12 @@
   },
   {
     "id": "006",
-    "name": "Giorgia",
-    "alias": "Giorgi",
-    "role": "Project manager",
+    "name": "Andrea",
+    "alias": "_six99_",
+    "role": "full stack & game developer",
     "disorder": "Lore Ipsum",
-    "imageProfile": "Giorgia.webp",
-    "imageProfilePreview": "Giorgia-preview.webp"
+    "imageProfile": "Andrea.webp",
+    "imageProfilePreview": "Andrea-preview.webp"
   },
   {
     "id": "007",
@@ -82,15 +82,6 @@
   },
   {
     "id": "010",
-    "name": "Simone",
-    "alias": "Simone9419",
-    "role": "full stack developer",
-    "disorder": "Lore Ipsum",
-    "imageProfile": "Simone.webp",
-    "imageProfilePreview": "Simone-preview.webp"
-  },
-  {
-    "id": "011",
     "name": "Inactive",
     "alias": "anon",
     "role": "full stack developer",
