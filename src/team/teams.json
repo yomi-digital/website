@@ -28,15 +28,6 @@
   },
   {
     "id": "004",
-    "name": "Stefano",
-    "alias": "Steve_Rogers",
-    "role": "frontend developer & co-founder",
-    "disorder": "Lore Ipsum",
-    "imageProfile": "Stefano.webp",
-    "imageProfilePreview": "Stefano-preview.webp"
-  },
-  {
-    "id": "005",
     "name": "Vincenzo",
     "alias": "Tdb_Snip3r",
     "role": "full stack developer & AI Builder",
@@ -45,7 +36,7 @@
     "imageProfilePreview": "AndreaRm-preview.webp"
   },
   {
-    "id": "006",
+    "id": "005",
     "name": "Andrea",
     "alias": "_six99_",
     "role": "full stack & game developer",
@@ -54,7 +45,7 @@
     "imageProfilePreview": "Andrea-preview.webp"
   },
   {
-    "id": "007",
+    "id": "006",
     "name": "Elisea",
     "alias": "Elsi",
     "role": "UX|UI designer",
@@ -63,7 +54,7 @@
     "imageProfilePreview": "Elisea-preview.webp"
   },
   {
-    "id": "008",
+    "id": "007",
     "name": "Giuseppe",
     "alias": "Peppe",
     "role": "frontend developer",
@@ -72,16 +63,7 @@
     "imageProfilePreview": "Giuseppe-preview.webp"
   },
   {
-    "id": "009",
-    "name": "Lucrezia",
-    "alias": "Doclew",
-    "role": "frontend developer",
-    "disorder": "Lore Ipsum",
-    "imageProfile": "Lucrezia.webp",
-    "imageProfilePreview": "Lucrezia-preview.webp"
-  },
-  {
-    "id": "010",
+    "id": "008",
     "name": "Inactive",
     "alias": "anon",
     "role": "full stack developer",
