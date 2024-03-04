@@ -18,9 +18,6 @@
             </a>
           </div>
           <div class="slide">
-            <img src="../assets/partners/Frame.svg" alt="" />
-          </div>
-          <div class="slide">
             <a href="https://quadrans.io/" target="_blank">
               <img src="../assets/partners/Group (1).svg" alt="" />
             </a>
@@ -42,7 +39,7 @@
           </div>
           <div class="slide">
             <a href="https://www.sewernation.xyz/" target="_blank">
-              <img src="../assets/partners/sewernation.png" alt="" />
+              <img src="../assets/partners/sewer-logo.png" alt="" />
             </a>
           </div>
           <div class="slide">
