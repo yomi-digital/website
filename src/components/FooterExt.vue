@@ -52,6 +52,11 @@
               <img src="../assets/partners/Logo.png" alt="" />
             </a>
           </div>
+          <div class="slide">
+            <a href="https://theglasselite.com/" target="_blank">
+              <img src="../assets/partners/TGE_logo_bianco_tot.svg" alt="" />
+            </a>
+          </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i
           ></template>
