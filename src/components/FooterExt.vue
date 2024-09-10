@@ -18,8 +18,8 @@
             </a>
           </div>
           <div class="slide">
-            <a href="https://www.bolket.com/" target="_blank">
-              <img src="../assets/partners/bolket-logo_positive-color_signature.svg>
+            <a href="https://bolket/" target="_blank">
+              <img src="../assets/partners/bolket-logo_positive-color_signature.svg" alt="" />
             </a>
           </div>
           <div class="slide">
@@ -35,6 +35,11 @@
           <div class="slide">
             <a href="https://nftberlin.org/#/" target="_blank">
               <img src="../assets/partners/nftberlin.svg" alt="" />
+            </a>
+          </div>
+          <div class="slide">
+            <a href="https://justanother.cloud/" target="_blank">
+              <img src="../assets/partners/logo.svg" alt="" />
             </a>
           </div>
           <div class="slide">
