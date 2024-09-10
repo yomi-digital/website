@@ -62,11 +62,6 @@
               <img src="../assets/partners/TGE_logo_bianco_tot.png" alt="" />
             </a>
           </div>
-          <div class="slide">
-            <a href="https://justanother.cloud/" target="_blank">
-              <img src="https://www.justanother.cloud/img/logo.svg" alt="" />
-            </a>
-          </div>
           </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i
