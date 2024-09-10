@@ -18,6 +18,11 @@
             </a>
           </div>
           <div class="slide">
+            <a href="https://www.bolket.com/" target="_blank">
+              <img src="../assets/partners/bolket-logo_positive-color_signature.svg>
+            </a>
+          </div>
+          <div class="slide">
             <a href="https://quadrans.io/" target="_blank">
               <img src="../assets/partners/Group (1).svg" alt="" />
             </a>
@@ -55,6 +60,12 @@
           <div class="slide">
             <a href="https://theglasselite.com/" target="_blank">
               <img src="../assets/partners/TGE_logo_bianco_tot.png" alt="" />
+            </a>
+          </div>
+          </div>
+          <div class="slide">
+            <a href="https://justanother.cloud/" target="_blank">
+              <img src="https://www.justanother.cloud/img/logo.svg" alt="" />
             </a>
           </div>
           <template slot="prevButton"
