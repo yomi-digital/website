@@ -62,7 +62,6 @@
               <img src="../assets/partners/TGE_logo_bianco_tot.png" alt="" />
             </a>
           </div>
-          </div>
           <template slot="prevButton"
             ><i class="fa-solid fa-chevron-left"></i
           ></template>
