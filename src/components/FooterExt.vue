@@ -39,7 +39,7 @@
           </div>
           <div class="slide">
             <a href="https://justanother.cloud/" target="_blank">
-              <img src="../assets/partners/logo.svg" alt="" />
+              <img src="../assets/partners/justanother.svg" alt="" />
             </a>
           </div>
           <div class="slide">
